@@ -2,6 +2,7 @@
 title: "LightForm Wiki"
 description: "LightForm Wiki site."
 maintainer: "Adam Plowman"
+baseurl: "/wiki"
 github_user_or_organisation: test-aplowman
 markdown: kramdown
 kramdown:
