@@ -43,7 +43,7 @@ show_meta: false
         {% endif -%}
         {% endfor -%}
         <tr>
-            <td><a href="{{ exp.url }}">{{ exp.title }}</a></td>
+            <td><a href="{{ exp.url | prepend: site.baseurl }}">{{ exp.title }}</a></td>
             <td>{{ exp.author }}</td>
             <td>{{ checklist_col }}</td>
             <td>{{ an_code_link }}</td>
