@@ -1,0 +1,23 @@
+---
+layout: post
+title: Tags
+permalink: /tags/
+published: true
+---
+
+{% include get_tags.html %}
+
+{% for tag in tags %}
+    <h3 class="tag-title" id="{{ tag | slugify }}">#{{ tag }}</h3>
+    <ul>
+    {% for collec in site.collections %}
+        {% for collec_item in collec.docs %}
+            {% assign ttags = collec_item.tags | join:'|' | append:'|' %}
+            {% assign rawtags = rawtags | append:ttags %}
+                {% if collec_item.tags contains tag %}
+                <li><a href="{{ collec_item.url | prepend: site.baseurl | prepend: site.url }}">{{ collec_item.title }}</a></li>
+                {% endif %}
+        {% endfor %}
+    {% endfor %}
+    </ul>
+{% endfor %}

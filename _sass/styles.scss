@@ -1,0 +1,240 @@
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: #333;
+    overflow-wrap: break-word
+}
+
+a {
+    color: #03a9f4;
+}
+// a[href^="http://"], a[href^="https://"] {
+//     background: url(/assets/images/external_link.svg) center right no-repeat;
+//     padding-right: 13px;
+// }
+
+.article-content code {
+    background-color: #f0f0f0;
+    padding: 0.2em 0.4rem;
+    font-size: 85%;
+    border-radius: 3px;
+}
+
+.article-content .highlight code {
+    background: initial;
+    padding: initial;
+    border-radius: initial;
+    font-size: 95%;
+}
+
+.language-python, .language-bash, .language-yaml, .language-markdown {
+    position: relative;
+    margin: 1rem 0;
+}
+
+.language-python::before, .language-bash::before, .language-yaml::before, .language-markdown::before {
+    display: inline-block;    
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #9cafb4;
+    font-variant: small-caps;
+    background-color: #f0f0f0;
+    padding: 0 0.5rem;
+    text-align: left;
+}
+
+.language-python::before {
+    content: "Python";
+}
+
+.language-bash::before {
+    content: "Bash";
+}
+
+.language-yaml::before {
+    content: "YAML";
+}
+
+.language-markdown::before {
+    content: "Markdown";
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.post-breadcrumbs, .post-meta, .all-tags {
+    color: #aaa;
+    font-size: 0.875rem;
+    font-family: Inconsolata, Monaco, Consolas, monospace;
+}
+
+.all-tags a {
+    display: inline-block;
+    background-color: #eaeaea;
+    color: #6a6a6a;
+    margin: 0 0.15rem;
+    padding: 0 0.2rem;
+}
+.post-breadcrumbs a {
+    color: #aaa;
+}
+.post-title {
+    font-size: 2rem;
+    letter-spacing: -1px;
+    line-height: 1.2;
+    margin: 0.5rem 0;
+    font-weight: bold;
+}
+
+.post-breadcrumbs {
+    margin-bottom: 1.2rem;
+}
+
+.article-content {
+    font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 1.6rem;    
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: inherit;
+    transition: color 0.25s ease;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+    color: #666;
+    text-decoration: none;
+}
+
+h1 a, h2 a {
+    text-decoration: underline;
+    text-decoration-color: #efefef;
+}
+
+h1 a:hover, h2 a:hover {
+    text-decoration: underline;
+    text-decoration-color: #efefef;
+}
+
+h1, h2 {
+    font-size: 1.6em;
+}
+
+h1.post-title {
+    text-decoration: none;
+    display: block;
+    border: none;
+}
+
+h3 {
+    font-size: 1.4em;    
+}
+
+h1, h2, h3, h4 {
+    font-weight: normal;    
+}
+
+h4 {
+    font-size: 1.1em;    
+}
+
+h5, h6 {
+    font-size: 0.9rem;    
+}
+
+ol, ul {
+    margin: 1rem 0;
+}
+
+ol ol, ol ul, ul ol, ul ul {
+    margin: 0;
+}
+
+pre.highlight {
+    border: 1px solid silver;
+}
+
+#calendar-wrapper {
+    overflow-x: auto;
+    position: relative;
+    margin-top: 1rem;
+}
+
+iframe.plot {
+    width: 100%;
+    height: 500px;
+    border: 0;
+}
+
+blockquote {
+    background:#f9f9f9;
+    border-left:5px solid #ccc;
+    margin:1.5em 10px;
+    padding:.5em 10px;
+    quotes:"\201C""\201D""\2018""\2019";
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table td, table th {
+    border: 1px solid #dfe2e5;
+    padding: 0.5rem 1rem;
+}
+
+table tr:nth-child(2n) {
+    background-color: #f6f8fa;
+}
+
+.article-content em + table {
+    text-align: center;
+}
+
+table.smaller {
+    font-size: 85%;
+}
+
+table.vertical-header tr:nth-child(2n) {
+    background-color: initial;
+}
+
+table.vertical-header td:nth-child(2n) {
+    background-color: #f6f8fa;
+}
+
+table.experiments th {
+    vertical-align: top;
+}
+
+a.checklist-action {
+    font-variant: small-caps;
+}
+
+a.checklist-action.add-checklist {
+    color: green;
+}
+a.checklist-action.edit-checklist {
+    color: navy;
+}
+a.checklist-action.delete-checklist {
+    color: red;
+}
+a.checklist-action.checklist-history {
+    color: navy;
+}
+a.checklist-action.prose-dir-link {
+    display: block;
+    font-weight: normal;
+    color: gray;
+}

@@ -1,0 +1,10 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ " - " | prepend: page.title }}{% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <link id="main-style-link" rel="stylesheet"
+        href="{{ '/assets/styles/main.css' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ '/favicon.ico' | prepend: site.baseurl }}">
+</head>

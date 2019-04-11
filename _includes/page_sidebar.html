@@ -1,0 +1,58 @@
+{% include get_tags.html %}
+{% assign collec_srt = site.collections | sort: "nav_order" %}
+
+
+
+<div class="sidebar-control">
+    <span class="sidebar-control-bar"></span>
+    <span class="sidebar-control-bar"></span>
+    <span class="sidebar-control-bar"></span>
+</div>
+<div class="sidebar-wrap">
+    <div class="sidebar">
+        <div class="nav-group">
+            <div class="nav-group-title"><a href="/">Home</a></div>
+        </div>
+        {% for collec in collec_srt %}
+            {% if collec.nav_order != nil %}
+                <!-- If index.html exists set the title to be an anchor with it's url in the href -->
+                {% assign collec_title = collec.nav_name %}
+                {% for collec_item in collec.docs %}
+                    {% assign filename = collec_item.url | split: "/" %}
+                    {% if filename[-1] == "index" %}
+                        {% assign href = collec_item.collection | prepend: "/" | prepend: site.url %}
+                        {% assign collec_title = '<a href="' | append: href | append: '">' | append: collec.nav_name | append: '</a>' %}
+                    {% endif %}
+                {% endfor %}
+
+                <div class="nav-group">
+                    <div class="nav-group-title">{{ collec_title }}</div>
+                    {% if collec.nav_list_pages %}
+                    <ul>
+                        <!-- Only list pages that are not "index.html" -->
+                        {% for collec_item in collec.docs  %}
+                            {% assign filename = collec_item.url | split: "/" %}
+                            {% if filename[-1] != "index" %}
+                                <!-- Use `title_short` if specified; otherwise `title` -->
+                                {% if collec_item.title_short != nil %}
+                                    {% assign title = collec_item.title_short %}
+                                {% else %}
+                                    {% assign title = collec_item.title %}
+                                {% endif %}
+                                <li><a href="{{ /collec_item.url | prepend: site.url }}">{{ title }}</a></li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                </div>
+            {% endif %}
+        {% endfor %}
+        <div class="nav-group">
+            <div class="nav-group-title"><a href="{{ site.url }}{{ site.baseurl }}/tags/">Tags</a></div>
+            <div class="all-tags">
+                {% for tag in tags %}<a
+                    href="{{ site.url }}{{ site.baseurl }}/tags/#{{ tag }}">#{{ tag }}</a>{% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+{% assign rawtags = "" %}
+{% for collec in site.collections %}
+    {% for collec_item in collec.docs %}
+        {% assign ttags = collec_item.tags | join:'|' | append:'|' %}
+        {% assign rawtags = rawtags | append:ttags %}
+    {% endfor %}
+{% endfor %}
+{% assign rawtags = rawtags | split:'|' | sort %}
+
+{% assign tags = "" %}
+{% for tag in rawtags %}
+    {% if tag != "" %}
+        {% if tags == "" %}
+            {% assign tags = tag | split:'|' %}
+        {% endif %}
+        {% unless tags contains tag %}
+            {% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
+        {% endunless %}
+    {% endif %}
+{% endfor %}

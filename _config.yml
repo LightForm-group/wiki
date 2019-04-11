@@ -1,0 +1,145 @@
+# Site settings
+title: "LightForm Wiki"
+description: "LightForm Wiki site."
+maintainer: "Adam Plowman"
+github_user_or_organisation: test-aplowman
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# Want to include files in `_includes/code` (expected way doesn't work).
+include: 
+  - _includes
+exclude:
+  - _includes/head.html
+  - _includes/page_sidebar.html
+  - _includes/page_header.html
+  - _includes/toc.html
+  - _includes/get_tags.html
+
+collections_dir: collections
+collections:
+  experiments:
+    output: true
+    nav_order: 1
+    nav_name: Experiments
+    nav_list_pages: false
+    index_list_pages: false
+    permalink: /:collection/:name
+    add_new_name: experiment
+  software_and_simulation:
+    output: true
+    nav_order: 2
+    nav_name: Software & Simulation
+    nav_list_pages: false
+    index_list_pages: true
+    permalink: /:collection/:name
+    add_new_name: page
+  miscellaneous: 
+    output: true
+    nav_order: 3
+    nav_name: Miscellaneous
+    nav_list_pages: true
+    index_list_pages: true
+    permalink: /:collection/:name
+    add_new_name: page
+
+defaults:
+  - scope:
+      path: ""
+      type: "experiments"
+    values:
+      layout: experiment
+      tags: [protocol, experiment]
+      toc: true
+      published: true
+      show_breadcrumbs: true
+      show_meta: true
+  - scope:
+      path: ""
+      type: "software_and_simulation"
+    values:
+      layout: post
+      show_breadcrumbs: true
+      show_meta: true      
+  - scope:
+      path: ""
+      type: "miscellaneous"
+    values:
+      layout: post
+      show_breadcrumbs: true
+      show_meta: true      
+
+prose:
+  media: 'assets/images/posts'
+  ignore: [
+    _config.yml,
+    .gitignore,
+    favicon.ico,
+    _sass,
+    _layouts,
+    _posts,
+  ]
+  users:
+    - login: aplowman
+      user: Adam Plowman
+    - login: JQFonseca
+      user: João Fonseca
+    - login: christopher-daniel
+      user: Christopher Daniel
+    - login: merrygoat
+      user: Peter Crowther
+    - login: mikesmic
+      user: Michael Atkinson
+    - login: nicholasbyres
+      user: Nicholas Byres
+    - login: Paloma-Hidalgo
+      user: Paloma Hidalgo
+    - login: chrisrace
+      user: Christopher Race
+  metadata:
+    collections:
+      - name: "published"
+        field:
+          element: checkbox
+          label: "Published"
+          value: true
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          help: "This is the title of your post."
+          value: CURRENT_DATETIME
+      - name: "author"
+        field:
+          element: "text"
+          label: "Author"
+          value: CURRENT_USER
+      - name: "toc"
+        field:
+          element: "checkbox"
+          label: "Table of contents"
+          help: "Check this to display a table of contents with your post."
+          value: true
+    collections/_experiments:
+      - name: "published"
+        field:
+          element: checkbox
+          label: "Published"
+          value: true
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          help: "This is the title of your post."
+          value: CURRENT_DATETIME
+      - name: "author"
+        field:
+          element: "text"
+          label: "Author"
+          value: CURRENT_USER      
+      - name: "analysis_code"
+        field:
+          element: "text"
+          label: "Analysis code URL"
+          help: "Add a GitHub URL here to the analysis code for this experiment."

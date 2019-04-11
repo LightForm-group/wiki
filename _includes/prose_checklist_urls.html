@@ -1,0 +1,8 @@
+{% assign site_url_split = site.url | split: "https://" %}
+{% assign prose_url = "https://prose.io/#" | append: site.github_user_or_organisation | append: "/" | append: site_url_split[1] %}
+{% assign prose_cl_new_url = prose_url | append: "/new/master/_includes/checklists/" %}
+{% assign prose_cl_edit_url = prose_url | append: "/edit/master/_includes/checklists/" %}
+{% assign prose_cl_dir_url = prose_url | append: "/tree/master/_includes/checklists" %}
+{% assign github_cl_history_url = "https://github.com/" | append: site.github_user_or_organisation | append: "/" | append: site_url_split[1] | append: "/commits/master/_includes/checklists/" %}
+{% assign prose_exp_dir = prose_url | append: "/tree/master/collections/_experiments" %}
+{% assign prose_cl_dir = prose_url | append: "/tree/master/_includes/checklists" %}
