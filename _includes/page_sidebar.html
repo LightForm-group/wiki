@@ -11,7 +11,7 @@
 <div class="sidebar-wrap">
     <div class="sidebar">
         <div class="nav-group">
-            <div class="nav-group-title"><a href="/{{ site.baseurl }}">Home</a></div>
+            <div class="nav-group-title"><a href="{{ site.url | append: site.baseurl }}/">Home</a></div>
         </div>
         {% for collec in collec_srt %}
             {% if collec.nav_order != nil %}
