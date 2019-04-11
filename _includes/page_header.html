@@ -1,6 +1,6 @@
 {% assign site_url_split = site.url | split: "https://" %}
-{% assign prose_url = "https://prose.io/#" | append: site.github_user_or_organisation | append: "/" | append: site.baseurl | append: site_url_split[1] | append: "/edit/master/" %}
-{% assign history_url = "https://github.com/" | append: site.github_user_or_organisation | append: "/" | append: site.baseurl | append: site_url_split[1] | append: "/commits/master/" %}
+{% assign prose_url = "https://prose.io/#" | append: site.github_user_or_organisation | append: "/" | append: site_url_split[1] | append: site.baseurl | append: "/edit/master/" %}
+{% assign history_url = "https://github.com/" | append: site.github_user_or_organisation | append: "/" | append: site_url_split[1] | append: site.baseurl | append: "/commits/master/" %}
 {% if page.collection %}
 {% assign prose_url = prose_url | append: "collections/" %}
 {% assign history_url = history_url | append: "collections/" %}
@@ -10,7 +10,7 @@
 
 <div class="page-header">
     <div class="page-header-content">
-        <a href="/{{ site.baseurl }}"><img class="header-logo"
+        <a href="{{ site.url | append: site.baseurl }}/"><img class="header-logo"
                 src="{{ '/assets/images/site/lightform-logo.png' | prepend: site.baseurl | prepend: site.url }}"></a>
         <div class="page-manage-buttons">
             <a href="{{ prose_url }}" class="edit-page-button" title="Edit this page on Prose.IO"><span
