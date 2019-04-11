@@ -15,7 +15,7 @@ layout: post
                     {% else %}
                         {% assign title = collec_item.title %}
                     {% endif %}                    
-                    <li><a href="{{ collec_item.url }}">{{ title }}</a></li>         
+                    <li><a href="{{ collec_item.url | prepend: site.baseurl }}">{{ title }}</a></li>
                 {% endif %}
             {% endfor %}
             </ul>
@@ -25,7 +25,7 @@ layout: post
 
 {% assign collec = site.collections | where: "label", page.collection | first %}
 {% assign site_url_split = site.url | split: "https://" %}
-{% assign prose_new_url = "https://prose.io/#" | append: site.github_user_or_organisation | append: "/" | append: site.baseurl | append: site_url_split[1] | append: "/new/master/" %}
+{% assign prose_new_url = "https://prose.io/#" | append: site.github_user_or_organisation | append: site.baseurl | append: "/new/master/" %}
 {% if page.collection %}
     {% assign prose_new_url = prose_new_url | append: "collections/" %}
 {% endif %}
