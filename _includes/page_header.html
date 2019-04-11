@@ -1,6 +1,6 @@
 {% assign site_url_split = site.url | split: "https://" %}
-{% assign prose_url = "https://prose.io/#" | append: site.github_user_or_organisation | append: "/" | append: site_url_split[1] | append: site.baseurl | append: "/edit/master/" %}
-{% assign history_url = "https://github.com/" | append: site.github_user_or_organisation | append: "/" | append: site_url_split[1] | append: site.baseurl | append: "/commits/master/" %}
+{% assign prose_url = "https://prose.io/#" | append: site.github_user_or_organisation | append: "/" | append: site.baseurl | append: "/edit/master/" %}
+{% assign history_url = "https://github.com/" | append: site.github_user_or_organisation | append: "/" | append: site.baseurl | append: "/commits/master/" %}
 {% if page.collection %}
 {% assign prose_url = prose_url | append: "collections/" %}
 {% assign history_url = history_url | append: "collections/" %}
