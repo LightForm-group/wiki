@@ -36,9 +36,17 @@ collections:
     index_list_pages: true
     permalink: /:collection/:name
     add_new_name: page
-  miscellaneous: 
+  handbook:
     output: true
     nav_order: 3
+    nav_name: Handbook
+    nav_list_pages: false
+    index_list_pages: true
+    permalink: /:collection/:name
+    add_new_name: page    
+  miscellaneous: 
+    output: true
+    nav_order: 4
     nav_name: Miscellaneous
     nav_list_pages: true
     index_list_pages: true
@@ -62,7 +70,14 @@ defaults:
     values:
       layout: post
       show_breadcrumbs: true
-      show_meta: true      
+      show_meta: true
+  - scope:
+      path: ""
+      type: "handbook"
+    values:
+      layout: post
+      show_breadcrumbs: true
+      show_meta: true        
   - scope:
       path: ""
       type: "miscellaneous"
