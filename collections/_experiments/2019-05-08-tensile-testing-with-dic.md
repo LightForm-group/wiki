@@ -1,6 +1,6 @@
 ---
 published: true
-author: Adam Plowman
+author: Sumeet Mishra
 title: Tensile Testing with DIC
 ---
 ## Parameters
