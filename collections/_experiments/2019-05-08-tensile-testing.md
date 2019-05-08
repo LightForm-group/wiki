@@ -1,7 +1,7 @@
 ---
 published: true
 author: Sumeet Mishra
-title: Tensile Testing
+title: Tensile testing
 ---
 ## Parameters
 
