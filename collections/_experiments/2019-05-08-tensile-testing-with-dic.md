@@ -1,7 +1,7 @@
 ---
 published: true
 author: Sumeet Mishra
-title: Tensile Testing with DIC
+title: Tensile testing with DIC
 ---
 ## Parameters
 
