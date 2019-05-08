@@ -1,6 +1,7 @@
 ---
 published: true
-title: Optical Microscopy
+title: Optical microscopy
+author: Adam Plowman
 ---
 ## Parameters
 
