@@ -9,8 +9,6 @@ Use deformation mode on the dilatometer. See manual page xx.
 
 ## Parameters to determine
 
-- here is a change
-
 ### Fixed parameters
 - Sample geometry
 - Platen material
