@@ -31,13 +31,13 @@ show_meta: false
         {% if exp.analysis_code -%}
         {% assign an_code_link = '<a href="' | append: exp.analysis_code | append: '">Link</a>' -%}
         {% endif -%}
-        {% assign exp_title_nospace = exp.title | replace: " ", "-" | downcase -%}
-        {% assign cl_add_url = prose_cl_new_url | append: exp_title_nospace | append: ".yml" -%}
-        {% assign cl_edit_url = prose_cl_edit_url | append: exp_title_nospace | append: ".yml" -%}
-        {% assign cl_history_url = github_cl_history_url | append: exp_title_nospace | append: ".yml" -%}
+        {% assign exp_title_clean = exp.title | replace: " ", "-" | downcase | replace: "(", "_" | replace: ")", "_" -%}
+        {% assign cl_add_url = prose_cl_new_url | append: exp_title_clean | append: ".yml" -%}
+        {% assign cl_edit_url = prose_cl_edit_url | append: exp_title_clean | append: ".yml" -%}
+        {% assign cl_history_url = github_cl_history_url | append: exp_title_clean | append: ".yml" -%}
         {% assign checklist_col = '<a class="checklist-action add-checklist" href="' | append: cl_add_url | append: '">add</a>' -%}
         {% for cl in checklists -%}
-        {% if cl == exp_title_nospace -%}
+        {% if cl == exp_title_clean -%}
         {% assign checklist_col = '<a class="checklist-action edit-checklist" href="' | append: cl_edit_url | append: '">edit</a>' -%}
         {% assign checklist_col = checklist_col | append: ' | <a class="checklist-action checklist-history" href="' | append: cl_history_url | append: '">history</a>' -%}
         {% endif -%}
