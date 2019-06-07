@@ -136,7 +136,7 @@ contact Dave Strong via:
   If you have booked equipment or lab space, please arrive on time for your booked session.
   
   If you are unable to attend or no longer require your booked session, please cancel, where possible providing 24hrs notice.
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  
 
 ***Stores ***
 
