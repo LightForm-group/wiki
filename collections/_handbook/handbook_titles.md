@@ -1,5 +1,5 @@
 ---
-title: Handbook Title
+title: 'Draft Handbook '
 author: Natalie Shannon
 published: true
 toc: true
@@ -85,7 +85,7 @@ contact Dave Strong via:
 **Telephone:** 0161 306 3597
 
   -
-  Machine Operation:
+  **Machine Operation:**
   
   Switch off machines after use.
   
@@ -101,7 +101,7 @@ contact Dave Strong via:
   
   If you are putting used grinding paper back in the tray – clean it first as failure to do so can contaminate other materials
 
-  Polishing - do’s and don’ts
+  **Polishing - do’s and don’ts**
 
   When polishing, if your sample is covered in a large foam of diamond spray or swimming in OPS then you are using too much.
   
@@ -119,7 +119,7 @@ contact Dave Strong via:
   
   If you finish a bottle or box, dispose of it either in the bin or in the skip at the end of the building. Don’t leave it on/under the desk, or in the bottle carriers.
 
-  Basic housekeeping and good practice :
+ **Basic housekeeping and good practice :**
 
   **Clean up after yourself**. Everyone has to use the lab, not just you. So when you’ve finished, clean any surfaces, sinks or machines that you’ve used that aren’t clean.
   
@@ -157,12 +157,13 @@ available on the School of Materials
 [website](http://www.materials.manchester.ac.uk/our-research/facilities/)
 
 ***Out of Hours Working ***
-
+ 
+ 
 Out of hours working is defined as any time after 5.00 pm or before 8:00
 am Monday to Friday, all day Saturday, all day Sunday, public holidays
 and during the University’s Christmas closure period.
 
-**PERMITS ARE REQUIRED FOR ALL OUT-OF-HOURS WORKING **
+### PERMITS ARE REQUIRED FOR ALL OUT-OF-HOURS WORKING
 
 Students, researchers and visitors wishing to work in the building after
 hours must obtain permission form academic supervisor. Out-of-hours
@@ -216,7 +217,7 @@ All travel relating to University business (e.g. to a conference
 directly related to your research) must be booked through Key Travel
 wherever possible.
 
-Conference registration, travel and accommodation arrangements should be
+**Conference registration**, travel and accommodation arrangements should be
 made well in advance and only following consultation with your
 Supervisor.
 
