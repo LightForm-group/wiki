@@ -1,4 +1,11 @@
-a: 1
-c: 3
-b: 2
-d: 4
+hot_compression:
+    widget: GroupBox
+    title: Hot Compression Metadata
+    layout: QFormLayout
+    children:
+        introduction:
+            widget: Label
+            text: This is where metadata for the dilatometer hot compression test is added.
+        temperatures:
+            widget: LineEdit
+            label: Temperature (°C)

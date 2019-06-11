@@ -1,14 +1,16 @@
 ebsd:
     widget: GroupBox
     title: EBSD metadata
-    layout: QFormLayout
+    layout: FormLayout
+    _name: ebsd
     children:
         file_warning:
             widget: Label
             text: All EBSD data should be uploaded as ctf files as this has the correct metadata.
         temperatures:
             widget: LineEdit
-            label: Temperature (°C)
+            label: Temperature(s) (°C)
+            tooltip: If the experimental data is at more than one temperature, seperate values with commas.
         tilt_angle:
             widget: LineEdit
             label: Tilt angle (°)
@@ -21,6 +23,7 @@ ebsd:
             label: Phase 1
             editable: True
             values:
+                empty:
                 ti_cu: Titanium cubic
                 hex: Hexagonal
         microscope:
@@ -37,7 +40,8 @@ ebsd:
         material:
             widget: GroupBox
             title: Material Description
-            layout: QFormLayout
+            layout: FormLayout
+            tooltip: A description of the material analysed. Consider adding information about the type of material and the forming process.
             children:
                 material_description:
                     widget: PlainTextEdit
