@@ -5,6 +5,9 @@ published: true
 toc: true
 ---
 
+Project descriptors code of conduct - Chris Taylor 
+
+
 ***Technician workshops ***
 
 There are a number of workshops in the School, run by trained
