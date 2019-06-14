@@ -1,12 +1,14 @@
 {% assign site_url_split = site.url | split: "https://" %}
 {% assign prose_url = "https://prose.io/#" | append: site.github_user_or_organisation | append: site.baseurl | append: "/edit/master/" %}
-{% assign history_url = "https://github.com/" | append: site.github_user_or_organisation | append: site.baseurl | append: "/commits/master/" %}
+{% assign github_url = "https://github.com/" | append: site.github_user_or_organisation | append: site.baseurl %}
+{% assign history_url = github_url | append: "/commits/master/" %}
 {% if page.collection %}
 {% assign prose_url = prose_url | append: "collections/" %}
 {% assign history_url = history_url | append: "collections/" %}
 {% endif %}
 {% assign prose_url = prose_url | append: page.path %}
 {% assign history_url = history_url | append: page.path %}
+
 
 <div class="page-header">
     <div class="page-header-content">
@@ -18,6 +20,7 @@
             <a href="{{ history_url }}" class="page-history-button"
                 title="View the commit history of this page on GitHib"><span
                     class="page-manage-button-text">history</span></a>
+            <a href="{{ github_url }}" class="github-repo-link"><span class="page-manage-button-text">github</span></a>
         </div>
     </div>
 </div>
