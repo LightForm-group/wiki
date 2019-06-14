@@ -28,7 +28,7 @@ When running `DAMASK_spectral`, I've found the following differences between thi
 ### `material.config` file
 
 - `<homegenization>` key `type` is now `mech`
-- The following `<crystallite>` outputs keys appear to be no longer supported:
+- The following `<crystallite>` output keys appear to be no longer supported:
   - `e` (total strain as Green-Lagrange tensor)
   - `ee` (elastic strain as Green-Lagrange tensor)
   - `eulerangles` (orientation as Bunge triple)
