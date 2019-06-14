@@ -15,11 +15,11 @@ A new version of DAMASK has been installed on the CSF. The new version offers fa
 
 ## Loading
 
-Load the new version (`v2.0.3-367-g70428155`) with: `module load apps/intel-17.0/damask/devel`
+Load the new version with: `module load apps/intel-17.0/damask/devel`
 
 ## Differences
 
-When running `DAMASK_spectral`, I've found the following differences between this development version and the older version that is installed on the CSF (version 2.0.2):
+When running `DAMASK_spectral`, I've found the following differences between this development version and the older version that is installed on the CSF (version `2.0.2`):
 
 ### Output files
 
