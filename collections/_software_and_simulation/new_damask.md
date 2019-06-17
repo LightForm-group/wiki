@@ -1,6 +1,6 @@
 ---
 title: New version of DAMASK installed on the CSF
-author: Adam Plowman
+author: Adam Plowman, Michael Atkinson
 tags:
   - simulation
   - csf
@@ -19,7 +19,7 @@ Load the new version (`v2.0.3-367-g70428155`) with: `module load apps/intel-17.0
 
 ## Differences
 
-When running `DAMASK_spectral`, I've found the following differences between this development version and the older version that is installed on the CSF (version `2.0.2`):
+When running `DAMASK_spectral`, we've found the following differences between this development version and the older version that is installed on the CSF (version `2.0.2`):
 
 ### Output files
 
@@ -28,7 +28,7 @@ When running `DAMASK_spectral`, I've found the following differences between thi
 ### `material.config` file
 
 - `<homegenization>` key `type` is now `mech`
-- The following `<crystallite>` output keys appear to be no longer supported:
+- The following `<crystallite>` output keys appear to be no longer supported (or have been renamed?):
   - `e` (total strain as Green-Lagrange tensor)
   - `ee` (elastic strain as Green-Lagrange tensor)
   - `eulerangles` (orientation as Bunge triple)
