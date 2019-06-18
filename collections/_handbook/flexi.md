@@ -1,7 +1,8 @@
 ---
-Title: Flexible Working 
-Author: Natalie Shannon
+title: Flexible Working 
+author: Natalie Shannon
 ---
+
 **Flexible working hours**
 
 Core campus working hours are 10am to 4.00am Monday to Friday in order to facilitate collaborative working. Meetings and events will not be arranged outside these hours. 
