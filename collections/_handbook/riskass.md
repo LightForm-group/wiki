@@ -1,7 +1,8 @@
 ---
-Title: Risk Assessment 
-Author: Natalie Shannon 
+title: Risk Assessment 
+author: Natalie Shannon 
 ---
+
 There is detailed information in the Management System document on the
 how to carry out Risk and COSHH assessments for laboratory based work.
 
