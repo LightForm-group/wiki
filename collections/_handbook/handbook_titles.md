@@ -1,5 +1,5 @@
 ---
-title: 'Draft Handbook '
+title: LightForm Handbook 
 author: Natalie Shannon
 published: true
 toc: true
