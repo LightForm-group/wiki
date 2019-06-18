@@ -1,6 +1,6 @@
 ---
-Title: ***Conduct whilst using labs and equipment:***
-Author: Natalie Shannon
+title: Conduct whilst using labs and equipment
+author: Natalie Shannon
 ---
 Dave Strong - Research Technician has provided below, clear and concise
 instructions regarding expected standards of behaviour regarding labs
