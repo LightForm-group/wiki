@@ -12,7 +12,7 @@ It sets out standards of practice which the team are expected to follow when wit
 
 This code is not exhaustive, and it is important that individuals seek advice and guidance if necessary. 
 
-## Code of Conduct briefing:
+## Code of Conduct briefing
 
 All team members will be briefed, in addition, the induction programme for all new colleagues will reinforce the principles of this code. 
 
@@ -108,4 +108,4 @@ On occasions when a work from home arrangement is necessary, please inform in ad
 
 ### Booking Leave
 
-Leave requests must to be forwarded to your Line Manager/Supervisor for prior approval. Please consider work schedules and commitments when planning leave. 
+Leave requests must to be forwarded to your Line Manager/Supervisor for prior approval. Please consider work schedules and commitments when planning leave.
