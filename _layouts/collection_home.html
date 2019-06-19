@@ -8,15 +8,11 @@ layout: post
     {% if collec.label == page.collection %}
         {% if collec.index_list_pages %}
             <ul>
-            {% for collec_item in collec.docs %}
+            {% assign collecs_sorted = collec.docs | sort: "title" %}
+            {% for collec_item in collecs_sorted %}            
                 {% assign filename = collec_item.url | split: "/" %}
                 {% if filename[-1] != "index" %}
-                    <!-- Use `title_short` if specified; otherwise `title` -->
-                    {% if collec_item.title_short != nil %}
-                        {% assign title = collec_item.title_short %}
-                    {% else %}
-                        {% assign title = collec_item.title %}
-                    {% endif %}                    
+                    {% assign title = collec_item.title %}
                     <li><a href="{{ collec_item.url | prepend: site.baseurl }}">{{ title }}</a></li>
                 {% endif %}
             {% endfor %}
