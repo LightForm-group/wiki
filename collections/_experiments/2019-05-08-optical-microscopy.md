@@ -10,7 +10,6 @@ This describes two optical microscopes for looking at microstructures.
 
 ### Fixed parameters
 - Microsope - Zeiss Axio Scope.A1 with AxioCam MRc 5, Zeiss Axio Imager.M2m with Axiocam 305 Color
-- Platen material - (Alumina, Silica Nitride)
 - Alloy elements (One or more of: Ti, Al, V etc.)
 - Filter (Bright Field reflected, Dark Field reflected, Polarised reflected, Circularly polarised reflected)
 - Sample Orientation Out of Plane (Z1) - (ND(Normal), RD(Rolling), TD(Transverse), CD(Compression), R1(Radial 1), R2(Radial 2), FD(Forging), DD(Draw), ED(Extrusion), RD(Radial), AD(Axial))
