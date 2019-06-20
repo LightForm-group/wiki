@@ -1,8 +1,15 @@
 ---
 published: true
 author: Christopher Daniel
-title: EBSD (reconstruction)
+title: EBSD - TESCAN
 ---
-## Parameters
+This describes the TESCAN EBSD Microsope. This has:
 
-Add experiment parameters here.
+- Camera: Oxford Symmetry
+- Camera Insertion Disatnce: 178 mm
+
+## Adjustable Parameters
+
+- Beam Intensity (Default 20)
+- Spot Size (Default 0.1 mm)
+- Scan Mode: (Resolution, Depth, Field, Wide Field, Channeling)
