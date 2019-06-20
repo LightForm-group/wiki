@@ -12,7 +12,8 @@
         </div>
         <div class="page-footer"></div>
     </div>
-    <script>
+    <script type="text/javascript">
+
         function toggleNav() {
             console.log("toggleNav");
             var bod = document.body;
@@ -65,6 +66,52 @@
                 '<a href="#' + headings[i].id + '">' +
                 headings[i].innerText +
                 '</a>';
+        }
+
+        function copyToClipboard(containerElem, confirmElem) {
+
+            var textarea = document.createElement('textarea')
+            textarea.id = 'temp_element'
+            textarea.style.height = 0
+            document.body.appendChild(textarea)
+            textarea.value = containerElem.innerText
+
+            var selector = document.querySelector('#temp_element')
+            selector.select()
+            document.execCommand('copy')
+            document.body.removeChild(textarea)
+            confirmElem.innerHTML = 'Copied!';
+            confirmElem.style.opacity = 1;
+            confirmElem.style.display = 'inline';
+            setTimeout(function () {
+                fadeOut(confirmElem);
+            }, 400);
+
+        }
+
+        function fadeOut(element) {
+            var op = 1;  // initial opacity
+            var timer = setInterval(function () {
+                if (op <= 0.1) {
+                    clearInterval(timer);
+                    element.style.display = 'none';
+                }
+                element.style.opacity = op;
+                element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+                op -= op * 0.1;
+            }, 50);
+        }
+
+        // Copy-to-clipboard widgets:
+        var copyWidgets = document.getElementsByClassName("copy-widget");
+        for (let i of copyWidgets) {
+            copyTargetId = i.dataset.copyId
+            copyTarget = document.querySelector('#' + copyTargetId);
+            copyButton = i.querySelector('.copy-button');
+            copyMessage = i.querySelector('.copy-message');
+            copyButton.addEventListener('click', function () {
+                copyToClipboard(copyTarget, copyMessage)
+            });
         }
 
     </script>
