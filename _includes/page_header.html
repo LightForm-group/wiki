@@ -21,16 +21,16 @@
         <a href="{{ site.url | append: site.baseurl }}/"><img class="header-logo"
                 src="{{ '/assets/images/site/lightform-logo.png' | prepend: site.baseurl | prepend: site.url }}"></a>
         <div class="page-manage-buttons">
-            <a href="{{ github_edit_url }}" class="edit-page-button" title="Edit this page on GitHub"><span
+            <a href="{{ github_edit_url }}" class="edit-page-button" title="Edit this page on GitHub."><span
                     class="page-manage-button-text">edit</span></a>
             <a href="{{ history_url }}" class="page-history-button"
-                title="View the commit history of this page on GitHib"><span
+                title="View the commit history of this page on GitHib."><span
                     class="page-manage-button-text">history</span></a>
             {% if path[-1] != 'index.md' and path[-1] != 'index.html' and path[-1] != 'tagged.html' %}
-                <a href="{{ github_del_url }}" class="delete-page-button" title="Delete this page."><span
+                <a href="{{ github_del_url }}" class="delete-page-button" title="Delete this page on GitHub."><span
                     class="page-manage-button-text">delete</span></a>
             {% endif %}            
-            <a href="{{ github_home_url }}" class="github-repo-link"><span
+            <a href="{{ github_home_url }}" class="github-repo-link" title="Go to the Wiki repository on GitHub."><span
                     class="page-manage-button-text">github</span></a>
         </div>
     </div>
