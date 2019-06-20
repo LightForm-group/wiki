@@ -10,6 +10,7 @@ This describes the TESCAN EBSD Microsope. This has:
 
 ## Adjustable Parameters
 
-- Beam Intensity (Default 20)
-- Spot Size (Default 0.1 mm)
+- Beam Intensity: (Default 20)
+- Spot Size: (Default 0.1 mm)
 - Scan Mode: (Resolution, Depth, Field, Wide Field, Channeling)
+- Camera Mode: (Resolution, Sensitivity, Speed 1, Speed 2)
