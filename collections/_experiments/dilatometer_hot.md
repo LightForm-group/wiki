@@ -5,20 +5,22 @@ analysis_code: 'https://github.com/LightForm-group/Ti_dilatometer_analysis'
 published: true
 ---
 
-Use deformation mode on the dilatometer. See manual page xx.
+This is a thermomechnnical testing machine. This describes the compression test.
 
 ## Parameters to determine
 
 ### Fixed parameters
-- Sample geometry
-- Platen material
+- Sample geometry - (Cylinder, Sqaure, prisms)
+- Platen material - (Alumina, Silica Nitride)
 
 ### Adjustable parameters
-- Temperature 
-- Deformation extent 
-- Deformation rate
-- Heating and cooling rate
-- Shielding gas
+- Temperature - (Up to 1300 C)
+- Targer Deformation extent - (Percentage of original size)
+- Control mode (Strain, Position, Load, Multi-step)
+- Deformation rate - (Percentage per second)
+- Heating protocol - (Text)
+- Cooling protocol - (Text)
+- Shielding gas - (Argon, Nitrogen, Other)
 
 ## Other notes
-- other notes
+- Other notes
