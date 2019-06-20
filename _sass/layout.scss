@@ -338,7 +338,11 @@ a.add-exp-button {
     margin-top: 2rem;
 }
 
-a.add-exp-button, a.edit-page-button, a.page-history-button, a.github-repo-link {
+a.add-exp-button,
+a.edit-page-button,
+a.page-history-button,
+a.github-repo-link,
+a.delete-page-button {
     background-color: #eee;
     display: inline-block;
     padding: 0.3rem 0.5rem 0.6rem;
@@ -357,11 +361,18 @@ a.page-history-button {
     background: url(/wiki/assets/images/site/history.svg);
 }
 
+a.delete-page-button {
+    background: url(/wiki/assets/images/site/delete.svg);
+}
+
 a.github-repo-link {
     background: url(/wiki/assets/images/site/github-mark-small.svg)
 }
 
-a.edit-page-button, a.page-history-button, a.github-repo-link {    
+a.edit-page-button,
+a.page-history-button,
+a.github-repo-link,
+a.delete-page-button {    
     background-repeat: no-repeat;
     background-color: #eee;  
     background-size: 1.3rem;
@@ -379,8 +390,11 @@ a.edit-page-button, a.page-history-button, a.github-repo-link {
     padding-left: 1.5rem;
 }
 
-a.add-exp-button:hover, a.edit-page-button:hover, a.page-history-button:hover, 
-a.github-repo-link:hover {
+a.add-exp-button:hover,
+a.edit-page-button:hover,
+a.page-history-button:hover, 
+a.github-repo-link:hover,
+a.delete-page-button:hover {
     text-decoration: initial;
     background-color: #ddd;
 }
