@@ -37,12 +37,12 @@ a {
     font-size: 95%;
 }
 
-.language-python, .language-bash, .language-yaml, .language-markdown {
+div[class^=language-] {
     position: relative;
-    margin: 1rem 0;
+    margin: 1rem 0;    
 }
 
-.language-python::before, .language-bash::before, .language-yaml::before, .language-markdown::before {
+div[class^=language-]::before {
     display: inline-block;    
     position: absolute;
     top: 0;
