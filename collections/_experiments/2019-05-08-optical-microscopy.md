@@ -1,14 +1,15 @@
 ---
 published: true
-title: 'Optical microscopy - Zeiss Axio Scope .A1 '
+title: Optical microscopy
 author: Peter Crowther
 ---
 
-This is an optical microscope for looking at microstructures. This has a AxioCam MRc 5.
+This describes two optical microscopes for looking at microstructures.
 
 ## Parameters to determine
 
 ### Fixed parameters
+- Microsope - Zeiss Axio Scope.A1 with AxioCam MRc 5, Zeiss Axio Imager.M2m with Axiocam 305 Color
 - Platen material - (Alumina, Silica Nitride)
 - Alloy elements (One or more of: Ti, Al, V etc.)
 - Filter (Bright Field reflected, Dark Field reflected, Polarised reflected, Circularly polarised reflected)
