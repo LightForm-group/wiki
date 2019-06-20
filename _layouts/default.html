@@ -106,7 +106,6 @@
         var codeBlocks = document.querySelectorAll('div[class^=language-]');
         for (var i = 0; i < codeBlocks.length; i++) {
             var item = codeBlocks[i];
-            console.log(item);
             var codeCopyID = "syntax-highlight-copy-target-" + i.toString();
             var copyWidgetStr = `
                 <div class="copy-widget inline" data-copy-id="${codeCopyID}">
