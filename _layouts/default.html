@@ -102,13 +102,30 @@
             }, 50);
         }
 
+        // Add copy-to-clipboard to code blocks:
+        var codeBlocks = document.querySelectorAll('div[class^=language-]');
+        for (var i = 0; i < codeBlocks.length; i++) {
+            var item = codeBlocks[i];
+            console.log(item);
+            var codeCopyID = "syntax-highlight-copy-target-" + i.toString();
+            var copyWidgetStr = `
+                <div class="copy-widget inline" data-copy-id="${codeCopyID}">
+                    <span class="copy-message"></span>                    
+                    <button class="copy-button">Copy</button>
+                </div>`
+            var highlightElem = item.firstChild;
+            highlightElem.insertAdjacentHTML('afterbegin', copyWidgetStr)
+            var codeElem = item.querySelector('code');
+            codeElem.id = codeCopyID;
+        }
+
         // Copy-to-clipboard widgets:
         var copyWidgets = document.getElementsByClassName("copy-widget");
         for (let i of copyWidgets) {
-            copyTargetId = i.dataset.copyId
-            copyTarget = document.querySelector('#' + copyTargetId);
-            copyButton = i.querySelector('.copy-button');
-            copyMessage = i.querySelector('.copy-message');
+            let copyTargetId = i.dataset.copyId
+            let copyTarget = document.querySelector('#' + copyTargetId);
+            let copyButton = i.querySelector('.copy-button');
+            let copyMessage = i.querySelector('.copy-message');
             copyButton.addEventListener('click', function () {
                 copyToClipboard(copyTarget, copyMessage)
             });

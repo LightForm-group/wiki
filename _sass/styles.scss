@@ -39,7 +39,7 @@ a {
 
 div[class^=language-] {
     position: relative;
-    margin: 1rem 0;    
+    margin: 1rem 0;
 }
 
 div[class^=language-]::before {
@@ -52,6 +52,12 @@ div[class^=language-]::before {
     background-color: #f0f0f0;
     padding: 0 0.5rem;
     text-align: left;
+}
+
+div.highlight .copy-widget {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .language-python::before {
