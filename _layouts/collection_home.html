@@ -24,9 +24,12 @@ layout: post
 {% assign collec = site.collections | where: "label", page.collection | first %}
 {% assign site_url_split = site.url | split: "https://" %}
 {% assign prose_new_url = "https://prose.io/#" | append: site.github_user_or_organisation | append: site.baseurl | append: "/new/master/" %}
+{% assign github_new_url = "https://github.com/" | append: site.github_user_or_organisation | append: site.baseurl | append: "/new/master/" %}
 {% if page.collection %}
     {% assign prose_new_url = prose_new_url | append: "collections/" %}
+    {% assign github_new_url = github_new_url | append: "collections/" %}
 {% endif %}
 {% assign prose_new_url = prose_new_url | append: collec.relative_directory %}
+{% assign github_new_url = github_new_url | append: collec.relative_directory %}
 
-<a href="{{ prose_new_url }}" class="add-exp-button">+ add {{ collec.add_new_name }}</a>
+<a href="{{ github_new_url }}" class="add-exp-button">+ add {{ collec.add_new_name }}</a>

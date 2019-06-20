@@ -1,12 +1,15 @@
 {% assign site_url_split = site.url | split: "https://" %}
-{% assign prose_url = "https://prose.io/#" | append: site.github_user_or_organisation | append: site.baseurl | append: "/edit/master/" %}
-{% assign github_url = "https://github.com/" | append: site.github_user_or_organisation | append: site.baseurl %}
-{% assign history_url = github_url | append: "/commits/master/" %}
+{% assign prose_edit_url = "https://prose.io/#" | append: site.github_user_or_organisation | append: site.baseurl | append: "/edit/master/" %}
+{% assign github_home_url = "https://github.com/" | append: site.github_user_or_organisation | append: site.baseurl %}
+{% assign history_url = github_home_url | append: "/commits/master/" %}
+{% assign github_edit_url = github_home_url | append: "/edit/master/" %}
 {% if page.collection %}
-{% assign prose_url = prose_url | append: "collections/" %}
-{% assign history_url = history_url | append: "collections/" %}
+    {% assign prose_edit_url = prose_edit_url | append: "collections/" %}
+    {% assign github_edit_url = github_edit_url | append: "collections/" %}
+    {% assign history_url = history_url | append: "collections/" %}
 {% endif %}
-{% assign prose_url = prose_url | append: page.path %}
+{% assign prose_edit_url = prose_edit_url | append: page.path %}
+{% assign github_edit_url = github_edit_url | append: page.path %}
 {% assign history_url = history_url | append: page.path %}
 
 
@@ -15,12 +18,12 @@
         <a href="{{ site.url | append: site.baseurl }}/"><img class="header-logo"
                 src="{{ '/assets/images/site/lightform-logo.png' | prepend: site.baseurl | prepend: site.url }}"></a>
         <div class="page-manage-buttons">
-            <a href="{{ prose_url }}" class="edit-page-button" title="Edit this page on Prose.IO"><span
+            <a href="{{ github_edit_url }}" class="edit-page-button" title="Edit this page on GitHub"><span
                     class="page-manage-button-text">edit</span></a>
             <a href="{{ history_url }}" class="page-history-button"
                 title="View the commit history of this page on GitHib"><span
                     class="page-manage-button-text">history</span></a>
-            <a href="{{ github_url }}" class="github-repo-link"><span class="page-manage-button-text">github</span></a>
+            <a href="{{ github_home_url }}" class="github-repo-link"><span class="page-manage-button-text">github</span></a>
         </div>
     </div>
 </div>
