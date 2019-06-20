@@ -27,6 +27,7 @@ This describes the general metadata when thinking about EBSD. EBSD is a techniqu
 - Beam Energy (Default 20 kV)
 - Step Size (Number micrometers)
 - EBSD Exposure Time - (Number milliseconds)
+- Overlap of stitched maps - (Percentage)
 
 ## Other notes
 - Other notes - (e.g. Stage scan?)
