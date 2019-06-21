@@ -216,8 +216,18 @@ table tr:nth-child(2n) {
     text-align: center;
 }
 
+td {
+    text-align: left;
+    vertical-align: top;
+}
+
 table.smaller {
     font-size: 85%;
+}
+
+table.smaller ul {
+    padding-left: 0.7rem;
+    margin-top: 0rem;
 }
 
 table.vertical-header tr:nth-child(2n) {
