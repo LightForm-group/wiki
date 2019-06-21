@@ -17,6 +17,11 @@ exclude:
   - _includes/page_header.html
   - _includes/toc.html
   - _includes/get_tags.html
+  - _includes/checklist_controls.html
+  - _includes/checklist_urls.html
+  - _includes/checklist.md
+  - _includes/get_checklists.html
+  - _includes/get_checklist_formatted.html
 
 collections_dir: collections
 collections:
