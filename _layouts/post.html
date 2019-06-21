@@ -57,7 +57,6 @@ layout: default
     {% endif %}
     <div class="article-border"></div>
     <div class="article-content" itemprop="articleBody">
-        {% assign filtered_content = content | replace: "@AdamPlowman", "AP" %}
-        {{ filtered_content }}
+        {{ content }}
     </div>
 </article>
