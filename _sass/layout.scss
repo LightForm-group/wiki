@@ -342,7 +342,8 @@ a.add-exp-button,
 a.edit-page-button,
 a.page-history-button,
 a.github-repo-link,
-a.delete-page-button {
+a.delete-page-button,
+a.image-upload-link {
     background-color: #eee;
     display: inline-block;
     padding: 0.3rem 0.5rem 0.6rem;
@@ -369,10 +370,15 @@ a.github-repo-link {
     background: url(/wiki/assets/images/site/github-mark-small.svg)
 }
 
+a.image-upload-link {
+    background: url(/wiki/assets/images/site/upload_img.svg)
+}
+
 a.edit-page-button,
 a.page-history-button,
 a.github-repo-link,
-a.delete-page-button {    
+a.delete-page-button,
+a.image-upload-link {    
     background-repeat: no-repeat;
     background-color: #eee;  
     background-size: 1.3rem;
@@ -394,7 +400,8 @@ a.add-exp-button:hover,
 a.edit-page-button:hover,
 a.page-history-button:hover, 
 a.github-repo-link:hover,
-a.delete-page-button:hover {
+a.delete-page-button:hover,
+a.image-upload-link:hover {
     text-decoration: initial;
     background-color: #ddd;
 }
@@ -469,6 +476,10 @@ a.delete-page-button:hover {
 
     .page-manage-button-text {
         display: inline;
+    }
+    
+    .page-manage-button-text.no-text {
+        display: none;
     }
 
     .page-manage-buttons a {
