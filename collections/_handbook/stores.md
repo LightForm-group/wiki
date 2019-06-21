@@ -1,6 +1,6 @@
 ---
-Title: Stores
-Author: Natalie Shannon 
+title: Stores
+author: Natalie Shannon 
 ---
 ***Stores ***
 
