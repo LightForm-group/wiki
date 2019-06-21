@@ -11,7 +11,7 @@ Before you start, please make sure you have a GitHub account, and that you are a
 Content in this wiki is organised into *collections* (which you can see in the navigation side-bar on the left). They are currently:
 
 - Handbook
-- Experimental Protocols
+- Experiments
 - Software and simulation
 - Miscellaneous
 
