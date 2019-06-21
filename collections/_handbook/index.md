@@ -20,7 +20,7 @@ The LightForm handbook is a living document, that means that it won't ever be co
 
 **Structure**
 
-Our handbook contains LightForm’s most "static" knowledge and information; it’s a quick guide on “how to” for the administration aspects of LightForm, for example how to arrange payment for a conference or hotel. Importantly, it also defines how we operate, for example best practice lab procedures, safety and risk assessment.   
+Our handbook contains LightForm’s most "static" knowledge and information; it’s a quick guide on "how to" for the administration aspects of LightForm, for example how to arrange payment for a conference or hotel. Importantly, it also defines how we operate, for example best practice lab procedures, safety and risk assessment.   
 
 **Contributing to this handbook**
 
