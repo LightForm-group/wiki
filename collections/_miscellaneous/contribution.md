@@ -8,7 +8,7 @@ This Wiki is designed to be updated frequently; we want everyone to share any an
 
 Before you start, please make sure you have a GitHub account, and that you are a member of the LightForm "wiki-creators" team. Adam Plowman or Peter Crowther will be happy to help with this.
 
-Content in this wiki is organised into *collections* (which you can see in the navigation side-bar). They are currently:
+Content in this wiki is organised into *collections* (which you can see in the navigation side-bar on the left). They are currently:
 
 - Handbook
 - Experimental Protocols
