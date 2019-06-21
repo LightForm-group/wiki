@@ -499,7 +499,7 @@ a.image-upload-link:hover {
     }
 
     article.main.page-wide {
-        grid-template-columns: max-content;
+        grid-template-columns: auto;
         grid-template-areas: 
         "article-header"
         "article-content";
