@@ -58,13 +58,13 @@ After you "commit" the new page, you'll have to wait a couple of minutes before 
 
 ## How to add images to pages
 
-To add images to a page, you first need to upload the images to the correct folder on GitHub. Once that is done you can then add them to a page. To add upload images to the correct folder, click on the "Add images" button in the top right of the Wiki. It looks something like this:
+To add images to a page, you first need to upload the images to the correct folder on GitHub. Once that is done you can then add them to a page. To upload images to the correct folder, click on the "Add images" button in the top right corner of the Wiki. It looks something like this:
 
 ![Add images icon](/wiki/assets/images/site/add_images_button.png)
 
-This will take you to a page on GitHub where you upload images. In particular, once you "commit" the new images, it will place them in the folder: `wiki/assets/images/posts`.
+This will take you to a page on GitHub where you can upload images. In particular, once you "commit" the new images, it will place them in the folder: `wiki/assets/images/posts`.
 
-Image we uploaded an image of some aluminium, with the file name `aluminium_small.jpg`. You can now add this image to your Markdown file by adding the following to the file:
+Imagine we uploaded a photo of some aluminium, with the file name `aluminium_small.jpg`. You would then be able to add this image to your Markdown file by adding the following code to the page (by editing it on GitHub):
 
 ```markdown
 ![](/wiki/assets/images/posts/aluminium_small.jpg)
@@ -77,3 +77,7 @@ In the GitHub editor, this would look something like this:
 After you "commit" the changes, you'll again need to wait a couple of minutes before they show up. Once they do, the page with the image will look something like this:
 
 ![New page on the wiki with image](/wiki/assets/images/site/new_page_final_image.png)
+
+## Help
+
+Please contact Adam Plowman if you have any problems with contributing to the Wiki.
