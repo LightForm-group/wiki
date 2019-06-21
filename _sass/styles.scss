@@ -253,3 +253,15 @@ a.checklist-action.prose-dir-link {
     font-weight: normal;
     color: gray;
 }
+
+span.bad-page {
+    color: red;
+    font-size: 0.8rem;
+}
+span.bad-page a {
+    color: red;
+}
+
+span.bad-page-edit {
+    font-weight: bold;
+}

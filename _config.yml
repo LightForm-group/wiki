@@ -64,6 +64,7 @@ defaults:
       published: true
       show_breadcrumbs: true
       show_meta: true
+      title: ''      
   - scope:
       path: ""
       type: "software_and_simulation"
@@ -71,20 +72,23 @@ defaults:
       layout: post
       show_breadcrumbs: true
       show_meta: true
+      title: ''
   - scope:
       path: ""
       type: "handbook"
     values:
       layout: post
       show_breadcrumbs: true
-      show_meta: true        
+      show_meta: true
+      title: ''     
   - scope:
       path: ""
       type: "miscellaneous"
     values:
       layout: post
       show_breadcrumbs: true
-      show_meta: true      
+      show_meta: true
+      title: ''
 
 prose:
   media: 'assets/images/posts'
