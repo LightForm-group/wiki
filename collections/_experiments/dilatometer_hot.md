@@ -7,16 +7,13 @@ published: true
 
 This is a thermomechnnical testing machine. This describes the compression test.
 
-## Parameters to determine
+### Adjustable parameters
 
-### Fixed parameters
 - Sample geometry - (Cylinder, Sqaure, prisms)
 - Platen material - (Alumina, Silica Nitride)
-
-### Adjustable parameters
 - Temperature - (Up to 1300 C)
 - Targer Deformation extent - (Percentage of original size)
-- Control mode (Strain, Position, Load, Multi-step)
+- Control mode - (Strain, Position, Load, Multi-step)
 - Deformation rate - (Percentage per second)
 - Heating protocol - (Text)
 - Cooling protocol - (Text)
