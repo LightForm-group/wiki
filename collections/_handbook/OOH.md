@@ -7,7 +7,7 @@ author: Natalie Shannon
  
 Out of hours working is defined as any time after 5.00 pm or before 8:00
 am Monday to Friday, all day Saturday, all day Sunday, public holidays
-and during the University’s Christmas closure period.
+and during the University's Christmas closure period.
 
 ### PERMITS ARE REQUIRED FOR ALL OUT-OF-HOURS WORKING
 
