@@ -14,6 +14,15 @@ a {
 //     padding-right: 13px;
 // }
 
+.copy-widget.inline {
+    display: inline;
+}
+
+.copy-widget .copy-message {
+    font-size: 0.8rem;
+    color: green;
+}
+
 .article-content code {
     background-color: #f0f0f0;
     padding: 0.2em 0.4rem;
@@ -28,12 +37,12 @@ a {
     font-size: 95%;
 }
 
-.language-python, .language-bash, .language-yaml, .language-markdown {
+div[class^=language-] {
     position: relative;
     margin: 1rem 0;
 }
 
-.language-python::before, .language-bash::before, .language-yaml::before, .language-markdown::before {
+div[class^=language-]::before {
     display: inline-block;    
     position: absolute;
     top: 0;
@@ -43,6 +52,12 @@ a {
     background-color: #f0f0f0;
     padding: 0 0.5rem;
     text-align: left;
+}
+
+div.highlight .copy-widget {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .language-python::before {
@@ -237,4 +252,16 @@ a.checklist-action.prose-dir-link {
     display: block;
     font-weight: normal;
     color: gray;
+}
+
+span.bad-page {
+    color: red;
+    font-size: 0.8rem;
+}
+span.bad-page a {
+    color: red;
+}
+
+span.bad-page-edit {
+    font-weight: bold;
 }

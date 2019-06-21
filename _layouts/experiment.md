@@ -22,24 +22,7 @@ layout: post
 
 {{ content }}
 
-{% include get_checklists.html %}
-{% include prose_checklist_urls.html %}
-
-{% assign exp_title_clean = page.title | replace: " ", "-" | downcase | replace: "(", "_" | replace: ")", "_" -%}
-
 {{ "## Metadata template" | markdownify }}
-{% for cl in checklists -%}
-{% if cl == exp_title_clean -%} 
-  {% assign checklist_exists = true -%}
-  {% assign cl_edit_url = prose_cl_edit_url | append: exp_title_clean | append: ".yml" -%}
-  {% assign cl_history_url = github_cl_history_url | append: exp_title_clean | append: ".yml" -%}
-  <a href="{{ cl_edit_url }}" class="checklist-action edit-checklist">edit</a> | <a href="{{ cl_history_url }}" class="checklist-action checklist-history">history</a>
-  {% capture my_include %}{% include checklist.md checklist=exp_title_clean %}{% endcapture %}
-  {{ my_include | markdownify }}
-{% endif -%}
-{% endfor %}
-
-{% if checklist_exists != true -%}
-  {% assign prose_cl_new_url = prose_cl_new_url | append: exp_title_clean | append: ".yml" -%}
-  <a href="{{ prose_cl_new_url }}" class="checklist-action add-checklist">add</a>
-{% endif -%}
+{% assign exp_title_clean = page.title | replace: " ", "-" | downcase | replace: "(", "_" | replace: ")", "_" -%}
+{% include checklist_controls.html exp_title_clean=exp_title_clean %}
+{% include get_checklist_formatted.html exp_title_clean=exp_title_clean %}

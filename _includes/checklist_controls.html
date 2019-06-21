@@ -1,0 +1,15 @@
+{% include get_checklists.html %}
+{% assign exp_title_clean = include.exp_title_clean %}
+{% assign cl_add_redirect_url = "add_metadata_file#" | append: exp_title_clean | prepend: "/" | prepend: site.baseurl | prepend: site.url -%}                
+{% assign cl_edit_url = github_cl_edit_url | append: exp_title_clean | append: ".yml" -%}
+{% assign cl_history_url = github_cl_history_url | append: exp_title_clean | append: ".yml" -%}
+{% assign cl_delete_url = github_cl_del_url | append: exp_title_clean | append: ".yml" -%}                
+{% assign checklist_col = '<a class="checklist-action add-checklist" href="' | append: cl_add_redirect_url | append: '">add</a>' -%}
+{% for cl in checklists -%}    
+    {% if cl == exp_title_clean -%}
+        {% assign checklist_col = '<a class="checklist-action edit-checklist" href="' | append: cl_edit_url | append: '">edit</a>' -%}
+        {% assign checklist_col = checklist_col | append: ' | <a class="checklist-action checklist-history" href="' | append: cl_history_url | append: '">history</a>' -%}
+        {% assign checklist_col = checklist_col | append: ' | <a class="checklist-action delete-checklist" href="' | append: cl_delete_url | append: '">delete</a>' -%}
+    {% endif -%}
+{% endfor -%}
+{{ checklist_col }}
