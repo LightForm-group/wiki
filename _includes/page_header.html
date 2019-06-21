@@ -26,7 +26,7 @@
             <a href="{{ history_url }}" class="page-history-button"
                 title="View the commit history of this page on GitHib."><span
                     class="page-manage-button-text">history</span></a>
-            {% if path[-1] != 'index.md' and path[-1] != 'index.html' and path[-1] != 'tagged.html' %}
+            {% if path[-1] != 'index.md' and path[-1] != 'index.html' and path[-1] != 'tagged.html' and path[-1] != 'add_metadata_file.html' %}
                 <a href="{{ github_del_url }}" class="delete-page-button" title="Delete this page on GitHub."><span
                     class="page-manage-button-text">delete</span></a>
             {% endif %}            
