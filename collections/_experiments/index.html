@@ -31,8 +31,7 @@ show_meta: false
                     {% assign an_code_link = '<a href="' | append: exp.analysis_code | append: '">Link</a>' -%}
                 {% endif -%}
                 {% assign exp_title_clean = exp.title | replace: " ", "-" | downcase | replace: "(", "_" | replace: ")", "_" -%}
-                {% assign cl_add_redirect_url = "add_metadata_file#" | append: exp_title_clean | prepend: "/" | prepend: site.baseurl | prepend: site.url -%}
-                
+                {% assign cl_add_redirect_url = "add_metadata_file#" | append: exp_title_clean | prepend: "/" | prepend: site.baseurl | prepend: site.url -%}                
                 {% assign cl_edit_url = github_cl_edit_url | append: exp_title_clean | append: ".yml" -%}
                 {% assign cl_history_url = github_cl_history_url | append: exp_title_clean | append: ".yml" -%}
                 {% assign checklist_col = '<a class="checklist-action add-checklist" href="' | append: cl_add_redirect_url | append: '">add</a>' -%}
