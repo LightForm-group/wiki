@@ -48,11 +48,19 @@
             {% endif %}
         {% endfor %}
         <div class="nav-group">
+            <div class="nav-group-title"><a href="{{ site.url }}{{ site.baseurl }}/people/">People</a></div>
+            <div class="all-tags">
+                {% for person in site.data.people %}
+                    <a href="{{ site.url }}{{ site.baseurl }}/people/#{{ person.handle | slugify }}">{{ person.name }}</a>
+                {% endfor %}
+            </div>
+        </div>        
+        <div class="nav-group">
             <div class="nav-group-title"><a href="{{ site.url }}{{ site.baseurl }}/tags/">Tags</a></div>
             <div class="all-tags">
                 {% for tag in tags %}<a
                     href="{{ site.url }}{{ site.baseurl }}/tags/#{{ tag }}">#{{ tag }}</a>{% endfor %}
             </div>
-        </div>
+        </div>        
     </div>
 </div>

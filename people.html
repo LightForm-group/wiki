@@ -1,0 +1,30 @@
+---
+layout: post
+title: People
+---
+
+{% assign people_sorted = site.data.people | sort: "name" %}
+{% for person in people_sorted %}
+        
+    <h3 id="{{ person.handle | slugify }}">{{person.name}}</h3>
+    <div class="person-container">
+        <!-- <div class="person-image">
+            <img src="{{ person.profile_image }}">
+        </div> -->
+        <table class="smaller vertical-header left-aligned-header person-info">
+            <tr>
+                <th>Profile</th>
+                <td><a href="{{ person.url }}">Link</a></td>            
+            </tr>
+            <tr>
+                <th>Posts</th>
+                <td>{% include get_author_pages.html author_name=person.name %}</td>
+            </tr>
+            <!-- <tr>
+                <th>Slack</th>
+                <td><a href="https://lightform-group.slack.com/team/{{ person.slack_id }}">Link</a></td>
+            </tr> -->
+        </table>
+    </div>
+
+{% endfor %}

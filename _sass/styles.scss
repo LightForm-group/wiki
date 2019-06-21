@@ -238,6 +238,10 @@ table.vertical-header td:nth-child(2n) {
     background-color: #f6f8fa;
 }
 
+table.vertical-header.left-aligned-header th {
+    text-align: left;
+}
+
 table.experiments th {
     vertical-align: top;
 }
@@ -274,4 +278,39 @@ span.bad-page a {
 
 span.bad-page-edit {
     font-weight: bold;
+}
+
+span.author-name {
+    color: #432878;
+    // border: 1px solid #eaeaea;
+    padding: 0 0.2rem;    
+}
+
+span.author-name a {
+    color: inherit;
+}
+
+div.person-container {
+    
+    display: flex;
+    width: 100%;
+}
+
+div.person-image {
+    width: 10rem;
+    margin: 0;
+    padding: 0;
+}
+
+div.person-image img {
+    margin: 0;
+    padding: 0;
+}
+
+table.person-info {
+    flex: 1;
+}
+
+table.person-info th {
+    width: 5rem;
 }

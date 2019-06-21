@@ -1,0 +1,19 @@
+{% assign author_name = include.author_name %}
+{% assign page_links = "" %}
+
+{% for collec in site.collections %}
+    {% for collec_item in collec.docs %}
+        {% assign all_authors = collec_item.author | split: ',' %}
+        {% for author in all_authors %}
+            {% if author == author_name %}
+                
+                {% assign page_href = collec_item.url | prepend: site.baseurl %}
+                {% assign page_link = '<a href="' | append: page_href | append: '">' | append: collec_item.title | append: '</a><br/>' %}
+                {% assign page_links = page_links | append: page_link %}
+
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+{% endfor %}
+
+{{ page_links }}
