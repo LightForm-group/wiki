@@ -1,4 +1,5 @@
 {% include get_checklists.html %}
+{% include checklist_urls.html %}
 {% assign exp_title_clean = include.exp_title_clean %}
 {% assign cl_add_redirect_url = "add_metadata_file#" | append: exp_title_clean | prepend: "/" | prepend: site.baseurl | prepend: site.url -%}                
 {% assign cl_edit_url = github_cl_edit_url | append: exp_title_clean | append: ".yml" -%}
