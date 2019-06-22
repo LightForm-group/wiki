@@ -48,7 +48,7 @@ Add the new starter to the [people section](https://lightform.org.uk/people) of 
 
 ## Wiki data file
 
-Add the new starter to the `people.yml` data file on the Wiki, which resides [here](https://github.com/lightform-group/wiki/_data/people.yml).
+Add the new starter to the `people.yml` data file on the Wiki, which resides [here]https://github.com/LightForm-group/wiki/blob/master/_data/people.yml).
 
 ## Dropbox
 
