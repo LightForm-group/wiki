@@ -6,7 +6,7 @@ toc: true
 
 This Wiki is designed to be updated frequently; we want everyone to share any and all useful information related to LightForm and the research we do. This is a short guide for how to contribute. Don't worry about breaking the Wiki, we can always revert it to a previous state (because it uses GitHub)!
 
-Before you start, please make sure you have a GitHub account, and that you are a member of the LightForm "wiki-creators" team. Adam Plowman or Peter Crowther will be happy to help with this.
+Before you start, please make sure you have a GitHub account, and that you are a member of the LightForm "wiki-creators" team. @AdamPlowman or @PeterCrowther will be happy to help with this.
 
 Content in this wiki is organised into *collections* (which you can see in the navigation side-bar on the left). They are currently:
 
