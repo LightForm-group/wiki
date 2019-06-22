@@ -22,6 +22,9 @@ exclude:
   - _includes/checklist.md
   - _includes/get_checklists.html
   - _includes/get_checklist_formatted.html
+  - _includes/get_author_pages.html
+  - _includes/get_person_handle.html
+  - _includes/resolve_people.html
 
 collections_dir: collections
 collections:
@@ -77,6 +80,12 @@ defaults:
       show_edit_button: false
       show_history_button: false
       show_delete_button: false
+  - scope:
+      path: "people.*"
+    values:
+      show_edit_button: false
+      show_history_button: false
+      show_delete_button: false      
   - scope:
       path: "add_metadata_file.*"
     values:

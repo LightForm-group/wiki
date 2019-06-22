@@ -1,0 +1,9 @@
+{% assign person_name = include.person %}
+{% assign handle = person_name %}
+{% for person in site.data.people %}
+    {% if person.name == person_name %}
+        {% assign handle = '@' | append: person.handle %}
+    {% endif %}
+{% endfor %}
+
+{{ handle }}

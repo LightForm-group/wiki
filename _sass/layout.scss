@@ -141,16 +141,13 @@ body.no-scroll  {
     text-decoration: underline;
 }
 
-.sidebar-wrap .all-tags {
+.sidebar-wrap .all-tags, .sidebar-wrap .all-people {
     margin-top: 0.5rem;
 }
 
-.sidebar-wrap .all-tags a {
+.sidebar-wrap .all-tags a, .sidebar-wrap .all-people a {
     font-size: 0.875rem;
     font-family: monospace; 
-}
-
-.sidebar-wrap .all-tags a {
     display: inline-block;
     background-color: #444;
     color: #ccc;
@@ -159,7 +156,7 @@ body.no-scroll  {
     text-decoration: none;
 }
 
-.sidebar-wrap .all-tags a:hover {
+.sidebar-wrap .all-tags a:hover, .sidebar-wrap .all-people a:hover {
     text-decoration: underline;
 }
 

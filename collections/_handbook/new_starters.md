@@ -5,7 +5,9 @@ published: true
 toc: true
 ---
 
-## Add to Slack
+This is a checklist to perform when there is a new starter joining the LightForm team.
+
+## Slack
 
 1. In the Slack desktop app, click on `LightFORM` name in the top left corner.
 2. In the drop down, click `Invite people`.
@@ -13,7 +15,7 @@ toc: true
 
 ![]({{site.baseurl}}/assets/images/posts/new_starter_slack.png)
 
-## Add to the LightForm email distribution lists
+## LightForm email distribution lists
 
 We currently operate three listserve email distribution lists:
 
@@ -39,3 +41,15 @@ To add a new LightForm member to a given emailing list, follow these steps (you 
 3. Go to `Subscriber Management`: ![]({{site.baseurl}}/assets/images/posts/new_starter_listserv_1.png)
 4. Select the list to which the new starter should be added: ![]({{site.baseurl}}/assets/images/posts/new_starter_listserv_2.png)
 5. Type the new starter's email address and click the `Add to...` button: ![]({{site.baseurl}}/assets/images/posts/new_starter_listserv_3.png)
+
+## LightForm website
+
+Add the new starter to the [people section](https://lightform.org.uk/people) of the LightForm public website.
+
+## Wiki data file
+
+Add the new starter to the `people.yml` data file on the Wiki, which resides [here](https://github.com/lightform-group/wiki/_data/people.yml).
+
+## Dropbox
+
+Add the new starter to the each of the three theme meeting folders on Dropbox.

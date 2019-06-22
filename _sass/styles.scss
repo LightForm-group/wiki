@@ -84,13 +84,13 @@ a:hover {
     text-decoration: underline;
 }
 
-.post-breadcrumbs, .post-meta, .all-tags {
+.post-breadcrumbs, .post-meta, .all-tags, .all-people {
     color: #aaa;
     font-size: 0.875rem;
     font-family: Inconsolata, Monaco, Consolas, monospace;
 }
 
-.all-tags a {
+.all-tags a, .all-people a {
     display: inline-block;
     background-color: #eaeaea;
     color: #6a6a6a;
@@ -238,6 +238,10 @@ table.vertical-header td:nth-child(2n) {
     background-color: #f6f8fa;
 }
 
+table.vertical-header.left-aligned-header th {
+    text-align: left;
+}
+
 table.experiments th {
     vertical-align: top;
 }
@@ -274,4 +278,41 @@ span.bad-page a {
 
 span.bad-page-edit {
     font-weight: bold;
+}
+
+span.author-name {
+    color: #8450f4;
+    font-family: Inconsolata, Monaco, Consolas, monospace;
+    font-size: 0.875rem;
+    padding: 0 0.2rem;    
+}
+
+span.author-name a {
+    color: inherit;
+}
+
+div.person-container {
+    
+    display: flex;
+    width: 100%;
+}
+
+div.person-image {
+    width: 10rem;
+    margin: 0;
+    padding: 0;
+}
+
+div.person-image img {
+    margin: 0;
+    padding: 0;
+}
+
+table.person-info {
+    flex: 1;
+}
+
+table.person-info th {
+    width: 5rem;
+    vertical-align: top;
 }

@@ -80,4 +80,4 @@ After you "commit" the changes, you'll again need to wait a couple of minutes be
 
 ## Help
 
-Please contact Adam Plowman if you have any problems with contributing to the Wiki.
+Please contact @AdamPlowman if you have any problems with contributing to the Wiki.
