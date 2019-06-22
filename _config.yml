@@ -78,6 +78,12 @@ defaults:
       show_history_button: false
       show_delete_button: false
   - scope:
+      path: "people.*"
+    values:
+      show_edit_button: false
+      show_history_button: false
+      show_delete_button: false      
+  - scope:
       path: "add_metadata_file.*"
     values:
       show_edit_button: false
