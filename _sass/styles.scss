@@ -84,13 +84,13 @@ a:hover {
     text-decoration: underline;
 }
 
-.post-breadcrumbs, .post-meta, .all-tags {
+.post-breadcrumbs, .post-meta, .all-tags, .all-people {
     color: #aaa;
     font-size: 0.875rem;
     font-family: Inconsolata, Monaco, Consolas, monospace;
 }
 
-.all-tags a {
+.all-tags a, .all-people a {
     display: inline-block;
     background-color: #eaeaea;
     color: #6a6a6a;
@@ -281,8 +281,8 @@ span.bad-page-edit {
 }
 
 span.author-name {
-    color: #432878;
-    // border: 1px solid #eaeaea;
+    color: #8450f4;
+    font-size: 0.875rem;
     padding: 0 0.2rem;    
 }
 
@@ -313,4 +313,5 @@ table.person-info {
 
 table.person-info th {
     width: 5rem;
+    vertical-align: top;
 }
