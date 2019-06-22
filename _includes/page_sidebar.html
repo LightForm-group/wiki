@@ -48,10 +48,10 @@
             {% endif %}
         {% endfor %} 
         <div class="nav-group">
-            <div class="nav-group-title"><a href="{{ site.url }}{{ site.baseurl }}/tags/">Tags</a></div>
+            <div class="nav-group-title"><a href="{{ site.url }}{{ site.baseurl }}/tags">Tags</a></div>
             <div class="all-tags">
                 {% for tag in tags %}<a
-                    href="{{ site.url }}{{ site.baseurl }}/tags/#{{ tag }}">#{{ tag }}</a>{% endfor %}
+                    href="{{ site.url }}{{ site.baseurl }}/tags#{{ tag }}">#{{ tag }}</a>{% endfor %}
             </div>
         </div>
         <div class="nav-group">
