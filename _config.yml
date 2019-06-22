@@ -61,6 +61,36 @@ collections:
 defaults:
   - scope:
       path: ""
+    values:
+      show_edit_button: true
+      show_history_button: true
+      show_delete_button: true
+  - scope:
+      path: "index.*"
+    values:
+      show_edit_button: true
+      show_history_button: true
+      show_delete_button: false      
+  - scope:
+      path: "tagged.*"
+    values:
+      show_edit_button: false
+      show_history_button: false
+      show_delete_button: false
+  - scope:
+      path: "add_metadata_file.*"
+    values:
+      show_edit_button: false
+      show_history_button: false
+      show_delete_button: false      
+  - scope:
+      path: "collections/*/index.*"
+    values:
+      show_edit_button: true
+      show_history_button: true
+      show_delete_button: false
+  - scope:
+      path: ""
       type: "experiments"
     values:
       layout: experiment
@@ -69,7 +99,7 @@ defaults:
       published: true
       show_breadcrumbs: true
       show_meta: true
-      title: ''      
+      title: ''
   - scope:
       path: ""
       type: "software_and_simulation"
@@ -77,7 +107,7 @@ defaults:
       layout: post
       show_breadcrumbs: true
       show_meta: true
-      title: ''
+      title: ''    
   - scope:
       path: ""
       type: "handbook"
