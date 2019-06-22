@@ -52,7 +52,7 @@ You're now ready to publish the new page. Scroll down to the bottom of the page 
 
 ![GitHub new page commit button](/wiki/assets/images/site/new_page_github_commit_button.png)
 
-After you "commit" the new page, you'll have to wait a couple of minutes before you new file appears as a link on the collection home page. Your new page should then look something like this:
+After you "commit" the new page, you'll have to wait a couple of minutes before your new file appears as a link on the collection home page. Your new page should then look something like this:
 
 ![New page on the wiki](/wiki/assets/images/site/new_page_final.png)
 
@@ -62,7 +62,7 @@ To add images to a page, you first need to upload the images to the correct fold
 
 ![Add images icon](/wiki/assets/images/site/add_images_button.png)
 
-This will take you to a page on GitHub where you can upload images. In particular, once you "commit" the new images, it will place them in the folder: `wiki/assets/images/posts`.
+This will take you to a page on GitHub where you can upload images. In particular, once you "commit" the new images, they will be placed in the folder: `wiki/assets/images/posts`.
 
 Imagine we uploaded a photo of some aluminium, with the file name `aluminium_small.jpg`. You would then be able to add this image to your Markdown file by adding the following code to the page (by editing it on GitHub):
 
