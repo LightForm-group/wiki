@@ -27,14 +27,15 @@ layout: default
         <div class="post-meta">
             {% assign all_authors = page.author | split: ',' %}
             {% for author in all_authors %}
-                {% assign author_html = author %}
+                {% assign author_strip = author | strip %}
+                {% assign author_html = author_strip %}
                 {% comment %}
                     Try to find author in people data file.
                 {% endcomment %}
                 {% for person in site.data.people %}
-                    {% if person.name == author %}
+                    {% if person.name == author_strip %}
                         {% assign person_handle = person.handle | slugify %}
-                        {% assign author_html = '<a href="' | append: site.url | append: site.baseurl | append: '/people/#' | append: person_handle | append: '">' | append: author | append: '</a>' %}                            
+                        {% assign author_html = '<a href="' | append: site.url | append: site.baseurl | append: '/people/#' | append: person_handle | append: '">' | append: author_strip | append: '</a>' %}                            
                     {% endif %}
                 {% endfor %}           
                 <span class="author-name">{{ author_html }}</span>
