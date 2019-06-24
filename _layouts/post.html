@@ -45,7 +45,7 @@ layout: default
             •
             <span class="all-tags">
                 {% for tag in page.tags %}<a
-                    href="{{ site.url }}{{ site.baseurl }}/tags#{{ tag }}">#{{ tag }}</a>{% endfor %}
+                    href="{{ site.url }}{{ site.baseurl }}/tags#{{ tag | slugify }}">#{{ tag | slugify }}</a>{% endfor %}
             </span>
             {% endif %}
         </div>

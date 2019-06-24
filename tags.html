@@ -7,7 +7,7 @@ published: true
 {% include get_tags.html %}
 
 {% for tag in tags %}
-    <h3 class="tag-title" id="{{ tag | slugify }}">#{{ tag }}</h3>
+    <h3 class="tag-title" id="{{ tag | slugify }}">#{{ tag | slugify }}</h3>
     <ul>
     {% for collec in site.collections %}
         {% for collec_item in collec.docs %}
