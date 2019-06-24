@@ -1,5 +1,5 @@
 ---
-title: Technical Workshop
+title: Technical Workshop - making samples
 author: Natalie Shannon
 ---
 
