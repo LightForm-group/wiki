@@ -21,7 +21,7 @@ layout: post
                     {% assign title = collec_item.title %}
                     {% if title == '' %}
                         {% comment %}File name has no title in its YAML front matter.{% endcomment %}
-                        {% assign error = error | append: '<span class="bad-page-error no-title">Page must have a title. </span>'%}
+                        {% assign error = error | append: '<span class="bad-page-error no-title"><a href="/wiki/miscellaneous/contribution#how-to-add-a-new-page">Page must have "title" in the YAML front matter</a>. </span>'%}
                     {% endif %}
                     {% assign filename_arr = collec_item.path | split: "/" %}
                     {% assign filename_full = filename_arr.last %}
