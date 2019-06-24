@@ -21,7 +21,7 @@ In addition, you must read the University safety policy which can be found [here
 
 You must attend the Health and Safety Induction and any specialised local safety training specified by your supervisor or the health and safety staff. 
 
-There is detailed information in the Management System document [(here)](https://www.staffnet.manchester.ac.uk/materials/health-and-safety/forms/) on the how to carry out Risk and COSHH assessments for laboratory based work. You need to update/revise your Risk and COSHH assessment forms annually when your work changes.
+There is detailed information in the Management System document ([here](https://www.staffnet.manchester.ac.uk/materials/health-and-safety/forms/)) on the how to carry out Risk and COSHH assessments for laboratory based work. You need to update/revise your Risk and COSHH assessment forms annually when your work changes.
 
 **Please note: No work can commence until a risk assessment and or COSHH has been completed.
 
