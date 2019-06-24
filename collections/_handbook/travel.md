@@ -1,6 +1,7 @@
 ---
-Title: Travel and Accommodation
-Author: Natalie Shannon 
+Title : Travel and Accommodation.md
+Author: Natalie Shannon
+
 ---
 
 All travel relating to University business (e.g. to a conference directly related to your research) must be booked through Key Travel wherever possible. 
