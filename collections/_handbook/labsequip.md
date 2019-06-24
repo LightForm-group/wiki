@@ -63,9 +63,11 @@ contact Dave Strong via:
   
   **Do not remove beakers, bottles from the lab.** I made sure there was a bottle of methanol, acetone, water, detergent and two of OPS, all labelled. These seem to have been used, removed and rotated so much that we have 5 or 6 random empty bottles most of the time.
 
-  Booking Equipment / lab space
+  **Booking Equipment / lab space**
 
   If you have booked equipment or lab space, please arrive on time for your booked session.
   
   If you are unable to attend or no longer require your booked session, please cancel, where possible providing 24hrs notice.
+  Please contact Dave Strong to cancel David.Strong@manchester.ac.uk 
+
   
