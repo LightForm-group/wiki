@@ -1,6 +1,6 @@
 ---
-Title:Fees and Expenses
-Author:Natalie Shannon
+title: Fees and Expenses
+author: Natalie Shannon
 ---
 **Fees and Expenses:
   
