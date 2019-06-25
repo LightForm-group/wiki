@@ -1,5 +1,5 @@
 ---
-title: Safety in Laboratories and Workshops
+title: 2.Safety in Laboratories and Workshops
 author: Natalie Shannon
 ---
 
