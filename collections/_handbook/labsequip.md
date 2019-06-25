@@ -1,5 +1,5 @@
 ---
-title: 1 Conduct whilst using labs and equipment
+title: 3. Conduct whilst using labs and equipment
 author: Natalie Shannon
 ---
 Dave Strong - Research Technician has provided below, clear and concise
@@ -63,7 +63,7 @@ contact Dave Strong via:
   
   **Do not remove beakers, bottles from the lab.** I made sure there was a bottle of methanol, acetone, water, detergent and two of OPS, all labelled. These seem to have been used, removed and rotated so much that we have 5 or 6 random empty bottles most of the time.
 
-  **Booking Equipment / lab space**
+  **Booking Equipment / lab space / Cancelling lab space and equipment bookings**
 
   If you have booked equipment or lab space, please arrive on time for your booked session.
   
