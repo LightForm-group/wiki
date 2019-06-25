@@ -1,4 +1,4 @@
-tem:
+TEM:
     widget: GroupBox
     title: TEM metadata
     layout: FormLayout
@@ -19,9 +19,9 @@ tem:
             widget: ComboBox
             label: Microscope
             values:
-                lazor: Super Lazor 9000
-                small: Micro μ Version 6
-                zeiss: Ultra Beam
+                - Super Lazor 9000
+                - Micro μ Version 6
+                - Ultra Beam
         material:
             widget: GroupBox
             title: Material Description

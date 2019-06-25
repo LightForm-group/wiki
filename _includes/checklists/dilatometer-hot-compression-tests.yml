@@ -1,4 +1,4 @@
-hot_compression:
+Dilatometer Hot Compression:
     widget: GroupBox
     title: Hot Compression Metadata
     layout: QFormLayout

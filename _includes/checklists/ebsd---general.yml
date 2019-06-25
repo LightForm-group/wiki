@@ -1,0 +1,124 @@
+EBSD general:
+    widget: GroupBox
+    title: General EBSD metadata
+    layout: FormLayout
+    _name: ebsd
+    children:
+        file_warning:
+            widget: Label
+            text: All EBSD data should be uploaded as ctf files as this has the correct metadata.
+        alloy_elements:
+            widget: ComboBox
+            editable: True
+            label: Alloy Elements
+            values:
+                titanium: Ti
+                aluminum: Al
+                vanadium: V
+        orientation_1:
+            widget: ComboBox
+            editable: False
+            label: Sample Orientation (Z1)
+            values: 
+                    - ND(Normal)
+                    - RD(Rolling)
+                    - TD(Transverse)
+                    - CD(Compression)
+                    - R1(Radial 1)
+                    - R2(Radial 2)
+                    - FD(Forging)
+                    - DD(Draw)
+                    - ED(Extrusion)
+                    - RD(Radial)
+                    - AD(Axial)
+        orientation_2:
+            widget: ComboBox
+            editable: False
+            label: Sample Orientation (Y1)
+            values: 
+                    - ND(Normal)
+                    - RD(Rolling)
+                    - TD(Transverse)
+                    - CD(Compression)
+                    - R1(Radial 1)
+                    - R2(Radial 2)
+                    - FD(Forging)
+                    - DD(Draw)
+                    - ED(Extrusion)
+                    - RD(Radial)
+                    - AD(Axial)
+        orientation_3:
+            widget: ComboBox
+            editable: False
+            label: Sample Orientation (X1)
+            values: 
+                    - ND(Normal)
+                    - RD(Rolling)
+                    - TD(Transverse)
+                    - CD(Compression)
+                    - R1(Radial 1)
+                    - R2(Radial 2)
+                    - FD(Forging)
+                    - DD(Draw)
+                    - ED(Extrusion)
+                    - RD(Radial)
+                    - AD(Axial)
+        phase_name:
+            widget: ComboBox
+            editable: True
+            label: Phase Name
+            values: 
+                    - Ti Hex 
+                    - Ti Beta
+                    - Ti Cubic
+                    - Al Cubic
+        crystal_system:
+            widget: ComboBox
+            values: - Hexagonal
+                    - Cubic
+            editable: False
+            label: Crystal System
+        space_group:
+            widget: LineEdit
+            label: Crystal Space Group
+        laue_group:
+            widget: LineEdit
+            label: Crystal Laue Group
+        reflectors:
+            widget: QLineEdit
+            label: Reflectors
+            default: 40
+        material:
+            widget: GroupBox
+            title: Material Description
+            layout: FormLayout
+            tooltip: A description of the material analysed. Consider adding information about the type of material and the forming process.
+            children:
+                material_description:
+                    widget: PlainTextEdit
+        sample_processing:
+            widget: LineEdit
+            label: Sample Processing Route
+            tooltip: Sample processing method e.g. Rolling, Cast, Uniaxial Compression, Plane Strain, Tension, Forging
+        tilt_angle:
+            widget: LineEdit
+            label: Tilt angle (°)
+            default: 70
+        working_distance:
+            widget: LineEdit
+            label: Working Distance (mm)
+        magnification:
+            widget: LineEdit
+            label: Magnification
+        beam_energy:
+            widget: LineEdit
+            label: Beam Energy (kV)
+        step_size:
+            widget: LineEdit
+            label: Step Size (µm)
+        exposure_time:
+            widget: LineEdit
+            label: Exposure Time (ms)
+        overlap:
+            widget: LineEdit
+            label: Overlap of stitched maps (%)
