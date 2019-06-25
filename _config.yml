@@ -68,6 +68,7 @@ defaults:
       show_edit_button: true
       show_history_button: true
       show_delete_button: true
+      order: 0
   - scope:
       path: "index.*"
     values:
