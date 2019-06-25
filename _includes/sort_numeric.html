@@ -1,0 +1,55 @@
+{% comment %}
+    Sort an array numerically, instead of alphabetically.
+{% endcomment %}
+
+{% assign arr = include.array %}
+{% assign max_num_digits = 1 %}
+{% for i in arr %}
+  {% if i.size > max_num_digits %}
+    {% assign max_num_digits = i.size %}
+  {% endif %}
+{% endfor %}
+
+{% assign padded_arr = '' %}
+{% for i in arr %}
+  {% assign i_padded = i %}
+  {% for j in (1..max_num_digits) %}
+    {% if i.size < j %}
+      {% assign i_padded = i_padded | prepend: '0' %}
+    {% endif %}
+  {% endfor %}
+  {% if padded_arr == '' %}
+    {% assign padded_arr = i_padded | split: '|' %}    
+  {% else %}
+    {% assign padded_arr = padded_arr | join: '|' | append:'|' | append: i_padded | split: '|' %}
+  {% endif %}
+{% endfor %}
+
+{% assign sorted_arr = padded_arr | sort %}
+
+{% assign unpadded_arr = '' %}
+{% for i in sorted_arr %}
+    {% assign unpadded_i = '' %}
+    {% assign digits = i | split: '' %}
+
+    {% assign remove_digits = true %}
+    {% for j in digits %}
+        {% if remove_digits == true and j != '0' %}
+            {% assign remove_digits = false %}
+        {% endif %}
+        {% if remove_digits == false %}
+            {% assign unpadded_i = unpadded_i | append: j %}        
+        {% endif %}
+    {% endfor %}
+    {% if unpadded_i == '' %}
+        {% assign unpadded_i = '0' %}
+    {% endif %}
+
+    {% if unpadded_arr == '' %}
+        {% assign unpadded_arr = unpadded_i | split: '|' %}    
+    {% else %}
+        {% assign unpadded_arr = unpadded_arr | join: '|' | append:'|' | append: unpadded_i | split: '|' %}
+    {% endif %}
+{% endfor %}
+
+{{ unpadded_arr | join: '|' }}
