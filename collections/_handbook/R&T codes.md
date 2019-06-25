@@ -2,6 +2,7 @@
 title: Research and task codes for purchasing 
 author: Natalie Shannon 
 ---
+
 Research and task codes for purchasing 
 
 If you are making a purchase against the LightForm budget, you will need prior permission to do so from your Supervisor. 
@@ -11,8 +12,8 @@ A task code will relate to the type of product or service you need to purchase, 
 
 These are the LightForm task codes, if you are unsure as to which task code to use, please contact Natalie Shannon Natalie.a.shannon@manchester.ac.uk 
 
-A0501 IAB Meetings
-To include all related expenses for hosting meetings in relation to venue hire/meals/lunches 
+A0501 IAB Meetings to include:
+All related expenses for hosting meetings in relation to venue hire/meals/lunches 
 Steering board expenses – flights accommodation for academic steering committee members
 
 A0502 Investigator Travel to include:
@@ -27,14 +28,14 @@ A0701 IAB Consumables to include:
 PDRA - Travel/accommodation/subsidence
 Management team - Travel/accommodation/subsidence
 
-A0702 Outreach Consumables
-To include all related expenses for visiting academics – bench fees where applicable, subsistence contributions
+A0702 Outreach Consumables to include:
+All related expenses for visiting academics – bench fees where applicable, subsistence contributions
 All web/social media/photography
 
-A0703 Team Building Consumables
-To include Management meeting lunch/dinner and other related expenses, including PhD events
+A0703 Team Building Consumables to include:
+Management meeting lunch/dinner and other related expenses, including PhD events
 
-A0704 General Consumables & Licences
+A0704 General Consumables & Licences to include:
 Stores and equipment purchases 
 
 
