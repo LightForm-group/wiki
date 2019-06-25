@@ -1,5 +1,5 @@
 ---
-title: Petty Cash
+title: 7. Petty Cash
 Author: Natalie Shannon
 ---
 ***Petty Cash***
