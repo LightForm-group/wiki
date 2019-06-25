@@ -11,11 +11,9 @@ published: true
     <ul>
     {% for collec in site.collections %}
         {% for collec_item in collec.docs %}
-            {% assign ttags = collec_item.tags | join:'|' | append:'|' %}
-            {% assign rawtags = rawtags | append:ttags %}
-                {% if collec_item.tags contains tag %}
+            {% if collec_item.tags contains tag %}
                 <li><a href="{{ collec_item.url | prepend: site.baseurl | prepend: site.url }}">{{ collec_item.title }}</a></li>
-                {% endif %}
+            {% endif %}
         {% endfor %}
     {% endfor %}
     </ul>
