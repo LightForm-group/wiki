@@ -1,5 +1,5 @@
 ---
-title: Conduct whilst using labs and equipment
+title: 1 Conduct whilst using labs and equipment
 author: Natalie Shannon
 ---
 Dave Strong - Research Technician has provided below, clear and concise
