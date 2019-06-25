@@ -12,9 +12,9 @@ EBSD general:
             editable: True
             label: Alloy Elements
             values:
-                titanium: Ti
-                aluminum: Al
-                vanadium: V
+                - Ti
+                - Al
+                - V
         orientation_1:
             widget: ComboBox
             editable: False
@@ -74,7 +74,8 @@ EBSD general:
                     - Al Cubic
         crystal_system:
             widget: ComboBox
-            values: - Hexagonal
+            values: 
+                    - Hexagonal
                     - Cubic
             editable: False
             label: Crystal System
