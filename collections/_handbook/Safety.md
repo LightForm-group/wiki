@@ -25,17 +25,7 @@ There is detailed information in the Management System document ([here](https://
 
 **Please note: No work can commence until a risk assessment and or COSHH has been completed.
 
-**RISK ASSESSMENT:
-
 You must familiarise yourself with your laboratories and pay attention to all the safety documents relating to those areas. Safety equipment such as safety glasses, laboratory coats, gloves and hard hats will be issued as required and must be worn. 
-
-For Postgraduate Students there are also Compulsory Health & Safety assessments on eProg.
-
-There is detailed information in the Management System document on the how to carry out Risk and COSHH assessments for laboratory based work.
-
-You need to update/revise your Risk and COSHH assessment forms annually when your work changes. https://www.staffnet.manchester.ac.uk/materials/health-and-safety/forms/
-
-You must familiarise yourself with your laboratories and pay attention to all the safety documents relating to those areas. Safety equipment such as safety glasses, laboratory coats, gloves and hard hats will be issued as required and must be worn.
 
 For Postgraduate Students there are also Compulsory Health & Safety assessments on eProg.
 
