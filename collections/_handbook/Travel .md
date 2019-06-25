@@ -1,6 +1,6 @@
 ---
-Title:  Travel and Accommodation.md
-Author: Natalie Shannon
+title:  Travel and Accommodation.md
+author: Natalie Shannon
 ---
 
 **Travel and accommodation  
