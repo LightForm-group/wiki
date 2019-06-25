@@ -1,5 +1,5 @@
 ---
-title:  Travel and Accommodation.md
+title:  Travel and Accommodation
 author: Natalie Shannon
 ---
 
