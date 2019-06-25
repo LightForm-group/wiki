@@ -1,6 +1,7 @@
 ---
-title:  8. Travel and Accommodation
+title: 8. Travel and Accommodation
 author: Natalie Shannon
+order: 8
 ---
 
 **Travel and accommodation  

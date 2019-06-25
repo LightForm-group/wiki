@@ -1,6 +1,7 @@
 ---
-title: 1.Technical Workshop - making samples
+title: 1. Technical Workshop - making samples
 author: Natalie Shannon
+order: 1
 ---
 
 

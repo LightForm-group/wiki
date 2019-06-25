@@ -1,6 +1,7 @@
 ---
-title: 2.Safety in Laboratories and Workshops
+title: 2. Safety in Laboratories and Workshops
 author: Natalie Shannon
+order: 2
 ---
 
 The School Safety Adviser is Chris Turnbull. 

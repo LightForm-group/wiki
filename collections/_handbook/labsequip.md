@@ -1,6 +1,7 @@
 ---
 title: 3. Conduct whilst using labs and equipment
 author: Natalie Shannon
+order: 3
 ---
 Dave Strong - Research Technician has provided below, clear and concise
 instructions regarding expected standards of behaviour regarding labs

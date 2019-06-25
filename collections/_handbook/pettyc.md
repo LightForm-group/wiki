@@ -1,6 +1,7 @@
 ---
 title: 7. Petty Cash
 Author: Natalie Shannon
+order: 7
 ---
 ***Petty Cash***
 

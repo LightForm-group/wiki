@@ -1,6 +1,7 @@
 ---
 title: 9. Fees and Expenses
 author: Natalie Shannon
+order: 9
 ---
 **Fees and Expenses**:
   

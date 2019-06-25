@@ -1,6 +1,7 @@
 ---
 title: 4. Stores
 author: Natalie Shannon 
+order: 4
 ---
 ***Stores ***
 
