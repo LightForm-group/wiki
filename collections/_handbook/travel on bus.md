@@ -1,6 +1,6 @@
 ---
-title: Travelling on University business 
-author: Natalei Shannon 
+title: 11. Travelling on University business 
+author: Natalie Shannon 
 ---
 
 Travelling on University business:
