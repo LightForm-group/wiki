@@ -1,8 +1,8 @@
 ---
-Title:Fees and Expenses
-Author:Natalie Shannon
+title: Fees and Expenses
+author: Natalie Shannon
 ---
-**Fees and Expenses:
+**Fees and Expenses**:
   
 Items should only be claimed on Fees & Expenses forms for out of pocket travelling expenses when it is not possible to purchase an item by raising an order via a requisition. 
 

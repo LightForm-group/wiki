@@ -1,3 +1,5 @@
 # LightForm Wiki
 
-See [this post](https://lightform-group.github.io/wiki/miscellaneous/how-to-use-wiki) for how to use the Wiki!
+Click [here](https://lightform-group.github.io/wiki) to go to the Wiki home page.
+
+See [this post](https://lightform-group.github.io/wiki/miscellaneous/contribution) for a quick guide to contributing.
