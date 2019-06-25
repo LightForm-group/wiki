@@ -1,5 +1,5 @@
 ---
-title: Fees and Expenses
+title: 9. Fees and Expenses
 author: Natalie Shannon
 ---
 **Fees and Expenses**:
