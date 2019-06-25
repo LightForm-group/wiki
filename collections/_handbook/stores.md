@@ -1,5 +1,5 @@
 ---
-title: Stores
+title: 4. Stores
 author: Natalie Shannon 
 ---
 ***Stores ***
