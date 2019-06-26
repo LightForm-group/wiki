@@ -45,7 +45,7 @@ To add a new LightForm member to a given emailing list, follow these steps (you 
 ## LightForm website
 
 Add the new starter to the [people section](https://lightform.org.uk/people) of the LightForm public website.
-Natalie Shannon (Project Manager) will complete this for you, Natalie will ask you to provide bio information and a project descriptor for use on the site.
+
 
 ## Wiki data file
 
