@@ -20,49 +20,49 @@ EBSD general:
             editable: False
             label: Sample Orientation (Z1)
             values: 
-                    - ND(Normal)
-                    - RD(Rolling)
-                    - TD(Transverse)
-                    - CD(Compression)
-                    - R1(Radial 1)
-                    - R2(Radial 2)
-                    - FD(Forging)
-                    - DD(Draw)
-                    - ED(Extrusion)
-                    - RD(Radial)
-                    - AD(Axial)
+                    - ND (Normal)
+                    - RD (Rolling)
+                    - TD (Transverse)
+                    - CD (Compression)
+                    - R1 (Radial 1)
+                    - R2 (Radial 2)
+                    - FD (Forging)
+                    - DD (Draw)
+                    - ED (Extrusion)
+                    - RD (Radial)
+                    - AD (Axial)
         orientation_2:
             widget: ComboBox
             editable: False
             label: Sample Orientation (Y1)
             values: 
-                    - ND(Normal)
-                    - RD(Rolling)
-                    - TD(Transverse)
-                    - CD(Compression)
-                    - R1(Radial 1)
-                    - R2(Radial 2)
-                    - FD(Forging)
-                    - DD(Draw)
-                    - ED(Extrusion)
-                    - RD(Radial)
-                    - AD(Axial)
+                    - ND (Normal)
+                    - RD (Rolling)
+                    - TD (Transverse)
+                    - CD (Compression)
+                    - R1 (Radial 1)
+                    - R2 (Radial 2)
+                    - FD (Forging)
+                    - DD (Draw)
+                    - ED (Extrusion)
+                    - RD (Radial)
+                    - AD (Axial)
         orientation_3:
             widget: ComboBox
             editable: False
             label: Sample Orientation (X1)
             values: 
-                    - ND(Normal)
-                    - RD(Rolling)
-                    - TD(Transverse)
-                    - CD(Compression)
-                    - R1(Radial 1)
-                    - R2(Radial 2)
-                    - FD(Forging)
-                    - DD(Draw)
-                    - ED(Extrusion)
-                    - RD(Radial)
-                    - AD(Axial)
+                    - ND (Normal)
+                    - RD (Rolling)
+                    - TD (Transverse)
+                    - CD (Compression)
+                    - R1 (Radial 1)
+                    - R2 (Radial 2)
+                    - FD (Forging)
+                    - DD (Draw)
+                    - ED (Extrusion)
+                    - RD (Radial)
+                    - AD (Axial)
         phase_name:
             widget: ComboBox
             editable: True
@@ -86,7 +86,7 @@ EBSD general:
             widget: LineEdit
             label: Crystal Laue Group
         reflectors:
-            widget: QLineEdit
+            widget: LineEdit
             label: Reflectors
             default: 40
         material:
