@@ -2,7 +2,6 @@ TEM:
     widget: GroupBox
     title: TEM metadata
     layout: FormLayout
-    _name: tem
     children:
         voltage:
             widget: LineEdit
