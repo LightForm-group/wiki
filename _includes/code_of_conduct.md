@@ -1,20 +1,12 @@
----
-published: true
-author: Natalie Shannon
-toc: true
-title: Code of Conduct
----
-## Introduction
+## LightForm Code of Conduct
 
-This Code of Conduct is intended as a guide and support to all LightForm colleagues, defining how the LightForm team will operate, in order to foster an inclusive work environment, in which to successfully deliver our project goals. 
+The LightForm Code of Conduct is applicable to the entire LightForm team. It defines how we operate, how we work together and how we treat one another, in order to foster an inclusive work environment, in which to successfully deliver our project goals.
 
 It sets out standards of practice which the team are expected to follow when within, or representing LightForm.  
 
 This code is not exhaustive, and it is important that individuals seek advice and guidance if necessary. 
 
 All team members will be briefed, in addition, the induction programme for all new colleagues will reinforce the principles of this code. 
-
-## Code of Conduct
 
 ### Professional growth, development and training
 
