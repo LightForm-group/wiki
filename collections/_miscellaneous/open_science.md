@@ -1,3 +1,7 @@
+---
+title: Open and reproducible Science
+author: Peter Crowther
+---
 # Open and reproducible Science
 
 ## Why share?
