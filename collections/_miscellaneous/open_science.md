@@ -1,6 +1,8 @@
 ---
 title: Open and reproducible Science
 author: Peter Crowther
+tags: 
+  - open science
 ---
 # Open and reproducible Science
 
