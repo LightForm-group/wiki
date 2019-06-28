@@ -76,7 +76,7 @@ defaults:
       show_history_button: true
       show_delete_button: false      
   - scope:
-      path: "tagged.*"
+      path: "tags.*"
     values:
       show_edit_button: false
       show_history_button: false
