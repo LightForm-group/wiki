@@ -42,6 +42,8 @@ To add a new LightForm member to a given emailing list, follow these steps (you 
 4. Select the list to which the new starter should be added: ![]({{site.baseurl}}/assets/images/posts/new_starter_listserv_2.png)
 5. Type the new starter's email address and click the `Add to...` button: ![]({{site.baseurl}}/assets/images/posts/new_starter_listserv_3.png)
 
+Note: I used the information [here](https://kb.iu.edu/d/alml) to set the access levels of the lists. They are currently set so any subscriber may send an email to the respective distribution list (using the `Send= Private,Confirm` setting).
+
 ## LightForm website
 
 Add the new starter to the [people section](https://lightform.org.uk/people) of the LightForm public website.
