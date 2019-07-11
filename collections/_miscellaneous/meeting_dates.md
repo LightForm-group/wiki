@@ -6,7 +6,6 @@ Use the [Resource Booker](https://resourcebooker.manchester.ac.uk/) to book room
 
 |    Date    |       Theme        |   Time    |   Room   |
 | ---------- | ------------------ | --------- | -------- |
-| 09/07/2019 | Modelling and data | 1pm - 2pm | D11, MSS |
 | 16/07/2019 | Update Natalie     | 3pm - 4pm | D11, MSS |
 | 23/07/2019 | Al Alloys          | 2pm - 3pm | D11, MSS |
 | 30/07/2019 | Ti Alloys          | 2pm - 3pm | D11, MSS |
