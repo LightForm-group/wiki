@@ -49,6 +49,44 @@ A colleagues position or status will not deter others from addressing their beha
 
 Harassment and discrimination by and/or of members of our team will not be tolerated in any form. 
 
+If you have concerns regarding colleague conduct, you can choose to discuss these with LightForm Project Manager, Natalie Shannon, or a colleague external to LightForm:
+
+<u>Contact details</u>
+
+**Natalie Shannon** (LightForm Project Manager)
+
+<table class="vertical-header smaller">
+  <tr>
+      <th>Telephone</th>
+      <td>0161 306 4151</td>
+  </tr>
+  <tr>
+      <th>Email</th>
+      <td><a href="mailto:natalie.a.shannon@manchester.ac.uk">natalie.a.shannon@manchester.ac.uk</a></td>
+  </tr>
+  <tr>
+      <th>Office</th>
+      <td>Sackville Street Building – room C59a</td>            
+  </tr>
+</table>
+
+**Christine Taylor** (School of Materials, Project Manager - external to LightForm)
+
+<table class="vertical-header smaller">
+  <tr>
+      <th>Telephone</th>
+      <td>0161 306 2270</td>
+  </tr>
+  <tr>
+      <th>Email</th>
+      <td><a href="mailto:christine.taylor@manchester.ac.uk">christine.taylor@manchester.ac.uk</a></td>
+  </tr>
+  <tr>
+      <th>Office</th>
+      <td>Sackville Street Building - room D41.7</td>            
+  </tr>
+</table>
+
 ### How we communicate and support one another
 
 Effective methods of communication create a happier work environment at all levels and support all team members to feel valued and acknowledged.
