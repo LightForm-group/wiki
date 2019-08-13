@@ -28,6 +28,8 @@ This describes the metadata which applies to EBSD experiments. EBSD is a techniq
 
 ### Other notes
 - Other notes - (e.g. Stage scan?)
+- Storing diffraction patterns?
+- Storing chemical composition?
 
 ## Setup Specific Metatdata
 There are several different microscope setups which have the above data in common but also have some instrument specific metadata.
@@ -36,8 +38,7 @@ There are several different microscope setups which have the above data in commo
 
 - Camera: Oxford Symmetry
 - Camera Insertion Distance: 178 mm
-- Beam Intensity - (Default: 20)
-- Spot Size (mm) - (Default: 0.1)
+- Beam Intensity - (Default: 20) - analagous to probe current.
 - Scan Mode - (Resolution, Depth, Field, Wide Field, Channeling)
 - Camera Mode - (Resolution, Sensitivity, Speed 1, Speed 2)
 
@@ -45,6 +46,7 @@ There are several different microscope setups which have the above data in commo
 
 - Camera: Oxford NordlysNano
 - Camera Insertion Distance: 164.8 mm
-- Spot Size - (Default 4.0, range, integer 1 to 7)
+- Spot Size - (Default 4, range, integer 1 to 7)
+- Aperture - () Combination of the aperture and the spot size is analagous to probe current.
 - Binning Mode - (Default 4x4, (1x1, 2x2, 4x4, 8x8, 8x16))
 - Gain - (Default: Low, High)
