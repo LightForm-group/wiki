@@ -12,30 +12,30 @@ Dropbox personal folder - Content and management instructions
 •	Manuscripts
 •	Any other writing: notes, snippets etc.
 
-**How writing should be saved: 
+(**)How writing should be saved: 
 
 Each piece of writing should have its own subfolder – the subfolder should be given an appropriate descriptive title, which identifies the content – for example:
 
-**Example subfolder title  “Year 1 transfer report” 
+(**)Example subfolder title  “Year 1 transfer report” 
   Example subfolder title  “Starting material characterisation report”
 
 The idea is that anyone can look at the titles of the folders and make a good guess about the contents. This shared folder makes it easier to write collaboratively.
 
-**Presentations Folder -What you need to save in the Presentations Folder – any of the following:
+(**)Presentations Folder -What you need to save in the Presentations Folder – any of the following:
 
 •	All presentation (PowerPoint) files
 •	Posters 
 •	Progress updates (with industrial sponsor for example)
 •	Any other slide based files 
 
-**How presentations should be saved: 
+(**)How presentations should be saved: 
 
 Each presentation will have its own subfolder –subfolders should be given an appropriate descriptive title which includes the event title and date – for example:
 
 **Example subfolder title  ““PowerPoint Industrial sponsor update 05.02.19” 
 
 
-**Literature Folder - What you need to save in the Literature Folder – any of the following:
+**Literature Folder - What you need to save in the Literature Folder – any of the following:**
 
 Literature you have read and used in your research:
 
