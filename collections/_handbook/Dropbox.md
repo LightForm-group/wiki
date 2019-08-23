@@ -16,8 +16,8 @@ author: Natalie Shannon
 
 Each piece of writing should have its own subfolder – the subfolder should be given an appropriate descriptive title, which identifies the content – for example:
 
-**Example subfolder title  “Year 1 transfer report” 
-**Example subfolder title  “Starting material characterisation report”**
+Example subfolder title  “Year 1 transfer report” 
+Example subfolder title  “Starting material characterisation report”
 
 The idea is that anyone can look at the titles of the folders and make a good guess about the contents. This shared folder makes it easier to write collaboratively.
 
@@ -33,17 +33,16 @@ The idea is that anyone can look at the titles of the folders and make a good gu
 
 Each presentation will have its own subfolder –subfolders should be given an appropriate descriptive title which includes the event title and date – for example:
 
-**Example subfolder title  ““PowerPoint Industrial sponsor update 05.02.19”** 
+Example subfolder title  ““PowerPoint Industrial sponsor update 05.02.19” 
 
 
 **Literature Folder - What you need to save in the Literature Folder – any of the following:**
 
 Literature you have read and used in your research:
-
-•	Publications
-•	Journals
-•	Papers 
-•	Reports
+Publications
+Journals
+Papers 
+Reports
 
 **How literature should be saved:** 
 
