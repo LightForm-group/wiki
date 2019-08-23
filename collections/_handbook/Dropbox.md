@@ -2,7 +2,7 @@
 title: Dropbox personal folder - Content and management instructions
 author: Natalie Shannon
 ---
-Dropbox personal folder - Content and management instructions
+**Dropbox personal folder - Content and management instructions**
 
 **Writing Folder - What you need to save in the Writing Folder – any of the following:**
 
