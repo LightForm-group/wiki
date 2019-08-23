@@ -4,8 +4,7 @@ author: Natalie Shannon
 ---
 Dropbox personal folder - Content and management instructions
 
-**Writing Folder
-What you need to save in the Writing Folder – any of the following:
+**Writing Folder - What you need to save in the Writing Folder – any of the following:
 
 •	Experimental reports
 •	Literature reviews
@@ -22,8 +21,7 @@ Each piece of writing should have its own subfolder – the subfolder should be 
 
 The idea is that anyone can look at the titles of the folders and make a good guess about the contents. This shared folder makes it easier to write collaboratively.
 
-**Presentations Folder
-What you need to save in the Presentations Folder – any of the following:
+**Presentations Folder -What you need to save in the Presentations Folder – any of the following:
 
 •	All presentation (PowerPoint) files
 •	Posters 
@@ -37,8 +35,7 @@ Each presentation will have its own subfolder –subfolders should be given an a
 **Example subfolder title  ““PowerPoint Industrial sponsor update 05.02.19” 
 
 
-**Literature Folder
-What you need to save in the Literature Folder – any of the following:
+**Literature Folder - What you need to save in the Literature Folder – any of the following:
 
 Literature you have read and used in your research:
 
@@ -58,8 +55,7 @@ If you do not already use a reference manager tool, speak to your supervisor for
 
 It’s important to have a good shared record of the literature you use, so that writing and collaborating with others (including your Supervisor) is easy.
 
-**Experiments Folder
-What you need to save in the Experiments Folder:
+**Experiments Folder - What you need to save in the Experiments Folder:
 
 •	All raw data
 •	Analysis
@@ -93,8 +89,7 @@ Analysis should if possible link directly to the data in the Data sub-subfolder.
 Subfolders within Analysis should be given an appropriate descriptive title. Include an abbreviation of the analysis title and date.
 
 
-**Progress Summary Folder
- What you need to save in the Progress Summary Folder:
+**Progress Summary Folder - What you need to save in the Progress Summary Folder:
 
 •	“Progress Summary Spreadsheet” in which you detail your month by month progression
 
