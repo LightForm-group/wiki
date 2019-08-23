@@ -30,11 +30,11 @@ Presentations Folder -What you need to save in the Presentations Folder – any 
 •	Any other slide based files 
 
 (**)
-How presentations should be saved: 
+**How presentations should be saved:** 
 
 Each presentation will have its own subfolder –subfolders should be given an appropriate descriptive title which includes the event title and date – for example:
 
-**Example subfolder title  ““PowerPoint Industrial sponsor update 05.02.19” 
+**Example subfolder title  ““PowerPoint Industrial sponsor update 05.02.19”** 
 
 
 **Literature Folder - What you need to save in the Literature Folder – any of the following:**
@@ -46,7 +46,7 @@ Literature you have read and used in your research:
 •	Papers 
 •	Reports
 
-(**How literature should be saved: 
+**How literature should be saved:** 
 
 You are required to use a bibliography reference manager tool for example Zotero, Endnote, Mendeley, in order to reference articles relevant to your project. 
 
