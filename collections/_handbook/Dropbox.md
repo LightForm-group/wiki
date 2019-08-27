@@ -1,5 +1,5 @@
 ---
-title: Dropbox personal folder - Content and management instructions
+title: 14. Dropbox personal folder - Content and management instructions
 author: Natalie Shannon
 order: 14
 ---
