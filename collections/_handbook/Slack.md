@@ -1,7 +1,7 @@
 ---
-title:15. SLACK
+title: SLACK
 author: Natalie Shannon
-order:15
+order: 15
 ---
 
 Slack
