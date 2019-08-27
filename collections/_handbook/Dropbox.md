@@ -1,6 +1,7 @@
 ---
 title: Dropbox personal folder - Content and management instructions
 author: Natalie Shannon
+order: 14
 ---
 
 ![](/wiki/assets/images/posts/dropbox_folder_overview.png)
