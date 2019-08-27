@@ -3,6 +3,8 @@ title: Dropbox personal folder - Content and management instructions
 author: Natalie Shannon
 ---
 
+![](/wiki/assets/images/posts/dropbox_folder_overview.jpg)
+
 ## Writing Folder
 
 **What you need to save in the Writing Folder – any of the following:**
