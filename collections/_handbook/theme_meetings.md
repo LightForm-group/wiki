@@ -5,7 +5,7 @@ page_width: wide
 order: 13
 ---
 
-**Theme Meetings 
+** Theme Meetings 
 
 LightForm research projects are categorised into themes:
 
@@ -18,7 +18,7 @@ With a multisite team it is imperative that progress is shared, updated and reco
 
 Everyone is invited to the meeting, which will be co-delivered by a PDRA/Supervisor/PhD
 
-**Input at theme meetings
+** Input at theme meetings
 
 Everyone is invited to give a brief update on their work, including:
 
@@ -28,7 +28,7 @@ Everyone is invited to give a brief update on their work, including:
 •	Providing summary slide (as shown in the dropbox folder or on the Slack #titanium channel) summarising progress, plans and updates to milestones/deadlines  
 •	Summary slides should be shared in advance of theme meetings, please forward to the Lead Researcher, at least one day prior to the scheduled meeting
 
-**Example project progress summary slide: 
+** Example project progress summary slide: 
 
 
 <table class="smaller">
