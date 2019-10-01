@@ -63,6 +63,7 @@ If you have concerns regarding colleague conduct, you can choose to discuss thes
 The University of Manchester is committed to promoting equality and providing an environment where all members of its community are treated with respect and dignity. We are committed to seeking to employ a workforce and educate a student body that reflects the diverse community we serve. The Equality Act (2010) helps by providing a legal framework to protect people from discrimination, harassment and victimisation in the workplace and wider society. http://documents.manchester.ac.uk/display.aspx?DocID=8361
 
 Any staff member or student who believes that they may have been the victim of discrimination, harassment, bullying or victimisation shall have protection under the University’s Dignity at Work and Study Policy and Procedure.
+https://www.staffnet.manchester.ac.uk/equality-and-diversity/policies-and-guidance/dignity-at-work-and-study/
 
 
 ### How we communicate and support one another
