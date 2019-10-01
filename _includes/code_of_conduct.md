@@ -58,6 +58,13 @@ If you have concerns regarding colleague conduct, you can choose to discuss thes
   </tr>
 </table>
 
+### Equality, Diversity and Inclusion Policy 
+
+The University of Manchester is committed to promoting equality and providing an environment where all members of its community are treated with respect and dignity. We are committed to seeking to employ a workforce and educate a student body that reflects the diverse community we serve. The Equality Act (2010) helps by providing a legal framework to protect people from discrimination, harassment and victimisation in the workplace and wider society. http://documents.manchester.ac.uk/display.aspx?DocID=8361
+
+Any staff member or student who believes that they may have been the victim of discrimination, harassment, bullying or victimisation shall have protection under the University’s Dignity at Work and Study Policy and Procedure.
+
+
 ### How we communicate and support one another
 
 Effective methods of communication create a happier work environment at all levels and support all team members to feel valued and acknowledged.
@@ -90,7 +97,7 @@ We will therefore:
 -	Proactively share resources, information and expertise, 
 -	Share resources, information and expertise by utilising SLACK as an essential, inclusive group communication tool  
 
-http://documents.manchester.ac.uk/display.aspx?DocID=8361
+
 
 ### Working hours
 
