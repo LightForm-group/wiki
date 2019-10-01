@@ -90,6 +90,8 @@ We will therefore:
 -	Proactively share resources, information and expertise, 
 -	Share resources, information and expertise by utilising SLACK as an essential, inclusive group communication tool  
 
+http://documents.manchester.ac.uk/display.aspx?DocID=8361
+
 ### Working hours
 
 Core campus working hours are 10am to 4.00pm Monday to Friday in order to facilitate collaborative working. Meetings and events will not be arranged outside these hours. 
