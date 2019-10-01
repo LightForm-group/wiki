@@ -106,4 +106,16 @@ The Progress Summary Spreadsheet enables the Project Manager to see at a glance,
 **Please note: You will also use the Progress Summary sheet to update the team on progress at monthly theme meetings.**  
 
 
+### Keeping our information safe
+
+The University not only holds personal data about you, it also holds a vast amount of sensitive material, for example in relation to our research.
+
+The University must protect this information and ensure that it is not shared internally, or externally, with those who have no right to it. We all, therefore, have an important responsibility to keep information safe and secure.
+
+Publicising and sharing of LightForm outputs, research findings, IP, collaborations and other sensitive information is strictly prohibited.
+
+You must seek written authorisation from your supervisor in advance, regarding any communications for social media, press or broadcast media.
+
+Where appropriate we aim to make all research reproducible and accessible, subject to the constraints of the specific project, through quality science data collection and archiving procedures.
+
 
