@@ -117,7 +117,7 @@ On occasions when a work from home arrangement is necessary, please inform in ad
 
 ### Work - life balance
 
-Domestic & family responsibilities have shifted over the years. LightForm working practices are supportive of work-life balance and can accommodate flexible days including work from home days to flexible hours, in order to fit real life commitments of parents, carers and the unforeseen life circumstances, which we all require space to deal with on occasion.
+Domestic and family responsibilities have shifted over the years. LightForm working practices are supportive of work-life balance and can accommodate flexible days including work from home days to flexible hours, in order to fit real life commitments of parents, carers and the unforeseen life circumstances, which we all require space to deal with on occasion.
 If you would like to discuss flexible working arrangements, please speak with your Line Manager. 
 
 
