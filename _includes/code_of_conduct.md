@@ -92,7 +92,7 @@ We will therefore:
 
 ### Working hours
 
-Core campus working hours are 10am to 4.00am Monday to Friday in order to facilitate collaborative working. Meetings and events will not be arranged outside these hours. 
+Core campus working hours are 10am to 4.00pm Monday to Friday in order to facilitate collaborative working. Meetings and events will not be arranged outside these hours. 
 Exceptions for these core hours can be arranged in line with University and Departmental policy.
 
 Avoid sending work-related email outside of 8.00am and 6.00pm, colleagues are not required, or should feel obliged to reply to emails outside of their typical work hours.
@@ -104,6 +104,12 @@ On occasions when you need to send emails outside of working hours, you may cons
 ### Working from home
 
 On occasions when a work from home arrangement is necessary, please inform in advance your Line Manager/Supervisor as campus based working is encouraged for the purpose of team collaborations. Remember to set up a status update for email/SLACK if there will be a delay in you responding to colleagues.
+
+### Work - life balance
+
+Domestic & family responsibilities have shifted over the years. LightForm working practices are supportive of work-life balance and can accommodate flexible days including work from home days to flexible hours, in order to fit real life commitments of parents, carers and the unforeseen life circumstances, which we all require space to deal with on occasion.
+If you would like to discuss flexible working arrangements, please speak with your Line Manager. 
+
 
 ### Booking Leave
 
