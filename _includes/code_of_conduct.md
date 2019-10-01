@@ -8,35 +8,6 @@ This code is not exhaustive, and it is important that individuals seek advice an
 
 All team members will be briefed, in addition, the induction programme for all new colleagues will reinforce the principles of this code. 
 
-### Professional growth, development and training
-
-Take ownership for your own professional growth, development and training. Utilise the relevant training and development opportunities provided through the Staff Learning and Development Unit 
-
-If specific development and training requirements are not provided in-house, speak to your Supervisor. Provision may be available to arrange group or individual training through an external provider. 
-
-Actively develop and grow skills and expertise by taking your Professional Development Review (PDR) and One to One meetings seriously and invest time in the discussion and planning of your development. Discuss expectations and career aspirations and seek feedback.
-
-### Keeping our team safe
-
-We are committed to the implementation and maintenance of the highest standards of health, safety and welfare and we all have an important role in maintaining a healthy and safe environment.
-
-Whilst on University business, it is your responsibility to take reasonable care of your own and others' safety by adopting safe working practices and making proper use of the safety facilities provided.
-
-You can do this by complying with University Health and Safety Policies and Codes of Practice, which cover activities conducted within, or on behalf of the University. This applies not only on University premises, but anywhere else that you may be working.
-
-We all have a duty of care in the workplace, therefore if you see anything that may be a health and safety breach and is likely to cause harm, you must speak up and report it to the appropriate health and safety officials immediately.
-
-### Keeping our information safe
-
-The University not only holds personal data about you, it also holds a vast amount of sensitive material, for example in relation to our research.
-
-The University must protect this information and ensure that it is not shared internally, or externally, with those who have no right to it. We all, therefore, have an important responsibility to keep information safe and secure.
-
-Publicising and sharing of LightForm outputs, research findings, IP, collaborations and other sensitive information is strictly prohibited.
-
-You must seek written authorisation from your supervisor in advance, regarding any communications for social media, press or broadcast media.
-
-Where appropriate we aim to make all research reproducible and accessible, subject to the constraints of the specific project, through quality science data collection and archiving procedures.
 
 ### Our work space
 
@@ -119,7 +90,7 @@ We will therefore:
 -	Proactively share resources, information and expertise, 
 -	Share resources, information and expertise by utilising SLACK as an essential, inclusive group communication tool  
 
-### Flexible working hours
+### Working hours
 
 Core campus working hours are 10am to 4.00am Monday to Friday in order to facilitate collaborative working. Meetings and events will not be arranged outside these hours. 
 Exceptions for these core hours can be arranged in line with University and Departmental policy.
