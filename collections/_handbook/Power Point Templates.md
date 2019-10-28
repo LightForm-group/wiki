@@ -11,7 +11,7 @@ Two sizes of Power Points are provided, 4:3 and 16:9, which can accommodate a ra
 
 **When to use:** Please use this Power Point template as your opening/introduction slide of your presentation 
 
-Adding a partner logo: If you need to add in an industrial partner’s logo, please keeps this in the bottom right hand corner of the slide (see example on slide) making the logo the same size as the other featured logos.
+**Adding a partner logo:** If you need to add in an industrial partner’s logo, please keeps this in the bottom right hand corner of the slide (see example on slide) making the logo the same size as the other featured logos.
 
 Please remove the industrial partner logo box, if it is not required. 
 
