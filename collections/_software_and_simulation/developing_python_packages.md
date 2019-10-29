@@ -103,7 +103,7 @@ The `setup` command has as its arguments a bunch of metadata about our package, 
 The best way to install a package that we are actively developing is to install it in "editable" (or "development") mode. This means that any changes we make to the code are immediately applied when we use the package. If we didn't do this, each time we made a change to the code, we would have to reinstall the package. With our new environment activated (see above), and assuming we are within the same directory as the `environment.yml` file, we can install our package in editable mode like this:
 
 ```
-pip install -e mypackage
+pip install -e .
 ```
 
 The `-e` argument ensures that the package is installed in editable mode.
