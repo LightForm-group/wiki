@@ -56,7 +56,7 @@ dependencies:
 
 ```
 
-In the above, we first specify a name for the environment; I usually just name it as the package name, appended with 'env'. Additionally, we specify the allowed Python versions (here, greater than or equal to Python 3.6), along with a bunch of other Python packages. `pylint`, `rope` and `autopep8` are packages that I use when I'm developing a package, but are not necessary for our end users (they help with things like code formatting and checking for syntax errors). Likewise, the `twine` package is used to help us upload our package to the Python package index (PyPI), which is what enables other users to install our package. The `ipykernel` package will allow us to use the environment within a Jupyter notebook.
+In the above, we first specify a name for the environment; I usually just name it as the package name, appended with "env". Additionally, we specify the allowed Python versions (here, greater than or equal to Python 3.6), along with a bunch of other Python packages. `pylint`, `rope` and `autopep8` are packages that I use when I'm developing a package, but are not necessary for our end users (they help with things like code formatting and checking for syntax errors). Likewise, the `twine` package is used to help us upload our package to the Python package index (PyPI), which is what enables other users to install our package. The `ipykernel` package will allow us to use the environment within a Jupyter notebook.
 
 To create the environment, navigate to the same directory as the `environment.yml` file and type:
 
@@ -72,7 +72,7 @@ conda activate mypackage_env
 
 At this point, the only Python packages that we'll be able to use are those listed in the `environment.yml` file. (We can stop using the environment by deactivating it: `conda deactivate`.)
 
-## Installing our package in 'editable' mode
+## Installing our package in "editable" mode
 
 We now have a virtual environment in which to begin our development work. Next, we need to install our package within this environment, so we can start testing and using it. We'll use `pip` to install our package. You may be familiar with using `pip` to install packages that other people have published (indeed, we will make sure our package is available to our users via `pip`). However, we can also use `pip` to install local Python packages, which is what we need to do here. The `pip install` command essentially runs through the code in our `setup.py` script. An example `setup.py` file looks like this:
 
@@ -101,7 +101,7 @@ setup(
 
 The `setup` command has as its arguments a bunch of metadata about our package, like who wrote it and where it can be found on GitHub. Also included is the `install_requires` parameter, which is where we list other packages that are required by our package and that should therefore be installed as part of the installation process. In the above example, we are indicating that our package needs `numpy` to work. Note that packages that our code needs to work are listed here in the `setup.py` file, whereas packages that we use to help us develop our package (and so are not required by our end users) are listed in the `environment.yml` file.
 
-The best way to install a package that we are actively developing is to install it in 'editable' (or 'development') mode. This means that any changes we make to the code are immediately applied when we use the package. If we didn't do this, each time we made a change to the code, we would have to reinstall the package. With our new environment activated (see above), and assuming we are within the same directory as the `environment.yml` file, we can install our package in editable mode like this:
+The best way to install a package that we are actively developing is to install it in "editable" (or "development") mode. This means that any changes we make to the code are immediately applied when we use the package. If we didn't do this, each time we made a change to the code, we would have to reinstall the package. With our new environment activated (see above), and assuming we are within the same directory as the `environment.yml` file, we can install our package in editable mode like this:
 
 ```
 pip install -e mypackage
@@ -111,26 +111,27 @@ The `-e` argument ensures that the package is installed in editable mode.
 
 ## Using our environment within a Jupyter notebook
 
-To allow our environment to show up as a separate 'kernel' within Jupyter, we need to tell Jupyter about it. Assuming our environment is active (see above), and that we have `ipykernel` installed (which will be the case if `ipykernel` is listed in the `environment.yml` file, as above), then we simply type:
+To enable our environment to show up as a separate kernel within Jupyter, we need to tell Jupyter about it. Assuming our environment is active (see above), and that we have `ipykernel` installed (which will be the case if `ipykernel` is listed in the `environment.yml` file, as above), then we simply type:
 
 ```
 python -m ipykernel install --user --name=mypackage_env
 ```
 
-Note that we need to give the new Jupyter kernel a name. I usually just use the same name as the environment (i.e. the package name appended with 'env'). `mypackage_env` should now show up as an available kernel within Jupyter notebook. I find this useful during development work.
+Note that we need to give the new Jupyter kernel a name. I usually just use the same name as the environment (i.e. the package name appended with "env"). `mypackage_env` should now show up as an available kernel within Jupyter notebook. I find this useful during development work.
 
 ## Publishing our package to PyPI
 
 After we have developed our package (to the extent where it can, in principle, be useful to others---it needn't be perfect!), we can *publish* it to the Python package index (PyPI). Once this is done, other people can install it by simply typing `pip install mypackage`.
 
-The first thing you'll need to do is register new accounts on https://test.pypi.org/ and on https://pypi.org/. (You can skip the 'test' site if you want, but it allows us to check that our package will be uploaded correctly before we do it 'for real'.) The credentials you register will be used when we use `twine` to upload our package, as below.
+The first thing you'll need to do is register new accounts on [https://test.pypi.org/](https://test.pypi.org/) and on [https://pypi.org/](https://pypi.org/). (You can skip the "test" site if you want, but it allows us to check that our package will be uploaded correctly before we do it for real.) The credentials you register will be used when we use `twine` to upload our package, as below.
 
-The steps I take to publish a new release of a package are as follows. These steps include publishing to PyPI, and also adding a new 'release' on GitHub. Assuming our environment is active (see above):
+The steps I take to publish a new release of a package are as follows. These steps include publishing to PyPI, and also adding a new release on GitHub. Assuming our environment is active (see above):
 
-- Update `CHANGELOG.md` to include the changes (fixes, additional functionality, other changes) that you've made since the last release.
+- Commit any changes to `git`.
+- Update `CHANGELOG.md` to include a summary of the changes (fixes, additional functionality, other changes) that you've made since the last release.
 - Update the package version number (e.g. in the `setup.py` file)
 - Commit these changes to `git` with a message like: `git commit "Prep for vx.y.z"` (i.e. this commit is preparation for a new release version)
-- Add a git tag for this release: `git tag vx.y.z. -m "Add vx.y.z tag for PyPI"`
+- Add a git tag for this release with the tag being the version number: `git tag vx.y.z. -m "Add vx.y.z tag for PyPI"`
 - Push the new tag to GitHub: `git push --tags origin master`
 - Add a "release" on GitHub using the newly added tag.
 - Generate distribution archives in the repository directory:
