@@ -1,6 +1,7 @@
 ---
 title: Developing and publishing Python packages
 author: Adam Plowman
+toc: true
 tags:
   - python
 published: true
@@ -64,7 +65,7 @@ To create the environment, navigate to the same directory as the `environment.ym
 conda env create
 ```
 
-This will install the Python version and packages listed in the `environment.yml` file as a new conda environment. Our new conda environment should show up with any other installed conda environments when we type `conda env list`. To use our new conda environment, we need to activate it [^1]:
+This will install the Python version and packages listed in the `environment.yml` file as a new conda environment. Our new conda environment should show up with any other installed conda environments when we type `conda env list`. To use our new conda environment, we need to activate it[^1]:
 
 ```
 conda activate mypackage_env
@@ -146,5 +147,7 @@ The steps I take to publish a new release of a package are as follows. These ste
   ```
 
 <hr/>
+
+## Footnotes
 
 [^1]: `conda activate` works the same on MacOS, Linux and Windows, but only with conda version 4.6 and later. See [here](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#managing-environments). Previous versions have platform-specific commands.
