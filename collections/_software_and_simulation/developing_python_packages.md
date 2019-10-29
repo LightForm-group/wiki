@@ -145,4 +145,6 @@ The steps I take to publish a new release of a package are as follows. These ste
   twine upload dist/*
   ```
 
+<hr/>
+
 [^1]: `conda activate` works the same on MacOS, Linux and Windows, but only with conda version 4.6 and later. See [here](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#managing-environments). Previous versions have platform-specific commands.
