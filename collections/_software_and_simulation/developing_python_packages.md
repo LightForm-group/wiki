@@ -77,7 +77,6 @@ At this point, the only Python packages that we'll be able to use are those list
 We now have a virtual environment in which to begin our development work. Next, we need to install our package within this environment, so we can start testing and using it. We'll use `pip` to install our package. You may be familiar with using `pip` to install packages that other people have published (indeed, we will make sure our package is available to our users via `pip`). However, we can also use `pip` to install local Python packages, which is what we need to do here. The `pip install` command essentially runs through the code in our `setup.py` script. An example `setup.py` file looks like this:
 
 ```python
-
 from setuptools import find_packages, setup
 
 setup(
@@ -85,7 +84,6 @@ setup(
     version='0.1.0,
     description='This package does some very useful things.',
     author='Adam J. Plowman',
-    author_email='adam.plowman@manchester.ac.uk',
     packages=find_packages(),
     install_requires=[
         'numpy',
@@ -147,4 +145,4 @@ The steps I take to publish a new release of a package are as follows. These ste
   twine upload dist/*
   ```
 
-[^1] `conda activate` works the same on MacOS, Linux and Windows, but only with conda version 4.6 and later. See [here](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#managing-environments). Previous versions have platform-specific commands.
+[^1]: `conda activate` works the same on MacOS, Linux and Windows, but only with conda version 4.6 and later. See [here](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#managing-environments). Previous versions have platform-specific commands.
