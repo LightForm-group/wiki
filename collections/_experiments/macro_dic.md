@@ -1,2 +1,16 @@
+---
+published: true
+author: Wayne Heatman
+title: Macro DIC
+---
+
 # Procedure for carrying out macro DIC measurements 
-- led by Wayne Heatman
+
+
+## Application of speckle pattern
+
+## Image aquisistion
+
+
+
+
