@@ -8,5 +8,4 @@ To book rooms:
 
 |    Date    |       Theme        |   Time    |   Room   |
 | ---------- | ------------------ | --------- | -------- |
-| 22/10/2019 | Ti Alloys          | 2pm - 3pm | C16, MSS |
-| 29/10/2019 | Modelling and data | 2pm - 3pm | C16, MSS |
+| 26/11/2019 | Modelling and data | 2pm - 3pm | D15, MSS |
