@@ -1,5 +1,5 @@
 ---
-title: New version of DAMASK installed on the CSF
+title: Using DAMASK on the CSF
 author: Adam Plowman, Michael Atkinson, Pratheek Shanthraj
 tags:
   - simulation
@@ -71,7 +71,7 @@ source /mnt/eps01-rds/jf01-home01/shared/load_DAMASK_processing.sh
 We can then start a Python instance and, assuming our output HDF5 is called `geom_load.hdf5`, load the HDF5 file into Python. In the following example,
 we add the Cauchy stress (which will have a label of `sigma`), and then the von Mises Cauchy stress:
 
-```Python
+```python
 import damask
 
 f = damask.DAD5('geom_load.hdf5')
@@ -97,7 +97,7 @@ Note that we can also extract data from the HDF5 file without requiring the DAMA
 
 ## Differences between this version (2.0.3) and the version installed centrally on the CSF (2.0.2)
 
-When running `DAMASK_spectral`, we've found the following differences between this development version and the older version that is installed on the CSF (version `2.0.2`):
+When running `DAMASK_spectral`, we've found the following differences between this development version and the older version that is installed centrally on the CSF (version `2.0.2`):
 
 ### Output files
 
