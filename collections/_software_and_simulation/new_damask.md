@@ -93,7 +93,7 @@ source /mnt/eps01-rds/jf01-home01/shared/load_DAMASK_processing.sh
 python processing.py
 ```
 
-Note that we can also extract data from the HDF5 file without requiring the DAMASK processing environment (e.g. on our local computer). To do this we need the following `h5py` Python package installed. This can be installed using `pip install h5py`. See the [documentation](http://docs.h5py.org/en/stable/) for `h5py` for more details concerning loading an HDF5 file.
+Note that we can also extract data from the HDF5 file without requiring the DAMASK processing environment (e.g. on our local computer). To do this we need the `h5py` Python package installed. This can be installed using `pip install h5py`. See the [documentation](http://docs.h5py.org/en/stable/) for `h5py` for more details concerning loading an HDF5 file.
 
 ## Differences between this version (2.0.3) and the version installed centrally on the CSF (2.0.2)
 
