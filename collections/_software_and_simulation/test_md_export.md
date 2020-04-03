@@ -10,4 +10,6 @@ layout: jupyter_notebook
 
 ---
 
-{% include jupyter_notebooks/markdown_versions/test.md %}
+Hello.
+
+{% include jupyter_notebooks/test/test.md %}

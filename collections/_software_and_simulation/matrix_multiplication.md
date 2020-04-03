@@ -10,4 +10,4 @@ layout: jupyter_notebook
 
 ---
 
-{% include jupyter_notebooks/markdown_versions/matrix_multiplication.md %}
+{% include jupyter_notebooks/matrix_multiplication/matrix_multiplication.md %}
