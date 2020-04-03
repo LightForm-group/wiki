@@ -15,7 +15,7 @@ plt.scatter(x=[1,2,3], y=[4,5,6])
 
 
 
-![png]({{ site.baseurl }}/assets/images/jupyter_notebooks/test_md_export/output_1_1.png)
+![png]({{ site.baseurl }}{{ site.jupyter_notebooks_images }}/test_md_export/output_1_1.png)
 
 
 Here is some LaTex: $x^2=\frac{1}{2}B_\mathrm{N}$.

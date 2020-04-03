@@ -10,6 +10,4 @@ layout: jupyter_notebook
 
 ---
 
-Hello.
-
 {% include jupyter_notebooks/test_md_export/test.md %}
