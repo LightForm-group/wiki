@@ -1,0 +1,33 @@
+{%- assign author_name = include.author_name -%}
+{%- assign author_page_titles = '' -%}
+{%- for collec in site.collections -%}
+    {%- for collec_item in collec.docs -%}
+        {%- assign all_authors = collec_item.author | split: ',' -%}
+        {%- for author in all_authors -%}
+            {%- assign author_strip = author | strip -%}
+            {%- if author_strip == author_name -%}
+                {%- assign author_page_titles = author_page_titles | append: '|' | append: collec_item.title -%}
+            {%- endif -%}
+        {%- endfor -%}
+    {%- endfor -%}
+{%- endfor -%}
+{%- assign author_page_titles = author_page_titles | split: '|' | sort -%}
+{%- assign page_links = '' -%}
+{%- for title in author_page_titles -%}
+    {%- for collec in site.collections -%}
+        {%- for collec_item in collec.docs -%}
+            {%- assign all_authors = collec_item.author | split: ',' -%}
+            {%- for author in all_authors -%}
+                {%- assign author_strip = author | strip -%}
+                {%- if author_strip == author_name -%}
+                    {%- if title == collec_item.title -%}
+                        {%- assign page_href = collec_item.url | prepend: site.baseurl -%}
+                        {%- assign page_link = '<a href="' | append: page_href | append: '">' | append: collec_item.title | append: '</a><br/>' -%}
+                        {%- assign page_links = page_links | append: page_link -%}
+                    {%- endif -%}
+                {%- endif -%}
+            {%- endfor -%}
+        {%- endfor -%}
+    {%- endfor -%}
+{%- endfor -%}
+{{- page_links | strip -}}

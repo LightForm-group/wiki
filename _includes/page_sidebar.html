@@ -46,13 +46,23 @@
                     {% endif %}
                 </div>
             {% endif %}
-        {% endfor %}
+        {% endfor %} 
         <div class="nav-group">
-            <div class="nav-group-title"><a href="{{ site.url }}{{ site.baseurl }}/tags/">Tags</a></div>
+            <div class="nav-group-title"><a href="{{ site.url }}{{ site.baseurl }}/tags">Tags</a></div>
             <div class="all-tags">
                 {% for tag in tags %}<a
-                    href="{{ site.url }}{{ site.baseurl }}/tags/#{{ tag }}">#{{ tag }}</a>{% endfor %}
+                    href="{{ site.url }}{{ site.baseurl }}/tags#{{ tag | slugify }}">#{{ tag | slugify }}</a>{% endfor %}
             </div>
         </div>
+        <div class="nav-group">
+            <div class="nav-group-title"><a href="{{ site.url }}{{ site.baseurl }}/people">People</a></div>
+            <div class="all-people">
+                {%- assign all_people = site.data.people | sort: "name" -%}
+                {%- for person in all_people -%}
+                    {%- capture author_pages -%}{%- include get_author_pages.html author_name=person.name -%}{%- endcapture -%}
+                    {%- if author_pages != '' -%}<a 
+                        href="{{ site.url }}{{ site.baseurl }}/people#{{ person.handle | slugify }}">{{ person.name }}</a>{%- endif -%}{%- endfor -%}
+            </div>
+        </div>                
     </div>
 </div>

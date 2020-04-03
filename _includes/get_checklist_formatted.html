@@ -1,0 +1,8 @@
+{% include get_checklists.html %}
+{% assign exp_title_clean = include.exp_title_clean %}
+{% for cl in checklists -%}
+  {% if cl == exp_title_clean -%}
+    {% capture my_include %}{% include checklist.md checklist=exp_title_clean %}{% endcapture %}
+    {{ my_include | markdownify }}
+  {% endif -%}
+{% endfor %}

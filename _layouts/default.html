@@ -8,11 +8,12 @@
     <div class="page-main">
         {% include page_header.html %}
         <div class="page-content">
-            {{ content }}
+            {% include resolve_people.html content=content %}
         </div>
         <div class="page-footer"></div>
     </div>
-    <script>
+    <script type="text/javascript">
+
         function toggleNav() {
             console.log("toggleNav");
             var bod = document.body;
@@ -65,6 +66,68 @@
                 '<a href="#' + headings[i].id + '">' +
                 headings[i].innerText +
                 '</a>';
+        }
+
+        function copyToClipboard(containerElem, confirmElem) {
+
+            var textarea = document.createElement('textarea')
+            textarea.id = 'temp_element'
+            textarea.style.height = 0
+            document.body.appendChild(textarea)
+            textarea.value = containerElem.innerText
+
+            var selector = document.querySelector('#temp_element')
+            selector.select()
+            document.execCommand('copy')
+            document.body.removeChild(textarea)
+            confirmElem.innerHTML = 'Copied!';
+            confirmElem.style.opacity = 1;
+            confirmElem.style.display = 'inline';
+            setTimeout(function () {
+                fadeOut(confirmElem);
+            }, 400);
+
+        }
+
+        function fadeOut(element) {
+            var op = 1;  // initial opacity
+            var timer = setInterval(function () {
+                if (op <= 0.1) {
+                    clearInterval(timer);
+                    element.style.display = 'none';
+                }
+                element.style.opacity = op;
+                element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+                op -= op * 0.1;
+            }, 50);
+        }
+
+        // Add copy-to-clipboard to code blocks:
+        var codeBlocks = document.querySelectorAll('div[class^=language-]');
+        for (var i = 0; i < codeBlocks.length; i++) {
+            var item = codeBlocks[i];
+            var codeCopyID = "syntax-highlight-copy-target-" + i.toString();
+            var copyWidgetStr = `
+                <div class="copy-widget inline" data-copy-id="${codeCopyID}">
+                    <span class="copy-message"></span>                    
+                    <button class="copy-button">Copy</button>
+                </div>`
+            var highlightElem = item.firstChild;
+            highlightElem.insertAdjacentHTML('afterbegin', copyWidgetStr)
+            var codeElem = item.querySelector('code');
+            codeElem.id = codeCopyID;
+        }
+
+        // Copy-to-clipboard widgets:
+        var copyWidgets = document.getElementsByClassName("copy-widget");
+        for (let i of copyWidgets) {
+            let copyTargetId = i.dataset.copyId
+            let copyTarget = document.querySelector('#' + copyTargetId);
+            let copyButton = i.querySelector('.copy-button');
+            let copyMessage = i.querySelector('.copy-message');
+            copyButton.addEventListener('click', function () {
+                copyToClipboard(copyTarget, copyMessage)
+            });
         }
 
     </script>

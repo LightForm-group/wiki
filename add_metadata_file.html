@@ -1,0 +1,24 @@
+---
+layout: post
+title: Add new experiment metadata file...
+---
+
+{% assign github_url = "https://github.com/" | append: site.github_user_or_organisation | append: site.baseurl %}
+{% assign github_cl_new_url = github_url | append: "/new/master/_includes/checklists/" %}
+
+<p>When you click the button below, you will be taken to GitHub to create a new file. Please ensure you name this new
+  file:</p>
+
+<code><span id="file-name"></span></code>
+<div class="copy-widget inline" data-copy-id="file-name">
+  <button class="copy-button">Copy</button>
+  <span class="copy-message"></span>
+</div>
+
+<p><a href="{{ github_cl_new_url }}" class="add-exp-button">+ add metadata file</a></p>
+
+<script>
+  var file_name = window.location.hash.substr(1) + '.yml';
+  var span_tag = document.getElementById('file-name');
+  span_tag.innerHTML = file_name;
+</script>

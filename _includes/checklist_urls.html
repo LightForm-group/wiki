@@ -1,0 +1,12 @@
+{% assign site_url_split = site.url | split: "https://" %}
+{% assign github_url = "https://github.com/" | append: site.github_user_or_organisation | append: site.baseurl %}
+{% assign github_cl_end_url = "/_includes/checklists/" %}
+
+<!-- URLs associated with experiment metatdata checklists -->
+{% assign github_cl_new_url = github_url | append: "/new/master" | append: github_cl_end_url %}
+{% assign github_cl_edit_url = github_url | append: "/edit/master" | append: github_cl_end_url  %}
+{% assign github_cl_dir_url = github_url | append: "/tree/master" | append: github_cl_end_url  %}
+{% assign github_cl_del_url = github_url | append: "/delete/master" | append: github_cl_end_url  %}
+{% assign github_cl_history_url = github_url | append: "/commits/master" | append: github_cl_end_url %}
+
+{% assign github_exp_dir_url = github_url | append: "/tree/master/collections/_experiments" %}

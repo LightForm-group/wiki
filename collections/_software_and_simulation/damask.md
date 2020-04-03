@@ -1,5 +1,5 @@
 ---
-title: DAMASK
+title: DAMASK (outdated)
 author: Adam Plowman
 tags:
   - simulation
@@ -9,7 +9,11 @@ toc: true
 published: true
 ---
 
->Note: I am in the process of writing a Python package for simplifying the process of using DAMASK on the CSF. I will add a Wiki entry summarising this when it's done. -AP
+<hr/>
+
+Please see [this post]({{site.baseurl}}/software_and_simulation/new-damask) for how to use an updated version of DAMASK on the CSF.
+
+<hr/>
 
 [DAMASK](https://damask.mpie.de/) is a code for simulating crystal plasticity within a finite-strain continuum mechanical framework.
 

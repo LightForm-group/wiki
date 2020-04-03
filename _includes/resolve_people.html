@@ -1,0 +1,10 @@
+{% assign content = include.content %}
+{% for person in site.data.people %}
+    {% assign handle_name = '@' | append: person.handle %}
+    {% assign person_handle = person.handle | slugify %}
+    {% assign name_href = site.url | append: site.baseurl | append: '/people#' | append: person_handle %}
+    {% assign name_elem = '<span class="author-name"><a href="' | append: name_href | append: '">' | append: person.name | append: '</a></span>' %}    
+    {% assign content = content | replace: handle_name, name_elem %}
+{% endfor %}
+
+{{ content }}

@@ -1,0 +1,87 @@
+tem:
+    widget: GroupBox
+    title: TEM metadata
+    layout: FormLayout
+    _name: tem
+    children:
+        accelerating_voltage:
+            widget: LineEdit
+            label: voltage (kV)
+            default: 200
+            tooltip: The beam acceleration voltage
+        probe_current:
+            widget: LineEdit
+            label: Probe Current (nA)
+            default: 1
+        magnification:
+            widget: LineEdit
+            label: Magnification
+            default: 5.5
+        microscope:
+            widget: ComboBox
+            label: Microscope
+            values:
+                - FEI Titan G2 80-200
+        orientation_1:
+            widget: ComboBox
+            editable: False
+            label: Sample Orientation (Z1)
+            values:
+                -
+                - ND (Normal)
+                - RD (Rolling)
+                - TD (Transverse)
+                - CD (Compression)
+                - R1 (Radial 1)
+                - R2 (Radial 2)
+                - FD (Forging)
+                - DD (Draw)
+                - ED (Extrusion)
+                - RD (Radial)
+                - AD (Axial)
+            tooltip: The orientation of the sample in the out of plane (Z1) direction.
+        orientation_2:
+            widget: ComboBox
+            editable: False
+            label: Sample Orientation (Y1)
+            values:
+                -
+                - ND (Normal)
+                - RD (Rolling)
+                - TD (Transverse)
+                - CD (Compression)
+                - R1 (Radial 1)
+                - R2 (Radial 2)
+                - FD (Forging)
+                - DD (Draw)
+                - ED (Extrusion)
+                - RD (Radial)
+                - AD (Axial)
+            tooltip: The orientation of the sample in the Up, North (Y1) direction.
+        orientation_3:
+            widget: ComboBox
+            editable: False
+            label: Sample Orientation (X1)
+            values:
+                -
+                - ND (Normal)
+                - RD (Rolling)
+                - TD (Transverse)
+                - CD (Compression)
+                - R1 (Radial 1)
+                - R2 (Radial 2)
+                - FD (Forging)
+                - DD (Draw)
+                - ED (Extrusion)
+                - RD (Radial)
+                - AD (Axial)
+            tooltip: The orientation of the sample in the Side, East (X1) direction.
+
+        material:
+            widget: GroupBox
+            title: Material Description
+            layout: FormLayout
+            tooltip: A description of the material analysed. Consider adding information about the type of material and the forming process.
+            children:
+                material_description:
+                    widget: PlainTextEdit

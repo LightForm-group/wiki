@@ -1,0 +1,35 @@
+---
+layout: post
+title: People
+toc: true
+---
+
+Listed below are the pages that people have contributed to.
+
+{% assign people_sorted = site.data.people | sort: "name" %}
+{% for person in people_sorted %}
+    {%- capture author_pages -%}{%- include get_author_pages.html author_name=person.name -%}{%- endcapture -%}
+    {%- if author_pages != '' -%}
+        <h3 id="{{ person.handle | slugify }}">{{person.name}}</h3>
+        <div class="person-container">
+            <table class="smaller vertical-header left-aligned-header person-info">
+                <tr>
+                    <th>Profile</th>
+                    <td>
+                        {%- assign person_url = person.url | strip -%}
+                        {%- if person_url != '' -%}<a href="{{ person.url }}">Link</a>
+                        {%- else -%}-{%- endif -%}                        
+                    </td>
+                </tr>
+                <tr>
+                    <th>Posts</th>
+                    <td>{% include get_author_pages.html author_name=person.name %}</td>
+                </tr>
+                <!-- <tr>
+                    <th>Slack</th>
+                    <td><a href="https://lightform-group.slack.com/team/{{ person.slack_id }}">Link</a></td>
+                </tr> -->
+            </table>
+        </div>
+    {%- endif -%}
+{% endfor %}

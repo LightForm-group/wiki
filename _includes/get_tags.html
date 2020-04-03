@@ -14,7 +14,7 @@
             {% assign tags = tag | split:'|' %}
         {% endif %}
         {% unless tags contains tag %}
-            {% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
+            {% assign tags = tags | join:'|' | append:'|' | append: tag | split:'|' %}
         {% endunless %}
     {% endif %}
 {% endfor %}

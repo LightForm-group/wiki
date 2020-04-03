@@ -20,12 +20,28 @@ exclude:
   - _includes/page_header.html
   - _includes/toc.html
   - _includes/get_tags.html
+  - _includes/checklist_controls.html
+  - _includes/checklist_urls.html
+  - _includes/checklist.md
+  - _includes/get_checklists.html
+  - _includes/get_checklist_formatted.html
+  - _includes/get_author_pages.html
+  - _includes/get_person_handle.html
+  - _includes/resolve_people.html
 
 collections_dir: collections
 collections:
-  experiments:
+  handbook:
     output: true
     nav_order: 1
+    nav_name: Handbook
+    nav_list_pages: false
+    index_list_pages: true
+    permalink: /:collection/:name
+    add_new_name: page  
+  experiments:
+    output: true
+    nav_order: 2
     nav_name: Experiments
     nav_list_pages: false
     index_list_pages: false
@@ -33,20 +49,12 @@ collections:
     add_new_name: experiment
   software_and_simulation:
     output: true
-    nav_order: 2
+    nav_order: 3
     nav_name: Software & Simulation
     nav_list_pages: false
     index_list_pages: true
     permalink: /:collection/:name
-    add_new_name: page
-  handbook:
-    output: true
-    nav_order: 3
-    nav_name: Handbook
-    nav_list_pages: false
-    index_list_pages: true
-    permalink: /:collection/:name
-    add_new_name: page    
+    add_new_name: page  
   miscellaneous: 
     output: true
     nav_order: 4
@@ -59,6 +67,43 @@ collections:
 defaults:
   - scope:
       path: ""
+    values:
+      show_edit_button: true
+      show_history_button: true
+      show_delete_button: true
+      order: 0
+  - scope:
+      path: "index.*"
+    values:
+      show_edit_button: true
+      show_history_button: true
+      show_delete_button: false      
+  - scope:
+      path: "tags.*"
+    values:
+      show_edit_button: false
+      show_history_button: false
+      show_delete_button: false
+  - scope:
+      path: "people.*"
+    values:
+      show_edit_button: false
+      show_history_button: false
+      show_delete_button: false      
+  - scope:
+      path: "add_metadata_file.*"
+    values:
+      show_edit_button: false
+      show_history_button: false
+      show_delete_button: false      
+  - scope:
+      path: "collections/*/index.*"
+    values:
+      show_edit_button: true
+      show_history_button: true
+      show_delete_button: false
+  - scope:
+      path: ""
       type: "experiments"
     values:
       layout: experiment
@@ -67,6 +112,7 @@ defaults:
       published: true
       show_breadcrumbs: true
       show_meta: true
+      title: ''
   - scope:
       path: ""
       type: "software_and_simulation"
@@ -74,91 +120,20 @@ defaults:
       layout: post
       show_breadcrumbs: true
       show_meta: true
+      title: ''    
   - scope:
       path: ""
       type: "handbook"
     values:
       layout: post
       show_breadcrumbs: true
-      show_meta: true        
+      show_meta: true
+      title: ''     
   - scope:
       path: ""
       type: "miscellaneous"
     values:
       layout: post
       show_breadcrumbs: true
-      show_meta: true      
-
-prose:
-  media: 'assets/images/posts'
-  ignore: [
-    _config.yml,
-    .gitignore,
-    favicon.ico,
-    _sass,
-    _layouts,
-    _posts,
-  ]
-  users:
-    - login: aplowman
-      user: Adam Plowman
-    - login: JQFonseca
-      user: João Fonseca
-    - login: christopher-daniel
-      user: Christopher Daniel
-    - login: merrygoat
-      user: Peter Crowther
-    - login: mikesmic
-      user: Michael Atkinson
-    - login: nicholasbyres
-      user: Nicholas Byres
-    - login: Paloma-Hidalgo
-      user: Paloma Hidalgo
-    - login: chrisrace
-      user: Christopher Race
-  metadata:
-    collections:
-      - name: "published"
-        field:
-          element: checkbox
-          label: "Published"
-          value: true
-      - name: "title"
-        field:
-          element: "text"
-          label: "Title"
-          help: "This is the title of your post."
-          value: CURRENT_DATETIME
-      - name: "author"
-        field:
-          element: "text"
-          label: "Author"
-          value: CURRENT_USER
-      - name: "toc"
-        field:
-          element: "checkbox"
-          label: "Table of contents"
-          help: "Check this to display a table of contents with your post."
-          value: true
-    collections/_experiments:
-      - name: "published"
-        field:
-          element: checkbox
-          label: "Published"
-          value: true
-      - name: "title"
-        field:
-          element: "text"
-          label: "Title"
-          help: "This is the title of your post."
-          value: CURRENT_DATETIME
-      - name: "author"
-        field:
-          element: "text"
-          label: "Author"
-          value: CURRENT_USER      
-      - name: "analysis_code"
-        field:
-          element: "text"
-          label: "Analysis code URL"
-          help: "Add a GitHub URL here to the analysis code for this experiment."
+      show_meta: true
+      title: ''

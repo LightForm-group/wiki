@@ -141,16 +141,13 @@ body.no-scroll  {
     text-decoration: underline;
 }
 
-.sidebar-wrap .all-tags {
+.sidebar-wrap .all-tags, .sidebar-wrap .all-people {
     margin-top: 0.5rem;
 }
 
-.sidebar-wrap .all-tags a {
+.sidebar-wrap .all-tags a, .sidebar-wrap .all-people a {
     font-size: 0.875rem;
     font-family: monospace; 
-}
-
-.sidebar-wrap .all-tags a {
     display: inline-block;
     background-color: #444;
     color: #ccc;
@@ -159,7 +156,7 @@ body.no-scroll  {
     text-decoration: none;
 }
 
-.sidebar-wrap .all-tags a:hover {
+.sidebar-wrap .all-tags a:hover, .sidebar-wrap .all-people a:hover {
     text-decoration: underline;
 }
 
@@ -342,7 +339,12 @@ a.add-exp-button {
     margin-top: 2rem;
 }
 
-a.add-exp-button, a.edit-page-button, a.page-history-button {
+a.add-exp-button,
+a.edit-page-button,
+a.page-history-button,
+a.github-repo-link,
+a.delete-page-button,
+a.image-upload-link {
     background-color: #eee;
     display: inline-block;
     padding: 0.3rem 0.5rem 0.6rem;
@@ -361,7 +363,23 @@ a.page-history-button {
     background: url(/wiki/assets/images/site/history.svg);
 }
 
-a.edit-page-button, a.page-history-button {    
+a.delete-page-button {
+    background: url(/wiki/assets/images/site/delete.svg);
+}
+
+a.github-repo-link {
+    background: url(/wiki/assets/images/site/github-mark-small.svg)
+}
+
+a.image-upload-link {
+    background: url(/wiki/assets/images/site/upload_img.svg)
+}
+
+a.edit-page-button,
+a.page-history-button,
+a.github-repo-link,
+a.delete-page-button,
+a.image-upload-link {    
     background-repeat: no-repeat;
     background-color: #eee;  
     background-size: 1.3rem;
@@ -379,7 +397,12 @@ a.edit-page-button, a.page-history-button {
     padding-left: 1.5rem;
 }
 
-a.add-exp-button:hover, a.edit-page-button:hover, a.page-history-button:hover {
+a.add-exp-button:hover,
+a.edit-page-button:hover,
+a.page-history-button:hover, 
+a.github-repo-link:hover,
+a.delete-page-button:hover,
+a.image-upload-link:hover {
     text-decoration: initial;
     background-color: #ddd;
 }
@@ -455,6 +478,10 @@ a.add-exp-button:hover, a.edit-page-button:hover, a.page-history-button:hover {
     .page-manage-button-text {
         display: inline;
     }
+    
+    .page-manage-button-text.no-text {
+        display: none;
+    }
 
     .page-manage-buttons a {
         padding-left: 2rem;
@@ -473,7 +500,7 @@ a.add-exp-button:hover, a.edit-page-button:hover, a.page-history-button:hover {
     }
 
     article.main.page-wide {
-        grid-template-columns: max-content;
+        grid-template-columns: auto;
         grid-template-areas: 
         "article-header"
         "article-content";
