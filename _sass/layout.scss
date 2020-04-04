@@ -296,10 +296,14 @@ ul.inline-toc li {
     padding-left: 1px; // to stop list style marker from being cut off when using list-style-type inside.    
 }
 
-.article-content img {
+.article-content img:not([alt=Binder]) {
     display: block;
     max-width: 85%;
     margin: 1rem auto;
+}
+
+.article-content img[alt=Binder] {
+    vertical-align: text-bottom;
 }
 
 .article-content img + em {
