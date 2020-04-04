@@ -5,7 +5,7 @@ maintainer: "Adam Plowman"
 baseurl: "/wiki"
 github_user_or_organisation: lightform-group
 jupyter_notebooks_dir: "_includes/jupyter_notebooks"
-jupyter_notebooks_branch: "jupyter-notebooks"
+jupyter_notebooks_branch: "master"
 jupyter_notebooks_images: "/assets/images/jupyter_notebooks"
 markdown: kramdown
 kramdown:
