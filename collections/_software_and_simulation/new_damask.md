@@ -106,7 +106,7 @@ When running `DAMASK_spectral`, we've found the following differences between th
 ### `material.config` file
 
 - `<homegenization>` key `type` is now `mech`
-- 'coveraratio' is now 'c/a'
+- `coveraratio` is now `c/a`
 - The following `<crystallite>` output keys appear to be no longer supported (or have been renamed?):
   - `e` (total strain as Green-Lagrange tensor)
   - `ee` (elastic strain as Green-Lagrange tensor)
