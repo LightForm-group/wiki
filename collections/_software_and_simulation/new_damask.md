@@ -1,6 +1,6 @@
 ---
 title: Using DAMASK on the CSF
-author: Adam Plowman, Michael Atkinson, Pratheek Shanthraj
+author: Adam Plowman, Michael Atkinson, Pratheek Shanthraj, Guy Bowker
 tags:
   - simulation
   - csf
