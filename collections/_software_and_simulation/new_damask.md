@@ -74,7 +74,7 @@ we add the Cauchy stress (which will have a label of `sigma`), and then the von 
 ```python
 import damask
 
-f = damask.DAD5('geom_load.hdf5')
+f = damask.DADF5('geom_load.hdf5')
 
 f.add_Cauchy()
 f.add_Mises('sigma')
