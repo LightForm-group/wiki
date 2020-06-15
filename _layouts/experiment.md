@@ -1,6 +1,17 @@
 ---
 layout: post
 ---
+
+{% assign filename = page.url | split: "/" -%} 
+{% assign tut_link = "-" -%}
+{% for tut in site.tutorials -%}
+    {% assign tut_filename = tut.url | split: "/" -%}
+    {% if tut_filename[-1] == filename[-1] -%}
+        {% assign page_href = tut.url | prepend: site.baseurl %}
+        {% assign tut_link = '<a href="' | append: page_href | append: '">Link</a>' -%}
+    {% endif -%}
+{% endfor %}  
+
 <br/>
 <table class="vertical-header smaller">
   <tr>
@@ -16,6 +27,10 @@ layout: post
       -
       {% endif %}            
       </td>
+    <tr>
+      <th>Tutorial</th>
+      <td>{{ tut_link }}</td>
+    </tr>
   </tr>
 </table>
 <br/>

@@ -47,6 +47,11 @@ collections:
     index_list_pages: false
     permalink: /:collection/:name
     add_new_name: experiment
+  tutorials:
+    output: true
+    index_list_pages: true
+    permalink: /:collection/:name
+    add_new_name: tutorial    
   software_and_simulation:
     output: true
     nav_order: 3
@@ -113,6 +118,14 @@ defaults:
       show_breadcrumbs: true
       show_meta: true
       title: ''
+  - scope:
+      path: ""
+      type: "tutorials"
+    values:
+      layout: post
+      show_breadcrumbs: true
+      show_meta: true
+      title: ''    
   - scope:
       path: ""
       type: "software_and_simulation"

@@ -4,9 +4,15 @@ layout: default
 
 {% assign collec_nav_nav = page.collection %}
 {% for collec in site.collections %}
-    {% if collec.label == page.collection %}
-        {% assign collec_nav_nav = collec.nav_name %}
-    {% endif %}
+    {% if page.collection != 'tutorials' -%}
+        {% if collec.label == page.collection %}
+            {% assign breadcrumbs_link = '<a href="' | append: site.url | append: site.baseurl | append: '/' | append: collec.label | append: '">' | append: collec.nav_name | append: '</a>' -%}
+        {% endif %}
+    {% else -%}
+        {% if collec.label == 'experiments' -%}
+            {% assign breadcrumbs_link = '<a href="' | append: site.url | append: site.baseurl | append: '/' | append: collec.label | append: '">' | append: collec.nav_name | append: '</a>' -%}
+        {% endif -%}
+    {% endif -%}
 {% endfor %}
 
 {% assign article_class = 'main' %}
@@ -19,8 +25,7 @@ layout: default
 <article class="{{ article_class }}">
     <header class="article-header">
         {% if page.show_breadcrumbs %}
-        <div class="post-breadcrumbs">[<a
-                href="{{ site.url }}{{ site.baseurl }}/{{ page.collection }}">{{ collec_nav_nav }}</a>]</div>
+        <div class="post-breadcrumbs">[{{ breadcrumbs_link }}]</div>
         {% endif %}
         <h1 class="post-title">{{ page.title }}</h1>
         {% if page.show_meta %}
