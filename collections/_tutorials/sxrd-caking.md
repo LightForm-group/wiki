@@ -39,9 +39,9 @@ However, for fast acquisition data (> 10 Hz) we have a *.dat* file which contain
 pilatus100k_path_template='../../rawdata/025_2Nb_NDload_725C_15mms_23_02_2017-140829/pixi_%05d.tif'
 </MetaDataAtStart>
 &End
-path  load  temperature position
-00001 0.002761  0.157104  0.095435
-00002 0.002632  0.157179  0.095299
+path  load  temperature  position
+00001  0.002761  0.157104  0.095435
+00002  0.002632  0.157179  0.095299
 ...
 
 Select this *.dat* file and click *'Ok'*
