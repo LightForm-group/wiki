@@ -5,11 +5,11 @@ author: Christopher Daniel
 
 ## Caking diffraction pattern images using DAWN on the iCSF
 
-You will first need to contact IT services to get setup with an iCSF account. The iCSF (interactive Computational Shared Facility, 'http://ri.itservices.manchester.ac.uk/icsf/') gives us access to the University's high performance computing environment. This allows us to store and analyse our large Synchrotron X-ray Diffraction (SXRD) datasets as a group.
+You will first need to contact IT services to get setup with an iCSF account. The iCSF ([interactive Computational Shared Facility](http://ri.itservices.manchester.ac.uk/icsf/)) gives us access to the University's high performance computing environment. This allows us to store and analyse our large Synchrotron X-ray Diffraction (SXRD) datasets as a group.
 
 Before we can analyse the diffraction pattern rings for changes in phase fraction, micromechanical response and texture, we need to **cake** the data. **Caking** converts our 2-dimensional image into slices (of particular azimuthal angles) to produce a number of intensity profiles versus 2-theta angle (or pixel position). We can then investigate how the intensity peak profile of particular lattice plane peaks change in particular directions over time. We can also run a full **azimuthal integration**, which sums up the intensities around the whole image, to produce a single intensity profile versus 2-theta angle. This can then be used to calculate the phase fraction, for instance.
 
-To run the **caking** and **azimuthal integration** we have setup the program DAWN ('https://dawnsci.org/about/') on the iCSF. DAWN is a data analysis and processing program commonly used for processing synchrotron data.
+To run the **caking** and **azimuthal integration** we have setup the program [DAWN](https://dawnsci.org/about/) on the iCSF. DAWN is a data analysis and processing program commonly used for processing synchrotron data.
 
 Log onto the iCSF by opening the terminal and using the secure shell (ssh) protocol i.e. ssh -X mbcx9cd4@incline256.itservices.manchester.ac.uk
 
