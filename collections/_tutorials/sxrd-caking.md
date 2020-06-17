@@ -141,7 +141,7 @@ Then, select the *'Output Directory'*, where the data will be saved.
 
 **Run**
 
-To run the processing pipeline click on the *green play button** in the *'Data Slice View'*.
+To run the processing pipeline click on the *green play button* in the *'Data Slice View'*.
 
 A window will appear to select a directory, choose the same directory as your *'Output Directory'*.
 
@@ -163,13 +163,13 @@ sshfs -o follow_symlinks mbcx9cd4@incline.itservices.manchester.ac.uk: iCSF-Home
 
 The above example shows the settings for saving cakes for *single peak profile (SPP)* analysis, which can then be loaded into [xrdfit](https://github.com/LightForm-group/xrdfit). xrdfit is a Python package for fitting and analysing the diffraction peaks, to discern the micromechanical behaviour of the material.
 
-The key points for saving the cakes for *SPP* analysis in DAWN is that the *'X axis'* is selected as *'Angle(degrees)'* and the data is saved in *'dat'* format.
+**The key points for saving the cakes for *SPP* analysis in DAWN is that the *'X axis'* is selected as *'Angle(degrees)'* and the data is saved in *'dat'* format.**
 
 **Texture with MAUD**
 
 SXRD data can also be used to analyse changes in *texture*, using the [MAUD](http://maud.radiographema.eu) software package. A Jupyter Notebook showing how to setup MAUD in batch mode is available on our shared LightForm GitHub group - [MAUD-batch-analysis](https://github.com/LightForm-group/MAUD-batch-analysis)
 
-However, now the key points for saving the cakes for *texture* analysis in DAWN is that the *'X axis'* is selected as *'Pixel number (pixels)'* and the data is saved in *'dat'* format.
+**The key points for saving the cakes for *texture* analysis in DAWN is that the *'X axis'* is selected as *'Pixel number (pixels)'* and the data is saved in *'dat'* format.**
 
 ![](/wiki/assets/images/posts/DAWN_screenshot16.png)
 
@@ -185,7 +185,7 @@ The *'Azimuthal range'* can be left blank for a full 360 degree integration. If 
 
 *'Pixel splitting'* should be ticked. This shares the intensity between bins, which avoids step changes to the peaks and can improve single peak fitting.
 
-The *'X axis'* is selected as *'Angle(degrees)', so the intensity data will be plotted for each two-theta angle increment.
+The *'X axis'* is selected as *'Angle(degrees)'*, so the intensity data will be plotted for each two-theta angle increment.
 
 Also, make sure the *'Zeros instead of NaNs'* is ticked. If this isn't ticked it will cause problems in TOPAS.
 
