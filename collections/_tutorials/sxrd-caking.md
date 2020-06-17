@@ -5,9 +5,15 @@ author: Christopher Daniel
 
 ## Caking diffraction pattern images using DAWN on the iCSF
 
+### iCSF
+
 You will first need to contact IT services to get setup with an iCSF account. The iCSF ([interactive Computational Shared Facility](http://ri.itservices.manchester.ac.uk/icsf/)) gives us access to the University's high performance computing environment. This allows us to store and analyse our large Synchrotron X-ray Diffraction (SXRD) datasets as a group.
 
+### What is caking?
+
 Before we can analyse the diffraction pattern rings for changes in phase fraction, micromechanical response and texture, we need to **cake** the data. **Caking** converts our 2-dimensional image into slices (of particular azimuthal angles) to produce a number of intensity profiles versus 2-theta angle (or pixel position). We can then investigate how the intensity peak profile of particular lattice plane peaks change in particular directions over time. We can also run a full **azimuthal integration**, which sums up the intensities around the whole image, to produce a single intensity profile versus 2-theta angle. This can then be used to calculate the phase fraction, for instance.
+
+### Opening DAWN on the iCSF
 
 To run the **caking** and **azimuthal integration** we have setup the program [DAWN](https://dawnsci.org/about/) on the iCSF. DAWN is a data analysis and processing program commonly used for processing synchrotron data.
 
@@ -24,6 +30,8 @@ module load apps/binapps/dawn
 dawn
 
 ![](/wiki/assets/images/posts/DAWN_screenshot2.png)
+
+### Caking in DAWN
 
 This will then open the DAWN workspace. Note, we should have the *'processing'* window selected in the top right.
 
@@ -45,11 +53,11 @@ pilatus100k_path_template='../../rawdata/025_2Nb_NDload_725C_15mms_23_02_2017-14
 
 &End
 
-path  load  temperature  position
+path  load  temperature position
 
-00001  0.002761  0.157104  0.095435
+00001 0.002761  0.157104  0.095435
 
-00002  0.002632  0.157179  0.095299
+00002 0.002632  0.157179  0.095299
 
 ...
 
@@ -91,7 +99,9 @@ There are a number of options for *'Cake Remapping'*.
 
 An *'Azimuthal range'* needs to be defined, for the start and end azimuthal angles i.e. [start,end]. Zero degrees is defined as the horizontal, east direction. Here, I have selected [2.5,-357.5] since I want cakes of 5 degrees, with the first cake centred on the horizontal, east direction. Or, I could have selected [5,-355] for cakes of 10 degrees, centred on the horizontal.
 
-The *'Number of azimuthal bins'* should match the azimuthal range you have chosen. Here, I have selected 72, since I have 5 degree cakes covering the entire azimuthal range. Or, I could have selected 36 for 10 degree cakes.
+The *'Number of azimuthal bins'* should match the azimuthal range you have chosen. Here, I have selected 72, since I have 5 degree cakes covering the entire azimuthal range. Or, I could have selected 36 for 10 degree cakes. Generally, 5 degrees caking is best, since it provides a higher resolution for the subsequent analysis, particularly for texture calculation. But, if your diffraction pattern rings are spotty it helps to increase the cake width and sum over larger azimuthal angle.
+
+*'Pixel splitting'* should be ticked. This shares the intensity between bins, which avoids step changes to the peaks and can improve single peak fitting.
 
 The *'X axis'* is selected as *'Angle(degrees)'* in this case. So the intensity data will be plotted for each two-theta angle increment.
 
@@ -131,18 +141,46 @@ sshfs -o follow_symlinks mbcx9cd4@incline.itservices.manchester.ac.uk: iCSF-Home
 
 ![](/wiki/assets/images/posts/DAWN_screenshot15.png)
 
-## Notes on different file formats
+## Different file formats
+
+The above example shows the settings for saving cakes for **single peak profile (SPP)** analysis, which can then be loaded into [xrdfit](https://github.com/LightForm-group/xrdfit). xrdfit is a Python package for fitting and analysing the diffraction peaks, to discern the micromechanical behaviour of the material.
+
+The key points for saving the cakes for **SPP** analysis in DAWN is that the *'X axis'* is selected as *'Angle(degrees)'* and the data is saved in *'dat'* format.
+
+SXRD data can also be used to analyse changes in **texture**, using the [MAUD](http://maud.radiographema.eu) software package. A Jupyter Notebook showing how to setup MAUD in batch mode is available on our shared LightForm GitHub group - [MAUD-batch-analysis](https://github.com/LightForm-group/MAUD-batch-analysis)
+
+However, now the key points for saving the cakes for **texture** analysis in DAWN is that the *'X axis'* is selected as *'Pixel number (pixels)'* and the data is saved in *'dat'* format.
 
 ![](/wiki/assets/images/posts/DAWN_screenshot16.png)
 
-## Azimuthal integration
+### Azimuthal integration
+
+DAWN can also be used to provide a full azimuthal integration, which sums up the intensities around the whole image, to produce a single intensity profile versus 2-theta angle. This can then be used to give an accurate estimation of the overall phase fraction of the material, using the program [TOPAS](https://www.bruker.com/products/x-ray-diffraction-and-elemental-analysis/x-ray-diffraction/xrd-software/topas.html).
+
+Instead of cake remapping, we now select the *'Azimuthal Integration'* tool. 
 
 ![](/wiki/assets/images/posts/DAWN_screenshot17.png)
 
+The *'Azimuthal range'* can be left blank for a full 360 degree integration. If an area of the detector is to be avoided then a range is defined as [start,end].
+
+*'Pixel splitting'* should be ticked. This shares the intensity between bins, which avoids step changes to the peaks and can improve single peak fitting.
+
+The *'X axis'* is selected as *'Angle(degrees)', so the intensity data will be plotted for each two-theta angle increment.
+
+Also, make sure the *'Zeros instead of NaNs'* is ticked. If this isn't ticked it will cause problems in TOPAS.
+
 ![](/wiki/assets/images/posts/DAWN_screenshot18.png)
+
+In this case for *'Export to Text File'* we choose *'xy'* file format in *'File Extension'*, so that the data can be loaded into TOPAS.
+
+Tick the *'In separate folder'* box to group the data into one folder.
+
+Leave *'Pad with zeros'* as five, which should give a high enough number count.
+
+Then, select the *'Output Directory'*, where the data will be saved.
 
 ![](/wiki/assets/images/posts/DAWN_screenshot19.png)
 
-## Calibration
+### Calibration
 
 [TODO - insert method for calibration]
