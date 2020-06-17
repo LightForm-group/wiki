@@ -19,7 +19,8 @@ You will then be prompted to enter your password.
 
 Load the DAWN module using the following commands in the terminal; 
 
-module load apps/binapps
+module load apps/binapps/dawn
+
 dawn
 
 ![](/wiki/assets/images/posts/DAWN_screenshot2.png)
@@ -35,13 +36,21 @@ For slower acquisition data (< 1 Hz) we have *.nxs* file which will have the met
 However, for fast acquisition data (> 10 Hz) we have a *.dat* file which contains the metadata for each diffraction pattern image - because the image frame rate was too fast to store any additional data. This *.dat* file should has a couple of lines of code at the top, which instructs DAWN to load the metadata with each image and contains a file path to the rawdata i.e. the *.tiff* diffraction pattern images. Note, ../ means the parent directory.
 
 &SRS
+
 <MetaDataAtStart>
+  
 pilatus100k_path_template='../../rawdata/025_2Nb_NDload_725C_15mms_23_02_2017-140829/pixi_%05d.tif'
+
 </MetaDataAtStart>
+
 &End
+
 path  load  temperature  position
+
 00001  0.002761  0.157104  0.095435
+
 00002  0.002632  0.157179  0.095299
+
 ...
 
 Select this *.dat* file and click *'Ok'*
