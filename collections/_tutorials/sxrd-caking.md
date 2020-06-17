@@ -155,7 +155,7 @@ However, now the key points for saving the cakes for **texture** analysis in DAW
 
 ### Azimuthal integration
 
-DAWN can also be used to provide a full azimuthal integration, which sums up the intensities around the whole image, to produce a single intensity profile versus 2-theta angle. This can then be used to give an accurate estimation of the overall phase fraction of the material, using the program [TOPAS](https://www.bruker.com/products/x-ray-diffraction-and-elemental-analysis/x-ray-diffraction/xrd-software/topas.html).
+DAWN can also be used to provide a full azimuthal integration, which sums up the intensities around the whole image, to produce a single intensity profile versus 2-theta angle. This can then be used to give an accurate estimation of the overall phase fraction of the material, using the program [TOPAS](https://www.bruker.com/products/x-ray-diffraction-and-elemental-analysis/x-ray-diffraction/xrd-software/topas.html). A Jupyter Notebook showing how to setup TOPAS batch mode is available on our shared LightForm GitHub group - [TOPAS-batch-analysis](https://github.com/LightForm-group/TOPAS-batch-analysis)
 
 Instead of cake remapping, we now select the *'Azimuthal Integration'* tool. 
 
