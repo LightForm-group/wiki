@@ -19,5 +19,5 @@ Note that we don't need the `--user` option in this case (unlike when installing
 
 
 See:
- - https://stackoverflow.com/questions/51525072/global-pip-referenced-within-a-conda-environment
- - https://pip.pypa.io/en/stable/reference/pip_install/#cmdoption-t
+ - [https://stackoverflow.com/questions/51525072/global-pip-referenced-within-a-conda-environment](https://stackoverflow.com/questions/51525072/global-pip-referenced-within-a-conda-environment)
+ - [https://pip.pypa.io/en/stable/reference/pip_install/#cmdoption-t](https://pip.pypa.io/en/stable/reference/pip_install/#cmdoption-t)
