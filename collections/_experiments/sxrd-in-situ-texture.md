@@ -2,7 +2,9 @@
 published: true
 author: Christopher Daniel
 title: SXRD in-situ texture
-analysis_code: 'https://github.com/LightForm-group/MAUD-batch-analysis'
+analysis_codes:
+  - name: MAUD batch analysis
+    link: 'https://github.com/LightForm-group/MAUD-batch-analysis'
 ---
 ## Parameters
 

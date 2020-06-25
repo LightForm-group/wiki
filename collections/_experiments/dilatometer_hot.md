@@ -1,8 +1,13 @@
 ---
 title: Dilatometer hot-compression tests
 author: João Fonseca
-analysis_code: 'https://github.com/LightForm-group/Ti_dilatometer_analysis'
-analysis_code: 'https://github.com/LightForm-group/compression-dilatometer-analysis-ZrNb'
+analysis_codes:
+  - name: Ti dilatometer analysis
+    link: https://github.com/LightForm-group/Ti_dilatometer_analysis
+  - name: ZrNb dilatometer analysis
+    link: https://github.com/LightForm-group/compression-dilatometer-analysis-ZrNb
+tutorials:
+  - Tutorial for dilatometer hot-compression tests
 published: true
 ---
 
