@@ -49,12 +49,14 @@ collections:
     add_new_name: experiment
   tutorials:
     output: true
+    nav_order: 3
+    nav_name: Tutorials   
     index_list_pages: true
     permalink: /:collection/:name
     add_new_name: tutorial    
   software_and_simulation:
     output: true
-    nav_order: 3
+    nav_order: 4
     nav_name: Software & Simulation
     nav_list_pages: false
     index_list_pages: true
@@ -62,7 +64,7 @@ collections:
     add_new_name: page  
   miscellaneous: 
     output: true
-    nav_order: 4
+    nav_order: 5
     nav_name: Miscellaneous
     nav_list_pages: true
     index_list_pages: true
