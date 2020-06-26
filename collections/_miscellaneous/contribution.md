@@ -89,8 +89,8 @@ After you "commit" the changes, you'll again need to wait a couple of minutes be
 
     {% raw %}`![png]({{ site.baseurl }}{{ site.jupyter_notebooks_images }}/NOTEBOOK_NAME/output_2_1.png)`{% endraw %}.
 
-4. Move the Markdown file into the newly created `_includes/jupyter_notebooks/NOTEBOOK_NAME` directory.
-5. Move any images from the exported notebook into the newly created `assets/images/jupyter_notebooks/NOTEBOOK_NAME` directory.
+4. Copy the Markdown file and the original `.ipynb` file into the newly created `_includes/jupyter_notebooks/NOTEBOOK_NAME` directory.
+5. Copy any images from the exported notebook into the newly created `assets/images/jupyter_notebooks/NOTEBOOK_NAME` directory.
 6. Now add a new page to the collection within which you want the notebook file to appear. For instance, we could add the notebook file to the "Software & Simulation" collection by creating within the `_software_and_simulations` collection a new file with the following contents:
     
     ```markdown
