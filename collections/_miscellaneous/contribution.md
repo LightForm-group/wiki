@@ -78,6 +78,40 @@ After you "commit" the changes, you'll again need to wait a couple of minutes be
 
 ![New page on the wiki with image](/wiki/assets/images/site/new_page_final_image.png)
 
+## How to add a static version of a Jupyter notebook
+
+1. Firstly export the Jupyter notebook in the Markdown format. Make sure you run the notebook first to ensure any figures are displayed. If your notebook does include figures, exporting will produce a ZIP file that contains image files in addition to a Markdown representation of the notebook.
+2. If necessary, unzip the ZIP file.
+3. Generate a new folder within the Wiki repository under the path `_includes/jupter_notebooks`. Use the same name as the Markdown file (but without the .md extension). From now own, let's refer to this name as `NOTEBOOK_NAME`. Also create the same new folder under the path `assets/images/jupyter_notebooks` (this is where the figure files will reside).
+3. Open the markdown file and replace all image paths like:
+
+    `![png](output_2_1.png)` with the following (where `NOTEBOOK_NAME` is as previously defined):
+
+    {% raw %}`![png]({{ site.baseurl }}{{ site.jupyter_notebooks_images }}/NOTEBOOK_NAME/output_2_1.png)`{% endraw %}.
+
+4. Move the Markdown file into the newly created `_includes/jupyter_notebooks/NOTEBOOK_NAME` directory.
+5. Move any images from the exported notebook into the newly created `assets/images/jupyter_notebooks/NOTEBOOK_NAME` directory.
+6. Now add a new page to the collection within which you want the notebook file to appear. For instance, we could add the notebook file to the "Software & Simulation" collection by creating within the `_software_and_simulations` collection a new file with the following contents:
+    
+    ```markdown
+    ---
+    title: My Jupyter Notebook
+    author: Adam Plowman
+    tags:
+      - python
+      - numpy
+    toc: true
+    published: true
+    layout: jupyter_notebook
+
+    ---
+
+    {% raw %}{% include jupyter_notebooks/NOTEBOOK_NAME/NOTEBOOK_NAME.md %}{% endraw %}
+
+    ```
+
+  Note that we must use `layout: jupyter_notebook` in the YAML front matter, and the contents of the file is just an {% raw %}`{% include ... %}`{% endraw %} statement.
+
 ## Help
 
 Please contact @AdamPlowman if you have any problems with contributing to the Wiki.
