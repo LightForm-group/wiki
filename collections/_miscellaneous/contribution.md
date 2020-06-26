@@ -112,6 +112,8 @@ After you "commit" the changes, you'll again need to wait a couple of minutes be
 
   Note that we must use `layout: jupyter_notebook` in the YAML front matter, and the contents of the file is just an {% raw %}`{% include ... %}`{% endraw %} statement.
 
+Once the changes have been deployed on GitHub, you should now find a link to the notebook on the chosen collection home page. Note that a Binder link should also be included, which allows anyone to launch an interactive version of the notebook. If your notebook requires some additional Python packages to run properly, you can add them to the file `binder/requirements`.txt. (Note that this `requirements.txt` file is shared for all notebooks on the Wiki, so please try to avoid specifying package versions.)
+
 ## Help
 
 Please contact @AdamPlowman if you have any problems with contributing to the Wiki.
