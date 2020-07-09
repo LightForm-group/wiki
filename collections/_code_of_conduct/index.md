@@ -1,4 +1,11 @@
-## LightForm Code of Conduct
+---
+layout: collection_home
+title: LightForm Code of Conduct
+show_breadcrumbs: false
+show_meta: false
+published: true
+toc: true
+---
 
 The LightForm Code of Conduct is applicable to the entire LightForm team. It defines how we operate, how we work together and how we treat one another, in order to foster an inclusive work environment, in which to successfully deliver our project goals.
 

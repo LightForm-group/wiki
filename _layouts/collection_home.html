@@ -13,4 +13,7 @@ layout: post
 {% assign collec = site.collections | where: "label", page.collection | first %}
 {% assign github_new_url = github_new_url | append: collec.relative_directory %}
 
-<a href="{{ github_new_url }}" class="add-exp-button">+ add {{ collec.add_new_name }}</a>
+{% if collec.add_new_name %}
+    <a href="{{ github_new_url }}" class="add-exp-button">+ add {{ collec.add_new_name }}</a>
+{% endif %}
+

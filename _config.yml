@@ -31,6 +31,13 @@ exclude:
 
 collections_dir: collections
 collections:
+  code_of_conduct:
+    output: true
+    nav_order: 0
+    nav_name: Code of Conduct
+    nav_list_pages: false
+    index_list_pages: false
+    permalink: /:collection/:name
   handbook:
     output: true
     nav_order: 1
@@ -143,7 +150,15 @@ defaults:
       layout: post
       show_breadcrumbs: true
       show_meta: true
-      title: ''     
+      title: ''
+  - scope:
+      path: ""
+      type: "code_of_conduct"
+    values:
+      layout: post
+      show_breadcrumbs: true
+      show_meta: true
+      title: ''        
   - scope:
       path: ""
       type: "miscellaneous"
