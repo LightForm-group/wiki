@@ -1,5 +1,5 @@
 ---
-title: ESSENTIAL Checklist for new members of LightForm
+title: Checklist for new members of LightForm
 author: Adam Plowman
 published: true
 toc: true
