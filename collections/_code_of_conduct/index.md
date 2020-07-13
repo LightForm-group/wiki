@@ -27,24 +27,25 @@ A colleagues position or status will not deter others from addressing their beha
 
 Harassment and discrimination by and/or of members of our team will not be tolerated in any form. 
 
-If you have concerns regarding colleague conduct, you can choose to discuss these with LightForm Project Manager, Natalie Shannon, or a colleague external to LightForm:
+If you have concerns regarding colleague conduct, you can choose to discuss these with LightForm Project Manager or a colleague external to LightForm:
 
 <u>Contact details</u>
 
-**Natalie Shannon** (LightForm Project Manager)
+**LightForm Project Manager**
+We are currently without a project manager. During this period, João Fonseca will be trying to keep up with project management duties. This is not ideal, and we hope to have a new project manager very soon.
 
 <table class="vertical-header smaller">
   <tr>
       <th>Telephone</th>
-      <td>0161 306 4151</td>
+      <td>07825352647</td>
   </tr>
   <tr>
       <th>Email</th>
-      <td><a href="mailto:natalie.a.shannon@manchester.ac.uk">natalie.a.shannon@manchester.ac.uk</a></td>
+      <td><a href="mailto:joao.fonseca@manchester.ac.uk">joao.fonseca@manchester.ac.uk</a></td>
   </tr>
   <tr>
       <th>Office</th>
-      <td>Sackville Street Building – room C59a</td>            
+      <td>MSS D11</td>            
   </tr>
 </table>
 
@@ -105,7 +106,9 @@ We will therefore:
 -	Proactively share resources, information and expertise, 
 -	Share resources, information and expertise by utilising SLACK as an essential, inclusive group communication tool  
 
+### Publications and authorship
 
+LightForm is collaborative research group, built on the idea that if we all help each other, we can all do better work, faster. As a consequence, many people will often contribute to our research outputs like data, software and publications. Therefore, it is important that authorship is considered carefully before publication, and that all contributions are appropriately acknowledged. At the very least, authorship should be discussed explicitly with all researchers involved, including PhD students, MSc and UG students, PDRAs, experimental officers and technicians. This does not mean that helping with research automatically implies authorship on a paper. In many cases a mention in the acknowledgements section will suffice. Nevertheless, authorship should be discussed before publication, so as to avoid any misunderstandings and to avoid missing out anyone's contribution. If agreement cannot be reached, arbitration should be sought via the project manager.
 
 ### Working hours
 
