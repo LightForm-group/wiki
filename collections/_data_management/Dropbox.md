@@ -1,7 +1,8 @@
 ---
-title: 14. Data management
-author: Natalie Shannon
-order: 14
+title: Organisation of Files
+author: Peter Crowther
+tags: 
+  - data-management
 ---
 
 ![](/wiki/assets/images/posts/dropbox_folder_overview.png)
