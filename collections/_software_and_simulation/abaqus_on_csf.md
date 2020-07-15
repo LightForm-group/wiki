@@ -24,14 +24,18 @@ e.	the name of your PI/supervisor/line manager
 
 ## ssh csf3
 
-8.	Type in password when requested and press enter
+8.	Type in your password when requested and press enter
 
-9.	Type in the following command to run Abaqus CAE (the Abaqus GUI) on a compute node. Maximum time allocated for interactive use is 1 hour. 
-Ensure you enter all spaces and capitalise the V then press enter, to run Abaqus.
+9.	Type in the following module command to load the application and press enter   
+
+## module load apps/binapps/abaqus/2019
+
+10. Type this final line and ensure you enter all spaces and capitalise the V. After pressing enter Abaqus should open up.
 
 ## qrsh -cwd -V -l short abq2019 cae -mesa
+Abaqus CAE (the Abaqus GUI) should now open running from a compute node with a max time allocated for interactive use of 1 hour.
 
-10.	A similar message to that given below will appear, to tell you which compute node is running and the number of available software licenses: 
+11.	A similar message to that given below will appear, to tell you which compute node is running and the number of available software licenses: 
 
 Warning: Permanently added '[node404.pri.csf3.alces.network]:33877,[10.10.140.4]:33877' (ECDSA) to the list of known hosts
 Abaqus License Manager checked out the following license: "cae" from Flexnet server lfarm4.its.manchester.ac.uk <112 out of 119 licenses remain available>
