@@ -61,10 +61,10 @@ collections:
     index_list_pages: true
     permalink: /:collection/:name
     add_new_name: tutorial    
-  data_management:
+  data_analysis:
     output: true
     nav_order: 5
-    nav_name: Data Management
+    nav_name: Data and Analysis
     nav_list_pages: false
     index_list_pages: true
     permalink: /:collection/:name
