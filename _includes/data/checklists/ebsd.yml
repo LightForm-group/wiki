@@ -109,8 +109,17 @@ EBSD general:
             layout: FormLayout
             tooltip: A description of the material analysed. Consider adding information about the type of material and the forming process.
             children:
-                material_description:
+                material_description:                    
                     widget: PlainTextEdit
+                laue_group:
+                    widget: LineEdit
+                    label: Crystal Laue Group
+                    tooltip: The crystal laue group being analysed.
+                reflectors:
+                    widget: LineEdit
+                    label: Reflectors
+                    default: 40
+                    tooltip: The number of reflectors selected.                    
         sample_processing:
             widget: LineEdit
             label: Sample Processing Route

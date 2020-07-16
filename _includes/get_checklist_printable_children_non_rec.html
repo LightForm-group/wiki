@@ -1,0 +1,62 @@
+{% assign children = include.children %}
+{% for children_item in children %}
+    <tr data-metadata-name="{{ children_item[0] }}">
+        {% if children_item[1].widget == "Label" %}
+            <td colspan="2">{{ children_item[1].text }}</td>
+        {% else %}
+            <td>
+                {{ children_item[1].label }}
+                <div class="metadata-tooltip">{{ children_item[1].tooltip }}</div>
+            </td>
+            {% if children_item[1].widget == "ComboBox" %}
+                <td>
+                    <ul>
+                        {% for val in children_item[1].values %}
+                        {% if val %}
+                        <li>{{ val }}</li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                </td>
+            {% elsif children_item[1].widget == "GroupBox" %}
+                <td>
+                    <table class="metadata-template">
+                        {% assign sub_children = children_item[1].children %}
+                        {% for sub_children_item in sub_children %}
+                            <tr data-metadata-name="{{ sub_children_item[0] }}">
+                                {% if sub_children_item[1].widget == "Label" %}
+                                    <td colspan="2">{{ sub_children_item[1].text }}</td>
+                                {% else %}
+                                    <td>
+                                        {{ sub_children_item[1].label }}
+                                        <div class="metadata-tooltip">{{ sub_children_item[1].tooltip }}</div>
+                                    </td>
+                                    {% if sub_children_item[1].widget == "ComboBox" %}
+                                        <td>
+                                            <ul>
+                                                {% for val in sub_children_item[1].values %}
+                                                {% if val %}
+                                                <li>{{ val }}</li>
+                                                {% endif %}
+                                                {% endfor %}
+                                            </ul>
+                                        </td>
+                                    {% elsif sub_children_item[1].widget == "GroupBox" %}                
+                                        <table class="metadata-template">
+                                            {% assign sub_children = sub_children_item[1].children %}
+                                            {% include get_checklist_printable_children.html children=sub_children %}
+                                        </table>
+                                    {% else %}
+                                        <td>{{ sub_children_item[1].values }}</td>
+                                    {% endif %}
+                                {% endif %}
+                            </tr>
+                        {% endfor %}
+                    </table>
+                </td>            
+            {% else %}
+                <td>{{ children_item[1].values }}</td>
+            {% endif %}
+        {% endif %}
+    </tr>
+{% endfor %}

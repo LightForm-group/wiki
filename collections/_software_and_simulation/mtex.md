@@ -1,6 +1,7 @@
 ---
 title: Common workflows in MTEX
 author: Adam Plowman, Sumeet Mishra
+subcollection: MTEX
 ---
 
 MTEX is a Matlab tool for texture analysis. Here are some common workflows in MTEX.

@@ -10,6 +10,7 @@ jupyter_notebooks_images: "/assets/images/jupyter_notebooks"
 markdown: kramdown
 kramdown:
   input: GFM
+data_dir: _includes/data # Moved data dir to within _includes so we can access the checklists as data hashes and as files to include.
 
 # Want to include files in `_includes/code` (expected way doesn't work).
 include: 
@@ -69,9 +70,17 @@ collections:
     index_list_pages: true
     permalink: /:collection/:name
     add_new_name: page  
-  miscellaneous: 
+  theory:
     output: true
     nav_order: 5
+    nav_name: Theory
+    nav_list_pages: false
+    index_list_pages: true
+    permalink: /:collection/:name
+    add_new_name: page      
+  miscellaneous: 
+    output: true
+    nav_order: 6
     nav_name: Miscellaneous
     nav_list_pages: true
     index_list_pages: true
@@ -142,7 +151,16 @@ defaults:
       layout: post
       show_breadcrumbs: true
       show_meta: true
-      title: ''    
+      title: ''
+      subcollection: root
+  - scope:
+      path: ""
+      type: "theory"
+    values:
+      layout: post
+      show_breadcrumbs: true
+      show_meta: true
+      title: ''          
   - scope:
       path: ""
       type: "handbook"

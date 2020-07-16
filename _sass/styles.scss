@@ -316,3 +316,57 @@ table.person-info th {
     width: 5rem;
     vertical-align: top;
 }
+
+div.metadata-template-wrapper {
+
+}
+
+table.metadata-template {
+    width: 100%;
+    margin-top: 2em;
+}
+
+table.metadata-template table.metadata-template {
+    margin-top: 0;
+}
+
+table.metadata-template tr td:first-child {
+    width: 50%;
+}
+
+div.metadata-tooltip {
+    color: gray;
+    font-size: smaller;
+}
+
+ul.metadata-combo-box {
+    margin: 0.9em 0 0.5em;
+    list-style-type: none;
+    padding-left: 0.5em;
+}
+
+ul.metadata-combo-box li::before {
+    content: "\2610";
+    margin-right: 0.5em;
+    font-size: larger;
+}
+
+ul.metadata-combo-box::before {
+    content: "Select one of:";
+    position: relative;
+    top: -0.5em;    
+    left: -0.5em;
+}
+
+body.printable-metadata-template .sidebar-wrap,
+body.printable-metadata-template .sidebar-control,
+body.printable-metadata-template .page-header,
+body.printable-metadata-template .article-content > :not(.metadata-template-wrapper),
+body.printable-metadata-template .article-toc, 
+body.printable-metadata-template header.article-header {    
+    display: none;
+}
+
+h3.metadata-template-title {
+    
+}

@@ -1,0 +1,14 @@
+{% assign checklist = include.checklist %}
+{% assign exp_title_clean = include.exp_title_clean %}
+{% for chklst_dat in checklist %}
+    <div class="metadata-template-wrapper">
+        <h2>Metadata template: {{ chklst_dat[0] }}</h2>
+        {% include checklist_controls.html exp_title_clean=exp_title_clean %}        
+        <div class="metadata-template-printable-toggle">Printable</div>
+        <table class="metadata-template">
+            {% assign children = chklst_dat[1].children %}
+            {% include get_checklist_printable_children.html children=children %}
+        </table>
+    </div>
+<br />
+{% endfor %}

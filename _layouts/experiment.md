@@ -46,7 +46,11 @@ layout: post
 
 {{ content }}
 
-{{ "## Metadata template" | markdownify }}
 {% assign exp_title_clean = page.title | replace: " ", "-" | downcase | replace: "(", "_" | replace: ")", "_" -%}
-{% include checklist_controls.html exp_title_clean=exp_title_clean %}
-{% include get_checklist_formatted.html exp_title_clean=exp_title_clean %}
+
+{% for chklst in site.data.checklists %}
+  {% if chklst[0] == exp_title_clean %}
+    {% assign checklist = chklst[1] %}
+    {% include get_checklist_printable.html checklist=checklist exp_title_clean=exp_title_clean %}
+  {% endif %}
+{% endfor %}
