@@ -130,6 +130,19 @@
             });
         }
 
+        var printableBtn = document.getElementById("metadata-template-printable-toggle");
+        var printableCloseBtn = document.getElementById("metadata-template-printable-close-button");
+        printableBtn.onclick = function () {
+            var bod = document.body;
+            bod.classList.toggle("printable-metadata-template");
+            window.scrollTo({ top: 0 });
+        };
+        printableCloseBtn.onclick = function () {
+            var bod = document.body;
+            bod.classList.toggle("printable-metadata-template");
+            document.getElementById("metadata-template-heading").scrollIntoView();
+        };
+
     </script>
 </body>
 

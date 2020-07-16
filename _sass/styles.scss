@@ -318,7 +318,7 @@ table.person-info th {
 }
 
 div.metadata-template-wrapper {
-
+    position: relative;
 }
 
 table.metadata-template {
@@ -367,6 +367,46 @@ body.printable-metadata-template header.article-header {
     display: none;
 }
 
-h3.metadata-template-title {
-    
+// #metadata-template-printable-close-button {
+//     display: none;
+//     position: absolute;
+//     right: 0;
+//     top: 0;
+// }
+
+#metadata-template-printable-close-button {
+    display: none;
 }
+body.printable-metadata-template #metadata-template-printable-close-button {
+    display: block;
+}
+
+#metadata-template-tools {
+    vertical-align: middle;
+}
+
+#metadata-template-printable-toggle, #metadata-template-printable-close-button {
+    float: right;
+    vertical-align: middle;
+    background-color: lightgreen;
+    border: 1px solid green;
+    border-radius: 0.2em;
+    padding: 0.3em;    
+    cursor: pointer;
+}
+#metadata-template-printable-toggle:hover,
+#metadata-template-printable-close-button:hover {
+    background-color: rgb(163, 233, 163);
+}
+
+body.printable-metadata-template #metadata-template-printable-toggle {
+    display: none;
+}
+
+@media print { 
+    #metadata-template-printable-toggle,
+    #metadata-template-printable-close-button,
+    #metadata-template-tools { 
+       visibility: hidden; 
+    } 
+ } 

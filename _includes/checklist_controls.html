@@ -13,4 +13,4 @@
         {% assign checklist_col = checklist_col | append: ' | <a class="checklist-action delete-checklist" href="' | append: cl_delete_url | append: '">delete</a>' -%}
     {% endif -%}
 {% endfor -%}
-<span>{{ checklist_col }}</span>
+<span id="metadata-template-tools">{{ checklist_col }}</span>

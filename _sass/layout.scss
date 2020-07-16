@@ -472,6 +472,10 @@ ul.experiment-champions {
         margin-left: $sidebar-width;
     }
 
+    body.printable-metadata-template .page-main {
+        margin-left: 1em;
+    }
+    
     .page-header-content {
         justify-content: left;
         margin-left: $content-margin-medium;
