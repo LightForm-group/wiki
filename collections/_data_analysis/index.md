@@ -20,15 +20,9 @@ Open research is the principle that as well as sharing results, the methods data
 Data management is about ensuring that the data we collect is stored, collated and annotated in such a way that it can be used in the future as easily as when it is first collected.
 
 ### Organisation of Research data
-Starting out at the beginning of your work, it might seem a lot of bother to set up an organisation system. The sooner you get into the habit of organising your research data, the easier it will be.
+Starting out at the beginning of your PhD with just a few files, it might seem a lot of bother to set up an organisation system. The sooner you get into the habit of organising your research data, the easier it will be. Digital data also has to be stored carefully, since a single unpredictable event such as the failure of a storage device can result in permanganate data loss. In this section we set out guidelines for how you should be storing your data.
 
 [Organisation of research data](./organisation-of-research-data)
-
-
-### Data storage
-Digital data has to be stored carefully, since a single unpredictable event such as the failure of a storage device can result in permanganate data loss. In this section we set out guidelines for how you should be storing your data.
-
-[Data storage](./data-storage)
 
 
 ### Metadata
@@ -37,17 +31,19 @@ Raw experimental or simulation data means nothing without information about the 
 [Experimental Metadata](./experimental-metadata)
 
 
-### Sharing 5 star data
-Sharing data is not just about uploading a pdf of some raw data. In order for others to effectively reuse the data we need to be careful what we share and how we share it.
+### Uploading data to a repository
+When we publish data, we need to put it somwhere it will be accessible well into the future. For this we use a data repository. This section has details about how to upload datasets to Zenodo.
 
-[5-star Open Data](./five-star-data)
-
+[Uploading data to Zenodo](./zenodo)
 
 ## Reproducible scientific workflows for data analysis
 Our analyses are often complex which reflects the complexity of the physical properties and processes that we are analysing. It is important that we are able to produce clear and reproducible analyses so that other people can verify the work that we do. The other important reason is that it allows others to more easily build on the work we do.
-
 
 ### Writing good code
 Because our datasets are getting larger, automating our analyses has become essential rather than just nice to have. A lot of modern data analysis means programming. You don't need to be a programming expert but there are some simple things we can do to ensure that the code we write is maintainable, reproducible and shareable.
 
 [Writing good code](./writing-good-code)
+
+### Examples of good analysis workflows
+
+[Analysis workflows](./analysis-workflows)

@@ -175,3 +175,11 @@ defaults:
       show_breadcrumbs: true
       show_meta: true
       title: ''
+  - scope:
+      path: ""
+      type: "data_analysis"
+    values:
+      layout: post
+      show_breadcrumbs: true
+      show_meta: true
+      title: ''

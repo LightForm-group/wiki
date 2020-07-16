@@ -1,49 +1,33 @@
 ---
-title: Using Git
+title: Writing good code
 author: Peter Crowther
 tags:
+  - code 
   - git
   - version control
 published: true
 ---
 
-# Using Git
+Here we set out some simple steps that can make a big difference to the quality of your code. It is important that code is readable as well as just functional. Well designed readable code is much easier for you or others to understand, maintain and verify. These points are summarised from [Good enough practices in scientific computing
+](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510)
 
-Git is a free and open source distributed version control system useful for versioning textual data. This could be code or data for making a paper. Git is not so good at storing very large files or binary files as these can make the repository very large.
+### Give functions and variables meaningful names
+If your vairables are called i, j and k then it will be really hard to understand what your code is doing. Using really short variable names was a convention from mnay years ago when screens could only show 80 characters. These days it is not necessary.
 
-## Getting Git
+### Use code comments
+Place a brief explanatory comment at the start of every program to say what this script does. Give a comment at the start of each function to say what it does (it only takes a line). If your code does anything complex then add some comments next to the complex bit to say what is going on.
 
-Get git here: https://git-scm.com/
+### Use functions to break up code / dont repeat yourself
+If your code is longer than 20 lines, it is time to start breaking it up into logical subsections. Using functions allows breaking down the problem being solved into smaller chunks so it can be more easily understood. It also reduces repetition which makes code easier to maintain. If you find yourself copying and pasting sections of code and renaming varaible names then you should be using a function.
 
-## Git glossary
+### Dont reinvent the wheel
+Before you start writing code, find out if someone else has written it first. Use functions from libraries.
 
-One of the reasons people struggle to start with git is its terminology. Here is a short summary of the basic git commands.
+### Provide a simple example and test data
+If someone else wants to use your code, the easiest way to find out how it works is to run an example with test data. It also verifies that the code is working as expected.
 
-These commands work in any directory:
-* git init - start a new git repository in the current directory
-* git clone "url" - Make a local copy of the git repository at "url"
+### Use version control
+Use version control to manage code. [Instructions on how to use git](./using-git)
 
-Both of these initialise a git repository in the current directory by adding the hidden ".git" folder. This holds the git magic so don’t change or delete anything in this folder.
-
-These commands will work in an initialised git directory:
-* git status - show the status of the current directory
-* git log - show the log for recent commits in the repository
-* git add "file_name" - add "file_name" to the staging area for the next commit
-* git commit - Add the currently staged files as a commit
-* git checkout "id" - Checkout the commit with commit id = "id"
-
-These commands work when you have set up a remote:
-* git pull - Incorporates changes from a remote repository into your local repository
-* git push - Push any changes in the local repository to the remote
-
-## Git GUIs
-
-While you will occasionally need to use the command line to access advanced features, for the most part you can use a graphical interface.
-
-* I would recommend GitHub Desktop: https://desktop.github.com/ for beginners who have not used git before and only want to use basic features. It is multiplatform, free and open source.
-* For a more complete interface with nice branch visualisation I would recommend GitExtensions: https://github.com/gitextensions/gitextensions. Git extensions V3 is Windows only but V2 supports all platforms and is not that much older. It is free and open source.
-* As an alternative GitKraken is really nice though it is proprietary and some features are subscriber only: https://www.gitkraken.com
-
-## GitHub
-
-GitHub is an online service for storing remote copies of repositories. While you can use git entirely as a local version control system, the advantage of having a remote repository is that you can synchronise your work over multiple computers and collaborate with others. We use a GitHub community to keep our groups code which you can access here: https://github.com/LightForm-group
+### Submit code to a reputable DOI-issuing repository
+Once you are done with your analysis, the code you have written forms part of the anayslsis pipeline. All parts of this need to be made public so people can reproduce the work.
