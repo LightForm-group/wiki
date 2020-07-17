@@ -1,62 +1,78 @@
 {% assign page = include.page %}
 {% for collec in site.collections %}
-    {% if collec.label == page.collection %}
+    {% if collec.label == page.collection %}    
         {% if collec.index_list_pages %}
-            <ul>
-
-            {% assign all_orders = '' %}
+            
+            {% assign subcollection_names = "" | split:  ',' %}
             {% for i in collec.docs %}
-                {% if all_orders == "" %}
-                    {% assign all_orders = i.order | split:'|' %}
+                {% if i.subcollection %}                    
+                    {% assign subcollection_names = subcollection_names | push: i.subcollection%}
                 {% else %}
-                    {% assign all_orders = all_orders | join:'|' | append:'|' | append: i.order | split:'|' %}
+                    {% assign subcollection_names = subcollection_names | push: "root" %}
                 {% endif %}
             {% endfor %}
+            {% assign subcollection_names = subcollection_names | uniq %}            
+            {% for subcollec in subcollection_names %}
+                {% if subcollec != "root" %}
+                    <h1>{{ subcollec }}</h1>
+                {% endif %}
+                {% assign sub_docs = collec.docs | where: "subcollection", subcollec %}
 
-            {% assign uniq_orders = all_orders | uniq %}
-            {% capture arr_srt %}{% include sort_numeric.html array=uniq_orders %}{% endcapture %}
-            {% assign sorted_orders = arr_srt | split: '|' %}
-
-            {% for order in sorted_orders %}
-                {% assign order_num = order | plus: 0 %} {% comment %}This forces order to be a number!{% endcomment %}
-                {% assign collecs_sorted = collec.docs | where: "order", order_num | sort: 'title' %}
-                {% for collec_item in collecs_sorted %}
-                    {% assign filename = collec_item.url | split: "/" %}
-                    {% if filename[-1] != "index" %}
-                        {% comment %}
-                            If there is something wrong with the file, show the filename (and extension) without linking to the page. Also state what is wrong.
-                        {% endcomment %}
-
-                        {% assign list_item = "" %}
-                        {% assign error = "" %}
-                        {% assign title = collec_item.title %}
-                        {% if title == '' %}
-                            {% comment %}File name has no title in its YAML front matter.{% endcomment %}
-                            {% assign error = error | append: '<span class="bad-page-error no-title"><a href="/wiki/miscellaneous/contribution#how-to-add-a-new-page">Page must have "title" in the YAML front matter</a>. </span>'%}
-                        {% endif %}
-                        {% assign filename_arr = collec_item.path | split: "/" %}
-                        {% assign filename_full = filename_arr.last %}
-                        {% assign filename_ext_arr = filename_full | split: "." %}
-                        {% assign filename_ext = filename_ext_arr.last %}
-                        {% if filename_full == filename_ext %}
-                            {% comment %}File name has no extension.{% endcomment %}
-                            {% assign error = error | append: '<span class="bad-page-error bad-filename">Page file names must end in ".md" or ".html". </span>'%}
-                        {% endif %}
-
-                        {% if error == '' %}
-                            {% assign page_href = collec_item.url | prepend: site.baseurl %}
-                            {% assign list_item = '<a href="' | append: page_href | append: '">' | append: title | append: '</a>' %}
+                <ul>
+                    {% assign all_orders = '' %}
+                    {% for i in sub_docs %}
+                        {% if all_orders == "" %}
+                            {% assign all_orders = i.order | split:'|' %}
                         {% else %}
-                            {% assign github_url = "https://github.com/" | append: site.github_user_or_organisation | append: site.baseurl %}
-                            {% assign github_edit_url = github_url | append: "/edit/master/collections/" | append: collec_item.path  %}
-                            {% assign list_item = '"' | append: filename_full | append: '" ' | append: '<span class="bad-page">[' | append: error | append: '<span class="bad-page-edit"><a href="' | append: github_edit_url | append: '">Click here to edit the page</a></span>.]</span>' %}
+                            {% assign all_orders = all_orders | join:'|' | append:'|' | append: i.order | split:'|' %}
                         {% endif %}
-
-                        <li>{{ list_item }}</li>
-                    {% endif %}
-                {% endfor %}
+                    {% endfor %}            
+        
+                    {% assign uniq_orders = all_orders | uniq %}
+                    {% capture arr_srt %}{% include sort_numeric.html array=uniq_orders %}{% endcapture %}
+                    {% assign sorted_orders = arr_srt | split: '|' %}
+        
+                    {% for order in sorted_orders %}
+                        {% assign order_num = order | plus: 0 %} {% comment %}This forces order to be a number!{% endcomment %}
+                        {% assign collecs_sorted = sub_docs | where: "order", order_num | sort: 'title' %}
+                        {% for collec_item in collecs_sorted %}
+                            {% assign filename = collec_item.url | split: "/" %}
+                            {% if filename[-1] != "index" %}
+                                {% comment %}
+                                    If there is something wrong with the file, show the filename (and extension) without linking to the page. Also state what is wrong.
+                                {% endcomment %}
+        
+                                {% assign list_item = "" %}
+                                {% assign error = "" %}
+                                {% assign title = collec_item.title %}
+                                {% if title == '' %}
+                                    {% comment %}File name has no title in its YAML front matter.{% endcomment %}
+                                    {% assign error = error | append: '<span class="bad-page-error no-title"><a href="/wiki/miscellaneous/contribution#how-to-add-a-new-page">Page must have "title" in the YAML front matter</a>. </span>'%}
+                                {% endif %}
+                                {% assign filename_arr = collec_item.path | split: "/" %}
+                                {% assign filename_full = filename_arr.last %}
+                                {% assign filename_ext_arr = filename_full | split: "." %}
+                                {% assign filename_ext = filename_ext_arr.last %}
+                                {% if filename_full == filename_ext %}
+                                    {% comment %}File name has no extension.{% endcomment %}
+                                    {% assign error = error | append: '<span class="bad-page-error bad-filename">Page file names must end in ".md" or ".html". </span>'%}
+                                {% endif %}
+        
+                                {% if error == '' %}
+                                    {% assign page_href = collec_item.url | prepend: site.baseurl %}
+                                    {% assign list_item = '<a href="' | append: page_href | append: '">' | append: title | append: '</a>' %}
+                                {% else %}
+                                    {% assign github_url = "https://github.com/" | append: site.github_user_or_organisation | append: site.baseurl %}
+                                    {% assign github_edit_url = github_url | append: "/edit/master/collections/" | append: collec_item.path  %}
+                                    {% assign list_item = '"' | append: filename_full | append: '" ' | append: '<span class="bad-page">[' | append: error | append: '<span class="bad-page-edit"><a href="' | append: github_edit_url | append: '">Click here to edit the page</a></span>.]</span>' %}
+                                {% endif %}
+        
+                                <li>{{ list_item }}</li>
+                            {% endif %}
+                        {% endfor %}
+                    {% endfor %}
+                    </ul>
             {% endfor %}
-            </ul>
         {% endif %}
     {% endif %}
 {% endfor %}

@@ -4,6 +4,7 @@ author: Adam Plowman
 tags:
   - python
 published: true
+subcollection: Python
 ---
 
 **UPDATE**: Looks like there is no problem with conda detecting the correct pip as long as the shell/environment is correctly configured using `conda init`. Original below kept for posterity.

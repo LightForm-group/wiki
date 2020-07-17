@@ -5,6 +5,7 @@ toc: true
 tags:
   - python
 published: true
+subcollection: Python
 ---
 
 This is a short guide on how to develop and publish Python packages. This is just my workflow; you may wish to modify to suit your needs!
