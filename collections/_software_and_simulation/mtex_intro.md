@@ -6,6 +6,7 @@ tags:
   - MATLAB
   - EBSD
 published: true
+subcollection: MTEX
 ---
 
 # Introduction to MTEX
