@@ -127,6 +127,7 @@ defaults:
       show_breadcrumbs: true
       show_meta: true
       title: ''
+      subcollection: root      
   - scope:
       path: ""
       type: "tutorials"
@@ -135,6 +136,7 @@ defaults:
       show_breadcrumbs: true
       show_meta: true
       title: ''    
+      subcollection: root      
   - scope:
       path: ""
       type: "software_and_simulation"
@@ -142,7 +144,8 @@ defaults:
       layout: post
       show_breadcrumbs: true
       show_meta: true
-      title: ''    
+      title: ''
+      subcollection: root
   - scope:
       path: ""
       type: "handbook"
@@ -151,6 +154,7 @@ defaults:
       show_breadcrumbs: true
       show_meta: true
       title: ''
+      subcollection: root      
   - scope:
       path: ""
       type: "code_of_conduct"
@@ -158,7 +162,8 @@ defaults:
       layout: post
       show_breadcrumbs: true
       show_meta: true
-      title: ''        
+      title: ''
+      subcollection: root      
   - scope:
       path: ""
       type: "miscellaneous"
@@ -167,3 +172,4 @@ defaults:
       show_breadcrumbs: true
       show_meta: true
       title: ''
+      subcollection: root      
