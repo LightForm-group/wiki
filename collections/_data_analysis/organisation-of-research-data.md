@@ -1,8 +1,27 @@
 ---
-title: 14. Data management
-author: Natalie Shannon
-order: 14
+title: Organisation of research data
+author: Peter Crowther
 ---
+
+All modern research means collecting and processing data. As equipment has increased in complexity and computing power has increased, the amount of data collected and its complexity has also increased. In order to do good reproducible research, it is important that the data is treated correctly. If the data is not treated correctly it can result in drawing inappropriate conclusions which does not make good science.
+
+## Good practices for data organisation
+
+### Keep raw data
+The raw data from a measurement should always be kept. While it is possible to reproduce analysis of a raw dataset, it may not be possible to reproduce the original raw data. Keeping the original raw data is important so that others can reproduce the analysis that you have done.
+
+### Ensure data are backed up
+Data should be backed up, preferably in more than one location. Where possible, use university networked research data storage/Dropbox as this is much more robust than USB hard disks.
+
+### Use version control
+For any text based documents such as papers or code, use version control tools to keep a single versioned copy. This reduces the chances of losing vital work and allows easy collaboration with other people.
+
+### Further reading:
+This is a summary of the points covered in the paper [Good enough practices in scientific computing](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510)
+
+# Use of Dropbox to manage your research data
+All LightForm students have Dropbox folders set up which are shared with their supervisor. This should be the primary location used for storage of research data and analysis.
+We have set up folders with specific purposes.
 
 ![](/wiki/assets/images/posts/dropbox_folder_overview.png)
 
@@ -52,7 +71,7 @@ Example subfolder title: "PowerPoint Industrial sponsor update 05.02.19"
 
 **How literature should be saved:**
 
-You are required to use a bibliography reference manager tool for example Zotero, Endnote, Mendeley, in order to reference articles relevant to your project. 
+It is a good idea to use a bibliography reference manager tool for example Zotero, Endnote, Mendeley, in order to reference articles relevant to your project. 
 
 You can either point your reference manager to this folder for saving the reference database or export your database as a Bibtex file to here.
 
@@ -82,7 +101,7 @@ Then within each individual experiment folder, you will have a further 2 sub-sub
 
 All raw data relating to the individual experiment – there should be no data analysis presented or stored in the Raw Data subfolder.
 
-This is the data that will be used for updating to the repository on publication/thesis completion.  When completed, the experimental data can be uploaded to ZENODO using DataLight.
+This is the data that will be used for updating to the repository on publication/thesis completion.  When completed, the experimental data can be uploaded to ZENODO.
 
 You experimental data files should also be named sensibly. See guidelines on the template for your experiment.
 
@@ -104,18 +123,3 @@ Subfolders within Analysis should be given an appropriate descriptive title. Inc
 The Progress Summary Spreadsheet enables the Project Manager to see at a glance, progress to date and will be discussed at your supervision meetings. You will have only one Progress Summary sheet which you update on a month by month basis.
 
 **Please note: You will also use the Progress Summary sheet to update the team on progress at monthly theme meetings.**  
-
-
-### Keeping our information safe
-
-The University not only holds personal data about you, it also holds a vast amount of sensitive material, for example in relation to our research.
-
-The University must protect this information and ensure that it is not shared internally, or externally, with those who have no right to it. We all, therefore, have an important responsibility to keep information safe and secure.
-
-Publicising and sharing of LightForm outputs, research findings, IP, collaborations and other sensitive information is strictly prohibited.
-
-You must seek written authorisation from your supervisor in advance, regarding any communications for social media, press or broadcast media.
-
-Where appropriate we aim to make all research reproducible and accessible, subject to the constraints of the specific project, through quality science data collection and archiving procedures.
-
-
