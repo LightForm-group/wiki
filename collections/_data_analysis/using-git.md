@@ -11,7 +11,7 @@ Git is a free and open source distributed version control system useful for vers
 
 ## Getting Git
 
-Get git here: https://git-scm.com/
+Get git here: <https://git-scm.com/>
 
 ## Git glossary
 
@@ -38,10 +38,10 @@ These commands work when you have set up a remote:
 
 While you will occasionally need to use the command line to access advanced features, for the most part you can use a graphical interface.
 
-* I would recommend GitHub Desktop: https://desktop.github.com/ for beginners who have not used git before and only want to use basic features. It is multiplatform, free and open source.
-* For a more complete interface with nice branch visualisation I would recommend GitExtensions: https://github.com/gitextensions/gitextensions. Git extensions V3 is Windows only but V2 supports all platforms and is not that much older. It is free and open source.
-* As an alternative GitKraken is really nice though it is proprietary and some features are subscriber only: https://www.gitkraken.com
+* I would recommend GitHub Desktop: <https://desktop.github.com/> for beginners who have not used git before and only want to use basic features. It is multiplatform, free and open source.
+* For a more complete interface with nice branch visualisation I would recommend GitExtensions: <https://github.com/gitextensions/gitextensions>. Git extensions V3 is Windows only but V2 supports all platforms and is not that much older. It is free and open source.
+* As an alternative GitKraken is really nice though it is proprietary and some advanced features are subscriber only: <https://www.gitkraken.com>
 
 ## GitHub
 
-GitHub is an online service for storing remote copies of repositories. While you can use git entirely as a local version control system, the advantage of having a remote repository is that you can synchronise your work over multiple computers and collaborate with others. We use a GitHub community to keep our groups code which you can access here: https://github.com/LightForm-group
+GitHub is an online service for storing remote copies of repositories. While you can use git entirely as a local version control system, the advantage of having a remote repository is that you can synchronise your work over multiple computers and collaborate with others. We use a GitHub community to keep our groups code which you can access here: <https://github.com/LightForm-group>

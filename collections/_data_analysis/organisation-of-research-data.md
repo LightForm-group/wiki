@@ -71,7 +71,7 @@ Example subfolder title: "PowerPoint Industrial sponsor update 05.02.19"
 
 **How literature should be saved:**
 
-You are required to use a bibliography reference manager tool for example Zotero, Endnote, Mendeley, in order to reference articles relevant to your project. 
+It is a good idea to use a bibliography reference manager tool for example Zotero, Endnote, Mendeley, in order to reference articles relevant to your project. 
 
 You can either point your reference manager to this folder for saving the reference database or export your database as a Bibtex file to here.
 

@@ -10,6 +10,8 @@ toc: true
 
 The experimental and simulation methods we use in modern research produce huge amounts of data. This data is valuable since it takes time and resources to produce, but if this data is not stored and analysed correctly this can greatly decrease its value. In these pages, data management and producing reliable and reproducible analysis workflows are broken down into key sections which are discussed in detail. Guidelines are given in each section to set out what is expected of you to make sure that we maintain a high standard in these areas.
 
+A series of presentations were given to group members in July 2020. The slides for these can be found here: [Data management slides](./data_management.pdf)
+
 ## Introduction to open and reproducible science
 Open research is the principle that as well as sharing results, the methods data and analysis used to create the results are also shared. The principles of open research are what drives all of the considerations discussed below.
 
