@@ -5,15 +5,15 @@ author: Kevin Tanswell
 
 1.	First contact the IT Services RI team: its-ri-team@manchester.ac.uk to setup a CSF user profile and provide the following details as per: http://ri.itservices.manchester.ac.uk/csf3/getting-started/user-accounts/
 
-a.	The name of the system you wish to access – in this case the CSF
+- The name of the system you wish to access – in this case the CSF
 
-b.	A brief description of why you want to use the CSF
+- A brief description of why you want to use the CSF
 
-c.	your University IT Username (not password)
+- your University IT Username (not password)
 
-d.	your library card number
+- your library card number
 
-e.	the name of your PI/supervisor/line manager
+- the name of your PI/supervisor/line manager
 
 2.	Download X2Go client from https://wiki.x2go.org/doku.php this is a Virtual Desktop Service required to access the CSF via a remote Linux desktop.
 
