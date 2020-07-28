@@ -25,6 +25,19 @@ To make the `DAMASK_spectral` executable available in addition to the the pre-/p
 source /mnt/eps01-rds/jf01-home01/shared/load_DAMASK_processing.sh
 ```
 
+### Example pre-processing
+
+#### Input files
+DAMASK requires four text input files:
+
+[.geom file](./geom_file.md)
+
+[.load file](./load_file.md)
+
+[material.config file](./material_file.md)
+
+[numerics.config file](./numerics_file.md)
+
 ### Example simulation jobscript
 
 #### Serial job
