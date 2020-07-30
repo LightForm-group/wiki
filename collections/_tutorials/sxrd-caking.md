@@ -1,5 +1,5 @@
 ---
-title: Tutorial for caking SXRD diffraction pattern images
+title: Tutorial for DAWN to cake SXRD diffraction pattern images
 author: Christopher Daniel
 ---
 
