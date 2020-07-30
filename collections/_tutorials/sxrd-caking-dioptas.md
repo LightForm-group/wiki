@@ -1,5 +1,5 @@
 ---
-title: Tutorial for Dioptas and pyFAI to cake SXRD diffraction pattern images
+title: Tutorial for Dioptas and PyFAI to cake SXRD diffraction pattern images
 author: Christopher Daniel
 ---
 
@@ -67,4 +67,4 @@ Therefore, no need to change any of the other values.
 
 Click 'Refine' to run the refinement.
 
-** Save as calibration as .poni file ** 
+** Save calibration as .poni file ** 
