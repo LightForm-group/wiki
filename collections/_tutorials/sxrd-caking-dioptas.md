@@ -31,7 +31,7 @@ Load the Dioptas module using the following commands in the terminal;
 
 ### Creating a .poni calibration file in Dioptas
 
-** Start Values **
+**Start Values**
 
 This will then open the Dioptas graphical user interface (GUI).
 
@@ -47,7 +47,7 @@ Set pixel width and height (e.g. 296 um x 296 um)
 
 Select calibrant (e.g. CeO2)
 
-** Peak Selection **
+**Peak Selection**
 
 Untick automatic increase.
 
@@ -57,14 +57,14 @@ Choose number of rings (e.g. 10).
 
 Then click on the map to select some of the rings.
 
-** Refinement Options **
+**Refinement Options**
 
 Make sure automatic refinement is ticked.
 
 Therefore, no need to change any of the other values.
 
-** Run Refinement **
+**Run Refinement**
 
 Click 'Refine' to run the refinement.
 
-** Save calibration as .poni file ** 
+**Save calibration as .poni file** 
