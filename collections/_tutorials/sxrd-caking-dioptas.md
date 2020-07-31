@@ -15,7 +15,7 @@ Before we can analyse the diffraction pattern rings for changes in phase fractio
 
 ### Opening Dioptas on the iCSF
 
-To run the *caking* and *azimuthal integration* we have setup the program [Dioptas](http://www.clemensprescher.com/programs/dioptas) on the iCSF. Dioptas is a python-based data analysis and processing program used for processing synchrotron data and developed at the DESY beamline in Germany.
+To run the *caking* and *azimuthal integration* we have setup the program [Dioptas](http://www.clemensprescher.com/programs/dioptas) on the iCSF. Dioptas is a python-based data analysis and processing program used for processing synchrotron data. The program was developed at the DESY beamline in Germany. It can do the same job as DAWN, but is slightly easier to use and once the calibration files are setup the caking and azimuthal integration can be automated using a python script and the PyFAI package.
 
 Log onto the iCSF by opening the terminal and using the secure shell (ssh) protocol; 
 
@@ -67,4 +67,8 @@ Therefore, no need to change any of the other values.
 
 Click 'Refine' to run the refinement.
 
-**Save calibration as .poni file** 
+**Save calibration as .poni file**
+
+### Caking and Azimuthal Integration using PyFAI
+
+[TODO]
