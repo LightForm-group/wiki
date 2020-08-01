@@ -19,13 +19,13 @@ To produce nice looking figures in MTEX the default settings need to be changed.
 
 The default MTEX fontsize of the pole figures are too small for journal figures. The fontsize is a function of the figure size.
 
-```
+```matlab
 fontSize = round(15 * ppi/100);
 ```
 
 You can either increase this value, or we suggest commenting this line out (% means comment in MATLAB) and then setting the default font size in the line below.
 
-```
+```matlab
 fontSize = 35;
 ```
 
@@ -33,7 +33,7 @@ fontSize = 35;
 
 The default annotations in MTEX cover the pole figure data. We can remove these by uncommenting this line.
 
-```
+```matlab
 pfAnnotations = @(varargin) [];
 ```
 
@@ -43,7 +43,7 @@ and then reapplying the annotations.
 
 To fit in the new annotations, we need to change the spacing of the pole figures. The value 30 works well to leave room between the individual pole figures. The value 50 is needed to leave enough room at the edge of the plot.
 
-```
+```matlab
 setMTEXpref('outerPlotSpacing',50);
 setMTEXpref('innerPlotSpacing',30);
 ```
@@ -52,7 +52,7 @@ setMTEXpref('innerPlotSpacing',30);
 
 The defualt colour map for MTEX is rainbow. This is not ideal since it is not perceptually uniform, which causes problems when printing figures in black and white, or for people who are colour blind. A much better option is the viridis colour (called 'parula' in MATLAB), but others are available if you're looking for something different.
 
-```
+```matlab
 setMTEXpref('defaultColorMap','parula');
 ```
 
@@ -62,7 +62,7 @@ The `phi2sections.m file` is located in the `plotting` folder within the MTEX pa
 
 To change the size of the values and fonts on the ODF slices, lines 110-113 need deleting and the following should be added;
 
-```
+```matlab
 % plot data
 h = plot(v,data{:},oS.sR,...
   'parent',ax,'projection','plain','xAxisDirection','east',...
