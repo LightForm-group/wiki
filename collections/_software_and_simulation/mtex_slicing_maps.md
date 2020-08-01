@@ -1,5 +1,5 @@
 ---
-title: Slicing maps and plotting texture variation in MTEX
+title: Slicing maps and plotting texture variation
 author: Christopher Daniel
 tags:
   - MTEX
@@ -9,7 +9,7 @@ published: true
 subcollection: MTEX
 ---
 
-# Slicing maps and plotting texture variation in MTEX
+# Slicing maps and plotting texture variation
 
 ## Selecting a Sub-Region
 
