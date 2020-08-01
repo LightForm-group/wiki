@@ -1,5 +1,5 @@
 ---
-title: Producing Nice Looking Figures in MTEX
+title: Producing nice looking figures in MTEX
 author: Christopher Daniel
 tags:
   - MTEX
@@ -9,7 +9,7 @@ published: true
 subcollection: MTEX
 ---
 
-# Producing Nice Looking Figures in MTEX
+# Producing nice looking figures in MTEX
 
 ## Changes to mtex_settings.m
 
