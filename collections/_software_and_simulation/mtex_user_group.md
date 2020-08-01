@@ -45,7 +45,7 @@ The MTEX User Group meeting will be held once a month at 10.00am - 11.00am, with
 
 The meeting calendar can be viewed here - https://lightform-group.github.io/wiki/
 
-## Meeting Record
+**Meeting Record**
 
 22-07-2020 : 'MTEX USer Group Introduction' by Christopher Daniel and  'Using MTEX to Visualise Crystal Orientations' by Nick Byres 
 19-08-2020 : 'Slicing EBSD Maps and Separating Different Texture Components' by Nick Byres.
@@ -53,6 +53,6 @@ The meeting calendar can be viewed here - https://lightform-group.github.io/wiki
 
 ## Organisers
 
-The current organisers of the MTEX User Group are Christopher Daniel christopher.daniel@manchester.ac.uk, Wayne Heatman wayne.heatman@manchester.ac.uk and Nick Byres nicholas.byres@postgrad.manchester.ac.uk. 
+The current organisers of the MTEX User Group are [Christopher Daniel](https://lightform.org.uk/people/dr-christopher-stuart-daniel) christopher.daniel@manchester.ac.uk, [Wayne Heatman](https://lightform.org.uk/people/wayne-heatman) wayne.heatman@manchester.ac.uk and [Nick Byres](https://lightform.org.uk/people/nicholas-byres) nicholas.byres@postgrad.manchester.ac.uk.
 
-Please feel free to contact us if you have something interesting to present at our next meeting, or if you need help contributing to this Wiki.
+*Please feel free to contact us if you have something interesting to present at our next meeting, or if you need help contributing to this Wiki.*
