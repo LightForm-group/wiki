@@ -11,9 +11,9 @@ subcollection: MTEX
 
 # Producing nice looking figures in MTEX
 
-## Changes to mtex_settings.m
-
 To produce nice looking figures in MTEX the default settings need to be changed. Unfortunately, this needs to be done each time you download a new version of MTEX. The lines where these changes are located also change each version. The current changes apply to version 5.2.8
+
+## Changes to mtex_settings.m
 
 **Change the fontsize**
 
