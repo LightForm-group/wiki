@@ -16,14 +16,14 @@ subcollection: MTEX
 The aim of the the MTEX User Group is to support anyone at Manchester who uses or will be using MTEX to analyse their EBSD, X-ray, Synchrotron or Neutron Diffraction data. We aim to do this by;
 
 - **Supporting new users with more documentation and example code.** The documentation will be collated on this LightForm Wiki page. Example code will be included in the documentation, either written within the page, or as links to a GitHub repository.
-- **Keeping up-to-date with the latest methods for complex analyses.** Every month we will have a presentation from one of our users about how they are using MTEX to analyse their data, or to present a particular MTEX concept. This will provide the group with greater insight into the MTEX features. We also aim to foster collaboration within the group, by discussing what projects our users are currently working.
+- **Keeping up-to-date with the latest methods for complex analyses.** Every month we will have a presentation from one of our users about how they are using MTEX to analyse their data, or to present a particular MTEX concept, to provide the group with greater insight into the MTEX features. We also aim to foster collaboration within the group, by discussing what projects our users are currently working.
 - **Helping troubleshoot users problems.** There will be support provided during the meeting, to see if our user group can offer any solutions to solve the problem. We also have a #mtex Slack channel where users can post their issues for input from the entire group.
 
 ## Useful Links
 
 **MTEX User Group Support**
 
-- [LightForm Wiki](https://lightform-group.github.io/wiki/software_and_simulation/) : We will record documentation about particular analyses that have been done at Manchester on the Wiki. This will be continually updated. Example code will be included in the documentation, either written within the page, or as links to a GitHub repository. We hope that this will provide a resource for new users to quickly get up to speed with MTEX and to build on what has already been done at Manchester. We also encourage our users to also contribute their novel techniques to the documentation on the MTEX site.
+- [LightForm Wiki](https://lightform-group.github.io/wiki/software_and_simulation/) : We will record documentation about particular analyses that have been done at Manchester on the Wiki. This will be continually updated. Example code will be included in the documentation, either written within the page, or as links to a GitHub repository. We hope that this will provide a resource for new users to quickly get up to speed with MTEX and to build on what has already been done at Manchester. We also encourage our users to contribute their novel techniques to the documentation on the main MTEX site.
 - [Presentations and Meeting Minutes](https://www.dropbox.com/sh/rslr5wpnjo8roqc/AADr1_nmn2UcN_7diF8Ss38Ga?dl=0) : We will keep a record of any previous meeting's presentations and minutes on Dropbox.
 - [#mtex Slack Channel](https://join.slack.com/t/ebsdmanchester/shared_invite/zt-dlb2m3b9-QkfqAYpERzV15hRoIFUjSA) : Our #mtex Slack Channel is hosted by the EBSD User Group, please click on the link to join. Please post any questions or updates related to MTEX here and our users will be quick to respond to help out. 
 
@@ -33,7 +33,7 @@ There also currently exists great suppoort and documentation from Ralf and the w
 
 - [MTEX Website](https://mtex-toolbox.github.io) : This is the best resource to learn about MTEX, there is a great amount of documentation and examples available and the site is being continually updated.
 - [MTEX Forum](https://groups.google.com/forum/?fromgroups=#!forum/mtexmail) : Please sign up to the MTEX google forum, where you can view a record of past issues from the wider MTEX community. You can also opt to receive email updates containing a summary of users issues and Ralf's solutuions.
-- [MTEX Community Scripts](https://gist.github.com/search?utf8=✓&q=%23mtexScript) : A collection of MTEX scripts from the wider community is now being shared and collated on GitHub Gist. This is a good place to check for more complex analysis code.
+- [MTEX Community Scripts](https://gist.github.com/search?utf8=✓&q=%23mtexScript) : A collection of MTEX scripts from the wider community is now being shared and collated on GitHub Gist. This is a good place to check out more complex analysis code.
 
 ## Meetings
 
