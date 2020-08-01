@@ -25,7 +25,7 @@ The aim of the the MTEX User Group is to support anyone at Manchester who uses o
 
 - [LightForm Wiki https](https://lightform-group.github.io/wiki/software_and_simulation/) : We will record documentation about particular analyses that have been done at Manchester on the Wiki. This will be continually updated. Example code will be included in the documentation, either written within the page, or as links to a GitHub repository. We hope that this will provide a resource for new users to quickly get up to speed with MTEX and to build on what has already been done at Manchester. Where possible we also encourage our users to also contribute their novel techniques to the documentation on the MTEX site.
 - [Presentations and Meeting Minutes](https://www.dropbox.com/sh/rslr5wpnjo8roqc/AADr1_nmn2UcN_7diF8Ss38Ga?dl=0) : We will keep a record of any previous meeting's presentations and minutes on Dropbox.
-- [#mtex Slack Channel on the EBSD User Group](https://join.slack.com/t/ebsdmanchester/shared_invite/zt-dlb2m3b9-QkfqAYpERzV15hRoIFUjSA)) : Please post any questions or updates related to MTEX here and our users will be quick to respond to help out. 
+- [#mtex Slack Channel on the EBSD User Group](https://join.slack.com/t/ebsdmanchester/shared_invite/zt-dlb2m3b9-QkfqAYpERzV15hRoIFUjSA) : Please post any questions or updates related to MTEX here and our users will be quick to respond to help out. 
 
 **MTEX Support**
 
@@ -45,7 +45,7 @@ The MTEX User Group meeting will be held once a month at 10.00am - 11.00am, with
 
 The meeting calendar can be viewed here - https://lightform-group.github.io/wiki/
 
-**Meeting Record**
+*Meeting Record*
 
 22-07-2020 : 'MTEX USer Group Introduction' by Christopher Daniel and  'Using MTEX to Visualise Crystal Orientations' by Nick Byres
 
