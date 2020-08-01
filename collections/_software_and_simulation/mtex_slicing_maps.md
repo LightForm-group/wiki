@@ -1,5 +1,5 @@
 ---
-title: Slicing Maps and Plotting Texture Variation
+title: Slicing maps and plotting texture variation in MTEX
 author: Christopher Daniel
 tags:
   - MTEX
@@ -9,13 +9,14 @@ published: true
 subcollection: MTEX
 ---
 
-# Slicing Maps and Plotting Texture Variation
+# Slicing maps and plotting texture variation in MTEX
 
 ## Selecting a Sub-Region
 
 An initial plot of the EBSD map can help to determine the x and y points which define the sub-region region. The `inpolygon` function is used to define the points that lie within the region.
 
-```x_top = 0
+```
+x_top = 0
 y_left = 0
 x_bottom = 100
 y_right = 100
@@ -33,7 +34,8 @@ The orientations from the cropped map can then be used to plot pole figures, ODF
 
 The map can also be exported to ctf using:
 
-```ebsd_cropped.export(‘myFile.ctf’)
+```
+ebsd_cropped.export(‘myFile.ctf’)
 ```
 
 ## Slicing a Map into Strips
@@ -42,7 +44,8 @@ To slice a map into strips, the x,y positions need to be defined and iterated th
 
 An example script used to do this is given below;
 
-```num_strips = 10; % number of strips to cut the map into (resolution)
+```
+num_strips = 10; % number of strips to cut the map into (resolution)
 
 % define the size of the EBSD map
 ebsd_grid = ebsd.gridify;
