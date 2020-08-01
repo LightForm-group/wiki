@@ -15,7 +15,7 @@ subcollection: MTEX
 
 An initial plot of the EBSD map can help to determine the x and y points which define the sub-region region. The `inpolygon` function is used to define the points that lie within the region.
 
-```
+```matlab
 x_top = 0
 y_left = 0
 x_bottom = 100
@@ -34,7 +34,7 @@ The orientations from the cropped map can then be used to plot pole figures, ODF
 
 The map can also be exported to ctf using:
 
-```
+```matlab
 ebsd_cropped.export(‘myFile.ctf’)
 ```
 
@@ -44,7 +44,7 @@ To slice a map into strips, the x,y positions need to be defined and iterated th
 
 An example script used to do this is given below;
 
-```
+```matlab
 num_strips = 10; % number of strips to cut the map into (resolution)
 
 % define the size of the EBSD map
