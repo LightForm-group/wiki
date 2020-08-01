@@ -1,5 +1,5 @@
 ---
-title: Producing nice looking figures in MTEX
+title: Producing nice looking figures
 author: Christopher Daniel
 tags:
   - MTEX
@@ -9,7 +9,7 @@ published: true
 subcollection: MTEX
 ---
 
-# Producing nice looking figures in MTEX
+# Producing nice looking figures
 
 To produce nice looking figures in MTEX the default settings need to be changed. Unfortunately, this needs to be done each time you download a new version of MTEX. The lines where these changes are located also change each version. The current changes apply to version 5.2.8
 
