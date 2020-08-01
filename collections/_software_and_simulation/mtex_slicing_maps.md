@@ -26,13 +26,15 @@ y_width = y_right-y_left
 region = [x_top, y_left, x_width, y_width];
 condition = inpolygon(ebsd,region);
 ebsd_cropped = ebsd(condition);
-ori_cropped = ebsd_cropped('Ti-Hex').orientations```
+ori_cropped = ebsd_cropped('Ti-Hex').orientations
+```
 
 The orientations from the cropped map can then be used to plot pole figures, ODFs, etc.
 
 The map can also be exported to ctf using:
 
-```ebsd_cropped.export(‘myFile.ctf’)```
+```ebsd_cropped.export(‘myFile.ctf’)
+```
 
 ## Slicing a Map into Strips
 
@@ -99,7 +101,8 @@ for strip_index = 0:num_strips-1
     outputFileName = strcat(analysis_path,sample_name,'_IPF_map_strip_',num2str(strip_index))
     IPF_map_plot(phase, ebsd_cutmap, outputFileName, visible)
     
-end``` 
+end
+``` 
 
 ## Example Code
 
