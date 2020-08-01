@@ -11,7 +11,7 @@ subcollection: MTEX
 
 # Slicing maps and plotting texture variation
 
-## Selecting a Sub-Region
+## Selecting a sub-region
 
 An initial plot of the EBSD map can help to determine the x and y points which define the sub-region region. The `inpolygon` function is used to define the points that lie within the region.
 
@@ -38,7 +38,7 @@ The map can also be exported to ctf using:
 ebsd_cropped.export(‘myFile.ctf’)
 ```
 
-## Slicing a Map into Strips
+## Slicing a map into strips
 
 To slice a map into strips, the x,y positions need to be defined and iterated through, with the maps sequentially saved.
 
@@ -107,10 +107,8 @@ for strip_index = 0:num_strips-1
 end
 ``` 
 
-## Example Code
+## Example code
 
-An example analysis for slicing EBSD maps into strips and plotting the texture variation is available on GitHub via the link;
-
-https://github.com/LightForm-group/MTEX-texture-slice-analysis
+An example analysis for slicing EBSD maps into strips and plotting the texture variation is available [here on GitHub](https://github.com/LightForm-group/MTEX-texture-slice-analysis)
 
 This example shows the texture variation across a Ti compression sample, outputting maps, pole figures and ODFs for the different strips, as well as plotting the variation of different texture strength values. The code allows the user to choose any number of strips and select the orientation of those strips. This code includes fixes for any negative x or y values that might result due to rotation of the data. 
