@@ -39,7 +39,7 @@ There also currently exists great suppoort and documentation from Ralf and the w
 
 The MTEX User Group meeting will be held once a month at 10.00am - 11.00am, with the aim to share our MTEX analyses in a relaxed and informal environment. The meetings consist of;
 
-1. A **presentation** from one of our users that will introduce a new analysis, concept, or way of working with MTEX. The presentation can be in any format, such as powerpoint or even working through some example code. *Please let us know if you would like to be present at the next meeting.*
+1. A **presentation** from one of our users that will introduce a new analysis, concept, or way of working with MTEX. The presentation can be in any format, such as powerpoint or even working through some example code. *Please let us know if you would like to present at the next meeting.*
 2. An **overview of current projects** will share what everyone is currently working on and provide opportunity for users to help each other out and collaborate. 
 3. A **troubleshooting** session will give an opportunity to discuss any problems, allowing other users to suggest their solutions, or an 'expert' can nominate themselves to take a look after the meeting.
 
