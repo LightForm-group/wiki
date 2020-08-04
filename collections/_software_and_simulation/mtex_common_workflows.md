@@ -1,6 +1,6 @@
 ---
 title: Common workflows in MTEX
-author: Adam Plowman, Sumeet Mishra, Christopher Daniel
+author: Adam Plowman, Sumeet Mishra, Christopher Daniel, Nicholas Byres
 subcollection: MTEX
 ---
 
@@ -8,25 +8,50 @@ MTEX is a Matlab tool for texture analysis. Here are some common workflows in MT
 
 ## Rotating data
 
-It is easy to get confused with the crystal and sample orientations in MTEX. When starting off using MTEX, it can be useful to first check the results with Aztec Channel 5 or Aztec Crystal, to check they agree.
+Each EBSD data point has various meta-data associated with it. Texture concerns the distribution of orientations in 3D space and of primary importance are the orientation data, represented by three Euler angles, and the spatial data represented by 'XY' coordinates in Cartesian space. MTEX can deal with these data independently. 
 
-There are different ways to define the rolling directions and apply rotations to the data, these are explained here.
+Firstly we must ensure the crystal orientations, i.e. the Euler angles, are with respect to the accepted normal specimen coordinate system and not some arbitrary coordinate system. This means a rotation may need to be applied to the orientation data. At this point, you must know the default X and Y directions of the microscope used to obtain your data, and the orientation of your specimen when it was placed into the microsope - and thus the orientation of the acquisition surface.
 
-The usual convention for a rolled sample is that X = RD, Y = TD, Z =  ND. And the typical convention for pole figures is to have RD (x axis) NORTH, and TD (y axis) EAST, which is done by setting ND (z axis) into the plane.
+The usual convention for a rolled sample is that X is alligned with RD, Y with TD and Z with ND. If your sample was placed into the microscope with this orientation, there is no need to apply a rotation to the orientation data. However, if the acquisition surface was different to this i.e. with RD in Y and TD in Z, a rotation must be applied. In this instance the rotation will be phi1 = 0, PHI = -90 and phi2 = -90.
+
+To do this the following syntax can be used:
+
+```matlab
+rot = rotation('Euler', 0*degree, -90*degree, -90*degree);
+ebsd = rotate(ebsd,rot,'keepXY'); % rotate the orientation data
+ebsd = rotate(ebsd,90*degree,'keepEuler') % rotate the spatial data
+```
+
+The flag 'keepXY' that is being passed to the 'rotate' command, ensures MTEX only rotates the orientation data and not the spatial data. The flag 'keepEuler' can be used in the same manner so that the second rotation only rotates the spatial data.
+
+To visualise your data in a map that is aligned as it were in the microscope, you can define the plotting conventions by:
+
+```matlab
+% plotting convention
+setMTEXpref('xAxisDirection','east');
+setMTEXpref('zAxisDirection','intoPlane');
+```
+
+However, the plotting convention affects both the plotting of maps AND pole figures. As long as our orientation data is in line with convention i.e. with the correct rotation applied, the above plotting convention would result in a pole figure that was plotted with RD east and TD south (I think!), which is not the normal convention. It is possible to change the plotting convention so that 'X' and 'Y' (and therefore RD and TD) are in the correct locations on the pole figure using the same format:
 
 ```matlab
 % plotting convention
 setMTEXpref('xAxisDirection','north');
-setMTEXpref('zAxisDirection','intoPlane');
+setMTEXpref('yAxisDirection','east');
 ```
 
-An example of applying a rotation to the orientation and spatial data is shown here. In this case, when the EBSD data was collected in the SEM microscope, the sample was aligned with RD out-of-plane, TD horizontal and ND vertical. The sample acquisition surface has X (RD) horizontal, Y (TD) vertical and Z (ND) out-of plane, so we need to apply a phi_1 = 90, PHI = 90 and phi_2 = 0 rotation to realign the Euler angle reference frame for the orientation data. We apply the command `keepXY` to keep the map coordinates as they are and to only change the Euler angle reference frame. However, if our spatial data (the map) also needs to be rotated, we can do that too. We apply the command `keepEuler` to preserve the Euler angles. By changing these values we can be sure that the orientations shown in our pole figures match with the ODF, and that our map is orientated as we would like.
+Changing the plotting convention will rotate your orientation data with respect to the 2D plane of the pole figure plot - but not with respect to the specimen coordinate system, as this will thuse be rotated with orientation data. This can be a source of confusion when first looking at texture data in MTEX. It is advised to check your textures against Aztec analyses to ensure your definitions are correct.
+
+Once you have established your orientation data with respect to the correct specimen coordinate system - it can be useful to define the directions in MTEX using the following:
 
 ```matlab
-rot = rotation('Euler', 90*degree, 90*degree, 0*degree);
-ebsd = rotate(ebsd,rot,'keepXY'); % rotate the orientation data
-ebsd = rotate(ebsd,90*degree,'keepEuler') % rotate the spatial data
+% as per convention
+RD = vector3d.X; 
+TD = vector3d.Y;
+ND = vector3d.Z;
 ```
+
+You can then use these definitions to define model orientations for example, without confusing vector directions etc.
 
 ## Generating representative textures
 
