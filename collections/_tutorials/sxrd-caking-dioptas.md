@@ -73,7 +73,7 @@ Click 'Refine' to run the refinement.
 
 ### Caking and Azimuthal Integration using PyFAI
 
-Dioptas uses elements of FabIO(https://pythonhosted.org/fabio/) and PyFAI(https://pyfai.readthedocs.io/en/latest/) to read in the diffraction images and to perform parts of the calibration. Dioptas also uses PyFAI to perform image integration. However, it is easy to setup a python script using PyFAI to perform the caking or a full azimuthal integration on a set of diffraction image data. A notebook explaining how to do this and the features of PyFAI is available on this [link](https://github.com/LightForm-group/pyFAI-integration-caking). Some interesting videos explaining how PyFAI works are available on this [link](http://www.silx.org/doc/pyFAI/dev/index.html#).
+Dioptas uses elements of [FabIO](https://pythonhosted.org/fabio/) and [PyFAI](https://pyfai.readthedocs.io/en/latest/) to read in the diffraction images and to perform parts of the calibration. Dioptas also uses PyFAI to perform image integration. However, it is easy to setup a python script using PyFAI to perform the caking or a full azimuthal integration on a set of diffraction image data. A notebook explaining how to do this and the features of PyFAI is available on this [link](https://github.com/LightForm-group/pyFAI-integration-caking). Some interesting videos explaining how PyFAI works are available on this [link](http://www.silx.org/doc/pyFAI/dev/index.html#).
 
 **Load Calibration**
 
