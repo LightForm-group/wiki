@@ -15,11 +15,13 @@ Before we can analyse the diffraction pattern rings for changes in phase fractio
 
 ### Opening Dioptas on the iCSF
 
-To run the *caking* and *azimuthal integration* we have setup the program [Dioptas](http://www.clemensprescher.com/programs/dioptas) on the iCSF. Dioptas is a python-based data analysis and processing program used for processing synchrotron data. The program was developed at the DESY beamline in Germany. It can do the same job as DAWN, but is slightly easier to use and once the calibration files are setup the caking and azimuthal integration can be automated using a python script and the PyFAI package.
+To run the *caking* and *azimuthal integration* we have setup the program [Dioptas](http://www.clemensprescher.com/programs/dioptas) on the iCSF. Dioptas is a python-based data analysis and processing program used for processing synchrotron data. The program was developed at the DESY beamline in Germany. It can do the same job as DAWN, but is slightly easier to use and once the calibration files are setup the caking and azimuthal integration can be automated using a python script and the [PyFAI](https://pyfai.readthedocs.io/en/latest/) package.
 
 Log onto the iCSF by opening the terminal and using the secure shell (ssh) protocol; 
 
+```bash
 ssh -X mbcx9cd4@incline256.itservices.manchester.ac.uk
+```
 
 You will then be prompted to enter your password.
 
@@ -71,4 +73,85 @@ Click 'Refine' to run the refinement.
 
 ### Caking and Azimuthal Integration using PyFAI
 
-[TODO]
+Dioptas uses elements of FabIO(https://pythonhosted.org/fabio/) and PyFAI(https://pyfai.readthedocs.io/en/latest/) to read in the diffraction images and to perform parts of the calibration. Dioptas also uses PyFAI to perform image integration. However, it is easy to setup a python script using PyFAI to perform the caking or a full azimuthal integration on a set of diffraction image data. A notebook explaining how to do this and the features of PyFAI is available on this [link](https://github.com/LightForm-group/pyFAI-integration-caking). Some interesting videos explaining how PyFAI works are available on this [link](http://www.silx.org/doc/pyFAI/dev/index.html#).
+
+**Load Calibration**
+
+First, we load the .poni calibration file, which contains information about the beamline setup. We load an azimuthal integrator object or ai, which we will use to perform an azimuthal integration or caking to the rest of our as-yet 'uncalibrated' data.
+
+```python
+ai = pyFAI.load("calibration/DLS_CeO2_1200mm.poni")
+```
+
+**Azimuthal Integration**
+
+An azimuthal integration can be performed using the `integrate1d` function.
+
+* The number of points in 2-theta is defined by the user.
+* The azimuthal range runs from -180 to 180, or -pi to pi, rather than 0 to 360 as in DAWN.
+* An output .dat file can be saved, which contains a header of metadata. 
+* The result is returned as a numpy array of 2-theta and intensity.
+
+An azimuthal integration can be performed like this.
+
+```python
+result = ai.integrate1d(pattern_image_array,
+                        npt=10000,
+                        azimuth_range=(-180,180),
+                        unit="2th_deg",
+                        correctSolidAngle=True,
+                        polarization_factor=0.99,
+                        method='full_csr',
+                        filename="analysis/integrated.dat")
+```
+
+**Caking**
+
+The `integrate2d` function is designed for caking of the data. The input arguments are similar to above, but now a number of azimuthal cakes can be chosen.
+
+The following script uses a loop to iterate through some images, create an array for the data and then save it as a text file.
+
+```python
+# Supress warnings when TIFFs are read
+logging.getLogger("fabio.TiffIO").setLevel(logging.ERROR)
+
+# user inputs
+number_of_points = 10000
+number_of_cakes = 36
+
+# get a list of the files
+image_list = sorted(pathlib.Path("data/").glob("pixium*"))
+
+for image_path in image_list:
+    # create empty array
+    caked_data = np.zeros((number_of_cakes + 1, number_of_points))
+    
+    # create an image array and cake the data
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore")
+        image = fabio.open(image_path)
+    pattern_image_array = image.data
+    result = ai.integrate2d(pattern_image_array,
+                            number_of_points,
+                            number_of_cakes,
+                            unit="2th_deg",
+                            polarization_factor=0.99,
+                            method='full_csr')  
+    
+    # write the caked result to the array
+    for cake_number in range(number_of_cakes):
+        if cake_number == 0:
+            caked_data[0] = result[1]
+            caked_data[1] = result[0][0]
+        else:   
+            caked_data[cake_number + 1] = result[0][cake_number]
+            
+    # swap the rows/columns
+    caked_data.transpose()
+    
+    # write out the caked data to a text file
+    output_path = f"analysis/{image_path.stem}.dat"
+    np.savetxt(output_path, caked_data)
+```
+
+This caked dataset is now saved in a format that can be used in [xrdfit](https://xrdfit.readthedocs.io/en/stable/) to analyse how the single peak profiles change over time.
