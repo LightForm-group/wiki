@@ -112,12 +112,16 @@ The `integrate2d` function is designed for caking of the data. The input argumen
 The following script uses a loop to iterate through some images, create an array for the data and then save it as a text file.
 
 ```python
-# Supress warnings when TIFFs are read
+# supress warnings when TIFFs are read
 logging.getLogger("fabio.TiffIO").setLevel(logging.ERROR)
 
 # user inputs
 number_of_points = 10000
 number_of_cakes = 36
+
+# rotate the detector so that the cardinal direction is in the center of the first cake.
+first_cake_angle = 360 / number_of_cakes
+ai.rot3 = (first_cake_angle / 2) * (math.pi / 180) # convert rotation to radians
 
 # get a list of the files
 image_list = sorted(pathlib.Path("data/").glob("pixium*"))
@@ -131,27 +135,24 @@ for image_path in image_list:
         warnings.simplefilter("ignore")
         image = fabio.open(image_path)
     pattern_image_array = image.data
-    result = ai.integrate2d(pattern_image_array,
+    result2d = ai.integrate2d(pattern_image_array,
                             number_of_points,
                             number_of_cakes,
                             unit="2th_deg",
                             polarization_factor=0.99,
-                            method='full_csr')  
+                            method='full_csr')
     
-    # write the caked result to the array
-    for cake_number in range(number_of_cakes):
-        if cake_number == 0:
-            caked_data[0] = result[1]
-            caked_data[1] = result[0][0]
-        else:   
-            caked_data[cake_number + 1] = result[0][cake_number]
-            
-    # swap the rows/columns
-    caked_data.transpose()
+    # flip the intensity data to order cakes clockwise rather than anticlockwise
+    intensity = np.flip(result2d.intensity.T, axis=1)
+    
+    # reshape radial labels to 2D array so they can be attached to the intensity data.
+    radial = np.reshape(result2d.radial, (-1, 1))
+    
+    result_array = np.hstack((radial, intensity))
     
     # write out the caked data to a text file
     output_path = f"analysis/{image_path.stem}.dat"
-    np.savetxt(output_path, caked_data)
+    np.savetxt(output_path, result_array)
 ```
 
 This caked dataset is now saved in a format that can be used in [xrdfit](https://xrdfit.readthedocs.io/en/stable/) to analyse how the single peak profiles change over time.
