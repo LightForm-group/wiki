@@ -6,7 +6,6 @@ show_breadcrumbs: false
 show_meta: false
 ---
 
-{% include checklist_urls.html %}
 {% assign exp_sorted = site.experiments | sort: "title" %}
 
 <table class="experiments">
@@ -14,8 +13,6 @@ show_meta: false
         <tr>
             <th>Experiment<a href="{{ github_exp_dir_url }}" class="checklist-action prose-dir-link">manage all</a></th>
             <th>Champion</th>
-            <th>Metadata template<a href="{{ github_cl_dir_url }}" class="checklist-action prose-dir-link">manage all</a>
-            </th>
             <th>Analysis codes</th>
             <th>Tutorials</th>
         </tr>
@@ -35,7 +32,6 @@ show_meta: false
                         {% assign tut_link = '<a href="' | append: page_href | append: '">Link</a>' -%}
                     {% endif -%}
                 {% endfor %}                        
-                {% assign exp_title_clean = exp.title | replace: " ", "-" | downcase | replace: "(", "_" | replace: ")", "_" -%}                
                 {% assign all_authors = exp.author | split : ',' %}
                 <tr>
                     <td><a href="{{ exp.url | prepend: site.baseurl }}">{{ exp.title }}</a></td>
@@ -46,7 +42,6 @@ show_meta: false
                         {% endfor %}
                         </ul>
                     </td>
-                    <td>{% include checklist_controls.html exp_title_clean=exp_title_clean %}</td>
                     <td>
 
                         {% if exp.analysis_codes %}
