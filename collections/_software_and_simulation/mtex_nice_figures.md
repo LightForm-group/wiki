@@ -20,8 +20,6 @@ To produce nice looking figures in MTEX the default settings need to be changed.
 The default MTEX fontsize of the pole figures are too small for journal figures. The fontsize is a function of the figure size.
 
 ```matlab
-%% default global plotting options
-
 fontSize = round(15 * ppi/100);
 ```
 
