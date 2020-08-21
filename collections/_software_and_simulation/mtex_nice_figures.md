@@ -20,6 +20,8 @@ To produce nice looking figures in MTEX the default settings need to be changed.
 The default MTEX fontsize of the pole figures are too small for journal figures. The fontsize is a function of the figure size.
 
 ```matlab
+%% default global plotting options
+
 fontSize = round(15 * ppi/100);
 ```
 
@@ -39,6 +41,12 @@ pfAnnotations = @(varargin) [];
 
 and then reapplying the annotations.
 
+*Note, this is found in the section.*
+
+```matlab
+%% default global plotting options
+```
+
 **Change the spacing between plots**
 
 To fit in the new annotations, we need to change the spacing of the pole figures. The value 30 works well to leave room between the individual pole figures. The value 50 is needed to leave enough room at the edge of the plot.
@@ -56,11 +64,27 @@ The defualt colour map for MTEX is rainbow. This is not ideal since it is not pe
 setMTEXpref('defaultColorMap','parula');
 ```
 
+*Note, this is found in the section.*
+
+```matlab
+%% Default ColorMap
+```
+
 ## Changes to phi2sections.m
 
-The `phi2sections.m file` is located in the `plotting` folder within the MTEX package.
+The `phi2sections.m file` is located in `ODFSections` folder, in the `plotting` folder, within the MTEX package.
 
-To change the size of the values and fonts on the ODF slices, lines 110-113 need deleting and the following should be added;
+To remove the labels that cover the ODF contours and change the size of the values and fonts on the ODF slices, lines 110-113 need deleting.
+
+```matlab
+% plot data
+h = plot(v,data{:},oS.sR,'TR',[int2str(oS.phi2(sec)./degree),'^\circ'],...
+  'parent',ax,'projection','plain','xAxisDirection','east',...
+  'xlabel','$\varphi_1$','ylabel','$\Phi$','dynamicMarkerSize',...
+  'zAxisDirection','intoPlane',varargin{:},'doNotDraw');
+```
+
+And the following should be added.
 
 ```matlab
 % plot data
@@ -70,4 +94,3 @@ h = plot(v,data{:},oS.sR,...
   'zAxisDirection','intoPlane',varargin{:},'doNotDraw');
 set(ax,'FontSize',35,'LineWidth',1); % additional figure settings
 ```
-
