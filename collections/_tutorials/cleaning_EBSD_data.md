@@ -5,6 +5,22 @@ author: Christopher Daniel
 
 # Tutorial for cleaning EBSD data
 
-## Cleaning data using Aztec Channel 5
+## Why we need to clean EBSD data? [Chris]
 
-## Cleaning data using Aztec Crystal
+- Producing nice figures
+- Beta reconstruction
+- Reproduction of features (twins, precipitate phases, misindexed orientations, etc.)
+
+## Important examples of cleaned data [Alec]
+
+## Different cleaning algorithms [Nick]
+
+- Removing wild spikes
+- Nearest neighbour
+- Kuwahara
+
+## Cleaning data using Aztec Channel 5 [Xiaohan]
+
+## Cleaning data using Aztec Crystal [Alec]
+
+## Cleaning data using MTEX [Nick]
