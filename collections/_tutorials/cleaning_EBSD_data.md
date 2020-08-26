@@ -19,8 +19,8 @@ author: Christopher Daniel
 - Nearest neighbour
 - Kuwahara
 
-## Cleaning data using Aztec Channel 5 [Xiaohan]
+## Cleaning data using Aztec Channel 5 for beta reconstruction [Xiaohan]
 
-## Cleaning data using Aztec Crystal [Alec]
+## Cleaning data using Aztec Crystal for beta reconstruction [Alec]
 
 ## Cleaning data using MTEX [Nick]
