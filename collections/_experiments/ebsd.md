@@ -4,6 +4,7 @@ author: Christopher Daniel
 title: EBSD
 tutorials:
   - Tutorial for beta reconstruction
+  - Tutorial for cleaning EBSD data
 ---
 ## General EBSD
 This describes the metadata which applies to EBSD experiments. EBSD is a technique where electrons are fired at a sample and the scattering of the electrons is analysed.
