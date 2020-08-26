@@ -17,7 +17,7 @@ Open the reconstruction.exe on any windows computer.
 
 [TODO]
 
-## Possible errors with beta reconstruction and how to solve them
+## Possible errors with reconstruction.exe and how to solve them
 
 ## Beta reconstruction in Python
 
