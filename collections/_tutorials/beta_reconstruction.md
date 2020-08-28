@@ -5,10 +5,6 @@ author: Christopher Daniel
 
 # Tutorial for beta reconstruction
 
-## Cleaning data using Aztec Channel 5 or Aztec Crystal
-
-Before running the beta reconstruction using the exectable (reconstruction.exe), the EBSD data will need to be cleaned. During cleaning, the indexed beta phase will need to be deleted, the alpha grains will need to be grown out so there are no non-indexed points, and the file will need to be exported in .ctf format.
-
 ## Running reconstruction.exe
 
 The reconstruction.exe can be downloaded [here](https://github.com/LightForm-group/beta-reconstruction-archive/releases/tag/v1.1), this includes bug fixes of the source code to improve the file read speed and the size of maps that can be reconstructed.
