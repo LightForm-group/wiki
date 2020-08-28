@@ -13,7 +13,17 @@ The reconstruction.exe can be downloaded [here](https://github.com/LightForm-gro
 
 Open the reconstruction.exe on any windows computer.
 
-[TODO]
+Click File, Import CTF to import the data. This will take a few mins to load the data. Once loaded the screen will appear blank.
+
+Click File, New Map, Beta Reconstruction. This will load an image of the map.
+
+You can change the Min. Disor (minimum disorientation) and the Recon Dev. (reconstruction deviation) values in the cells, but the default 2 and 3 degress are usually fine for reconstruction in Ti alloys. These values will alter the maximum misorientation between orientations to be considered the same alpha variant and the maximum misorientation from the Burgers relationship for the reconstruction to be accepted.
+
+Make sure you tick the Hide Progress (faster) cell, otherwise the reconstruction will take much longer to complete. Then click Reconstruct.
+
+When the reconstruction is complete a new beta map will appear. Click Save Beta CTF to save it.
+
+The reconstructed .ctf file can then be loaded in Channel 5 by first importing the data - Project, Import, Channel Text File (\*.ctf).
 
 ## Possible errors with reconstruction.exe and how to solve them
 
