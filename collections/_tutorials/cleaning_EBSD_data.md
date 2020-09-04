@@ -13,7 +13,28 @@ author: Christopher Daniel
 
 ## Important examples of cleaned data [Alec]
 
+Cast Mg alloy - soft orientated grains deformed heavily during preparation and do not index
 
+![](/wiki/assets/images/EBSD_misindexing_1.png)
+
+To fix: (see magnified image) can use consistent orientation indexed points to assumed true orientation of the misindexed grains. Using software such as CHANNEL5, copy and paste the trusted orientation around the grain edge, then 'grow out' the orientations to fill in the unindexed grains.
+
+Alternatively, re-prepare the sample with less/no deformation using less physically aggressive polishing methods such vibration polishing or electropolishing.
+
+Cold rolled Mg alloy - deformation twins too small to index during EBSD due to overlapping EBSD patterns
+
+![](/wiki/assets/images/Crystal_cleaning_tutorial_2.png)
+
+Unfortunately, there is no easy way to fix this. A lower current/smaller electron beam spot size may be able to index these twins, but the scan would run to slow for this to be feasible. Instead, transmission kikuchi diffraction (TKD) can be used since it has a much higher resolution than EBSD. (Even higher resolution mapping can be obtain using scanning preccesion electron diffraction in the TEM).
+
+Ti-6Al-4V % commercially pure titanium additively manufactured alloy-alloy composite
+
+![](/wiki/assets/images/Crystal_cleaning_tutorial_3.png)
+
+The soft CP Ti does not scan well due to deformation introduced during polishing, but the (relatively hard) Ti64 scans well, producing the regions of unindexed/misindexed points. This map of the Ti alpha phase was then reconstructed to the beta phase using the UoS beta reconstruction software. The unindexed and misindexed alpha data points are translated through the beta reconstruction and re-produced the regions of CP Ti in the final EBSD map (shown above on the left). In the magnified insert, the misindexed points can be seen. This cannot simply be 'grown out' to clean the map and must be removed manually using software like CHANNEL5 - the true beta grains can be seen clearly either side of the misindexed regions, so the grains boundaries can be outlined using copy and paste of trusted orientations, then they can be grown out to produce a good estimate of the true beta microstructure. For more information, please see:
+
+https://doi.org/10.1016/j.msea.2019.138289
+Davis et al. Mat. Sci. Eng. A 765 (2019), 1 - 16.
 
 ## Different cleaning algorithms [Nick]
 
