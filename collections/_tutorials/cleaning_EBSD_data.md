@@ -13,6 +13,8 @@ author: Christopher Daniel
 
 ## Important examples of cleaned data [Alec]
 
+
+
 ## Different cleaning algorithms [Nick]
 
 - Removing wild spikes
@@ -35,6 +37,43 @@ To save the data, click on Project, Export, as Channel Text File (\*.ctf).
 
 *Note, if the data is too big to load into the beta reconstruction software or if there is a small region of the map you are interested in, you can use the subset selection tool, select a rectangle, and crop the area.*
 
-## Cleaning data using Aztec Crystal for beta reconstruction [Alec]
+## Cleaning data using Aztec Crystal for beta reconstruction
+
+Open AZtec Crystal and load your EBSD map.
+
+Select ‘Clean up’ tab:
+ 
+![](/wiki/assets/images/Crystal_cleaning_tutorial_1.png)
+
+On the right side you will find the ‘settings’ tab for clean up:
+
+![](/wiki/assets/images/Crystal_cleaning_tutorial_2.png)
+
+Select the phases and dataset you wish to clean up. The ‘Exclude Voids’ tab will identify features such as sample edges and cracks and avoid those during clean up. How Crystal identifies these features is not trivial – please see the help file for more information. Finally, ‘Auto-Clean Up’ is self-explanatory – it is not recommended. Click this button at your own peril. 
+Below this section is the ‘Wild Spike Removal’ tab:
+ 
+![](/wiki/assets/images/Crystal_cleaning_tutorial_3.png) 
+
+ The help file is particularly useful regarding this feature:
+
+![](/wiki/assets/images/Crystal_cleaning_tutorial_4.png)
+
+The next step is ‘Zero Solution Removal’:
+
+![](/wiki/assets/images/Crystal_cleaning_tutorial_5.png)
+
+The ‘level of cleaning’ is scaled from 1 – the least aggressive – to 8 – the most aggressive. Level 1 requires 8 indexed pixels surrounding a non-indexed point to ‘fill’ it in, while level 8 requires only 1 neighbouring pixel to fill in an un-indexed point. Selecting the ‘Iterate’ function just repeats the zero solution removal until there are no points left to fill that fulfil your selected level criteria, unless you input a desired number of iterations into the ‘max’ field.
+A good place to start with this function, is to run level 1 until no more points can be filled, then run level 2, then level 3 and so on. However, care must be taken not to skew EBSD maps and data to the point where they are unrepresentative of your material.
+Each step in the cleaning you select in Crystal will be conveniently listed at the bottom of the cleaning tab; e.g.
+ 
+ ![](/wiki/assets/images/Crystal_cleaning_tutorial_6.png)
+ 
+The amount of non-indexed points remaining after each step is listed in parenthesis, making it easy to delete unnecessary steps. Unfortunately, at time of writing, Crystal cannot store a particular cleaning ‘routine’ for use on other maps.
+Once a cleaning routine has been selected, it can be applied at the top of the tab using the ‘Apply’ button:
+
+![](/wiki/assets/images/Crystal_cleaning_tutorial_7.png)
+ 
+Note that there is also a ‘Restore’ option, allowing you to return your original data if you are unhappy with the cleaning results.
+
 
 ## Cleaning data using MTEX [Nick]
