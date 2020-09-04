@@ -11,7 +11,7 @@ author: Christopher Daniel
 - Beta reconstruction
 - Reproduction of features (twins, precipitate phases, misindexed orientations, etc.)
 
-## Important examples of cleaned data [Alec]
+## Important examples of cleaned data
 
 Cast Mg alloy - soft orientated grains deformed heavily during preparation and do not index
 
