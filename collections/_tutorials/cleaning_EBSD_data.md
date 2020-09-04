@@ -63,12 +63,15 @@ The next step is ‘Zero Solution Removal’:
 ![](/wiki/assets/images/Crystal_cleaning_tutorial_5.png)
 
 The ‘level of cleaning’ is scaled from 1 – the least aggressive – to 8 – the most aggressive. Level 1 requires 8 indexed pixels surrounding a non-indexed point to ‘fill’ it in, while level 8 requires only 1 neighbouring pixel to fill in an un-indexed point. Selecting the ‘Iterate’ function just repeats the zero solution removal until there are no points left to fill that fulfil your selected level criteria, unless you input a desired number of iterations into the ‘max’ field.
+
 A good place to start with this function, is to run level 1 until no more points can be filled, then run level 2, then level 3 and so on. However, care must be taken not to skew EBSD maps and data to the point where they are unrepresentative of your material.
+
 Each step in the cleaning you select in Crystal will be conveniently listed at the bottom of the cleaning tab; e.g.
  
  ![](/wiki/assets/images/Crystal_cleaning_tutorial_6.png)
  
 The amount of non-indexed points remaining after each step is listed in parenthesis, making it easy to delete unnecessary steps. Unfortunately, at time of writing, Crystal cannot store a particular cleaning ‘routine’ for use on other maps.
+
 Once a cleaning routine has been selected, it can be applied at the top of the tab using the ‘Apply’ button:
 
 ![](/wiki/assets/images/Crystal_cleaning_tutorial_7.png)
