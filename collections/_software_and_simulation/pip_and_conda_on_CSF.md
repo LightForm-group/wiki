@@ -7,10 +7,6 @@ published: true
 subcollection: Python
 ---
 
-**UPDATE**: Looks like there is no problem with conda detecting the correct pip as long as the shell/environment is correctly configured using `conda init`. Original below kept for posterity.
-
----
-
 Installing Python packages via pip within a conda environment on the CSF:
 
 1. Load Anaconda (e.g. `module load apps/anaconda3/5.2.0/bin`)
