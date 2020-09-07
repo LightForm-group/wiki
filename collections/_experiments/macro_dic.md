@@ -39,7 +39,7 @@ The images that are to be obtained need to be as sharp as possible. Therefore, w
 ### Error determination and calibration
 This section explains how the subset size and step size affect noise/error in DIC (Digital Image Correlation) data. This section should help you to decide what subset size and step size you should choose for analysing your DIC data. The analysis was done using the DIC python code for the .csv output format from the LaVision DaVis DIC software.
 The following analysis was carried out on the first 10 images of one set of DIC data. The subset size and step size where changed and the strain was recorded.  The images were captured before any deformation had begun, so there should be no strain detected. Any strain detected by the DIC software is therefore noise in the recording. The area in which the data was gathered from can be seen in the image below.
-![](/wiki/assets/images/posts/AnalysisLocation.jpg =152x224)
+![](/wiki/assets/images/posts/AnalysisLocation.jpg){: width=152 height=224}
 
 ### Example Error determination and calibration
 The first set of tests were performed to look at the variation in strain with changing Subset Size and constant step size. The Subset size variation can be seen below:
