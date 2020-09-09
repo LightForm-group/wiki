@@ -41,7 +41,7 @@ Right-click on this link in the terminal window and select ‘Open Link’.
 `export http_proxy=http://webproxy.its.manchester.ac.uk:3128`
 `export https_proxy=http://webproxy.its.manchester.ac.uk:3128`
 3. Run the following command to load anaconda: `module load apps/binapps/anaconda3/2019.07`
-4. Run the following command to install DefDAP: `pip install --user defdap`. You can install any package from [Python Package Index (PyPI)](pypi.org) by changing the final argument.
+4. Run the following command to install DefDAP: `pip install --user defdap`. You can install any package from [Python Package Index (PyPI)](https://pypi.org) by changing the final argument.
 5. You can then quit this terminal and go back to your browser window.
 6. You will need to restart the Python kernel to use the new package (Kernel > Restart)
 ![](https://www.dropbox.com/s/rsrn1tsxh5elr43/restart.jpg?raw=1)
