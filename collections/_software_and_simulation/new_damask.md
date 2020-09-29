@@ -117,7 +117,7 @@ Note that we can also extract data from the HDF5 file without requiring the DAMA
   homogenization: SX
 ```
 
-- Must now follow .yaml/.yml syntax. keys must finish with a colon `:`. The value can then be defined. eg. 'c/a: 1.587'
+- Must now follow .yaml/.yml syntax. keys must finish with a colon `:`. The value can then be defined. eg. `c/a: 1.587`
 - More detail to follow
 
 ## Differences between this version (2.0.3) and the version installed centrally on the CSF (2.0.2)
