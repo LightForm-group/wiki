@@ -15,23 +15,23 @@ Not familiar with Manchester University's Computational Shared Facility 3 (CSF3)
 
 ## Running a DAMASK simulation from the command line
 
-To make the `DAMASK_spectral` executable available, run the following command on the CSF:
+To make the `DAMASK_grid` (v3.0) executable available (same function as `DAMASK_spectral` v2), run the following command on the CSF:
 
 ```bash
 source /mnt/eps01-rds/jf01-home01/shared/load_DAMASK-master.sh
 ```
 
-To make the `DAMASK_spectral` executable available in addition to the the pre-/post-processing commands, run the following command on the CSF:
+To make the `DAMASK_grid` executable available in addition to the the pre-/post-processing commands, run the following command on the CSF:
 
 ```bash
-source /mnt/eps01-rds/jf01-home01/shared/load_DAMASK_processing-master.sh
+source /mnt/eps01-rds/jf01-home01/shared/load_DAMASK-master_processing.sh
 ```
 
 ### Example simulation jobscript
 
 #### Serial job
 
-Place the following jobscript into a directory containing `DAMASK_spectral` input files (`.geom`, `.load`, and `material.yaml`) and submit it with `qsub jobscript_name`. Further customisation of the solver may be added in a `numerics.yaml` file if necessary.
+Place the following jobscript into a directory containing `DAMASK_grid` input files (`.geom`, `.load`, and `material.yaml`) and submit it with `qsub jobscript_name.sh`. Further customisation of the solver may be added in a `numerics.yaml` file if necessary.
 
 ```sh
 #!/bin/bash --login
@@ -46,7 +46,7 @@ DAMASK_spectral -g geom_file_name -l load_case_file_name
 
 #### Parallel job
 
-Place the following jobscript into a directory containing `DAMASK_spectral` input files (`.geom`, `.load`, and `material.yaml`) and submit it with `qsub jobscript_name`.
+Place the following jobscript into a directory containing `DAMASK_grid` input files (`.geom`, `.load`, and `material.yaml`) and submit it with `qsub jobscript_name`.
 
 ```sh
 #!/bin/bash --login
@@ -57,7 +57,7 @@ source /mnt/eps01-rds/jf01-home01/shared/load_DAMASK.sh
 #$ -cwd                   # Submit in the current working directory
 #$ -pe smp.pe 4           # Use a parallel environment with four cores
 
-mpirun -n $NSLOTS DAMASK_spectral -g geom_file_name -l load_case_file_name
+mpirun -n $NSLOTS DAMASK_grid -g geom_file_name -l load_case_file_name
 ```
 Running a job on the CSF will create two files in the working directory it is run within: A `jobname.o0000000` file, which contains generic job output, and `jobname.e0000000` which contains detail on errors that occured during the run.
 
@@ -67,7 +67,7 @@ DAMASK outputs the following files: (`geom_load.C_ref`, `geom_load.hdf5`, and `g
 To calculate some useful values from outputs and create a visual representation of the results (`.vtr`), first load the processing environment on the CSF using (as above):
 
 ```sh
-source /mnt/eps01-rds/jf01-home01/shared/load_DAMASK_processing.sh
+source /mnt/eps01-rds/jf01-home01/shared/load_DAMASK-master_processing.sh
 ```
 First of all, the .hdf5 output may be navigated from the command line using the command `h5ls`. eg `h5ls geom_load.hdf5/` will list the increments the job has completed.
 We can then start a Python instance and, assuming our output HDF5 is called `geom_load.hdf5`, load the HDF5 file into Python. In the following example,
@@ -92,7 +92,7 @@ The above *must* be run on the CSF! If we are processing a large output file, we
 ```sh
 #!/bin/bash --login
 
-source /mnt/eps01-rds/jf01-home01/shared/load_DAMASK_processing.sh
+source /mnt/eps01-rds/jf01-home01/shared/load_DAMASK-master_processing.sh
 
 #$ -N damask_processing   # Name of the job
 #$ -cwd                   # Submit in the current working directory
