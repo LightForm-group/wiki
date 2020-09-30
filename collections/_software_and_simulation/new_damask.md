@@ -109,6 +109,7 @@ Note that we can also extract data from the HDF5 file without requiring the DAMA
 ### `material.yaml` file
 
 - Orientations must now be defined using quaternions. Each quaternion component must be to at least 12 dp. eg:
+
 ```yaml
 - constituents:
   - fraction: 1.0
