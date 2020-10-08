@@ -127,3 +127,9 @@ mpiexec -n 4 cipher.exe --config GrainBoundaryPrecipitate.yaml
 # Contact
 
 This code is maintained by the Microstructure Modelling Group at the University of Manchester. For questions, comments, bug-reports or contributions please email Dr. Pratheek Shanthraj at [pratheek.shanthraj@manchester.ac.uk](mailto:pratheek.shanthraj@manchester.ac.uk).
+
+# References
+
+[1] Grand-canonical phase-field implementation: [https://arxiv.org/abs/1906.10503](https://arxiv.org/abs/1906.10503)  
+[2] p4est: [http://www.p4est.org](http://www.p4est.org/)  
+[3] PETSc: [https://www.mcs.anl.gov/petsc/](https://www.mcs.anl.gov/petsc/)
