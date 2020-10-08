@@ -123,3 +123,7 @@ And run an example:
 ```
 mpiexec -n 4 cipher.exe --config GrainBoundaryPrecipitate.yaml
 ```
+
+# Contact
+
+This code is maintained by the Microstructure Modelling Group at the University of Manchester. For questions, comments, bug-reports or contributions please email Dr. Pratheek Shanthraj at [pratheek.shanthraj@manchester.ac.uk](mailto:pratheek.shanthraj@manchester.ac.uk).
