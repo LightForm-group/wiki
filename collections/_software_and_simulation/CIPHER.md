@@ -11,7 +11,7 @@ published: true
 
 CIPHER is a parallel phase-field simulation code for microstructure evolution in multi-component alloy systems. It includes advanced features such as automatic parallel adaptive mesh refinement, local truncation error estimates and adaptive time stepping. CIPHER is designed for a large number of phases (10-10000), with computational complexity independent of the number of phases, and uses an efficient grand-canonical-based phase-field implementation with direct use of Compound-Energy- Formalism and other CALPHAD thermodynamic models for multi-component systems [1].
 
-# Installation
+## Installation
 >This software requires MPI, p4est v2.2 [2], and PETSc v3.12 [3].
 
 The following installation instructions are specific to users of the University of Manchester's Computational Shared Facility (CSF). Non CSF users will need to follow their local procedures to install, p4est and PETSc.
@@ -133,11 +133,11 @@ And run an example:
 mpiexec -n 4 cipher.exe --config GrainBoundaryPrecipitate.yaml
 ```
 
-# Contact
+## Contact
 
 This code is maintained by the Microstructure Modelling Group at the University of Manchester. For questions, comments, bug-reports or contributions please email Dr. Pratheek Shanthraj at [pratheek.shanthraj@manchester.ac.uk](mailto:pratheek.shanthraj@manchester.ac.uk).
 
-# References
+## References
 
 [1] Grand-canonical phase-field implementation: [https://arxiv.org/abs/1906.10503](https://arxiv.org/abs/1906.10503)  
 [2] p4est: [http://www.p4est.org](http://www.p4est.org/)  
