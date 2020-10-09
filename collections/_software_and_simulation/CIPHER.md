@@ -16,7 +16,7 @@ CIPHER is a parallel phase-field simulation code for microstructure evolution in
 
 The following installation instructions are specific to users of the University of Manchester's Computational Shared Facility (CSF). Non CSF users will need to follow their local procedures to install, p4est and PETSc.
 
-### To install p4est:
+### Installing p4est:
 
 First load MPI compilers and OpenBLAS with the command:
 ```
@@ -61,7 +61,7 @@ Now you need to add an environment variable to your system where p4est is locate
 ```
 export P4EST_DIR=$HOME/software/p4est-2.2/intel-17.0-openblas
 ```
-### To install PETSc:
+### Installing PETSc:
 
 Navigate back into the software folder and download PETSc with:
 
@@ -118,7 +118,7 @@ make PETSC_DIR=$PETSC_DIR PETSC_ARCH=$PETSC_ARCH
 make install PETSC_DIR=$PETSC_DIR PETSC_ARCH=$PETSC_ARCH all
 ```
 
-### To install CIPHER:
+### Installing CIPHER:
 
 If not already set, add CIPHER_DIR/bin to your PATH
 ```
