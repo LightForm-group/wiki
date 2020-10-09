@@ -1,5 +1,5 @@
 ---
-title: CIPHER: Calphad Integrated Phasefield solvER
+title: CIPHER (Calphad Integrated Phase-field solvER)
 author: Sakina Rehman
 ---
 
