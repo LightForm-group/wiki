@@ -1,6 +1,6 @@
 ---
 title: CIPHER (Calphad Integrated Phase-field solvER)
-author: Sakina Rehman
+author: Sakina Rehman, Pratheek Shanthraj
 tags:
   - simulation
   - csf
