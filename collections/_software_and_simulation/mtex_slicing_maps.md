@@ -111,4 +111,8 @@ end
 
 An example analysis for slicing EBSD maps into strips and plotting the texture variation is available [here on GitHub](https://github.com/LightForm-group/MTEX-texture-slice-analysis)
 
-This example shows the texture variation across a Ti compression sample, outputting maps, pole figures and ODFs for the different strips, as well as plotting the variation of different texture strength values. The code allows the user to choose any number of strips and select the orientation of those strips. This code includes fixes for any negative x or y values that might result due to rotation of the data. 
+This example shows the texture variation across a Ti compression sample, outputting maps, pole figures and ODFs for the different strips, as well as plotting the variation of different texture strength values (as shown in the figure below). The code allows the user to choose any number of strips and select the orientation of those strips. This code includes fixes for any negative x or y values that might result due to rotation of the data.
+
+![](/wiki/assets/images/posts/texture_variation_FE_results.png)
+
+
