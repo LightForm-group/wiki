@@ -47,11 +47,15 @@ The meeting calendar can be viewed here - https://lightform-group.github.io/wiki
 
 *Meeting Record*
 
-22-07-2020 : 'MTEX USer Group Introduction' by Christopher Daniel and  'Using MTEX to Visualise Crystal Orientations' by Nick Byres
+22-07-2020 : 'MTEX User Group Introduction' by Christopher Daniel and  'Using MTEX to Visualise Crystal Orientations' by Nick Byres
 
 19-08-2020 : 'Slicing EBSD Maps and Separating Different Texture Components' by Nick Byres.
 
-16-09-2020 : TBC
+16-09-2020 : 'Separating Data based on Grain Orienration' and 'Understanding Dominant Slip Mechanisms using MTEX' by Mia Maric
+
+14-10-2020 : 'Novel Ways to Present and Analyse Data in MTEX with Additional Plots' by Sam Armson
+
+11-11-2020 : TBC
 
 ## Organisers
 
