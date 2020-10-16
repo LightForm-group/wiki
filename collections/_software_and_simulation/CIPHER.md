@@ -134,7 +134,11 @@ mpiexec -n 4 cipher.exe --config GrainBoundaryPrecipitate.yaml
 ```
 ## Example: GrainBoundaryPrecipitate.yaml
 
-This example is used to briefly describe the purpose of each block contained within a CIPHER input .yaml file. The first block is named the ```header``` block:
+> This example is used to briefly describe the purpose of each block contained within a CIPHER input .yaml file. This example can be found in the micmog GitHub page.
+
+### header block
+
+The first block is named the ```header``` block:
 
 ```
 header:
@@ -148,6 +152,27 @@ header:
   ```
 
 The ```grid``` section defines the grid size of the model and ```size``` defines the physical dimensions of the model. In this example, the model is 3-dimensional, however, the model can be defined as 2-dimensional or 1-dimensional by altering the dimensions in the [x, y, z] array. The ```n_phases``` section defines the number of phases used in the simulation and the ```material``` section defines the number of materials present in the model. The ```interfaces``` section defines the interfaces present in the model. For example, the ```pptboundary``` defines an interface at the precipitate boundary and ```grain boundary``` defines a grain boundary present. The ```components``` section can be used to define the components present in this model and the ```outputs``` are the results that will be written out to a ```.vtu``` file.
+
+### solution_parameters block
+
+Usually found below the header block is the ```solution_parameters``` block:
+```
+solution_parameters:
+  time : 72000.0
+  interfacewidth : 4
+  initblocksize : [2, 2, 2]
+  initrefine : 5
+  maxnrefine : 5
+  minnrefine : 3
+  initcoarsen : 3
+  amrinterval : 200 
+  outputfreq : 5000
+  outfile : GBP
+  interpolation: cubic
+  petscoptions : -ts_adapt_monitor
+  ```
+A detailed understanding of this block is perhaps not necessary when running simple simulations. The main sections include the ```time```, which is the physical time in seconds (note that the physical time is not the same as the simulation time), the ```outputfreq```, which is the number of steps after which the results will be written to a ```.vtu``` file, and the ```outfile``` which is the name of the output file.
+
 
 ## Contact
 
