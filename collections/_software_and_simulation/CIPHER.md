@@ -132,6 +132,22 @@ And run an example:
 ```
 mpiexec -n 4 cipher.exe --config GrainBoundaryPrecipitate.yaml
 ```
+## Example: GrainBoundaryPrecipitate.yaml
+
+This example is used to briefly describe the purpose of each block contained within a CIPHER input .yaml file. The first block is named the ```header``` block:
+
+```
+header:
+  grid : [64, 64, 64]
+  size : [64, 64, 64]
+  n_phases : 3
+  materials : [matrix, precipitate]
+  interfaces : [grainboundary, pptboundary]
+  components : [al, cu, mg, zn]
+  outputs : [al_c, cu_c, mg_c, zn_c, phaseid] 
+  ```
+
+The ```grid``` section defines the grid size of the model and ```size``` defines the physical dimensions of the model. In this example, the model is 3-dimensional, however, the model can be defined as 2-dimensional or 1-dimensional by altering the dimensions in the [x, y, z] array. The ```n_phases``` section defines the number of phases used in the simulation and the ```material``` section defines the number of materials present in the model. The ```interfaces``` section defines the interfaces present in the model. For example, the ```pptboundary``` defines an interface at the precipitate boundary and ```grain boundary``` defines a grain boundary present. The ```components``` section can be used to define the components present in this model and the ```outputs``` are the results that will be written out to a ```.vtu``` file.
 
 ## Contact
 
