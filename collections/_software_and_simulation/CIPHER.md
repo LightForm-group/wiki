@@ -256,6 +256,29 @@ This ```boundary_id``` defines the boundary at which the influx will be applied 
 ```
 boundaries : influx
 ```
+### mappings block
+
+Each of the phases present must be assigned a material type, this is where the ```mapping``` block comes into use:
+
+```
+mappings:
+  phase_material_mapping : |-
+    2 of 1
+    2
+  voxel_phase_mapping: |-
+    116510 of 1
+    4 of 3
+    59 of 1
+    6 of 3
+    57 of 1
+    ...
+    interface_mapping: |-
+    2 of 1
+    7 of 2
+```
+For the GrainBoundaryPrecipitate.yaml example, in the ```phase_material_mapping```, '2 of 1' indicates 1 being repeated twice, so phase 1 is material 1 and phase 2 is material 1. The second line '2' shows that phase 3 is material 2. If there was '2 to 1' written in this block, this would create a list i.e. 2, 1. For example, if '10 to 5' was written, this would list 10, 9, 8, 7, 6, 5. If there is an $n$ number of phases, then there is an $n^2$ number of interfaces between $n$ phases. As this example has 3 phases, there are 9 possible boundaries. This is why there are 9 interfaces mapped under ```interface_mapping```
+
+In terms of mapping, it is ideal to orientate a model so it is easier to assign phases i.e. compact models. For the more complex geometries there are automatic scripts to generate them.
 
 ## Contact
 
