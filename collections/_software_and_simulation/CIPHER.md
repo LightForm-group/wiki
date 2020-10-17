@@ -220,6 +220,23 @@ material:
         tlnt_coefficient : -23.701314
 ```
 This block defines the ```matrix``` material properties. The ```chemical energy``` section is used to define whether the material is disordered (```calphaddis```), a sub-lattice model (```calphad2sl```) etc. The ```temperature``` is also defined in this block. This temperature can be kept the same in each material for an isothermal simulation or can be set differently in each material to allow thermal diffusion to occur. The ```c0``` array defines the alloy compositions of the components present in the simulation. The sum of these compositions must be 1. This block also allows the addition of the atomic mobilities (```unary_migration```, ```binary_migration``` etc.) by inputting the temperature coefficients and temperature exponents. The enthalpy terms can also be added to this block (```unary_enthalpy```, ```binary_enthalpy```, ```ternary_enthalpy``` etc.) in the same manner. The atomic mobilities and energy parameters are obtained from a diffusion and thermodynamic database respectively. I basic understanding of the CALPHAD method is required to be able to input the correct parameters into this block [4]. 
+### interface block
+
+The interface block usually takes the structure of:
+```
+interface :
+  grainboundary :
+    energy : 
+      e0: 5.0e+8
+    mobility : 
+      m0: 2.0e+2
+      activation_energy:
+        t_coefficient : -1.0e+5
+        t_exponent: 0
+    potential : [0.175e+4, -0.180e+4, -0.235e+4]  
+```
+
+The interface type mentioned here is the ```grain boundary```. Here the ```energy``` and ```mobility``` terms are inputted, which should be normalised to the appropriate length scale. Further interface types can be added e.g. ```pptboundary`` with the same block structure.
 
 ## Contact
 
@@ -230,5 +247,6 @@ This code is maintained by the Microstructure Modelling Group at the University 
 [1] Grand-canonical phase-field implementation: [https://arxiv.org/abs/1906.10503](https://arxiv.org/abs/1906.10503)  
 [2] p4est: [http://www.p4est.org](http://www.p4est.org/)  
 [3] PETSc: [https://www.mcs.anl.gov/petsc/](https://www.mcs.anl.gov/petsc/)
+
 [4] Ursula R. Kattner and Carelyn E. Campbell. Invited review: modelling of thermodynamics and diffusion in multicomponent systems. Materials Science and Technology, 25(4):443–459, 2009.
 
