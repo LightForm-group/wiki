@@ -132,9 +132,9 @@ And run an example:
 ```
 mpiexec -n 4 cipher.exe --config GrainBoundaryPrecipitate.yaml
 ```
-## Example: GrainBoundaryPrecipitate.yaml
+## Input .yaml file
 
-> This example is used to briefly describe the purpose of each block contained within a CIPHER input .yaml file. This example can be found in the micmog GitHub page.
+> This example is used to briefly describe the purpose of each block contained within a CIPHER input .yaml file. The example used is from the shared GitHub micmog group for modelling grain boundary precipitation (GrainBoundaryPrecipitate.yaml). 
 
 ### header block
 
@@ -173,6 +173,53 @@ solution_parameters:
   ```
 A detailed understanding of this block is perhaps not necessary when running simple simulations. The main sections include the ```time```, which is the physical time in seconds (note that the physical time is not the same as the simulation time), the ```outputfreq```, which is the number of steps after which the results will be written to a ```.vtu``` file, and the ```outfile``` which is the name of the output file.
 
+### material block
+
+In this example, there are two possible materials in the simulation: the matrix and the precipitate. The material block takes the usual structure of:
+
+```
+material:
+  matrix:
+    chemicalenergy : calphaddis
+    molarvolume : 1e-5
+    temperature0: 393.0
+    chempot_ex_kineticcoeff : 1.0
+    c0 : [0.90, 0.02, 0.04, 0.04]
+    mobilityc :
+      al :
+        mobility0 : 1.0e+18
+        unary_migration : 
+          al : 
+            t_coefficient : [-127200.0, -92.98]
+            t_exponent: [0, 1]
+          cu : 
+            t_coefficient : [-181583.4, -99.8]
+            t_exponent: [0, 1]
+          mg : 
+            t_coefficient : [-127200.0, -92.98]
+            t_exponent: [0, 1]
+          zn : 
+            t_coefficient : [-83255.0, -92.92]
+            t_exponent: [0, 1]
+    unary_enthalpy : 
+      al : 
+        t_coefficient : [-7976.15, 137.093038, -1.884662e-3, -8.77664e-6, 74092.0]
+        t_exponent: [0, 1, 2, 3, -1]
+        tlnt_coefficient : -24.3671976
+      cu : 
+        t_coefficient : [-7770.458, 130.485235, -2.65684e-3, 1.29223e-6, 52478.0]
+        t_exponent: [0, 1, 2, 3, -1]
+        tlnt_coefficient : -24.112392
+      mg : 
+        t_coefficient : [-5767.34, 142.775547, 4.858e-3, -1.393669e-6, 78950.0]
+        t_exponent: [0, 1, 2, 3, -1]
+        tlnt_coefficient : -26.1849782
+      zn : 
+        t_coefficient : [-4315.967, 116.900389, -1.712034e-3, 1.264963e-6]
+        t_exponent: [0, 1, 2, 3]
+        tlnt_coefficient : -23.701314
+```
+This block defines the ```matrix``` material properties. The ```chemical energy``` section is used to define whether the material is disordered (```calphaddis```), a sub-lattice model (```calphad2sl```) etc. The ```temperature``` is also defined in this block. This temperature can be kept the same in each material for an isothermal simulation or can be set differently in each material to allow thermal diffusion to occur. The ```c0``` array defines the alloy compositions of the components present in the simulation. The sum of these compositions must be 1. This block also allows the addition of the atomic mobilities (```unary_migration```, ```binary_migration``` etc.) by inputting the temperature coefficients and temperature exponents. The enthalpy terms can also be added to this block (```unary_enthalpy```, ```binary_enthalpy```, ```ternary_enthalpy``` etc.) in the same manner. The atomic mobilities and energy parameters are obtained from a diffusion and thermodynamic database respectively. I basic understanding of the CALPHAD method is required to be able to input the correct parameters into this block [4]. 
 
 ## Contact
 
@@ -183,3 +230,5 @@ This code is maintained by the Microstructure Modelling Group at the University 
 [1] Grand-canonical phase-field implementation: [https://arxiv.org/abs/1906.10503](https://arxiv.org/abs/1906.10503)  
 [2] p4est: [http://www.p4est.org](http://www.p4est.org/)  
 [3] PETSc: [https://www.mcs.anl.gov/petsc/](https://www.mcs.anl.gov/petsc/)
+[4] Ursula R. Kattner and Carelyn E. Campbell. Invited review: modelling of thermodynamics and diffusion in multicomponent systems. Materials Science and Technology, 25(4):443–459, 2009.
+
