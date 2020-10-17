@@ -220,6 +220,7 @@ material:
         tlnt_coefficient : -23.701314
 ```
 This block defines the ```matrix``` material properties. The ```chemical energy``` section is used to define whether the material is disordered (```calphaddis```), a sub-lattice model (```calphad2sl```) etc. The ```temperature``` is also defined in this block. This temperature can be kept the same in each material for an isothermal simulation or can be set differently in each material to allow thermal diffusion to occur. The ```c0``` array defines the alloy compositions of the components present in the simulation. The sum of these compositions must be 1. This block also allows the addition of the atomic mobilities (```unary_migration```, ```binary_migration``` etc.) by inputting the temperature coefficients and temperature exponents. The enthalpy terms can also be added to this block (```unary_enthalpy```, ```binary_enthalpy```, ```ternary_enthalpy``` etc.) in the same manner. The atomic mobilities and energy parameters are obtained from a diffusion and thermodynamic database respectively. I basic understanding of the CALPHAD method is required to be able to input the correct parameters into this block [4]. 
+
 ### interface block
 
 The interface block usually takes the structure of:
@@ -237,16 +238,33 @@ interface :
 ```
 
 The interface type mentioned here is the ```grain boundary```. Here the ```energy``` and ```mobility``` terms are inputted, which should be normalised to the appropriate length scale. Further interface types can be added e.g. ```pptboundary`` with the same block structure.
+### boundary block
+
+To allow either a chemical or thermal influx into the simulation, a boundary block must be included:
+
+```
+boundary: 
+  influx: 
+    boundary_id: 3
+    chem:
+      type: neumann
+      value: [0.0, 0.0, 1e7]
+ ```
+ 
+This ```boundary_id``` defines the boundary at which the influx will be applied and ```type``` defines the type of boundary condition, which, in this case, it is set as the Neumann or second-type boundary condition. In the ```value``` section the value of the influx at the boundary condition can be added e.g. an oxygen influx in partial pressure units. Please note that the ```boundary``` section must be added to the ```header``` block in order for the boundary condition to be applied:
+
+```
+boundaries : influx
+```
 
 ## Contact
 
-This code is maintained by the Microstructure Modelling Group at the University of Manchester. For questions, comments, bug-reports or contributions please email Dr. Pratheek Shanthraj at [pratheek.shanthraj@manchester.ac.uk](mailto:pratheek.shanthraj@manchester.ac.uk).
+This code is maintained by the Microstructure Modelling Group at the University of Manchester. For questions, comments, bug-reports or contributions please email Dr. Pratheek Shanthraj at [pratheek.shanthraj@manchester.ac.uk](mailto:pratheek.shanthraj@manchester.ac.uk) or Sakina Rehman at [sakina.rehman@postgrad.manchester.ac.uk](mailto:sakina.rehman@postgrad.manchester.ac.uk).
 
 ## References
 
 [1] Grand-canonical phase-field implementation: [https://arxiv.org/abs/1906.10503](https://arxiv.org/abs/1906.10503)  
 [2] p4est: [http://www.p4est.org](http://www.p4est.org/)  
 [3] PETSc: [https://www.mcs.anl.gov/petsc/](https://www.mcs.anl.gov/petsc/)
-
-[4] Ursula R. Kattner and Carelyn E. Campbell. Invited review: modelling of thermodynamics and diffusion in multicomponent systems. Materials Science and Technology, 25(4):443–459, 2009.
+<br />[4] Ursula R. Kattner and Carelyn E. Campbell. Invited review: modelling of thermodynamics and diffusion in multicomponent systems. Materials Science and Technology, 25(4):443–459, 2009.
 
