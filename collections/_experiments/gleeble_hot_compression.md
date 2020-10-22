@@ -1,6 +1,6 @@
 ---
 title: Gleeble and Hydrawedge hot-compression tests
-author: Christopher Daniel
+author: Muzamul Nawaz, Christopher Daniel
 analysis_codes:
 tutorials:
   - Tutorial for Gleeble uniaxial compression tests
