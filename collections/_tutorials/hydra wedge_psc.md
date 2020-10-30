@@ -26,8 +26,7 @@ author: Muzamul Nawaz, Christopher Daniel
 ### Setting up the Gleeble Hydrawedge for experiments
 1)	Take measurements of sample 
 
-<img src="/wiki/assets/images/posts/Measurement of thickness.jpg" width="300" height="300"> 
-<img src="/wiki/assets/images/posts/Measurement of width.jpg" width="300" height="300">  
+<img src="/wiki/assets/images/posts/Measurement of thickness.jpg" width="300" height="300">  <img src="/wiki/assets/images/posts/Measurement of width.jpg" width="300" height="300">  
 
 2)  Welding thermocouples to the sample using spot welder, try getting as close to centre as possible.
 
