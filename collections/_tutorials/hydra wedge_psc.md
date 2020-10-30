@@ -18,3 +18,5 @@ author: Muzamul Nawaz, Christopher Daniel
 
 ### Setting up the Gleeble Hydrawedge for experiments
 1)	Take measurements of sample 
+
+![](/wiki/assets/images/posts/Measurement of thickness.jpg) 
