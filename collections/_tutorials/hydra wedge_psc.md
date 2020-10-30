@@ -15,3 +15,6 @@ author: Muzamul Nawaz, Christopher Daniel
 6)	Hit the blue reset button.
 7)	Press ‘OpnDr’ and lift the door of the unit. Then close it and check the top right corner turns from a green unlocked padlock to a red locked padlock. 
 8)	Switch on the PC and make sure it is connected to the Gleeble.
+
+### Setting up the Gleeble Hydrawedge for experiments
+1)	Take measurements of sample 
