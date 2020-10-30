@@ -26,5 +26,5 @@ author: Muzamul Nawaz, Christopher Daniel
 ### Setting up the Gleeble Hydrawedge for experiments
 1)	Take measurements of sample 
 
-<img src="https://github.com/LightForm-group/wiki/blob/master/assets/images/posts/Measurement%20of%20thickness.jpg" width="300" height="300"> <img src="https://github.com/LightForm-group/wiki/blob/master/assets/images/posts/Measurement%20of%20width.jpg " width="300" height="300"> 
+<img src="https://github.com/LightForm-group/wiki/blob/master/assets/images/posts/Measurement%20of%20thickness.jpg" width="300" height="300"> <img src="/wiki/assets/images/posts/Measurement of width.jpg" width="300" height="300"> 
 
