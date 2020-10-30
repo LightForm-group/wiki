@@ -27,4 +27,4 @@ author: Muzamul Nawaz, Christopher Daniel
 1)	Take measurements of sample 
 
 ![](/wiki/assets/images/posts/Measurement of thickness.jpg) 
-<img src="/wiki/assets/images/posts/Measurement of thickness.jpg" width="100" height="100">
+<img src="https://github.com/LightForm-group/wiki/blob/master/assets/images/posts/Measurement%20of%20thickness.jpg" width="100" height="100">
