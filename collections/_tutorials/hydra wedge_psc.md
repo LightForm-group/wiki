@@ -20,3 +20,4 @@ author: Muzamul Nawaz, Christopher Daniel
 1)	Take measurements of sample 
 
 ![](/wiki/assets/images/posts/Measurement of thickness.jpg) 
+<img src="https://wiki/assets/images/posts/Measurement of thickness.jpg" width="100" height="100">
