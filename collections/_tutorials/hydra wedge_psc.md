@@ -31,6 +31,7 @@ author: Muzamul Nawaz, Christopher Daniel
 2)  Welding thermocouples to the sample using spot welder, try getting as close to centre as possible.
 
 3)  Inserting sample into the Gleeble Hydrawedge with graphite paper or tantalum stuck to the anvils via nickel paste. And make sure black wire goes into red thermocouple reader and green wire into white thermocouple reader.
+<img src="/wiki/assets/images/posts/Insert sample into gleeble hydrawedge.jpg" width="300" height="300">
 
 4)	Push autoloader forward so it clicks into place.
 
