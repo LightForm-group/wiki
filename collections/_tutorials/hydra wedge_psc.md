@@ -29,3 +29,22 @@ author: Muzamul Nawaz, Christopher Daniel
 <img src="/wiki/assets/images/posts/Measurement of thickness.jpg" width="300" height="300"> 
 <img src="/wiki/assets/images/posts/Measurement of width.jpg" width="300" height="300">  
 
+2)  Welding thermocouples to the sample using spot welder, try getting as close to centre as possible.
+
+3)  Inserting sample into the Gleeble Hydrawedge with graphite paper or tantalum stuck to the anvils via nickel paste. And make sure black wire goes into red thermocouple reader and green wire into white thermocouple reader.
+
+4)	Push autoloader forward so it clicks into place.
+
+5)	Turn on the hydraulic and turn mechanical on. Move stroke piston into full compression (0.00 mm) resulting in the anvil touching the specimen in the autoloader.  
+
+6)	Turn AirRam on and  AirRamComp on and adjust the Air Ram pressure using the  yellow knob on the gleeble system. Should be between (0.5-1kN0 for small plane strain.
+
+7)	Move wedge as close to sample but not touching. 
+
+8)	Turn off the mechanical and AirRam but keep on the AirRamComp. 
+
+9)	Close the door of the chamber and turn the VacOn, make sure to close  lever on chamber. 
+
+10)	If you want to use HighVac follow step 9, and wait for the Chamber read to go down to 7x10-1 Torr. Once this happens turn on HighVac (this will lead to VacOn turning off). Wait for the ChamberRead to show “VacStandby”. Once this is shown turn on VacOn.
+
+11)	Open up QuikSim and enter values to create a script. Once script has been created run the script and start the test. 
