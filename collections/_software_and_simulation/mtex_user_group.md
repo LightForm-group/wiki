@@ -32,7 +32,7 @@ The aim of the the MTEX User Group is to support anyone at Manchester who uses o
 There also currently exists great suppoort and documentation from Ralf and the wider MTEX community.
 
 - [MTEX Website](https://mtex-toolbox.github.io) : This is the best resource to learn about MTEX, there is a great amount of documentation and examples available and the site is being continually updated.
-- [MTEX Forum](https://groups.google.com/forum/?fromgroups=#!forum/mtexmail) : Please sign up to the MTEX google forum, where you can view a record of past issues from the wider MTEX community. You can also opt to receive email updates containing a summary of users issues and Ralf's solutuions.
+- [MTEX Forum](https://github.com/mtex-toolbox/mtex/discussions): Please sign up to the MTEX GitHub forum, where you can view a record of past issues from the wider MTEX community. You can also opt to receive email updates containing a summary of users issues and Ralf's solutuions. Note, this was recently moved from the previous [Google Forum](https://groups.google.com/forum/?fromgroups=#!forum/mtexmail).
 - [MTEX Community Scripts](https://gist.github.com/search?utf8=✓&q=%23mtexScript) : A collection of MTEX scripts from the wider community is now being shared and collated on GitHub Gist. This is a good place to check out more complex analysis code.
 
 ## Meetings
