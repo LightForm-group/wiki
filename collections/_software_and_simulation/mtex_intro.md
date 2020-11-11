@@ -11,7 +11,7 @@ subcollection: MTEX
 
 # Introduction to MTEX
 
-This guide is designed to be a basic introduction to the MTEX toolbox - a series of MATLAB scripts which can be uses for the analysis of EBSD data.
+This guide is designed to be a basic introduction to the MTEX toolbox - a series of MATLAB scripts which can be used for the analysis of EBSD data. Here is a link to a useful video that will guide you through the setup process and help you get started plotting your data: https://www.dropbox.com/s/vj59i0vy67lc68y/28May2020.mp4?dl=0
 
 ## Installing MTEX
 
