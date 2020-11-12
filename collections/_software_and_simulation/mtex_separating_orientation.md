@@ -44,19 +44,23 @@ and fibre - defines the full fibre by the plane and specimen direction.
 The syntax for using each of these commands is as follows:
 
 % components
+
 rotated_cube = orientation.byMiller([0 0 1],[1 1 0],crystal_symmetry); or
 rotated_cube = orientation.byEuler(45\*degree,0\*degree,0\*degree,crystal_symmetry) or
 rotated_cube = orientation.map((Miller(0, 0, 1,crystal_symmetry), ND, Miller(1, 1, 0,crystal_symmetry), RD);
 
 % a partial fibre
+
 ori1_113_110 = orientation.map(Miller(1, -1, 3,ebsd_Cub), ND, Miller(1, 1, 0,ebsd_Cub), RD);
 ori2_111_110 = orientation.map(Miller(1, -1, 1,ebsd_Cub), ND, Miller(1, 1, 0,ebsd_Cub), RD);
 f = fibre(ori1_113_110,ori2_111_110);
 
 % a full fibre
+
 Gamma_Fibre = fibre(Miller(1,1,1,crystal_symmetry),ND);
 
 % note - RD and ND in the previous syntax must be predefined e.g.
+
 RD = vector3d.X;
 ND = vector3d.Y;
 TD = vector3d.Z;
