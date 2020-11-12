@@ -23,7 +23,7 @@ Data can be separated with respect to it's orientation either for a texture comp
 
 # Defining the texture orientations
 
-Texture can be decribed either by a component, that is a single orientation where the crystal plane and direction within the plane have been defined, or by a fibre where only the plane orientation is defined. A complete fibre includes all the orentations that share the common plane alignment, whilst a partial fibre is all the orientations that exist between two pre-defined orientations i.e. a fibre in orientation space that connects to the two. Examples of these are:
+Texture can be decribed either by a component, that is a single orientation where the crystal plane and a specific direction within the plane have been defined, or by a fibre where only the plane orientation is defined. A complete fibre includes all the orentations that share the common plane alignment, whilst a partial fibre is all the orientations that exist between two pre-defined orientations i.e. a fibre in orientation space that connects to the two. Examples of these are:
 
 1. The rotated cube component - Miller indices {001}<110> and Euler angles phi1=45, PHI=0 and phi2=0.
 
@@ -70,7 +70,7 @@ with the following example syntax:
 
 ebsd_rotated_cube = ebsd('Titanium cubic').findByOrientation(rotated_cube,20\*degree);
 
-## Calculating volume fraction of orientations
+# Calculating volume fraction of orientations
 
 The volume fraction of your component/fibre can be calculated from the number of ebsd points within the separated variable.
 
@@ -78,4 +78,4 @@ to find the number of ebsd points within a variable use the command numel:
 
 vol_rotated_cube = numel(ebsd_rotated_cube.x);
 
-## Plotting KAM and orientation on IPF maps
+# Plotting KAM and orientation on IPF maps
