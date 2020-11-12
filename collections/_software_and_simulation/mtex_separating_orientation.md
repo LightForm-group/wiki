@@ -1,6 +1,6 @@
 ---
 title: Separating data by orientation
-author: Mia Maric, Christopher Daniel
+author: Mia Maric, Christopher Daniel, Nicholas Byres
 tags:
   - MTEX
   - MATLAB
@@ -9,7 +9,7 @@ published: true
 subcollection: MTEX
 ---
 
-# Separating data - the workflow
+# Separating data by orientation - the workflow
 
 Data can be separated with respect to it's orientation either for a texture component or a fibre. To do this it is important to know the specimen directions for your data set i.e RD, TD and ND for a rolled material. Data can be separated point by point using the raw data, or by grain. The work flow is as follows:
 
@@ -23,13 +23,13 @@ Data can be separated with respect to it's orientation either for a texture comp
 
 # Defining the texture orientations
 
-Texture can be decribed either by a component, that is a single orientation where the crystal plane and a specific direction within the plane have been defined, or by a fibre where only the plane orientation is defined. A complete fibre includes all the orentations that share the common plane alignment, whilst a partial fibre is all the orientations that exist between two pre-defined orientations i.e. a fibre in orientation space that connects to the two. Examples of these are:
+Orientation data can be separated either as a component, that is a single orientation where the crystal plane and a specific direction within that plane are defined or as a fibre where only the orientation of the plane normal is defined. A complete fibre includes all the orentations that share the common plane alignment, whilst a partial fibre is all the orientations that exist between two pre-defined components i.e. a fibre in orientation space that connects to the two. Examples of these are:
 
 1. The rotated cube component - Miller indices {001}<110> and Euler angles phi1=45, PHI=0 and phi2=0.
 
 2. A truncated fibre between the {113}<110> and {111}<110> orientations and
 
-3. The gamma fibre {111}||ND
+3. The gamma fibre {111} || ND
 
 There are various ways to define these orientations using different commands in MTEX. They are:
 
@@ -46,13 +46,17 @@ The syntax for using each of these commands is as follows:
 % components
 
 rotated_cube = orientation.byMiller([0 0 1],[1 1 0],crystal_symmetry); or
+
 rotated_cube = orientation.byEuler(45\*degree,0\*degree,0\*degree,crystal_symmetry) or
+
 rotated_cube = orientation.map((Miller(0, 0, 1,crystal_symmetry), ND, Miller(1, 1, 0,crystal_symmetry), RD);
 
 % a partial fibre
 
 ori1_113_110 = orientation.map(Miller(1, -1, 3,ebsd_Cub), ND, Miller(1, 1, 0,ebsd_Cub), RD);
+
 ori2_111_110 = orientation.map(Miller(1, -1, 1,ebsd_Cub), ND, Miller(1, 1, 0,ebsd_Cub), RD);
+
 f = fibre(ori1_113_110,ori2_111_110);
 
 % a full fibre
