@@ -13,8 +13,7 @@ Download .dmg file and install it following the guidance, here is the link:
 https://github.com/osxfuse/osxfuse/releases/tag/macfuse-4.0.3
 ```
 
-Step 2: Error you may have after installation:
-When you try to mount the folder using sshfs after the installation of MacFuse 4.0.3, you may have this error:
+Step 2: When you try to mount the folder using sshfs after the installation of MacFuse 4.0.3, you may have this error:
 ```
 dyld: Library not loaded: /usr/local/lib/libosxfuse_i64.2.dylib
 ```
