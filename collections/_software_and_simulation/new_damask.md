@@ -36,12 +36,12 @@ Place the following jobscript into a directory containing `DAMASK_grid` input fi
 ```sh
 #!/bin/bash --login
 
-source /mnt/eps01-rds/jf01-home01/shared/load_DAMASK.sh
+source /mnt/eps01-rds/jf01-home01/shared/load_DAMASK-master.sh
 
 #$ -N damask_run          # Name of the job
 #$ -cwd                   # Submit in the current working directory
 
-DAMASK_spectral -g geom_file_name -l load_case_file_name
+DAMASK_grid -g geom_file_name -l load_case_file_name
 ```
 
 #### Parallel job
@@ -51,7 +51,7 @@ Place the following jobscript into a directory containing `DAMASK_grid` input fi
 ```sh
 #!/bin/bash --login
 
-source /mnt/eps01-rds/jf01-home01/shared/load_DAMASK.sh
+source /mnt/eps01-rds/jf01-home01/shared/load_DAMASK-master.sh
 
 #$ -N damask_run          # Name of the job
 #$ -cwd                   # Submit in the current working directory
