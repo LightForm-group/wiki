@@ -3,7 +3,6 @@ title: 7. Petty Cash
 Author: Natalie Shannon
 order: 7
 ---
-***Petty Cash***
 
 For information about ordering procedures, making expense claims, please
 contact:

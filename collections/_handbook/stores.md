@@ -3,7 +3,6 @@ title: 4. Stores
 author: Natalie Shannon 
 order: 4
 ---
-***Stores ***
 
 Stores are open from Monday to Friday, and are sited as follows:
 

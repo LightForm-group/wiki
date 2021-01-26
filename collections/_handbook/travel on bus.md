@@ -4,19 +4,17 @@ author: Natalie Shannon
 order: 11
 ---
 
-Travelling on University business:
+If you are travelling on University business, you are responsible for familiarising yourself with any potential travel risks and ensuring you have travel insurance.
 
-If you are travelling on University business, you are responsible for familiarising yourself with any potential travel risks and ensuring you have travel insurance, please see below: 
-
-Risk Assessment 
+### Risk Assessment 
 
 The University have recently introduced a policy for all colleagues travelling on University business to familiarise themselves with potential travel risks and to register with the School of Materials H&S.
 
 Full details regarding a risk assessment/pre-travel self checklist and general travel advice can be found https://www.staffnet.manchester.ac.uk/insurance/travel/ 
 
-To register University business travel, please contact christopher.turnbull@manchester.ac.uk
+To register University business travel, please contact <christopher.turnbull@manchester.ac.uk>
           
-Travel Insurance 
+### Travel Insurance 
 
 Full details of University travel insurance can be found https://www.staffnet.manchester.ac.uk/insurance/travel/  
 

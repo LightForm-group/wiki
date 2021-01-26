@@ -14,6 +14,4 @@ As a SLACK members you can join and leave channels as and when they need to – 
 
 SLACK enables Face-to-face and face-to-screen, you can talk in depth over voice or video calls directly from Slack, if you need to show your work, you can also share your screen.
 
-If you have not yet signed up to SLACK, please contact Natalie Shannon Natalie.A.Shannon@manchester.ac.uk for an invitation to join.
-
-
+If you have not yet signed up to SLACK, see the [new starters documentation](new-starters) for information on how to join.

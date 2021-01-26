@@ -4,21 +4,21 @@ author: Natalie Shannon
 order: 2
 ---
 
-The School Safety Adviser is Chris Turnbull. 
+The School Safety Adviser is **Chris Turnbull**. 
 
 Contact via:
 
-Email: christopher.turnbull@manchester.ac.uk
+Email: <christopher.turnbull@manchester.ac.uk>
 
 Telephone: 0161 306 3596
 
-**Must read documentation**
+### Must read documentation
 
 It is important that you read the School Safety Policy. Management System and Safety Personnel documents can be found on the School intranet [here](https://www.staffnet.manchester.ac.uk/materials/health-and-safety/).
 
 In addition, you must read the University safety policy which can be found [here](http://documents.manchester.ac.uk/DocuInfo.aspx?DocID=654).
 
-**Mandatory training**
+### Mandatory training
 
 You must attend the Health and Safety Induction and any specialised local safety training specified by your supervisor or the health and safety staff. 
 
@@ -32,7 +32,7 @@ For Postgraduate Students there are also Compulsory Health & Safety assessments 
 
 The School safety policy and templates for risk assessments are available on the Virtual Common Room.
 
-If you have any questions regarding health and safety, please contact your supervisor or the School Safety Advisor, Christopher Turnbull - christopher.turnbull@manchester.ac.uk
+If you have any questions regarding health and safety, please contact your supervisor or the School Safety Advisor as detailed above.
 
 ### Keeping our team safe
 
@@ -43,10 +43,3 @@ Whilst on University business, it is your responsibility to take reasonable care
 You can do this by complying with University Health and Safety Policies and Codes of Practice, which cover activities conducted within, or on behalf of the University. This applies not only on University premises, but anywhere else that you may be working.
 
 We all have a duty of care in the workplace, therefore if you see anything that may be a health and safety breach and is likely to cause harm, you must speak up and report it to the appropriate health and safety officials immediately.
-
-
-
-
-
-
-
