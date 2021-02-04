@@ -22,8 +22,8 @@ show_meta: false
             {% assign filename = exp.url | split: "/" -%}
             {% if filename[-1] != "index" -%}
                 {% assign exp_name = filename[-1] | split: ".html" -%}
-                {% assign an_code_link = "-" -%}
-                {% assign tut_link = "-" -%}
+                {% assign an_code_link = "" -%}
+                {% assign tut_link = "" -%}
 
                 {% for tut in site.tutorials -%}
                     {% assign tut_filename = tut.url | split: "/" -%}
@@ -50,8 +50,6 @@ show_meta: false
                         <li><a href="{{ analysis_code.link }}">{{ analysis_code.name }}</a></li>
                         {% endfor -%}
                         </ul>
-                      {% else %}
-                      -
                       {% endif %}   
 
                     </td>
@@ -67,8 +65,6 @@ show_meta: false
                                 {% endfor %}
                             {% endfor %}
                             </ul>
-                        {% else %}
-                        -
                         {% endif %}
                     </td>
                 </tr>

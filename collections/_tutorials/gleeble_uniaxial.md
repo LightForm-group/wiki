@@ -1,5 +1,5 @@
 ---
-title: Tutorial for Gleeble uniaxial compression tests
+title: Gleeble uniaxial compression tests
 author: Muzamul Nawaz, Christopher Daniel
 ---
 

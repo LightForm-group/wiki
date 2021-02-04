@@ -1,6 +1,7 @@
 ---
-title: Tutorial for Dioptas and PyFAI to cake SXRD diffraction pattern images
+title: Caking SXRD diffraction pattern images using Dioptas and PyFAI
 author: Christopher Daniel
+subcollection: SXRD
 ---
 
 ## Caking diffraction pattern images using Dioptas and pyFAI on the iCSF

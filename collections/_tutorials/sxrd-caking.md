@@ -1,6 +1,7 @@
 ---
-title: Tutorial for DAWN to cake SXRD diffraction pattern images
+title: Caking SXRD diffraction pattern images using DAWN
 author: Christopher Daniel
+subcollection: SXRD
 ---
 
 ## Caking diffraction pattern images using DAWN on the iCSF

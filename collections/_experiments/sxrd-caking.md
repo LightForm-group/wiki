@@ -6,8 +6,8 @@ analysis_codes:
   - name: pyFAI Azimuthal Integration and Caking
     link: https://github.com/LightForm-group/pyFAI-integration-caking
 tutorials:
-  - Tutorial for DAWN to cake SXRD diffraction pattern images
-  - Tutorial for Dioptas and PyFAI to cake SXRD diffraction pattern images
+  - Caking SXRD diffraction pattern images using DAWN
+  - Caking SXRD diffraction pattern images using Dioptas and PyFAI
 ---
 ## Parameters
 

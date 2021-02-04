@@ -1,6 +1,7 @@
 ---
-title: Tutorial for TOPAS to analyse phase fraction changes
+title: Analysing phase fraction changes using TOPAS
 author: Christopher Daniel
+subcollection: SXRD
 ---
 
 ## Notes on manual fitting in TOPAS using the GUI

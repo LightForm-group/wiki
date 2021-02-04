@@ -2,6 +2,7 @@
 published: true
 author: Wayne Heatman, Elliot Cooksey-Nash
 title: Macro DIC
+
 ---
 
 This document oulines the procedure for carrying out macro DIC measurements. This procedure should be followed for achieving best quality data and make it ready for sharing and re-use.

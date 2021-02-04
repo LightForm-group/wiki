@@ -5,3 +5,5 @@ _site/
 .vscode/
 
 **/.ipynb_checkpoints/
+/Gemfile
+/Gemfile.lock

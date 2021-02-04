@@ -1,9 +1,12 @@
 ---
-title: Tutorial for beta reconstruction
+title: Beta reconstruction
 author: Christopher Daniel
+tags:
+  - EBSD
+subcollection: EBSD
 ---
 
-# Tutorial for beta reconstruction
+# Beta reconstruction
 
 ## Running reconstruction.exe
 

@@ -1,6 +1,9 @@
 ---
-title: Tutorial for cleaning EBSD data
+title: Cleaning EBSD data
 author: Christopher Daniel
+tags:
+  - EBSD
+subcollection: EBSD
 ---
 
 # Tutorial for cleaning EBSD data

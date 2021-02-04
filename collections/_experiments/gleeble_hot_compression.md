@@ -1,10 +1,9 @@
 ---
 title: Gleeble and Hydrawedge hot-compression tests
 author: Muzamul Nawaz, Christopher Daniel
-analysis_codes:
 tutorials:
-  - Tutorial for Gleeble uniaxial compression tests
-  - Tutorial for Hydrawedge plane strain compression tests
+    - Gleeble uniaxial compression tests
+    - Hydrawedge plane strain compression tests
 published: true
 ---
 

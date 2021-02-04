@@ -1,5 +1,5 @@
 ---
-title: Tutorial for Hydrawedge plane strain compression tests
+title: Hydrawedge plane strain compression tests
 author: Muzamul Nawaz, Christopher Daniel
 ---
 
