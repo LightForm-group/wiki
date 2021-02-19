@@ -108,12 +108,12 @@ Note that we can also extract data from the HDF5 file without requiring the DAMA
 
 ### `material.yaml` file
 
-- Orientations must now be defined using quaternions. Each quaternion component must be to at least 12 dp. eg:
+- Orientations must now be defined using quaternions. Each quaternion component must be to at least 15 dp. (machine precision) eg:
 
 ```yaml
 - constituents:
   - fraction: 1.0
-    orientation: [1.000000000000, 0.000000000000, 0.000000000000, 0.000000000000]
+    orientation: [1.000000000000000, 0.000000000000000, 0.000000000000000, 0.000000000000000]
     phase: Titanium_alpha
   homogenization: SX
 ```
