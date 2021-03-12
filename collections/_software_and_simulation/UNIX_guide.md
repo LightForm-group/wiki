@@ -21,3 +21,8 @@ Last login: Fri Mar 12 10:38:17 on ttys002
 Y15576GB@C-LOSX1EVL410 ~ % <TYPE A COMMAND HERE>
 ```
 This is my terminal. The first line is telling me the date and time of my last login, while the second line is telling me the user (Y15576GB) and the machine (LOSX1EVL410). Here ill use greater/less than parenthesis `(<>)` to indicate where you could type a command.
+
+## Helpful Youtube resources
+
+- [A playlist on basics of using the terminal](https://www.youtube.com/playlist?list=PLII6oL6B7q78PKy6_R6JTkkYjVXZBZcVq)
+- [Installing Anaconda by Joao](https://www.youtube.com/watch?v=EbYGBANqDdY)
