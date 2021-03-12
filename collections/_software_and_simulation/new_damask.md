@@ -7,6 +7,7 @@ tags:
   - damask
 toc: true
 published: true
+subcollection: DAMASK
 ---
 
 The HDF5-compatible version of DAMASK (v3.0.0) should now be working on the CSF. We have installed it in the group RDS space (`/mnt/eps01-rds/jf01-home01/shared/DAMASK-master`). More information about DAMASK, including detail about input and output files etc. may be found at [damask.mpie.de](https://damask.mpie.de).
