@@ -7,6 +7,7 @@ tags:
   - damask
 toc: true
 published: true
+subcollection: DAMASK
 ---
 
 # Paraview: how to visualise DAMASK results
