@@ -1,5 +1,5 @@
 ---
-title: UNIX for dummies: How to navigate mac OS terminal and the CSF
+title: UNIX for dummies - How to navigate mac OS terminal and the CSF
 author: Guy Bowker
 tags:
   - simulation
