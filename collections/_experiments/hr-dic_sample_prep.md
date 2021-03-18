@@ -10,7 +10,7 @@ There are two gold remodelling methods, one uses water the other uses chemical r
 
 ## WATER REMODELLING
 
-**1. Gold Deposition**
+### 1. Gold Deposition
 
 Using *Edwards S150B Sputter Coater* (Fig.1) in B13 Morton to deposit gold onto your polished sample. Coating for **5 to 6 minutes** will roughly give **20 to 30nm** gold layer on your sample surface. There is a handbook right beside the coater so you can control this equipment by following the guidance step by step.
 
@@ -22,7 +22,7 @@ Fig.1 Edwards S150B Sputter Coater
 
 You might want to wear nitrile gloves and use tweezer when taking your sample out of coater after gold sputtering, this is to avoid the gold layer being contaminated or scratched by fingers.
 
-**2. Gold Remodelling with Water Vapour**
+### 2. Gold Remodelling with Water Vapour
 
 After gold deposition then you can put your sample into the water remodelling device. Fig.2 and Fig.3 show what the water remodelling system looks like and how it works:
 - The small beaker (b) inside is the water reservoir. Filling it with about **1/3 to 2/3 cup of water** prior to heating up (Do not fill it full in case of overflow when boiling).
@@ -43,11 +43,11 @@ Fig.3 Schematic of water remodelling system: a) remodelling chamber, b) water re
 
 
 
-For more details about how to use water remodelling device safely please do refer to the risk assessment form placed on Dropbox.
+For more details about how to use water remodelling device safely please do refer to the risk assessment form placed on [Dropbox](https://www.dropbox.com/sh/gn7m0qwdlw5m50f/AABP154p8ZCppeDzHL8o_hnDa/Equipment%20RAs?dl=0&preview=MR1000_Remodelling+Equipment+B01+%26+B013_CRA.docx&subfolder_nav_tracking=1.)
 
 ## CHEMICAL/STYRENE REMODELLING
 
-**1. Gold Deposition**
+### 1. Gold Deposition
 
 Using *Quorum Q150T Coater* in sample prep room of EM centre to provide gold film onto your polished sample. This is an equipment which allows you to control the thickness of the gold film. To our best knowledge, 5nm is the ideal thickness for samples to get fully remodelled by styrene vapour within 30 hours. Again, there is a manual near the coater which can lead you step by step on how to use this machine.
 
@@ -58,9 +58,10 @@ Fig.4 Quorum Q150T Coater
 
 
 By the way, the default target material mounted in the coater is Au/Pd [80:20] so you need to change it to gold target before coating. You can borrow the gold target from Anjali and remember to return it back after your coating work. If you don’t know how to switch to the gold target, Anjali or Michael might be able to help (**please note your request might not be accepted until face-to-face assistance is available**).
+
 Again, wear nitrile gloves and use tweezer when taking your sample out of coater after gold deposition.
 
-**2. Gold Remodelling with Styrene Vapour**
+### 2. Gold Remodelling with Styrene Vapour
 
 Your gold coated sample is now ready to be chemically remodelled by styrene vapour. As styrene might cause biohazard and irritation if it contacts with skins and eyes or is inhaled accidentally, therefore, this remodelling work is only allowed to be carried out in a fume cupboard. Safety spectacle, lab coat, mask and nitrile gloves must be worn to prevent yourself from being contaminated. Fig.5 and Fig.6 illustrate what the styrene remodelling system looks like and how it works:
 - First, switch on the ventilator and raise up the sash (Do not over the limited height).
@@ -87,13 +88,13 @@ Fig.6 Schematic of chemical/styrene remodelling system: a) argon flow controller
 
 
 
-For more details about how to use styrene remodelling device safely please do refer to the risk assessment form placed on Dropbox.
+For more details about how to use styrene remodelling device safely please do refer to the risk assessment form placed on [Dropbox](https://www.dropbox.com/sh/gn7m0qwdlw5m50f/AABP154p8ZCppeDzHL8o_hnDa/Equipment%20RAs?dl=0&preview=MR1000_Remodelling+Equipment+B01+%26+B013_CRA.docx&subfolder_nav_tracking=1.)
 
 
 
 Once your sample has been gold remodelled then you can check the speckle pattern on high resolution SEM such as Q650, Tescan Mira3 or Magellan etc. by using the BSE mode as gold with high atomic number is able to provide good contrast under BSE. 20kv with 10mm WD or 10kv with 5mm WD are both okay for taking images, can also try other parameters. Magnification is related to the speckle size you’ve got – basically small gold speckle requires higher magnification while large speckle means lower magnification because you need to make sure that there are no less than 3 pixels in each gold speckle so that might possibly provide you a better correlation result afterwards. We also suggest each sub-image (tile) to be overlapped by 20% to enable an easy stitching in ImageJ. Fig.7a, b, c and d presents BSE image of the gold speckle pattern of pure Ti, Ni-based superalloy, stainless steel and Mg alloy respectively.
 
-![](/wiki/assets/images/posts/goldspecklepattern.jpg)
+![](/wiki/assets/images/posts/hrdicpattern.png)
 
 Fig.7 Gold speckle pattern BSE image of (a) pure Ti after water remodelling [3], (b) In718 (Ni-based superalloy) after water remodelling [4], (c) 304L stainless steel after water remodelling [1] and (d) ZEK100 (Mg alloy) after styrene remodelling. Image is acquired from high resolution SEM Magellan, Tescan S8000, Sirion and Q650 respectively with average speckle size for each one around 83nm (pure Ti), 70nm (In718), 56nm (304L stainless steel) and 25nm (ZEK100)
 
