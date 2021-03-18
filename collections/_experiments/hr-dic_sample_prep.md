@@ -13,6 +13,7 @@ There are two gold remodelling methods, one uses water the other uses chemical r
 **1. Gold Deposition**
 
 Using *Edwards S150B Sputter Coater* (Fig.1) in B13 Morton to deposit gold onto your polished sample. Coating for **5 to 6 minutes** will roughly give **20 to 30nm** gold layer on your sample surface. There is a handbook right beside the coater so you can control this equipment by following the guidance step by step.
+
 ![](/wiki/assets/images/posts/B13coater.jpeg)
 
 Fig.1 Edwards S150B Sputter Coater
@@ -31,6 +32,7 @@ After gold deposition then you can put your sample into the water remodelling de
 - Remodelling time is around **3.5 to 4 hours**, this can finally provide a homogeneous distribution of gold pattern with the average speckle size around **50 to 100nm**.
 - Turn off hot plate after remodelling. Wear heatproof gloves and use tweezer to take your sample out from remodelling chamber and put it aside for cooling down. Do not rinse hot beakers with cold water immediately, let them cool down for a bit and dry them.
 - For safety reason, leave a note to keep other people away from the hot plate when it is cooling down.
+
 ![](/wiki/assets/images/posts/waterremodelling.png)
 
 Fig.2 Water remodelling system: (a) remodelling chamber, (b) water reservoir, (c) hot plate, (d) cup holder
@@ -48,6 +50,7 @@ For more details about how to use water remodelling device safely please do refe
 **1. Gold Deposition**
 
 Using *Quorum Q150T Coater* in sample prep room of EM centre to provide gold film onto your polished sample. This is an equipment which allows you to control the thickness of the gold film. To our best knowledge, 5nm is the ideal thickness for samples to get fully remodelled by styrene vapour within 30 hours. Again, there is a manual near the coater which can lead you step by step on how to use this machine.
+
 ![](/wiki/assets/images/posts/EMCcoater.jpeg)
 
 Fig.4 Quorum Q150T Coater
@@ -73,6 +76,7 @@ Your gold coated sample is now ready to be chemically remodelled by styrene vapo
 -	Switch off the black valve on the wall to cut off the argon flow. Twist the black knob on the gas controller (a) counterclockwise a bit to let the residual gas out. When there are no running bubbles in styrene reservoir, switch off the white knob on the wall.
 -	Down the sash.
 -	Let the ventilator work for another 5 to 10 minutes and then turn it off.
+
 ![](/wiki/assets/images/posts/styreneremodelling.png)
 
 Fig.5 Chemical/Styrene remodelling system: (a & h) argon flow controller, (b) styrene reservoir, (c) heater, (d) exhaust chamber, (e) remodelling chamber, (f) hot plate, (g) ventilator switch
@@ -88,6 +92,7 @@ For more details about how to use styrene remodelling device safely please do re
 
 
 Once your sample has been gold remodelled then you can check the speckle pattern on high resolution SEM such as Q650, Tescan Mira3 or Magellan etc. by using the BSE mode as gold with high atomic number is able to provide good contrast under BSE. 20kv with 10mm WD or 10kv with 5mm WD are both okay for taking images, can also try other parameters. Magnification is related to the speckle size you’ve got – basically small gold speckle requires higher magnification while large speckle means lower magnification because you need to make sure that there are no less than 3 pixels in each gold speckle so that might possibly provide you a better correlation result afterwards. We also suggest each sub-image (tile) to be overlapped by 20% to enable an easy stitching in ImageJ. Fig.7a, b, c and d presents BSE image of the gold speckle pattern of pure Ti, Ni-based superalloy, stainless steel and Mg alloy respectively.
+
 ![](/wiki/assets/images/posts/goldspecklepattern.jpg)
 
 Fig.7 Gold speckle pattern BSE image of (a) pure Ti after water remodelling [3], (b) In718 (Ni-based superalloy) after water remodelling [4], (c) 304L stainless steel after water remodelling [1] and (d) ZEK100 (Mg alloy) after styrene remodelling. Image is acquired from high resolution SEM Magellan, Tescan S8000, Sirion and Q650 respectively with average speckle size for each one around 83nm (pure Ti), 70nm (In718), 56nm (304L stainless steel) and 25nm (ZEK100)
