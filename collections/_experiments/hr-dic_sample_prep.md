@@ -99,7 +99,7 @@ Fig.7 Gold speckle pattern BSE image of (a) pure Ti after water remodelling [3],
 
 
 
-References
+## Reference
 
 - [1]	F. Di Gioacchino and J. Quinta da Fonseca, “Plastic Strain Mapping with Sub-micron Resolution Using Digital Image Correlation,” Exp. Mech., vol. 53, no. 5, pp. 743–754, 2013, doi: 10.1007/s11340-012-9685-2.
 - [2]	A. Orozco-Caballero, D. Lunt, J. D. Robson, and J. Quinta da Fonseca, “How magnesium accommodates local deformation incompatibility: A high-resolution digital image correlation study,” Acta Mater., vol. 133, pp. 367–379, 2017, doi: 10.1016/j.actamat.2017.05.040.
