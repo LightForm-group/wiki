@@ -1,7 +1,12 @@
 ---
 title: HR-DIC Sample Prep
 author: Fan Gao
-
+tags:
+  - hrdic
+  - gold-remodelling
+  - speckle-pattern
+toc: true
+published: true
 ---
 
 HR-DIC (High Resolution Digital Imaging Correlation) is used to investigate the deformation behavior of materials at microstructural scale. Like macro-DIC, HR-DIC requires specific pattern distributing on the sample surface to record the movement of materials during the plastic deformation and thus acquire displacement map which can be used to plot strain map afterwards. Instead of spraying white and black paints in macro-DIC, HR-DIC requires a gold speckle pattern homogeneously distributing on sample surface, this pattern can be achieved via gold remodeling and observed on high resolution SEM.
