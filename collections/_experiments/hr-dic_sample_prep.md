@@ -54,7 +54,7 @@ For more details about how to use water remodelling device safely please do refe
 
 ### 1. Gold Deposition
 
-Using *Quorum Q150T Coater* in sample prep room of EM centre to provide gold film onto your polished sample. This is an equipment which allows you to control the thickness of the gold film. To our best knowledge, 5nm is the ideal thickness for samples to get fully remodelled by styrene vapour within 30 hours. Again, there is a manual near the coater which can lead you step by step on how to use this machine.
+Using *Quorum Q150T Coater* in sample prep room of EM centre to provide gold film onto your polished sample. This is an equipment which allows you to control the thickness of the gold film. To our best knowledge, **5nm** is the ideal thickness for samples to get fully remodelled by styrene vapour within 30 hours. Again, there is a manual near the coater which can lead you step by step on how to use this machine.
 
 ![](/wiki/assets/images/posts/EMCcoater.jpeg)
 
