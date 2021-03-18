@@ -101,7 +101,7 @@ Once your sample has been gold remodelled then you can check the speckle pattern
 
 ![](/wiki/assets/images/posts/hrdicpattern.png)
 
-Fig.7 Gold speckle pattern BSE image of (a) pure Ti after water remodelling [3], (b) In718 (Ni-based superalloy) after water remodelling [4], (c) 304L stainless steel after water remodelling [1] and (d) ZEK100 (Mg alloy) after styrene remodelling. Image is acquired from high resolution SEM Magellan, Tescan S8000, Sirion and Q650 respectively with average speckle size for each one around 83nm (pure Ti), 70nm (In718), 56nm (304L stainless steel) and 25nm (ZEK100)
+Fig.7 Gold speckle pattern BSE image of (a) pure Ti after water remodelling [3], (b) Inconel 718 (Ni-based superalloy) after water remodelling [4], (c) 304L stainless steel after water remodelling [1] and (d) ZEK100 (Mg alloy) after styrene remodelling. Image is acquired from high resolution SEM Magellan, Tescan S8000, Sirion and Q650 respectively with average speckle size for each one around 83nm (pure Ti), 70nm (Inconel 718), 56nm (304L stainless steel) and 25nm (ZEK100)
 
 
 
