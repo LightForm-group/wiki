@@ -9,7 +9,7 @@ toc: true
 published: true
 ---
 
-HR-DIC (High Resolution Digital Image Correlation) is used to investigate the deformation behavior of materials at microstructural scale. Like macro-DIC, HR-DIC requires specific pattern distributing on the sample surface to record the movement of materials during the plastic deformation and thus acquire displacement map which can be used to plot strain map afterwards. Instead of spraying white and black paints in macro-DIC, HR-DIC requires a gold speckle pattern homogeneously distributing on sample surface, this pattern can be achieved via gold remodeling and observed on high resolution SEM.
+HR-DIC (High Resolution Digital Image Correlation) is used to investigate the deformation behavior of materials at microstructural scale. Like macro-DIC, HR-DIC requires specific pattern distributing on the sample surface to record the movement of materials during the plastic deformation and thus acquire displacement map which can be used to plot strain map afterwards. Instead of spraying white and black paints, HR-DIC requires a gold speckle pattern homogeneously distributing on sample surface, this pattern can be achieved via gold remodeling and observed on high resolution SEM.
 
 There are two gold remodelling methods, one uses water the other uses chemical reagent like styrene. Water remodelling is suitable for materials which are able to stand high temperature and have good corrosion resistance (e.g. Ti alloys, Ni-based superalloys, stainless steels) while chemical remodelling would be considered if materials cannot go high temperature or they are easily attacked by water (e.g. Mg alloys). Both methods will be introduced individually as follow.
 
