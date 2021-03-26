@@ -8,7 +8,7 @@ published: true
 subcollection: MatFlow
 ---
 
-MatFlow presentations:
+Click to download a PowerPoint presentation on MatFlow:
 
 - [LightForm Research showcase (October 2020)][1]
 - [MatFlow Introduction (March 2021)][2]
