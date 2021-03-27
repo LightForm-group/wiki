@@ -1,5 +1,5 @@
 ---
-title: Installation
+title: Output File
 author: Sakina Rehman, Pratheek Shanthraj
 tags:
   - simulation
