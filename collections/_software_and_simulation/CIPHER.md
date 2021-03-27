@@ -6,6 +6,7 @@ tags:
   - csf
   - cipher
 toc: true
+subcollection: CIPHER (Calphad Integrated Phase-field solvER)
 published: true
 ---
 
