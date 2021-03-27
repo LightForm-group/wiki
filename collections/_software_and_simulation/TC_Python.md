@@ -1,5 +1,5 @@
 ---
-title: Installation
+title: Getting started
 author: Sakina Rehman
 tags:
   - python
