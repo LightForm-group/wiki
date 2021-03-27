@@ -1,11 +1,11 @@
 ---
-title: ThermoCalc Python
+title: Getting Started
 author: Sakina Rehman
 tags:
   - python
   - thermocalc
 toc: true
-subcollection: Python
+subcollection: ThermoCalc Python
 published: true
 ---
 
