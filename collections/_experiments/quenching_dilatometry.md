@@ -1,6 +1,6 @@
 ---
-title: Dilatometer Quenching Tests
-author: Ed Pickering, Josh Collins
+title: Dilatometer quenching tests
+author: Ed Pickering, Josh Collins, Mark Taylor
 ---
 
 ## Executive Summary
@@ -47,4 +47,13 @@ In addition, to ensure good data quality and that our interpretations are sound 
 •	It is difficult to assess volume fractions and start temperatures in mixed microstructures where there is overlap of transformations (e.g., bainite into martensite). 
 •	It is also difficult to calculate accurate volume fractions if there is a significant amount of retained austenite (with unknown volume fraction) at the end of the test, or under certain circumstances in which there is a significant amount of carbon partitioning to the austenite during transformation(s), since the procedure does not account for these occurrences.  
 •	The orientation of the samples should be considered where transformations may be non-isotropic in terms of their strain, for example when a sample is textured and the transformation has a strain that varies with crystallographic direction.
+
+##1.	Introduction
+
+**Dilatometry is the measurement of the expansion or contraction of a sample (i.e., its dilatation) when its temperature is changed.** This typically involves measurement in one direction (e.g., change in sample length), but measurements can also be multi-dimensional.  
+
+The most common reason for conducting dilatometry measurements is to measure the thermal expansion coefficients a material. However, for steels and other metals that display allotropic transformations (i.e., a change in crystal structure with temperature), dilatometry can be used to examine their phase transformation behaviour.  In steels, the change from body-centred cubic (BCC) ferrite to face-centred cubic (FCC) austenite (and the reverse) is accompanied by a change in volume of a few percent – precise values depend on the temperature of transformation and the composition of the steel.  See Fig. 1 for an example of how the dilatation changes when a low-alloy steel is heated from room temperature to above its Ae3 temperature, where austenite is stable, and is then cooled back to room temperature.  
+
+![Fig1](/wiki/assets/images/posts/Quenching_Dil_Fig1.png)
+**Figure 1.**  Dilatation curve for SA508 Grade 3 steel heated to 1000˚C at 20˚C s-1 and cooled to room temperature at 20˚C s-1.  The transformation on cooling around 400˚C is that to martensite.  ![image](https://user-images.githubusercontent.com/26139658/113914295-4e27ee00-97d5-11eb-8fc7-81bdb5050ed3.png)
 
