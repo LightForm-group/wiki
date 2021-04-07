@@ -48,7 +48,7 @@ In addition, to ensure good data quality and that our interpretations are sound 
 •	It is also difficult to calculate accurate volume fractions if there is a significant amount of retained austenite (with unknown volume fraction) at the end of the test, or under certain circumstances in which there is a significant amount of carbon partitioning to the austenite during transformation(s), since the procedure does not account for these occurrences.  
 •	The orientation of the samples should be considered where transformations may be non-isotropic in terms of their strain, for example when a sample is textured and the transformation has a strain that varies with crystallographic direction.
 
-##1.	Introduction
+## 1.	Introduction
 
 **Dilatometry is the measurement of the expansion or contraction of a sample (i.e., its dilatation) when its temperature is changed.** This typically involves measurement in one direction (e.g., change in sample length), but measurements can also be multi-dimensional.  
 
@@ -70,5 +70,17 @@ For the low-alloy steels Rolls-Royce uses for plant construction, the principal 
 The remainder of this document will set out the standard procedures for carrying out quenching dilatometry measurements on low-alloy steels.  Special focus will be given to austenitisation and quenching (CCT) investigations.  The type of quenching dilatometer used is a so-called **pushrod dilatometer**, which uses ceramic pushrods to contact the sample in order to measure length change, as will be described in the following section.  **This by far the most common type of quenching dilatometer**, and hence this document is written in reference to it.   
 
 The document begins by describing the typical experimental apparatus used for quenching dilatometry, including highlighting common choices for options such as quenching gas and pushrod material (Section 2).  It then proceeds to talk about sample preparation considerations (Section 3), before detailing the technicalities of data acquisition (Section 4) and analysis (Section 5).  Common artefacts and misinterpretations are highlighted in Section 6, ensuring data quality is addressed in Section 7, and complementary and alternative techniques are described in Section 8.  Finally, a ‘How To’ guide for common experiments is given in Section 9.  
+
+## 1.1.	Technique Limitations
+
+Before proceeding, it is worth highlighting some key limitations to the technique:
+
+•	**Only phase transformations that involve significant changes in sample length can be measured using dilatometry.**  Hence, it is useful for steels that display solid-state allotropic phase transitions on heating/cooling, but is less useful for examining precipitation in nickel alloys or aluminium alloys, unless there is a significant change in length or change in expansion coefficient associated with the event.  In theory, assessing Ti alloys should be possible, since like steels they exhibit an allotropic transition (alpha to beta), but the author has often found that the strains associated with this can be difficult to interpret and are often not as strong as for steels.  
+•	**Sample sizes** are typically no more than 4 mm diameter x 10 mm long.  The technique measures the length change of the entire specimen only (it samples the whole volume at once).  This may be significant where the steel exhibits compositional microsegregation (banding).
+•	**Heating and cooling rates** of up to 100˚C s-1 are usually achievable in a well-controlled manner in most alloys.  Heating and cooling rates of 1000˚C s-1 are achievable, but samples usually need to be hollow, the material has to have high thermal conductivity, and rates may not be so controllable.  
+•	**Typical maximum temperature of 1600˚C**, although measurements and/or control of temperature may be less good very high temperatures.  
+•	**It is difficult to assess volume fractions and start temperatures in mixed microstructures where there is overlap of transformations** (e.g., bainite into martensite).  Results should always be compared to those from microscopy and microhardness for a sanity check.  
+•	**Accurate measurement of volume fractions, following the procedure in Section 5.3 below, is difficult if there is a significant amount of retained austenite** (with unknown volume fraction) at the end of the test, or under certain circumstances in which there is a significant amount of carbon partitioning to the austenite during transformation(s), since the procedure does not account for these occurrences.  
+
 
 
