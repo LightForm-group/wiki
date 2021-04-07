@@ -45,7 +45,7 @@ In addition, to ensure good data quality and that our interpretations are sound 
 * Heating and cooling rates of up to 100˚C s<sup>-1</sup> are usually achievable in a well-controlled manner in most alloys.  Heating and cooling rates of 1000˚C s<sup>-1</sup> are achievable, but samples usually need to be hollow, the material has to have high thermal conductivity, and rates may not be so controllable.  
 * Typical maximum temperature of 1600˚C, although measurements and/or control of temperature may be less reliable at very high temperatures.  
 * It is difficult to assess volume fractions and start temperatures in mixed microstructures where there is overlap of transformations (e.g., bainite into martensite). 
-* It is also difficult to calculate accurate volume fractions if there is a significant amount of retained austenite (with unknown volume fraction) at the end of the test, or under certain circumstances in which there is a significant amount of carbon partitioning to the austenite during transformation(s), since the procedure does not account for these occurrences.  
+* It is also difficult to calculate accurate volume fractions if there is a significant amount of retained austenite (with unknown volume fraction) at the end of the test, or under certain circumstances in which there is a significant amount of carbon ioning to the austenite during transformation(s), since the procedure does not account for these occurrences.  
 •	The orientation of the samples should be considered where transformations may be non-isotropic in terms of their strain, for example when a sample is textured and the transformation has a strain that varies with crystallographic direction.
 
 ## 1.	Introduction
@@ -236,7 +236,7 @@ And the resulting transformation curve from Fig. 9 is:
 ![Fig10](/wiki/assets/images/posts/Quenching_Dil_Fig10.png)
 **Figure 10.**  The evolution of the transformation on cooling depicted in Fig. 9. 
 
-**Important note:**  this assumes that the final strain measured during the test corresponds to 100% transformed.  If retained austenite is present, then this will need to be measured through a different technique (e.g., XRD) and accounted for.  Also, errors may be introduced if a transformation involves significant carbon portioning into the retained austenite (e.g., if allotriomorphic ferrite forms at higher temperatures).  This is because this carbon partitioning leads to an expansion of the austenite lattice parameter, and the accompanying increased strain is misinterpreted as being due to the volume fraction of ferrite increasing (not due to austenite expansion).  
+**Important note:**  this assumes that the final strain measured during the test corresponds to 100% transformed.  If retained austenite is present, then this will need to be measured through a different technique (e.g., XRD) and accounted for.  Also, errors may be introduced if a transformation involves significant carbon portioning into the retained austenite (e.g., if allotriomorphic ferrite forms at higher temperatures).  This is because this carbon partitioning leads to an expansion of the austenite lattice parameter, and the accompanying increased strain is misinterpreted as being due to the volume fraction of ferrite increasing (not due to austenite expansion).  Further details can be found in [2]. 
 
 For curves with more than one transformation event, the volume fraction curve can be used to estimate the volume fractions of the respective microconstituents.  For example, the volume fraction curve for Fig. 8, which shows both ferrite and bainite formation, is as follows:
 
@@ -250,5 +250,116 @@ Note that **no technique can be used to calculate the fractions of microconstitu
 
 A question that must be asked when performing the analysis is ‘what am I measuring the fraction of?’.  The answer to this should be informed by comparison of the start temperatures to previous studies or empirical relationships, and should also use the results of microscopy and hardness.  This is discussed further in Section 6.2.  
 
+### 6.	Common Artefacts and Misinterpretations 
+
+Common features and artefacts seen in dilatometry curves include the following, which can either be seen in Fig. 1 or are schematised in Fig. 12:
+
+* **The final length of the sample does not match the original length of the sample.**  This can be seen in Fig.1.  The reasons behind this are not always clear, but can be a combination of:
+  * **Different end microstructure to start microstructure**, which can include the formation of **retained austenite** (more retained austenite will result in bigger difference, if the starting microstructure was 100% ferrite and cementite).
+  * **Transformation plasticity** could in theory contribute to this behaviour.  The formation of hard martensite inside austenite can plastically deform it and will constrain any subsequent transformation, leading to macroscopic changes in length.  
+  * **‘Drift’** in the apparatus.  This is essentially referring to any change that is due to expansion or contraction of the machine, or change in the measuring system, that leads to a change in measured sample length.  This seems to be especially prevalent at high heating and cooling rates when using alumina pushrods.
+  * Length changes during isothermal holding…
+* **Length changes during isothermal holding at high temperature.** This can also be seen in Fig.1, in which there is a small drop in strain observed during holding at 1000˚C. The following can contribute:
+  * **Phase transformations** such as precipitate dissolution, which were not completed during the heat step(s).  
+  * **Creep** of the sample, owing to the relaxation of residual stresses (the force applied to hold the sample in the pushrods is typically very small, and should not lead to creep).  The removal of dislocations and other defects could in theory also contribute to the creep strain.  
+  * **‘Drift’** in the apparatus, as described above.  
+* **‘Blips’** in the length change data in linear regions can arise from a number of sources:  
+  * **Sudden changes in gas flow rate***, owing to a switch from low to high flow rate valves (the machine will do this automatically).  As mentioned earlier, these are particularly pronounced when the gas is switched on after performing the initial part of an experiment under a vacuum. If these are problematic, it is usually best to change the experimental process to avoid gas being introduced during the middle of the cooling step.  Austenitisation (and other high-temperature holds) may still best be operated under vacuum to avoid decarburisation, as discussed in Section 4.1.  However, this vacuum can be removed at the very start of any cooling step (away from transformation events) and a partial pressure introduced if necessary, to avoid sudden jumps in gas flow during subsequent cooling.  
+  * **Mechanical issues with the machine**, such as untightened pushrods or broken or slipping pushrods. This can be caused by repeatedly using silica pushrods at temperatures up to or exceeding 1200 °C.
+  * **Vibrations from the surroundings**, although these would have to be significant (simply knocking the machine has no effect). 
+*	**‘Spiralling’** is often observed during fast heating and cooling rates, particularly at high temperatures.  It is usually caused by the machine struggling to maintain the correct (set) temperature, and rapidly changing the heating power and/or cooling gas flow rate.  This can create a disparity between the sample temperature at the centre and the sample temperature at the surface thermocouple, and the dilatation read corresponds to neither.  Not placing the sample correctly in the induction coil can cause this. 
+*	**Non-linear gradients** (in regions usually linear) at fast cooling rates are often observed.  These can arise owing to the non-uniform temperature through the volumes of samples when they are cooled rapidly using quenching gas at the sample surface.  Lag in the measurement system could also cause this change, in theory, as could the effect of fast gas impingement on the pushrods. 
+*	**Apparent reversal of transformations can be seen in tests.**  There are few metallurgical phenomena that could explain this effect (one being the release of latent heat in one area of the sample retransforming another area).  Instead, the origin is likely to be an issue with the measurement system itself, or perhaps some sort of creep or transformation plasticity.  Indeed, it has been shown that application of a stress during the transformation can result in similar strain profiles, see [3].  
+
+![Fig12](/wiki/assets/images/posts/Quenching_Dil_Fig12.png)
+**Figure 12.**  Schematising the artefacts that are commonly seen in dilatometry data.
+
+* **Decarburisation** can occur during some heat treatments, see Fig. 13.  As discussed in Section 4.1., it’s been found that this can happen when samples are held at high temperatures for a long duration (hours) with an inert gas atmosphere (presumably this is because oxygen contamination in the gas reacts with C at the sample surface).  Holding under vacuum does eliminate the decarburisation, although at very high temperatures could lead to more sublimation of elements from the sample surface.  Tests should be performed to find the best approach.  
+
+![Fig13](/wiki/assets/images/posts/Quenching_Dil_Fig13.png)
+**Figure 13.**  The decarburised surface layer of a low-alloy steel following a 2-hour hold at 820˚C with a partial pressure of helium.
+
+### 7.	Ensuring the Quality of Data and Interpretation
+
+How can we assess the origins of artefacts in data?  And how can we ensure our data is of good quality, and our interpretations are correct?  The following approaches are tools that can be used.
+
+**In order to determine the origins of artefacts (and remove them if possible):**
+
+* **Different sample geometries** and multiple thermocouple placements can be used to test whether non-uniform temperatures (or other geometry-related effects) are the cause of a phenomenon or not.  For instance, non-linear gradients during fast cooling may disappear if hollow samples are used, since there will be more temperature uniformity.  
+
+* **Alternative sample materials** are also useful when looking for the cause of artefacts. For example, a platinum reference (often supplied with the machine), or the use of austenitic steels (which should not transform) can be used to test for the origin of non-linear responses.  Pure Fe can be used to test start temperatures.  Samples that should creep less (e.g., W or intermetallics) can be used to assess the origins of ‘drift’.   
+
+* **Other machine-derived artefacts** (such as ‘blips’ due to change in gas flow rate) can be assessed by examining the metadata gathered from the results files, such as the data associated with HF power or gas inlet flow rate.  
+
+* **Repeat measurements**, either on the same sample or on samples of the same material, are always useful to determine whether artefacts have originated from one-time sample or machine oddities.  
+
+In addition to the removal/recognition of artefacts, to ensure good data quality and that our interpretations are sound:  
+
+* **Repeat measurements** on different samples of the same material should be carried out if the **uncertainty** in results is to be adequately quantified. It may also be appropriate to examine samples taken from different locations in a forging and/or at different orientations to a particular direction (e.g., the radial direction).  
+
+* **Comparisons of results** to those obtained through other experimental methods, in particular optical and scanning electron microscopy (SEM), and hardness, should always be carried out.  Such comparisons are critically important when confirming the presence of microconstituents and their volume fractions.  Optical microscopy is particularly useful to checking volume fractions of ferrite, whilst the presence of martensite will usually be obvious from the material hardness.  Ball-park figures for the hardnesses of single and mixed microconstituent microstructures can be predicted using the relationships provided by Ion et al. [4].  
+
+* **Comparisons to empirical relationships for start temperatures** can provide reassurances with respect to the identity of a start temperature (e.g., whether it corresponds to the bainite start or martensite start).  Such relationships are typically functions of alloy composition.  See Appendix 2 for a list of these.  
+
+* **Comparisons to results from more advanced models** for phase transformation kinetics can also be a useful way validate the interpretation of transformation curves.  Good examples of such models included the MUCG83 programme developed at University of Cambridge [5] and the transformation model developed by Li et al. [6] (note, however, that many such models use the same empirical expressions for start temperatures shown in Appendix 2).  
+
+### 8.	Complementary and Alternative Techniques
+
+As stated in the previous section, optical microscopy and SEM, as well as hardness, are primary experimental techniques that are complementary to quenching dilatometry, in that they are able to help confirm the microconstituents present in a sample.  Transmission electron microscopy is also of use, although is a specialist technique that only assesses a small volume of material and requires expert interpretation.  Similarly, techniques like X-ray diffraction (XRD), electron back-scatter diffraction and magnetic measurements can also be useful to determine whether any retained austenite is present in a sample.  
+
+In terms of measuring the **real-time** evolution of phase transformation behaviour, in-situ experiments can be performed.  It is possible to perform in-situ heating and cooling experiments in both the SEM and TEM, but observations are often complicated by sample drift, surface effects and oxidation.  A realistic alternative is the use of real-time X-ray diffraction using a synchrotron source of X-rays (so-called synchrotron XRD, SXRD).  Such sources are able to provide very high fluxes of X-rays, meaning that signals can be transmitted through large volumes of material (a few mm in thickness) and be detected with high-frequency acquisition systems.   By quantifying the evolution of austenite/ferrite during heating/cooling cycles, SXRD provides comparable information to quenching dilatometry  (volume fraction transformed, start temperatures), see [2].  However, SXRD requires access to national experimental facilities (synchrotron sources) and analysis of results is not trivial.  
+
+ 
+### 9.	‘How To’ Guide 
+
+#### 9.1.	Continuous Cooling Transformation (CCT) Diagrams
+
+The production of CCT diagrams is one of the principal uses of dilatometry, and is of particular interest to metallurgists who wish to understand and/or predict microstructural evolution when forgings are quenched during standard austenitisation-quench-temper heat treatments.   
+
+The following are notes on conducting experiments to produce CCT diagrams:
+
+* Heating and cooling rates, as well as the hold times and temperatures used, should be as close to the manufacturing process as possible. The heating rate and hold time and temperature are important as they will set the **prior austenite grain size**, which will determine the transformation kinetics.  
+* Typical cooling rates to assess are:  0.1, 0.2, 0.5, 1, 2, 5, 10, 20, 50, 100˚C s<sup>-1<sup>.
+* Transformation start temperatures should be determined as outlined in Section 5.  
+* The CCT diagram should be plotted such that time = 0 when the Ae3 temperature is passed through.  
+
+Appendix 3 provides examples of dilatation curves obtained for a number of different cooling rates in SA508 Grade 3 steel.  
+
+The prior austenite grain size should be measured and quoted alongside any CCT diagram.  It can be measured using thermal etching.  
+
+
+### 9.2.	Thermal Etching in the Dilatometer
+
+Measuring the prior-austenite grain size in modern low-alloy steels is challenging.  Etches (such as picric acid) which may have been used historically to reveal boundaries are not very effective in modern low-alloy steels that contain little phosphorus. Instead, two other methods can be used: EBSD and thermal etching.  Like etching, both require the formation of bainitic or martensitic structures from the prior austenite, because this means that the grain boundaries are preserved after cooling.    
+
+Using EBSD, the orientations of martensitic or bainitic plates can be mapped, and then grain construction software used to reconstruct the prior austenite grain structure.  The reconstruction is possible because only certain crystallographic variants of martensite or bainite should exist in a single prior austenite grain.  An example of reconstruction software is the MTEX toolbox [7].  There are challenges associated with this process in that as-quenched microstructures are often difficult to analyse using EBSD, since they tend to be highly strained and full of defects.  Tempering is needed to anneal defects, but this should not be so severe as to change the grain structure.
+
+Thermal etching measures prior austenite grain size more directly, and **can be performed in a quenching dilatometer.**  It works by subjecting a polished surface to the austenitisation heat treatment in a vacuum.  When this happens, the surface of the sample grooves at grain boundaries owing to surface energy considerations.  These grooves then appear dark when viewed optically, Fig. 14.  The process for conducting thermal etching in a quenching dilatometer is as follows:
+
+* A standard solid 4 mm diameter x 10 mm long sample should be ground on the curved edge to produce a flat region along the length of the sample (the result is a cylinder with a section of its curved edge sliced off uniformly along its length).  
+* This flat region should be polished to as good a finish as possible.  
+•	The sample should be heat treated in the dilatometer **under vacuum** following the austenitisation process of interest.  The chamber may need to be vacuum pumped, flooded with an inert gas and re-pumped a few times to ensure that most of the oxygen has been removed from the chamber. It can also help to clean the inside of the induction coil with a cloth and some ethanol before starting the experiment.
+* The sample should be **cooled in vacuum** by setting the dilatometer to cool rapidly, but without turning on the quenching gas (this can result in surface oxidation).
+* Images of the surface can be taken using an optical microscope, and the linear intercept method used to calculate the grain size.  
+* The technique is not suitable for steels with low hardenability, which don’t form martensite or bainite when cooled in vacuum.   
+
+![Fig14](/wiki/assets/images/posts/Quenching_Dil_Fig14.png)
+Figure 14.  The results of thermal etching, as viewed using optical microscopy.  Taken from [8].
+
+Acknowledgements
+
+This work was instructed and funded by Rolls-Royce plc.  Special thanks to E. Grieveson and D. Cogswell for their guidance during the writing of this document.  
+
+References
+
+[1]. H-S. Yang and H.K.D.H. Bhadeshia, Uncertainties In Dilatometric Determination Of
+Martensite Start Temperature, Materials Science and Technology 23 (2007) 556-560.  
+[2]. E.J. Pickering, J. Collins, A. Stark, L.D. Connor, A.A. Kiely, H.J. Stone, In Situ Observations of Continuous Cooling Transformations in Low Alloy Steels, Materials Characterization 165 (2020) 110355. 
+[3]. J.-B. Leblond, G. Mottet, J. Devaux and J.-C. Devaux, Mathematical Models of Anisothermal Phase Transformations in Steels, and Predicted Plastic Behaviour, Materials Science and Technology 1 (1985) 815-822.  
+[4]. J.C. Ion, K.E. Easterling and M.F. Ashby, A Second Report On Diagrams Of Microstructure And Hardness For Heat-Affected Zones In Welds, Acta Metallurgica 32 (1984) 1949-1962.  
+[5]. M.J. Peet and H.K.D.H. Bhadeshia, MUCG83 freeware, http://www.msm.cam.ac.uk/map/steel/programs/mucg83.html
+[6]. M.V. Li, D.V. Niebuhr, L.L. Meekisho and D.G. Atteridge, A Computational Model for the Prediction of Steel Hardenability, Metallurgical and Materials Transactions B, 29B (1998) 661-672.   
+[7]. MTEX analysis toolbox for MATLAB, https://mtex-toolbox.github.io/
+[8].  H. Pous Romero, I. Lonardelli, D. Cogswell and H.K.D.H. Bhadeshia, Austenite Grain Growth in a Nuclear Pressure Vessel Steel, Materials Science and Engineering A 567 (2013) 72-79.  
 
 
