@@ -172,7 +172,7 @@ The transformations from ferrite to austenite and austenite to ferrite involve d
 In the **offset method** is the recommended method for transformations that are preceded by periods of no transformation (which yield regions of linear dilatation).  Essentially, the method involves taking the gradient of the curve pre-transformation, and offsetting this from the curve by a particular amount.  The transformation temperature is defined as that when the offset curve meets the experimental data, see Fig. 5 for an example of transformation start during cooling.  It is analogous to the 0.2% proof stress method of determining yield strength.  
 
 ![Fig5](/wiki/assets/images/posts/Quenching_Dil_Fig5.png)
-**Figure 5.**  Showing the application of the offset method to determine the martensite start temperature of an SA508 Grade 3 steel quenched at 20˚C s-1 (full cooling curve shown inset).  
+**Figure 5.**  Showing the application of the offset method to determine the martensite start temperature of an SA508 Grade 3 steel quenched at 20˚C s<sup>-1<sup> (full cooling curve shown inset).  
 
 The offset method discussed here is that proposed by Yang and Bhadeshia [1].  They used a **constant offset for all samples of a given steel, corresponding to the strain for transformation to 1% martensite** (i.e., the strain that would be expected if 1% martensite formed in 100% austenite at room temperature).  The strain corresponding to 1% martensite can be found by computing the lattice parameters of the austenite and martensite, which in turn depend on the alloy composition.  Spreadsheets for the calculation of the offset strain (computed using empirical formulae for lattice parameters) can be found here:  http://www.phase-trans.msm.cam.ac.uk/2007/mart.html  (both spreadsheets contain the same calculations, which are also repeated in the paper).  
 
@@ -220,11 +220,11 @@ Similar sources of uncertainty are also present for the 2nd derivative method.  
 
 The volume fraction transformed can be estimated from dilatometry data by assuming the evolution of strain follows a lever rule type relationship.  For a general transformation, this can be written:  
 
-fraction transformed = \(\frac{\varepsilon - \varepsilon_\textrm{untransformed}}{\varepsilon_\textrm{transformed} - \varepsilon_\textrm{untransformed}}
+fraction transformed = $$\frac{\varepsilon - \varepsilon_\textrm{untransformed}}{\varepsilon_\textrm{transformed} - \varepsilon_\textrm{untransformed}}$$
 
 For transformation(s) on cooling (from austenite to ferrite), the following can be written:  
 
-fraction transformed = \(\frac{\varepsilon - \varepsilon_\gamma}{\varepsilon_\alpha - \varepsilon_\gamma}
+fraction transformed = $$\frac{\varepsilon - \varepsilon_\gamma}{\varepsilon_\alpha - \varepsilon_\gamma}$$
 
 Where \(\varepsilon\) is the strain from the dilatation curve at a particular temperature, \(\varepsilon_\alpha\)  is the strain from the extrapolated transformed gradient (assumed to be ferrite, hence the α notation) at the same temperature, and \(\varepsilon_\gamma\) is the strain from the extrapolated untransformed curve (assumed to be austenite) again at the same temperature.  This is schematised here: 
 
