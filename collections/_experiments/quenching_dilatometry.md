@@ -12,9 +12,9 @@ Quenching dilatometry is a technique that measures of the expansion or contracti
 *What information does it provide?*
 
 The principal output of an experiment is a graph of change in length vs. temperature.  From this, the following can be extracted using appropriate data analysis:
-•	Transformation start and finish temperatures (e.g., martensite start).  This can be used to create continuous cooling transformation (CCT) diagrams, continuous heating transformation (CHT) diagrams, and time-temperature-transformation (TTT) diagrams.  
-•	The evolution of the volume fractions of microstructural constituents (e.g., martensite) with temperature.  
-•	Thermal expansion coefficients.  
+* Transformation start and finish temperatures (e.g., martensite start).  This can be used to create continuous cooling transformation (CCT) diagrams, continuous heating transformation (CHT) diagrams, and time-temperature-transformation (TTT) diagrams.  
+* The evolution of the volume fractions of microstructural constituents (e.g., martensite) with temperature.  
+* Thermal expansion coefficients.  
 
 *Why/when use this technique?*
 
@@ -71,7 +71,7 @@ The remainder of this document will set out the standard procedures for carrying
 
 The document begins by describing the typical experimental apparatus used for quenching dilatometry, including highlighting common choices for options such as quenching gas and pushrod material (Section 2).  It then proceeds to talk about sample preparation considerations (Section 3), before detailing the technicalities of data acquisition (Section 4) and analysis (Section 5).  Common artefacts and misinterpretations are highlighted in Section 6, ensuring data quality is addressed in Section 7, and complementary and alternative techniques are described in Section 8.  Finally, a ‘How To’ guide for common experiments is given in Section 9.  
 
-## 1.1.	Technique Limitations
+### 1.1.	Technique Limitations
 
 Before proceeding, it is worth highlighting some key limitations to the technique:
 
