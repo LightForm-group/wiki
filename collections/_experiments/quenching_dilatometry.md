@@ -309,7 +309,6 @@ As stated in the previous section, optical microscopy and SEM, as well as hardne
 
 In terms of measuring the **real-time** evolution of phase transformation behaviour, in-situ experiments can be performed.  It is possible to perform in-situ heating and cooling experiments in both the SEM and TEM, but observations are often complicated by sample drift, surface effects and oxidation.  A realistic alternative is the use of real-time X-ray diffraction using a synchrotron source of X-rays (so-called synchrotron XRD, SXRD).  Such sources are able to provide very high fluxes of X-rays, meaning that signals can be transmitted through large volumes of material (a few mm in thickness) and be detected with high-frequency acquisition systems.   By quantifying the evolution of austenite/ferrite during heating/cooling cycles, SXRD provides comparable information to quenching dilatometry  (volume fraction transformed, start temperatures), see [2].  However, SXRD requires access to national experimental facilities (synchrotron sources) and analysis of results is not trivial.  
 
- 
 ### 9.	‘How To’ Guide 
 
 #### 9.1.	Continuous Cooling Transformation (CCT) Diagrams
@@ -362,4 +361,33 @@ Martensite Start Temperature, Materials Science and Technology 23 (2007) 556-560
 [7]. MTEX analysis toolbox for MATLAB, https://mtex-toolbox.github.io/
 [8].  H. Pous Romero, I. Lonardelli, D. Cogswell and H.K.D.H. Bhadeshia, Austenite Grain Growth in a Nuclear Pressure Vessel Steel, Materials Science and Engineering A 567 (2013) 72-79.  
 
+
+### APPENDIX 1 – Sample Geometries
+
+The following are examples of sample geometries used for pushrod dilatometers (provided by TA Instruments):
+
+![FigA1](/wiki/assets/images/posts/Quenching_Dil_Fig_A1.png)
+
+### APPENDIX 2 – Transformation Start Temperatures
+
+Empirical relationships for bainite and martensite start temperatures are listed below:  
+
+Expression (all compositions in wt.%) | Reference | Value for SA508 Grade 3 | Value for SA508 Grade 4N | Value for SA540
+------------ | ------------- | --------- | ------------- | --------
+ Ms (˚C) = 561–474C – 33Mn – 17Cr – 17Ni – 21Mo + **10Co – 7.5Si** * |||| 
+ Ms (˚C) = 539 – 423C – 30.4Mn – 12.1Cr – 17.7Ni – **7.5Mo + 10Co – 7.5Si** * ||||
+  |  |  |  | 
+ Bs (˚C) = 637 – 58C – 35Mn – 15Ni – 34Cr – 41Mo ||||
+
+
+*The modification in bold was proposed by Kung and Rayment (C.Y. Kung and J.J. Rayment, Metall. Trans. A 13 (1982) 328–331).  
+
+The alloy chemistries used to calculate the start temperatures above are shown here (all wt.%).  Only elements of interest are provided:  
+
+### APPENDIX 3 – Examples of CCT Results
+
+The following dilatometry curves and CCT diagram for SA508 Grade 3 were found for an austenitisation heat treatment of 900˚C for 10 seconds (simulating welding).  The austenite grain size (linear intercept) was 11 µm, and Ae3 temperature was calculated (using ThermoCalc) to be 799˚C.  
+
+![FigA2](/wiki/assets/images/posts/Quenching_Dil_Fig_A2.png)
+![FigA3](/wiki/assets/images/posts/Quenching_Dil_Fig_A3.png)
 
