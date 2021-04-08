@@ -374,11 +374,10 @@ Empirical relationships for bainite and martensite start temperatures are listed
 
 Expression (all compositions in wt.%) | Reference | Value for SA508 Grade 3 | Value for SA508 Grade 4N | Value for SA540
 ------------ | ------------- | --------- | ------------- | --------
- Ms (˚C) = 561–474C – 33Mn – 17Cr – 17Ni – 21Mo + **10Co – 7.5Si** * |||| 
- Ms (˚C) = 539 – 423C – 30.4Mn – 12.1Cr – 17.7Ni – **7.5Mo + 10Co – 7.5Si** * ||||
+ Ms (˚C) = 561–474C – 33Mn – 17Cr – 17Ni – 21Mo + **10Co – 7.5Si** * |W. Steven and A.G. Haynes, JISI 183 (1956) 349–359.|392˚C **(390˚C)**|350˚C|298˚C **(296˚C)**
+ Ms (˚C) = 539 – 423C – 30.4Mn – 12.1Cr – 17.7Ni – **7.5Mo + 10Co – 7.5Si** * |K.W. Andrews, JISI 203 (1965) 721–727.|391˚C **(389˚C)**|354˚C|304˚C **(302˚C)**
   |  |  |  | 
- Bs (˚C) = 637 – 58C – 35Mn – 15Ni – 34Cr – 41Mo ||||
-
+ Bs (˚C) = 637 – 58C – 35Mn – 15Ni – 34Cr – 41Mo |M.V. Li, D.V. Niebuhr, L.L. Meekisho and D.G. Atteridge, Metall. Mater. Trans. B, 29B (1998) 661-672.|535˚C	| 478˚C	| 520˚C
 
 *The modification in bold was proposed by Kung and Rayment (C.Y. Kung and J.J. Rayment, Metall. Trans. A 13 (1982) 328–331).  
 
