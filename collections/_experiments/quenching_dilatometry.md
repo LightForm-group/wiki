@@ -362,14 +362,14 @@ Martensite Start Temperature, Materials Science and Technology 23 (2007) 556-560
 [8].  H. Pous Romero, I. Lonardelli, D. Cogswell and H.K.D.H. Bhadeshia, Austenite Grain Growth in a Nuclear Pressure Vessel Steel, Materials Science and Engineering A 567 (2013) 72-79.  
 
 
-### APPENDIX 1 – Sample Geometries
+## APPENDIX 1 – Sample Geometries
 
 The following are examples of sample geometries used for pushrod dilatometers (provided by TA Instruments):
 
 ![FigA1](/wiki/assets/images/posts/Quenching_Dil_Fig_A1.png)
 
 
-### APPENDIX 2 – Transformation Start Temperatures
+## APPENDIX 2 – Transformation Start Temperatures
 
 Empirical relationships for bainite and martensite start temperatures are listed below:  
 
@@ -391,7 +391,7 @@ SA508 Grade 4N |	0.2	| - | 0.3 |	3.7 |	1.8 |	0.5
 SA540 |	0.4 |	0.25 |	0.7 |	1.8 |	0.85 |	0.3
 
 
-### APPENDIX 3 – Examples of CCT Results
+## APPENDIX 3 – Examples of CCT Results
 
 The following dilatometry curves and CCT diagram for SA508 Grade 3 were found for an austenitisation heat treatment of 900˚C for 10 seconds (simulating welding).  The austenite grain size (linear intercept) was 11 µm, and Ae3 temperature was calculated (using ThermoCalc) to be 799˚C.  
 
