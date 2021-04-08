@@ -368,6 +368,7 @@ The following are examples of sample geometries used for pushrod dilatometers (p
 
 ![FigA1](/wiki/assets/images/posts/Quenching_Dil_Fig_A1.png)
 
+
 ### APPENDIX 2 – Transformation Start Temperatures
 
 Empirical relationships for bainite and martensite start temperatures are listed below:  
@@ -381,7 +382,14 @@ Expression (all compositions in wt.%) | Reference | Value for SA508 Grade 3 | Va
 
 *The modification in bold was proposed by Kung and Rayment (C.Y. Kung and J.J. Rayment, Metall. Trans. A 13 (1982) 328–331).  
 
-The alloy chemistries used to calculate the start temperatures above are shown here (all wt.%).  Only elements of interest are provided:  
+The alloy chemistries used to calculate the start temperatures above are shown here (all wt.%).  Only elements of interest are provided: 
+
+Steel |	C	| Si	| Mn	| Ni	| Cr	| Mo
+---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- 
+SA508 Grade 3	| 0.2	| 0.25	| 1.4	| 0.8 |	0.25 |	0.5
+SA508 Grade 4N |	0.2	| - | 0.3 |	3.7 |	1.8 |	0.5
+SA540 |	0.4 |	0.25 |	0.7 |	1.8 |	0.85 |	0.3
+
 
 ### APPENDIX 3 – Examples of CCT Results
 
