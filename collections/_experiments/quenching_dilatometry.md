@@ -396,8 +396,8 @@ SA540 |	0.4 |	0.25 |	0.7 |	1.8 |	0.85 |	0.3
 
 ## APPENDIX 3 – Examples of CCT Results
 
-The following dilatometry curves and CCT diagram for SA508 Grade 3 were found for an austenitisation heat treatment of 900˚C for 10 seconds (simulating welding).  The austenite grain size (linear intercept) was 11 µm, and Ae3 temperature was calculated (using ThermoCalc) to be 799˚C.  
+The following dilatometry curves and CCT diagram for SA-540 B24 were found for an austenitisation heat treatment of 870˚C for 2 hours (to simulate a typical industrial treatment).  The Ae3 temperature was calculated, using equations by Andrews and Grange, and determined to be 749˚C.  
 
-![FigA2](/wiki/assets/images/posts/Quenching_Dil_Fig_A2.png)
-![FigA3](/wiki/assets/images/posts/Quenching_Dil_Fig_A3.png)
+![FigA2](/wiki/assets/images/posts/Quenching_Dil_Fig_A4.png)
+![FigA3](/wiki/assets/images/posts/Quenching_Dil_Fig_A5.png)
 
