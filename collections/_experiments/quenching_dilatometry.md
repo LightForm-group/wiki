@@ -398,6 +398,6 @@ SA540 |	0.4 |	0.25 |	0.7 |	1.8 |	0.85 |	0.3
 
 The following dilatometry curves and CCT diagram for SA-540 B24 were found for an austenitisation heat treatment of 870˚C for 2 hours (to simulate a typical industrial treatment).  The Ae3 temperature was calculated, using equations by Andrews and Grange, and determined to be 749˚C.  
 
-![FigA2](/wiki/assets/images/posts/Quenching_Dil_Fig_A4.png)
-![FigA3](/wiki/assets/images/posts/Quenching_Dil_Fig_A5.png)
+![FigA2](/wiki/assets/images/posts/Quenching_Dil_Fig_A5.png)
+![FigA3](/wiki/assets/images/posts/Quenching_Dil_Fig_A4.png)
 
