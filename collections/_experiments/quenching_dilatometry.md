@@ -1,6 +1,9 @@
 ---
 title: Dilatometer quenching tests
 author: Ed Pickering, Josh Collins, Mark Taylor
+analysis_codes:
+  - name: Offset Calculator & Dilation Ts Calculator
+    link: https://github.com/LightForm-group/steel_dilatometer_analysis
 ---
 
 ## Executive Summary
