@@ -11,11 +11,10 @@ subcollection: MatFlow
 
 ## Getting help with MatFlow workflows
 
-First of all, make sure your packages are up to date, with these two commands on the CSF:
+First of all, make sure your packages are up to date, with this command on the CSF:
 
 ```bash
-module load apps/anaconda3/5.2.0/bin
-pip install --user -U matflow damask-parse formable matflow-damask matflow-formable matflow-defdap matflow-mtex matflow-neper matflow-demo-extension
+/mnt/eps01-rds/jf01-home01/shared/matflow/update_matflow.sh
 ```
 
 If you are having problems with loading your workflow locally (e.g. in a Jupyter notebook), make sure your local packages are up to date (run this on your computer):
