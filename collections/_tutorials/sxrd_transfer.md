@@ -65,6 +65,11 @@ Then, you are ready to run the full transfer;
 
 `rsync -azv username@ssh.diamond.ac.uk:/dls/i12/data/2021/mg25682-2 diamond_data_rds`
 
+The final confirmation should return something like;
+
+`sent 693,246 bytes  received 65,792,616,969 bytes  11,708,036.34 bytes/sec
+total size is 87,034,154,221  speedup is 1.32`
+
 ### Copying data from DESY
 
 For DESY the data transfer is slightly different.
