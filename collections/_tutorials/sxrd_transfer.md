@@ -22,11 +22,11 @@ and
 
 `/mnt/eps01-rds/Fonseca-Lightform/shared`
 
-To access this data on the iCSF you will first need to setup some symbolic links, which will enable you to view the folder. First, remote desktop into the interactive linux environment, launch the terminal, and log in to the iCSF using the command;
+To access this data on the iCSF you will first need to setup some symbolic links. A symbolic link, also known as a sym or a soft link is a special type of file that points to another file or directory (like a shortcut in Windows), this will allow you to view the contents of the folder. First, remote desktop into the interactive linux environment, launch the terminal, and log in to the iCSF using the command;
 
 `ssh -X username@incline256.itservices.manchester.ac.uk`
 
-Then, make a new directory in your home folder on the iCSF where you would like to store this data. For instance,
+Then, it is probably a good idea to make a new directory in your home folder on the iCSF where you would like to store this data. For instance,
 
 `mkdir rds_lightform`
 
@@ -52,7 +52,9 @@ Open a terminal on your mac or laptop. Connect to the SSH;
 
 `ssh username@rds-ssh.itservices.manchester.ac.uk`
 
-Change directory so you can view the folder you would like to transfer the data to. Then, run the following command, which will use rsync to transfer the data from the path on Diamond's servers to our RDS folder at Manchester. Note, this will not direct any data through your computer.
+Change directory so you can view the folder you would like to transfer the data to. 
+
+Then, run the following command, which will use rsync to transfer the data from the path on Diamond's servers to our RDS folder at Manchester. Note, this will not direct any data through your computer.
 
 `rsync -azvn username@ssh.diamond.ac.uk:/dls/i12/data/2021/mg25682-2 diamond_data_rds`
 
@@ -73,3 +75,57 @@ total size is 87,034,154,221  speedup is 1.32`
 ### Copying data from DESY
 
 For DESY the data transfer is slightly different.
+
+First, using DESY's data management portal (Gamma Portal), you will need to register the FTP system. This is easily done by browsing the data on the portal and clicking a link for FTP registration. This will activate for 7 days. Here are the instructions for doing using the [Gamma Portal](https://confluence.desy.de/display/ASAP3/The+Gamma+Portal).
+
+The FTP server provides access to the data using the FTP protocol. DESY has it's own instructions for doing this - [accessing beamtime data using FTP](https://confluence.desy.de/display/ASAP3/Accessing+beamtime+data+using+FTP).
+
+However, we need to do run this FTP protocol on the **RDS-SSH service** at Manchester.
+
+Open a terminal on your mac or laptop. Connect to the SSH;
+
+`ssh username@rds-ssh.itservices.manchester.ac.uk`
+
+Change directory so you are within the folder you would like to transfer the data to. 
+
+Then, run the following series of commands to connect to the FTP server;
+
+`mkdir -p ~/.lftp/certs`
+`curl https://pki.pca.dfn.de/dfn-ca-global-g2/pub/cacert/chain.txt > ~/.lftp/certs/desy.pem`
+`echo 'set ssl:ca-file ~/.lftp/certs/desy.pem' >> ~/.lftp/rc`
+`echo 'debug 3' >> ~/.lftp/rc`
+`lftp`
+`open ftp://psftp.desy.de`
+`user USERNAME`
+
+Note the USERNAME should be your DESY (DOOR) username. You will then be prompted to enter your DESY (DOOR) password.
+
+Now you are in your homepage for the for FTP server that you registered. Using the command `ls` you will see the list of folders. For example;
+
+`---- Connecting to psftp.desy.de (2001:638:700:1004::1:37) port 21
+**** connect(control_sock): Network is unreachable
+---- Connecting to psftp.desy.de (131.169.4.55) port 21
+<--- 220-***               
+<--- 220-Welcome to psftp.desy.de
+<--- 220-***
+<--- 220 This is a private system - No anonymous login
+<--- 230 OK. Current restricted directory is /
+dr-xr-x---    6 26666      6666             4096 Feb  6 09:51 .
+dr-xr-x---    6 26666      6666             4096 Feb  6 09:51 ..
+-rw-r--r--    1 26666      6666              457 Mar 16 13:58 README.non-conformant-files.txt
+-r--------    1 26666      6666             1581 Dec  6 17:05 beamtime-metadata-11010750.json
+dr-xr-x---    2 26666      6666             4096 Dec  6 17:05 processed
+dr-xr-x---    5 26666      6666             4096 Dec  7 22:10 raw
+dr-xr-x---    2 26666      6666             4096 Dec  6 17:05 scratch_cc
+dr-xr-x---    2 26666      6666             4096 Dec  6 17:05 shared`
+
+To copy the data run the mirror command. This will transfer the data from DESY's FTP server to the folder that you are working within on the RDS-SSH service.
+
+`mirror raw`
+
+After this data transferred you can run the next folder;
+
+`mirror processing`
+
+etc.
+
