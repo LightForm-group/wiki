@@ -102,7 +102,8 @@ Note the USERNAME should be your DESY (DOOR) username. You will then be prompted
 
 Now you are in your homepage for the for FTP server that you registered. Using the command `ls` you will see the list of folders. For example;
 
-`---- Connecting to psftp.desy.de (2001:638:700:1004::1:37) port 21
+``` bash
+{---- Connecting to psftp.desy.de (2001:638:700:1004::1:37) port 21
 **** connect(control_sock): Network is unreachable
 ---- Connecting to psftp.desy.de (131.169.4.55) port 21
 <--- 220-***               
@@ -117,7 +118,8 @@ dr-xr-x---    6 26666      6666             4096 Feb  6 09:51 ..
 dr-xr-x---    2 26666      6666             4096 Dec  6 17:05 processed
 dr-xr-x---    5 26666      6666             4096 Dec  7 22:10 raw
 dr-xr-x---    2 26666      6666             4096 Dec  6 17:05 scratch_cc
-dr-xr-x---    2 26666      6666             4096 Dec  6 17:05 shared`
+dr-xr-x---    2 26666      6666             4096 Dec  6 17:05 shared}
+```
 
 To copy the data run the mirror command. This will transfer the data from DESY's FTP server to the folder that you are working within on the RDS-SSH service.
 
