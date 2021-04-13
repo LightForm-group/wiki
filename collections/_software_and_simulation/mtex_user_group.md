@@ -59,6 +59,9 @@ The meeting calendar can be viewed here - https://lightform-group.github.io/wiki
 
 ## Organisers
 
-The current organisers of the MTEX User Group are [Christopher Daniel](https://lightform.org.uk/people/dr-christopher-stuart-daniel) - christopher.daniel@manchester.ac.uk, [Wayne Heatman](https://lightform.org.uk/people/wayne-heatman) - wayne.heatman@manchester.ac.uk and [Nick Byres](https://lightform.org.uk/people/nicholas-byres) - nicholas.byres@postgrad.manchester.ac.uk.
+The current organisers of the MTEX User Group are: 
+[Christopher Daniel](https://lightform.org.uk/people/dr-christopher-stuart-daniel) - christopher.daniel@manchester.ac.uk, 
+[Wayne Heatman](https://lightform.org.uk/people/wayne-heatman) - wayne.heatman@manchester.ac.uk 
+and [Nick Byres](https://lightform.org.uk/people/nicholas-byres) - nicholas.byres@postgrad.manchester.ac.uk.
 
 *Please feel free to contact us if you have something interesting to present at our next meeting, would like to be part of the organisisng team, or if you need help contributing to this Wiki.*
