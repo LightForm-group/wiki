@@ -324,8 +324,9 @@ The following are notes on conducting experiments to produce CCT diagrams:
 * Typical cooling rates to assess are:  0.1, 0.2, 0.5, 1, 2, 5, 10, 20, 50, 100˚C s<sup>-1<sup>.
 * Transformation start temperatures should be determined as outlined in Section 5.  
 * The CCT diagram should be plotted such that time = 0 when the Ae3 temperature is passed through.  
+* An alloy's Ae3 temperature can be determined using Thermo-Calc software (https://thermocalc.com/) or can be manually calculated using published empirical equations. 
 
-Appendix 3 provides examples of dilatation curves obtained for a number of different cooling rates in SA508 Grade 3 steel.  
+Example equations for manually calculating steel Ae3 temperatures are provided in Appendix 2. Appendix 3 provides examples of dilatation curves obtained for a number of different cooling rates in SA540 B24 steel.  
 
 The prior austenite grain size should be measured and quoted alongside any CCT diagram.  It can be measured using thermal etching.  
 
@@ -372,7 +373,7 @@ The following are examples of sample geometries used for pushrod dilatometers (p
 ![FigA1](/wiki/assets/images/posts/Quenching_Dil_Fig_A1.png)
 
 
-## APPENDIX 2 – Transformation Start Temperatures
+## APPENDIX 2 – Transformation Start Temperatures & Ae3 Calculations
 
 Empirical relationships for bainite and martensite start temperatures are listed below:  
 
@@ -385,14 +386,21 @@ Expression (all compositions in wt.%) | Reference | Value for SA508 Grade 3 | Va
 
 *The modification in bold was proposed by Kung and Rayment (C.Y. Kung and J.J. Rayment, Metall. Trans. A 13 (1982) 328–331).  
 
-The alloy chemistries used to calculate the start temperatures above are shown here (all wt.%).  Only elements of interest are provided: 
+Examples of 3 different empirical equations for predicting Ae3 temperatures are listed below:
 
-Steel |	C	| Si	| Mn	| Ni	| Cr	| Mo
----------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- 
-SA508 Grade 3	| 0.2	| 0.25	| 1.4	| 0.8 |	0.25 |	0.5
-SA508 Grade 4N |	0.2	| - | 0.3 |	3.7 |	1.8 |	0.5
-SA540 |	0.4 |	0.25 |	0.7 |	1.8 |	0.85 |	0.3
+Expression (all compositions in wt.%) | Reference | Value for SA508 Grade 3 | Value for SA508 Grade 4N | Value for SA540 B24
+------------ | ------------- | --------- | ------------- | --------
+Ae3 (˚C) = 910 - 203(C)^(1/2) + 44.7Si - 15.2Ni + 31.5Mo + 104V + 13.1W - 30.0Mn + 11.0Cr + 20.0Cu - 700P - 400Al - 120As - 400Ti | K.W. Andrews, JISI 203 (1965) 721–727. | 802˚C | 787˚C | 751˚C 
+Ae3 (˚F) = 1570 - 323C - 25Mn + 80Si - 3Cr - 32Ni | R.A. Grange, Metal Progress 73 (1961). | 801˚C | 744˚C | 748˚C
+Ae3 (˚C) = 871 - 254.4(C)^(1/2) - 24.2Ni + 51.7Si | Eldis: REFERENCE NEEDED | 765˚C | 705˚C | 694˚C
 
+The alloy chemistries used to calculate the start temperatures and Ae3 values above are shown here (all wt.%).  Only elements of interest are provided: 
+
+Steel |	C	| Si	| Mn	| Ni	| Cr	| Mo | V | Cu | Al | Ti 
+---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- 
+SA508 Grade 3	| 0.18	| 0.25	| 1.32	| 0.74 |	0.21 |	0.49 | - | 0.03 | 0.002 | -  
+SA508 Grade 4N |	0.21	| 0.1 | 0.35 |	3.87 |	1.87 |	0.5 | - | 0.02 | 0.004 | -  
+SA540 B24 |	0.42 |	0.26 |	0.72 |	1.78 |	0.85 |	0.31 | 0.01 | 0.08 | 0.021 | 0.01 
 
 ## APPENDIX 3 – Examples of CCT Results
 
