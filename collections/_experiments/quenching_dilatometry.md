@@ -2,7 +2,7 @@
 title: Dilatometer quenching tests
 author: Ed Pickering, Josh Collins, Mark Taylor
 analysis_codes:
-  - name: Offset Calculator & Dilation Ts Calculator
+  - name: Quenching dilatometry analysis codes
     link: https://github.com/LightForm-group/steel_dilatometer_analysis
 ---
 
