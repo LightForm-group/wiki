@@ -4,7 +4,7 @@ author: Ed Pickering, Josh Collins, Mark Taylor
 analysis_codes:
   - name: Offset Strain Calculation
     link: https://github.com/LightForm-group/steel_dilatometer_analysis/tree/main/Offset%20Calculations
-  - name: Tranformation Start (Ts) Analysis
+  - name: Transformation Start (Ts) Analysis
     link: https://github.com/LightForm-group/steel_dilatometer_analysis/tree/main/Transformation%20Analysis
 ---
 
