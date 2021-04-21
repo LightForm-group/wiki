@@ -393,7 +393,7 @@ Examples of 3 different empirical equations for predicting Ae3 temperatures are 
 Expression (all compositions in wt.%) | Reference | Value for SA508 Grade 3 | Value for SA508 Grade 4N | Value for SA540 B24
 ------------ | ------------- | --------- | ------------- | --------
 Ae3 (˚C) = 910 - 203(C)^(1/2) + 44.7Si - 15.2Ni + 31.5Mo + 104V + 13.1W - 30.0Mn + 11.0Cr + 20.0Cu - 700P - 400Al - 120As - 400Ti | K.W. Andrews, JISI 203 (1965) 721–727. | 802˚C | 787˚C | 751˚C 
-Ae3 (˚F) = 1570 - 323C - 25Mn + 80Si - 3Cr - 32Ni | R.A. Grange, Metal Progress 73 (1961). | 801˚C | 744˚C | 748˚C
+Ae3 (˚F) = 1570 - 323C - 25Mn + 80Si - 3Cr - 32Ni<br /> **Note: ˚C = (˚F - 32)(5/9)** | R.A. Grange, Metal Progress 73 (1961). | 801˚C | 744˚C | 748˚C
 Ae3 (˚C) = 871 - 254.4(C)^(1/2) - 24.2Ni + 51.7Si | Eldis: REFERENCE NEEDED | 765˚C | 705˚C | 694˚C
 
 The alloy chemistries used to calculate the start temperatures and Ae3 values above are shown here (all wt.%).  Only elements of interest are provided: 
