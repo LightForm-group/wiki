@@ -6,6 +6,8 @@ analysis_codes:
     link: https://github.com/LightForm-group/steel_dilatometer_analysis/tree/main/Offset%20Calculations
   - name: Transformation Start (Ts) Analysis
     link: https://github.com/LightForm-group/steel_dilatometer_analysis/tree/main/Transformation%20Analysis
+  - name: Ae3 Calculations
+    link: https://github.com/LightForm-group/steel_dilatometer_analysis/tree/main/Ae3%20Calculations
 ---
 
 ## Executive Summary
