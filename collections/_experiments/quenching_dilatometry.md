@@ -10,6 +10,10 @@ analysis_codes:
     link: https://github.com/LightForm-group/steel_dilatometer_analysis/tree/main/Ae3%20Calculations
   - name: Bs & Ms Calculations
     link: https://github.com/LightForm-group/steel_dilatometer_analysis/tree/main/Bs%20%26%20Ms%20Calculations
+  - name: CCT Plotting
+    link: https://github.com/LightForm-group/steel_dilatometer_analysis/tree/main/CCT%20Plotting
+  - name: Dilation Curve Plotting
+    link: https://github.com/LightForm-group/steel_dilatometer_analysis/tree/main/Transformation%20Analysis
 ---
 
 ## Executive Summary
