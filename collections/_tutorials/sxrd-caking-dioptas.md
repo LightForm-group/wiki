@@ -40,15 +40,15 @@ This will then open the Dioptas graphical user interface (GUI).
 
 Then, click on *'Load File'* and select a calibration diffraction pattern.
 
-Input the distance (e.g. 1200 mm) and leave the box ticked as we want to refine this value.
+Select a 'Custom' detector and set pixel width and height (e.g. 172 um x 172 um)
 
-Input the wavelength (e.g. 0.1393 A) and leave the box unticked as we don't want to refine this value.
+Input the distance (e.g. 750 mm) and leave the box ticked as we want to refine this value.
+
+Input the wavelength (e.g. 0.12423 A) and leave the box unticked as we don't want to refine this value.
 
 Leave polarization as is (0.990).
 
-Set pixel width and height (e.g. 296 um x 296 um)
-
-Select calibrant (e.g. CeO2)
+Select calibrant (e.g. CeO2).
 
 **Peak Selection**
 
@@ -56,21 +56,39 @@ Untick automatic increase.
 
 Select automatic peak search.
 
-Choose number of rings (e.g. 10).
+Click 'clear all peaks'.
 
-Then click on the map to select some of the rings.
+Select current ring number as 1.
+
+Then click on the map to select the ring closest to the centre, which will become highlighted with points. You will need to click more than once to select around the entire ring.
+
+Once a ring is fully selected, select the next ring number (2), then click around the next ring away from the centre.
+
+Repeat until 10 or so rings have been selected.
 
 **Refinement Options**
 
 Make sure automatic refinement is ticked.
 
-Therefore, no need to change any of the other values.
+Leave the default values in this window, but be sure to change the number of rings to match the number of rings that have been highlighted.
 
-**Run Refinement**
+**Masking**
 
-Click 'Refine' to run the refinement.
+There is also an option to use a mask, which can filter out any dead pixels or gride lines from the pixel array.
+
+On the far left panel, click on the Mask tab.
+
+In the 'below thresh' box type 1 and click on the 'below thresh' box. This will highlight all points below a certain threshold. 
+
+Note, there is an option to apply a transparent threshold, as well as the standard fill threshold.
+
+**Run Calibration**
+
+Click 'Calibrate' to run a calibration.
 
 **Save calibration as .poni file**
+
+Click the 'save calibration' button at the bottom right of the window and save the calibration as a .poni file.
 
 ### Caking and Azimuthal Integration using PyFAI
 
