@@ -34,6 +34,8 @@ Load the Dioptas module using the following commands in the terminal;
 
 ### Creating a .poni calibration file in Dioptas
 
+The documentation for using Dioptas can be found [here](https://dioptas.readthedocs.io/en/stable/). However, the following instructions should be enough for a simple calibration.
+
 **Start Values**
 
 This will then open the Dioptas graphical user interface (GUI).
