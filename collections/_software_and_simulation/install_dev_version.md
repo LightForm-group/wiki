@@ -13,7 +13,7 @@ subcollection: MatFlow
 2. Find the GitHub repository of the package you would like to install
 3. Click on the green `Code` button and then copy the given URL:
 
-![](/wiki/assets/images/posts/github_clone.jpg)
+![](/wiki/assets/images/posts/github_clone.png)
 
 4. On the CSF, go to your home directory: `cd ~`, and then type: `git clone [GITHUB_URL]` where you should replace `[GITHUB_URL]` with the URL copied from step 3.
 5. On the CSF, change directory into the new git repository that was just downloaded from GitHub, e.g. `cd matflow-damask`, and then use checkout the desired branch like this: `git checkout [DEV_BRANCH]` where you should replace `[DEV_BRANCH]` with the name of the development branch you wish to install.
