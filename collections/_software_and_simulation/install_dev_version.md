@@ -16,5 +16,5 @@ subcollection: MatFlow
   ![](/wiki/assets/images/posts/github_clone.png)
 
 4. On the CSF, go to your home directory: `cd ~`, and then type: `git clone [GITHUB_URL]` where you should replace `[GITHUB_URL]` with the URL copied from step 3.
-5. On the CSF, change directory into the new git repository that was just downloaded from GitHub, e.g. `cd matflow-damask`, and then use checkout the desired branch like this: `git checkout [DEV_BRANCH]` where you should replace `[DEV_BRANCH]` with the name of the development branch you wish to install.
+5. On the CSF, change directory into the new git repository that was just downloaded from GitHub, e.g. `cd matflow-damask`, and then use `git checkout` to switch to the desired branch like this: `git checkout [DEV_BRANCH]` where you should replace `[DEV_BRANCH]` with the name of the development branch you wish to install.
 6. On the CSF, install the package in "editable" mode like this: `pip install --user -e .` (note the ending full-stop). Using editable mode means that you can subsequently `git pull` changes and the changes will be reflected in your installed package.
