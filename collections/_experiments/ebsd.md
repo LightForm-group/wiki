@@ -8,6 +8,8 @@ tutorials:
 analysis_codes:
   - name: Example MTEX Scripts 
     link: https://github.com/LightForm-group/Lightform_Mtex
+  - name: MTEX texture slice analysis
+    link: https://github.com/LightForm-group/MTEX-texture-slice-analysis
 ---
 ## General EBSD
 This describes the metadata which applies to EBSD experiments. EBSD is a technique where electrons are fired at a sample and the scattering of the electrons is analysed.
