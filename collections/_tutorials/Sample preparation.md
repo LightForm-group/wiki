@@ -15,13 +15,13 @@ in comparison with Ti alloy, also the Ti64 specimen in deformed state will be mo
 The rule of thumb is that after grinding on each paper you should not see any scratches from the previous one (by eye), the one with the smaller grade. You should use *User
 Defined* mode (you can control the speed and the water supply).
 
-                                                        <img src="/assets/images/posts/Picture1.jpg" width="500" height="500">  
+<img src="/assets/images/posts/Picture1.jpg" width="500" height="500">        
 
 When the machine is set, press the green button (by pressing the red one, you can always stop the grinder).
 Place the specimen on the disc, but not in the centre. Hold your specimen in the way that your hands are aligned with the net force on the disc but counteract it (left image).
 You can also use the designed tool to keep the sample on the rotating disc (right image). 
 
-<img src="/assets/images/posts/Picture2.jpg" width="400" height="400">      <img src="/assets/images/posts/Picture3.jpg" width="400" height="400">       
+<img src="/assets/images/posts/Picture2.jpg" width="300" height="400">      <img src="/assets/images/posts/Picture3.jpg" width="400" height="300">       
 
 After grinding, chemical-mechanical polishing with a mixture of colloidal silica (OP-S) and hydrogen peroxide should be performed on a polishing cloth with proportions:
 4 OP-S to 1 hydrogen peroxide. Put on the gloves. Mix the liquids in a small container, install the polishing cloth on the magnetic disc, turn the water off, adjust the speed 
@@ -31,7 +31,7 @@ force and time that they apply for polishing too, these vary from 2 -5 mins on O
 up your sample. If you see any kind of residual smear from the OP-S mixture you can try to remove it by turning the water on and as remaining OP-S mixture is still on the cloth, 
 slightly press the sample on the rotating disk. 
 
-<img src="/assets/images/posts/Picture4.jpg" width="400" height="400">      <img src="/assets/images/posts/Picture5.jpg" width="400" height="400">
+<img src="/assets/images/posts/Picture4.jpg" width="400" height="350">      <img src="/assets/images/posts/Picture5.jpg" width="400" height="400">
 
 Titanium and titanium alloys should normally look very clean after polishing so you should not see any dirt or anything like that on the surface. Due to the hexagonal 
 crystal lattice of α phase, the microstructural details in titanium can be seen using cross-polarized light on a light optical microscope, without etching. This can be used as 
