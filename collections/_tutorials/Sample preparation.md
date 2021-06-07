@@ -21,7 +21,7 @@ When the machine is set, press the green button (by pressing the red one, you ca
 Place the specimen on the disc, but not in the centre. Hold your specimen in the way that your hands are aligned with the net force on the disc but counteract it (left image).
 You can also use the designed tool to keep the sample on the rotating disc (right image). 
 
-<img src="/assets/images/posts/Picture2.jpg" width="300" height="400">      <img src="/assets/images/posts/Picture3.jpg" width="400" height="300">       
+<img src="/assets/images/posts/Picture2.jpg" width="300" height="400">      <img src="/assets/images/posts/Picture3.jpg" width="400" height="350">       
 
 After grinding, chemical-mechanical polishing with a mixture of colloidal silica (OP-S) and hydrogen peroxide should be performed on a polishing cloth with proportions:
 4 OP-S to 1 hydrogen peroxide. Put on the gloves. Mix the liquids in a small container, install the polishing cloth on the magnetic disc, turn the water off, adjust the speed 
