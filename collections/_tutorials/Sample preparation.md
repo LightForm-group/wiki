@@ -3,7 +3,7 @@ title: Sample preparation
 author: Bernadeta Karnasiewicz
 ---
 
-# Metallurgical preparation of Ti6Al4V specimens for microscopic observation (B12 lab)
+# Metallurgical preparation of Ti6Al4V specimens for EBSD examination (B12 lab)
 
 First the specimen needs to be mounted in the resin, in hot compression mounting machine. If you are preparing the sample for EBSD examination, remember that If your sample is 
 not flat, it will be very difficult to obtain EBSD map on this sample, regardless of the faultlessness of the preparation.
