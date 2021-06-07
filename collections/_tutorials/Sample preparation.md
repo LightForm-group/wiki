@@ -8,12 +8,7 @@ author: Bernadeta Karnasiewicz
 First the specimen needs to be mounted in the resin, in hot compression mounting machine. If you are preparing the sample for EBSD examination, remember that If your sample is 
 not flat, it will be very difficult to obtain EBSD map on this sample, regardless of the faultlessness of the preparation.
 
-Turn Struers TetraPol grinder on. For griding we use the SiC abrasive papers starting from 180, 320, 600, 800, 1200, 2400 and 4000 grade, under flowing water with sliding 
-speed between 200 to 300 rpm. Regarding details of the grinding technique, people often have different methods for force and time that they grind for, these vary from couple 
-of seconds  to 10 mins on every paper with manual force adjusted to the size and state of the material of the specimen (for example CP Ti is softer and more prone to scratches 
-in comparison with Ti alloy, also the Ti64 specimen in deformed state will be more difficult to prepare than the one that has been casted or annealed at β phase temperature). 
-The rule of thumb is that after grinding on each paper you should not see any scratches from the previous one (by eye), the one with the smaller grade. You should use *User
-Defined* mode (you can control the speed and the water supply).
+Turn Struers TetraPol grinder on. For griding we use the SiC abrasive papers starting from 180, 320, 600, 800, 1200, 2400 and ending at 4000 grade, under flowing water with sliding speed between 200 to 300 rpm. Regarding details of the grinding technique, people often have different methods for force and time that they grind for, these vary from couple of seconds  to 10 mins on every paper with manual force adjusted to the size and state of the material of the specimen (for example CP Ti is softer and more prone to scratches in comparison with Ti alloy, also the Ti64 specimen in deformed state will be more difficult to prepare than the one that has been casted or annealed at β phase temperature). The rule of thumb is that after grinding on each paper you should not see any scratches from the previous one (by eye), the one with the smaller grade. You should use *User Defined* mode (you can control the speed and the water supply).
 
 <img src="/assets/images/posts/Picture1.jpg" width="500" height="500">        
 
