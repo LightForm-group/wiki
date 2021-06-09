@@ -1,5 +1,5 @@
 ---
-title: Sample preparation
+title: ZEISS Axio Imager 2 microscope combined with ZEN 2 image-processing and analysis software for digital microscopy: instruction. 
 author: Bernadeta Karnasiewicz
 ---
 
