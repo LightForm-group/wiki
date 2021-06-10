@@ -78,13 +78,21 @@ Once the preview scan is finished, you need to acquire the tile region with diff
 
 <img src="/assets/images/posts/Zenn_Picture14.jpg" width="700" height="500">
 
+Distribute the support points across your tile region and adjust their number to the surface of your sample but also remember about the purpose of your map. A high reference-point density leads to more precise result, although the maximum useful density is one reference point per tile.
 
+Now you will Verify Z-positions of support points. Click on the Verify Support Points button in the Focus Surface section of the Tiles tool. Click on the Move to Current Point button. Use the Live mode to set the Z-positions using the focus drive. Click Set Z & Move to Next on the first point and repeat for all your support points and close. Click ‘Start Experiment’ to begin the scan. 
 
+<img src="/assets/images/posts/Zenn_Picture15.jpg" width="300" height="600">
 
+When the experiment is finished, you need to stitch individual images together, so the tiles are aligned and constitute a coherent map. The software uses a program to detect where pixels are misaligned in adjoining tiles and fuses them properly. Click ‘processing’ tab and then under the ‘Method’ click ‘stitching’. Under ‘input’ tab choose the experiment you want to stich and then Apply (at the top). Because of stitching, you might get an uneven edge of the map and you might want to crop them out. To do that, right click on the scan u want to crop, click create subset from R.O.I (region of interest) and crop the image out. Then right click on the image again and click create subset from R.O.I. Before you save the image, you can adjust some settings on histogram which is placed below the scan to your liking and add the scale bar by clicking ‘scale bar’ from the top menu (marked on red in above image). You can also change the properties of the scale bar itself by right click on it and clicking Format Graphical Elements. 
 
+<img src="/assets/images/posts/Zenn_Picture16.jpg" width="250" height="700">
 
+If you don’t want to change anything more on the image you can now save it. You can save the experiment in CZI format which will allow you to open it again in ZEN pro. In order to do that, click file and save as CZI to your external storage. You can also save Jpeg image by clicking ‘image export’ under the ‘Method’ tab. Under ‘Parameters’ tab select the destination folder of the export and change image format to Jpeg. Choose the input image and click Apply at the top. Check If your Jpeg image appears in your destination folder. Remember to save all your images to your own USB stick as the data from the University computer is regularly cleaned. Jpeg format compresses the image so the resultant map is not of full resolution. In principle you should save the map in TIFF format as it keeps the original resolution and therefore is appropriate for image analyses, however often there is a problem when trying to save TIFF on this computer (this needs to be resolved).
 
+<img src="/assets/images/posts/Zenn_Picture17.jpg" width="800" height="700">
 
+If the software comes up with the memory issue during saving (this happens usually with big samples or the areas scanned with big magnification, both resulting in big size of the map), click File, ‘save as with options’ and change the type of the file to tiff and then save. However, this means that you have a lower quality image as the software applies different compression in this case.  
 
-
+Once you are done, lower down the stage with the sample on it (to the maximum), go back to the lowest magnification and take your sample off from the stage. Close the software, turn the microscope off,  power supply off and log off the PC. 
 
