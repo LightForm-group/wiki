@@ -2,6 +2,8 @@
 published: true
 title: Optical microscopy
 author: Peter Crowther
+tutorials:
+  - Automated Optical Microscopy with ZEN 2
 ---
 
 This describes two optical microscopes for looking at microstructures.
