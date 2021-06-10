@@ -1,5 +1,5 @@
 ---
-title: ZEISS Axio Imager 2 microscope combined with ZEN 2 image-processing and analysis software for digital microscopy: instruction. 
+title: Automated optical microscope with ZEN 2.md
 author: Bernadeta Karnasiewicz
 ---
 
