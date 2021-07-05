@@ -1,6 +1,7 @@
 ---
 title: How to run ABAQUS software as a GUI on the CSF via a Linux remote desktop 
 author: Kevin Tanswell
+subcoolection: ABAQUS
 ---
 
 1.	First contact the IT Services RI team: its-ri-team@manchester.ac.uk to setup a CSF user profile and provide the following details as per: http://ri.itservices.manchester.ac.uk/csf3/getting-started/user-accounts/

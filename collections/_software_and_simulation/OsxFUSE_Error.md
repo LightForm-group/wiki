@@ -1,6 +1,7 @@
 ---
 title: OsxFUSE Folder Error for macOS BigSur
 author: Yichao Yao
+Subcollection: Misc
 ---
 
 ## OsxFUSE Error

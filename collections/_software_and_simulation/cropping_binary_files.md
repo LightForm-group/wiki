@@ -5,6 +5,7 @@ tags:
   - Python
   - EBSD
 published: true
+subcollection: Misc
 ---
 
 # Cropping CRC files
