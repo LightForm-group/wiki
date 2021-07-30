@@ -76,10 +76,18 @@ collections:
     nav_list_pages: false
     index_list_pages: true
     permalink: /:collection/:name
-    add_new_name: page  
-  miscellaneous: 
+    add_new_name: page
+  blog:
     output: true
     nav_order: 7
+    nav_name: Blog
+    nav_list_pages: false
+    index_list_pages: true
+    permalink: /:collection/:name
+    add_new_name: page
+  miscellaneous:
+    output: true
+    nav_order: 8
     nav_name: Miscellaneous
     nav_list_pages: true
     index_list_pages: true
@@ -152,7 +160,15 @@ defaults:
       layout: post
       show_breadcrumbs: true
       show_meta: true
-      title: ''
+      subcollection: root
+  - scope:
+      path: ""
+      type: "blog"
+    values:
+      layout: post
+      show_breadcrumbs: true
+      show_meta: true
+      title: ""
       subcollection: root
   - scope:
       path: ""
