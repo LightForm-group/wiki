@@ -12,7 +12,7 @@ kramdown:
   input: GFM
 
 # Want to include files in `_includes/code` (expected way doesn't work).
-include: 
+include:
   - _includes
 exclude:
   - _includes/head.html
@@ -45,7 +45,7 @@ collections:
     nav_list_pages: false
     index_list_pages: true
     permalink: /:collection/:name
-    add_new_name: page  
+    add_new_name: page
   experiments:
     output: true
     nav_order: 2
@@ -57,10 +57,10 @@ collections:
   tutorials:
     output: true
     nav_order: 3
-    nav_name: Tutorials   
+    nav_name: Tutorials
     index_list_pages: true
     permalink: /:collection/:name
-    add_new_name: tutorial    
+    add_new_name: tutorial
   data_analysis:
     output: true
     nav_order: 5
@@ -68,7 +68,7 @@ collections:
     nav_list_pages: false
     index_list_pages: true
     permalink: /:collection/:name
-    add_new_name: page  
+    add_new_name: page
   software_and_simulation:
     output: true
     nav_order: 6
@@ -107,7 +107,7 @@ defaults:
     values:
       show_edit_button: true
       show_history_button: true
-      show_delete_button: false      
+      show_delete_button: false
   - scope:
       path: "tags.*"
     values:
@@ -119,13 +119,13 @@ defaults:
     values:
       show_edit_button: false
       show_history_button: false
-      show_delete_button: false      
+      show_delete_button: false
   - scope:
       path: "add_metadata_file.*"
     values:
       show_edit_button: false
       show_history_button: false
-      show_delete_button: false      
+      show_delete_button: false
   - scope:
       path: "collections/*/index.*"
     values:
@@ -142,8 +142,8 @@ defaults:
       published: true
       show_breadcrumbs: true
       show_meta: true
-      title: ''
-      subcollection: root      
+      title: ""
+      subcollection: root
   - scope:
       path: ""
       type: "tutorials"
@@ -151,8 +151,8 @@ defaults:
       layout: post
       show_breadcrumbs: true
       show_meta: true
-      title: ''    
-      subcollection: root      
+      title: ""
+      subcollection: root
   - scope:
       path: ""
       type: "software_and_simulation"
@@ -160,6 +160,7 @@ defaults:
       layout: post
       show_breadcrumbs: true
       show_meta: true
+      title: ""
       subcollection: root
   - scope:
       path: ""
@@ -177,8 +178,8 @@ defaults:
       layout: post
       show_breadcrumbs: true
       show_meta: true
-      title: ''
-      subcollection: root      
+      title: ""
+      subcollection: root
   - scope:
       path: ""
       type: "code_of_conduct"
@@ -186,8 +187,8 @@ defaults:
       layout: post
       show_breadcrumbs: true
       show_meta: true
-      title: ''
-      subcollection: root      
+      title: ""
+      subcollection: root
   - scope:
       path: ""
       type: "miscellaneous"
@@ -195,8 +196,8 @@ defaults:
       layout: post
       show_breadcrumbs: true
       show_meta: true
-      title: ''
-      subcollection: root      
+      title: ""
+      subcollection: root
   - scope:
       path: ""
       type: "data_analysis"
@@ -204,4 +205,4 @@ defaults:
       layout: post
       show_breadcrumbs: true
       show_meta: true
-      title: ''
+      title: ""
