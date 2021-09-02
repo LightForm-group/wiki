@@ -14,6 +14,8 @@ toc: true
 
 *See the [project overview](/wiki/blog/ti-cp-pf-overview) for an outline. This page was last updated: July 2021*
 
+| [Next month's update (August)](/wiki/blog/ti-cp-pf-2021-08) 🡺 |
+
 Our initial work focussed on building a dual-phase titanium representative volume element that could be deformed in both "hard" and "soft" loading directions using a crystal plasticity package, DAMASK[^4]. We will later use the results from these types of simulations to build a new phase map over a subset of the deformed RVE, which can then be fed into a phase-field simulation code to examine, for example, grain growth.
 
 ## Methodology
