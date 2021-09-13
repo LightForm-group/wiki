@@ -57,13 +57,13 @@ $$
 
 The action of this rotation matrix on the column vectors that form the edges of the hexagonal unit cell is shown in the figure below (blue is the reference unit cell and red is the rotated unit cell):
 
-{% include hexagonal_axes_fig.html %}
+{% include plotly_figures/hexagonal_axes_fig.html %}
 
 We then converted the rotation matrix above into a quaternion by first converting to an axis-angle representation, which is 93.84$\degree$ about the Cartesian axis (0.25056281, 0.93511313, 0.25056281), and in turn converting this to a quaternion, which is: (0.6830127, 0.1830127, 0.6830127, 0.1830127). Formulae for these conversions can be found in Rowenhorst et al.[^5]. This quaternion was then the starting orientation for all three $\alpha$ laths in the RVE. To find the orientation of the $\beta$ matrix in which the $\alpha$ colony is embedded, we employed the DefDAP Python package[^2]; this quaternion is (0.4103, 0.0964, -0.7325, -0.5347).
 
 In our initial simulations, we discretised the model geometry into a relatively small number of material points; the grid dimensions were 32 $\times$ 32 $\times$ 32 (32,768 material points). This RVE is shown below. In this way, we benefited from faster throughput in the initial stages of the work. However, we will later use larger grid discretisations, which will be more capable of accurately resolving the stress and strain fields of the deformed RVEs.
 
-![dual_phase_Ti_RVE_32](/wiki/assets/images/posts/dual_phase_Ti_RVE_32.png)
+![dual_phase_Ti_RVE_32](/wiki/assets/images/posts/blog/ti_cp_pf/dual_phase_Ti_RVE_32.png)
 *The RVE used in our initial simulations of dual-phase Ti. Visualisation using ParaView.*
 
 ### Crystal plasticity model for Ti64

@@ -79,9 +79,9 @@ We have encounted some problems when trying to get MTEX to successfully load 3D 
 - Performing segmentation in Dream.3D requires an `ImageGeometry`, which is a uniform rectilinear grid. This means we cannot use the displacement information of each deformed voxel when doing this segmentation. However, I don't think this matters.
 - We have written a pipelines for performing the segmentation on a deformed RVE using a 128-cubed grid size. The deformed RVE and the resulting feature segmentation from the Dream3D pipeline is shown below. In this case we used a threshold misorientation angle of three degrees. I have yet to find a comprehensive description of the clustering algorithm that Dream3D uses for the segmentation, but it is reasonable to assume that our selected threshold means that neighbouring voxels that are misoriented by more than three degrees are considered to belong to distinct features (i.e. sub-grains).
 
-![dual_phase_Ti_RVE_128_grid_deformed_hard](/wiki/assets/images/posts/dual_phase_Ti_RVE_128_grid_deformed_hard.png)
+![dual_phase_Ti_RVE_128_grid_deformed_hard](/wiki/assets/images/posts/blog/ti_cp_pf/dual_phase_Ti_RVE_128_grid_deformed_hard.png)
 
-![dual_phase_Ti_RVE_128_grid_dream3D_clustered_3_degs_hard](/wiki/assets/images/posts/dual_phase_Ti_RVE_128_grid_dream3D_clustered_3_degs_hard.png)
+![dual_phase_Ti_RVE_128_grid_dream3D_clustered_3_degs_hard](/wiki/assets/images/posts/blog/ti_cp_pf/dual_phase_Ti_RVE_128_grid_dream3D_clustered_3_degs_hard.png)
 
 These preliminary results do not show significant formation of sub-grains, since the additional features are in very close proximity to the boundary of the $\alpha$ precipitates. We will continue to investigate this.
 
