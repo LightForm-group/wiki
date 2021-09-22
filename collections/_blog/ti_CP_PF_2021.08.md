@@ -91,11 +91,12 @@ We have developed a MatFlow workflow (and associated task schemas/extension func
 
 ## Quaternion component ordering conventions
 
-During our development of the associated MatFlow workflow, we found that different software can employ different orderings of quaternion components; vector-scalar or scalar-vector:
+During our development of the associated MatFlow workflow, we found that different software can employ different orderings of quaternion components; vector-scalar or, more commonly, scalar-vector:
 
-- Dream3D: vector-scalar[^15]
 - DAMASK: scalar-vector[^16]
 - MTEX: scalar-vector (I could not find an explicit statement, but from doing an Euler-to-quaternion conversion in MTEX, it seems so.)
+- DefDAP: scalar-vector
+- Dream3D: vector-scalar[^15]
 
 ## References
 
