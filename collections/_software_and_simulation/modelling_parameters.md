@@ -15,11 +15,11 @@ Constitutive Crystal Plasticity models are reliant on two equations as part of a
 
 Equation 1 describes the constitutive power law by which the slip rate $\dot{\gamma}$ on some arbitrary labelled slip system $i$ is dependant upon the initial shear rate $\dot{\gamma}_{0}^{i}$, ratio between initial $\tau^i$ and saturated $\xi^i$ CRSS values, inverse of strain rate sensitivity $n=\frac{1}{m}$, and shear stress on the slip system:
 
-	$$ \dot{\gamma}^i = \dot{\gamma}_{0}^{i}\displaystyle\left\lvert \frac{\tau^i}{\xi^i}\right\vert^n \text{sgn}(\tau^i) $$
+	$ \dot{\gamma}^i = \dot{\gamma}_{0}^{i}\displaystyle\left\lvert \frac{\tau^i}{\xi^i}\right\vert^n \text{sgn}(\tau^i) $
 	
 The saturated critical resolved shear stress ($\xi^i$) in this equation is reliant on Equation 2, which calculates the rate of hardening of the slip system with deformation:
 
-	$$ \dot{\xi}^i = \dot{h}_0^{s-s}(1+h_{int}^i)\sum_{i'=1}^{N_s} \displaystyle\left\lvert\dot{\gamma}^i\right\vert \displaystyle\left\lvert1-\frac{\xi^i'}{\xi_\infty^i'}\right\vert^w sgn(1-\frac{\xi^i'}{\xi_\infty^i'})h^ii' $$
+	$ \dot{\xi}^i = \dot{h}_0^{s-s}(1+h_{int}^i)\sum_{i'=1}^{N_s} \displaystyle\left\lvert\dot{\gamma}^i\right\vert \displaystyle\left\lvert1-\frac{\xi^i'}{\xi_\infty^i'}\right\vert^w sgn(1-\frac{\xi^i'}{\xi_\infty^i'})h^ii' $
 
 Please find below a collection of single crystal property parametters for Titanium and its alloys from a variety of literature sources.
 Please add to this list should your literature review include these parameters, to aid future work into modelling of titanium and its alloys.
