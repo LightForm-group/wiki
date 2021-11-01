@@ -6,12 +6,12 @@ tags:
   - DAMASK
   - Crystal Plasticity
   - Modelling
-toc: true
+toc: false
 subcollection: Titanium
 published: true
 ---
 
-Please find below a collection of single crystal property paramteters for Titanium and its alloys from a variety of literature sources.
+Please find below a collection of single crystal property parametters for Titanium and its alloys from a variety of literature sources.
 Please add to this list should your literature review include these parameters, to aid future work into modelling of titanium and its alloys.
 
 
@@ -20,13 +20,13 @@ Please add to this list should your literature review include these parameters, 
 
 | $C_{11}$ | $C_{12}$ | $C_{13}$ | $C_{33}$ | $C_{44}$ | $C_{66}$ | Source | Comments |
 | -------- | -------- | -------- | -------- | -------- | -------- | ------ | -------- |
-| 162.4    | 92.0     | 69.0     | 180.7    | 46.7.    |          | [1]    | Ultrasonic wave interference tests of CP-Ti at room temperature. Measurement of $C_{33}$ was interrupted but still included. |
+| 162.4    | 92.0     | 69.0     | 180.7    | 46.7     |          | [1]    | Ultrasonic wave interference tests of CP-Ti at room temperature. Measurement of $C_{33}$ was interrupted but still included. |
 
 ### Plastic properties - Initial and saturated Critical Resolved Shear Stresses (CRSS)
 
 | Slip system | \{ 0002 \}\< 11-20 \> | \{ 10-10 \}\< 11-20 \> | \{ 10-11 \}\< 11-23 \> | Source | Comments |
-| ----------- | ---------------------- |  ---------------------- | ----------------------- | ------ | -------- |
-| CRSS        |                        |                         |                         |        |          |
+| ----------- | --------------------- |  --------------------- | ---------------------- | ------ | -------- |
+| CRSS        |                       |                        |                        |        |          |
 
 ### Plastic properties - Hardening equation parameters
 
