@@ -25,7 +25,7 @@ The saturated critical resolved shear stress ($\xi^i$) in this equation is relia
 
 $$
 \begin{equation}
-\dot{\xi}^i = \dot{h}_0^{s-s}(1+h_{int}^i)\sum_{i^{\prime}=1}^{N_s} \displaystyle\left\lvert\dot{\gamma}^i\right\vert \displaystyle\left\lvert1-\frac{\xi^{i^{\prime}}}{\xi_\infty^{i^{\prime}}}\right\vert^w sgn(1-\frac{\xi^{i^{\prime}}}{\xi_\infty^{i^{\prime}}})h^{ii^{\prime}}
+\dot{\xi}^i = \dot{h}_0^{s-s}(1+h_{int}^i)\sum_{i^{\prime}=1}^{N_s} \displaystyle\left\lvert\dot{\gamma}^i\right\vert \displaystyle\left\lvert1-\frac{\xi^{i^{\prime}}}{\xi_\infty^{i^{\prime}}}\right\vert^a sgn(1-\frac{\xi^{i^{\prime}}}{\xi_\infty^{i^{\prime}}})h^{ii^{\prime}}
 \end{equation}
 $$
 
@@ -52,10 +52,10 @@ Please add to this list should your literature review include these parameters, 
 
 ### Plastic properties - Hardening equation parameters
 
-| $w$ | $n_{sl}$ | $dot{\gamma}_0$ | $h_0$ | $h_{ij}$ | Source | Comments |
-| --- | -------- | --------------- | ----- | -------- | ------ | -------- |
-|     |          |                 |       |          |        |          |
-|     |          |                 |       |          |        |          |
+| $a$ | $n_{sl}=\frac{1}{m}$ | $dot{\gamma}_0$ | $h_0$ |  $h_{ij}$  |   Source  | Comments |
+| --- | -------------------- | --------------- | ----- | ---------- | --------- | -------- |
+| 2.0 | 0.05                 | 0.001           | 200.0 | [1.4 (non-coplanar), 1.0 (coplanar)] | Ref. [^5] | Set arbritrarily for use in 'simplex algorythim to determine CRSS' |
+|     |                      |                 |       |          |           |          |
 
 
 ## Beta phase (Ti-$\beta$)
