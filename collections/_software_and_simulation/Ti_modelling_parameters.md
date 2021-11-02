@@ -44,10 +44,10 @@ Please add to this list should your literature review include these parameters, 
 
 ### Plastic properties - Initial and saturated Critical Resolved Shear Stresses (CRSS)
 
-| Slip system | \{ 0002 \}\< 11-20 \> | \{ 10-10 \}\< 11-20 \> | \{ 10-11 \}\< 11-23 \> | Source | Comments |
-| ----------- | --------------------- |  --------------------- | ---------------------- | ------ | -------- |
-| CRSS        |                       |                        |                        |        |          |
-|             |                       |                        |                        |        |          |
+| Slip system | \{ 0002 \}\< 11-20 \> | \{ 10-10 \}\< 11-20 \> | \{ 10-11 \}\< 11-23 \> |   Source  | Comments |
+| ----------- | --------------------- |  --------------------- | ---------------------- | --------- | -------- |
+| CRSS        | 420.0                 |  370.0                 | 590.0                  | Ref. [^4] | In-situ fatigue tests of room temperature Ti64. |
+|             |                       |                        |                        |           |          |
 
 ### Plastic properties - Hardening equation parameters
 
@@ -89,6 +89,7 @@ This code is maintained by the Microstructure Modelling Group at the University 
 [^1]: Fisher, E.S. and Renken, C.J., 1964. Single-crystal elastic moduli and the hcp→ bcc transformation in Ti, Zr, and Hf. Physical review, 135(2A), p.A482.
 [^2]: Naimon, E.R., Weston, W.F. and Ledbetter, H.M., 1974. Elastic properties of two titanium alloys at low temperatures. Cryogenics, 14(5), pp.246-249.
 [^3]: Hearmon, R.F.S., 1984. The elastic constants of crystals and other anisotropic materials. Landolt-Bornstein Tables, III/18, 1154.
+[^4]: Bridier, F., 2006. Analyse expérimentale des modes de déformation et d'endommagement par fatigue à 20° C d'alliage de titane: aspects cristallographiques à différentes échelles (Doctoral dissertation, Poitiers).
 
 
 
