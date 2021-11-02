@@ -31,17 +31,21 @@ Please add to this list should your literature review include these parameters, 
 | $C_{11}$ | $C_{12}$ | $C_{13}$ | $C_{33}$ | $C_{44}$ | $C_{66}$ | Source | Comments |
 | -------- | -------- | -------- | -------- | -------- | -------- | ------ | -------- |
 | 162.4    | 92.0     | 69.0     | 180.7    | 46.7     |          | [1]    | Ultrasonic wave interference tests of CP-Ti at room temperature. Measurement of $C_{33}$ was interrupted but still included. |
+| 160.0    | 95.0     | 45.0     | 181.0    | 55.0     | 55.0     | [2]    | 'pulse superposition' of Ti64 at room temperature.         |
+|          |          |          |          |          |          |        |          |
 
 ### Plastic properties - Initial and saturated Critical Resolved Shear Stresses (CRSS)
 
 | Slip system | \{ 0002 \}\< 11-20 \> | \{ 10-10 \}\< 11-20 \> | \{ 10-11 \}\< 11-23 \> | Source | Comments |
 | ----------- | --------------------- |  --------------------- | ---------------------- | ------ | -------- |
 | CRSS        |                       |                        |                        |        |          |
+|             |                       |                        |                        |        |          |
 
 ### Plastic properties - Hardening equation parameters
 
 | $w$ | $n_{sl}$ | $dot{\gamma}_0$ | $h_0$ | $h_{ij}$ | Source | Comments |
 | --- | -------- | --------------- | ----- | -------- | ------ | -------- |
+|     |          |                 |       |          |        |          |
 |     |          |                 |       |          |        |          |
 
 
@@ -51,17 +55,20 @@ Please add to this list should your literature review include these parameters, 
 | $C_{11}$ | $C_{12}$ | $C_{44}$ | Source | Comments |
 |  ------- | -------- | -------- | ------ | -------- |
 |          |          |          |        |          |
+|          |          |          |        |          |
 
 ### Plastic properties - Initial and saturated Critical Resolved Shear Stresses (CRSS)
 
 | Pencil glide | \{ 110 \}\< 111 \> | \{ 112 \}\< 111 \> | \{ 123 \}\< 111 \> | Source | Comments |
 | ------------ | ------------------ |  ----------------- | ------------------ | ------ | -------- |
 |     CRSS     |                    |                    |                    |        |          |
+|              |                    |                    |                    |        |          |
 
 ### Plastic properties - Hardening equation parameters
 
 | $w$ | $n_{sl}$ | $dot{\gamma}_0$ | $h_0$ | $h_{ij}$ | Source | Comments |
 | --- | -------- | --------------- | ----- | -------- | ------ | -------- |
+|     |          |                 |       |          |        |          |
 |     |          |                 |       |          |        |          |
 
 
@@ -72,5 +79,5 @@ This code is maintained by the Microstructure Modelling Group at the University 
 ## References
 
 [1] Fisher, E.S. and Renken, C.J., 1964. Single-crystal elastic moduli and the hcp→ bcc transformation in Ti, Zr, and Hf. Physical review, 135(2A), p.A482.
-
+[2] Naimon, E.R., Weston, W.F. and Ledbetter, H.M., 1974. Elastic properties of two titanium alloys at low temperatures. Cryogenics, 14(5), pp.246-249.
 
