@@ -1,5 +1,5 @@
 ---
-title: Modelling Parameters
+title: Ti Modelling Parameters
 author: Guy Bowker, Adam Plowman
 tags:
   - Titanium
