@@ -44,7 +44,7 @@ Please add to this list should your literature review include these parameters, 
 
 ### Plastic properties - Initial and saturated Critical Resolved Shear Stresses (CRSS)
 
-| Slip system | \{ 0002 \}\< 11-20 \> | \{ 10-10 \}\< 11-20 \> | \{ 10-11 \}\< 11-23 \> |   Source  | Comments |
+| Slip system |   \{ 0002 \}\< 11-20 \>   |   \{ 10-10 \}\< 11-20 \>   |   \{ 10-11 \}\< 11-23 \>   |   Source  | Comments |
 | ----------- | --------------------- |  --------------------- | ---------------------- | --------- | -------- |
 | CRSS        | 420.0                 |  370.0                 | 590.0                  | Ref. [^4] | In-situ fatigue tests of room temperature Ti64. |
 |             |                       |                        |                        |           |          |
@@ -67,7 +67,7 @@ Please add to this list should your literature review include these parameters, 
 
 ### Plastic properties - Initial and saturated Critical Resolved Shear Stresses (CRSS)
 
-| Pencil glide | \{ 110 \}\< 111 \> | \{ 112 \}\< 111 \> | \{ 123 \}\< 111 \> | Source | Comments |
+| Pencil glide |   \{ 110 \}\< 111 \>   |   \{ 112 \}\< 111 \>   |   \{ 123 \}\< 111 \>   | Source | Comments |
 | ------------ | ------------------ |  ----------------- | ------------------ | ------ | -------- |
 |     CRSS     |                    |                    |                    |        |          |
 |              |                    |                    |                    |        |          |
