@@ -48,6 +48,7 @@ Please add to this list should your literature review include these parameters, 
 | ----------- | --------------------- |  --------------------- | ---------------------- | --------- | -------- |
 | CRSS        | 420.0                 |  370.0                 | 590.0                  | Ref. [^4] | In-situ fatigue tests of room temperature Ti64. |
 | CRSS        | 349.0                 |  150.0                 | 1107.0                 | Ref. [^5] | 'Simplex algorythym' used to matchup results of MARC CPFE model with compression tests of room temperature CP-Ti. |
+| CRSS        | 444.0                 |  392.0                 | 631.0                 | Ref. [^6] | 'Ball model' - estimations of CRSS were validated against uniaxial compression and tensile tests of CP-Ti at room temperature. |
 
 ### Plastic properties - Hardening equation parameters
 
@@ -91,6 +92,7 @@ This code is maintained by the Microstructure Modelling Group at the University 
 [^3]: Hearmon, R.F.S., 1984. The elastic constants of crystals and other anisotropic materials. Landolt-Bornstein Tables, III/18, 1154.
 [^4]: Bridier, F., 2006. Analyse expérimentale des modes de déformation et d'endommagement par fatigue à 20° C d'alliage de titane: aspects cristallographiques à différentes échelles (Doctoral dissertation, Poitiers).
 [^5]: Zambaldi, C., Yang, Y., Bieler, T.R. and Raabe, D., 2012. Orientation informed nanoindentation of α-titanium: Indentation pileup in hexagonal metals deforming by prismatic slip. Journal of Materials Research, 27(1), pp.356-367.
+[^6]: Jones, I.P. and Hutchinson, W.B., 1981. Stress-state dependence of slip in Titanium-6Al-4V and other HCP metals. Acta Metallurgica, 29(6), pp.951-968.
 
 
 
