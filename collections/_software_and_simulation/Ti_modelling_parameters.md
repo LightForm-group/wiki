@@ -38,23 +38,23 @@ Please add to this list should your literature review include these parameters, 
 
 | $C_{11}$ | $C_{12}$ | $C_{13}$ | $C_{33}$ | $C_{44}$ | $C_{66}$ | Source    | Comments                                                                                                                     |
 | -------- | -------- | -------- | -------- | -------- | -------- | --------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| 162.4    | 92.0     | 69.0     | 180.7    | 46.7     |          | Ref. [^1] | Ultrasonic wave interference tests of CP-Ti at room temperature. Measurement of $C_{33}$ was interrupted but still included. |
-| 160.0    | 95.0     | 45.0     | 181.0    | 55.0     | 55.0     | Ref. [^2] | 'pulse superposition' of Ti64 at room temperature.                                                                           |
-| 160.0    | 90.0     | 66.0     | 181.0    | 46.5     |          | Ref. [^3] | Collection of crystal parameters from legacy papers |
+| 162.4    | 92.0     | 69.0     | 180.7    | 46.7     |          | (Fisher, 1964)[^1] | Ultrasonic wave interference tests of CP-Ti at room temperature. Measurement of $C_{33}$ was interrupted but still included. |
+| 160.0    | 95.0     | 45.0     | 181.0    | 55.0     | 55.0     | (Naimon, 1974)[^2] | 'pulse superposition' of Ti64 at room temperature.                                                                           |
+| 160.0    | 90.0     | 66.0     | 181.0    | 46.5     |          | (Hearmon, 1984)[^3] | Collection of crystal parameters from legacy papers |
 
 ### Plastic properties - Initial and saturated Critical Resolved Shear Stresses (CRSS)
 
 | Slip system |   \{ 0002 \}\< 11-20 \>   |   \{ 10-10 \}\< 11-20 \>   |   \{ 10-11 \}\< 11-23 \>   |   Source  | Comments |
 | ----------- | --------------------- |  --------------------- | ---------------------- | --------- | -------- |
-| CRSS        | 420.0                 |  370.0                 | 590.0                  | Ref. [^4] | In-situ fatigue tests of room temperature Ti64. |
-| CRSS        | 349.0                 |  150.0                 | 1107.0                 | Ref. [^5] | 'Simplex algorythym' used to matchup results of MARC CPFE model with compression tests of room temperature CP-Ti. |
-| CRSS        | 444.0                 |  392.0                 | 631.0                 | Ref. [^6] | 'Ball model' - estimations of CRSS were validated against uniaxial compression and tensile tests of CP-Ti at room temperature. |
+| CRSS        | 420.0                 |  370.0                 | 590.0                  | (Bridier, 2006)[^4] | In-situ fatigue tests of room temperature Ti64. |
+| CRSS        | 349.0                 |  150.0                 | 1107.0                 | (Zambaldi, 2012)[^5] | 'Simplex algorythym' used to matchup results of MARC CPFE model with compression tests of room temperature CP-Ti. |
+| CRSS        | 444.0                 |  392.0                 | 631.0                 | (Jones, 1981)[^6] | 'Ball model' - estimations of CRSS were validated against uniaxial compression and tensile tests of CP-Ti at room temperature. |
 
 ### Plastic properties - Hardening equation parameters
 
 | $a$ | $n_{sl}=\frac{1}{m}$ | $dot{\gamma}_0$ | $h_0$ |  $h_{ij}$  |   Source  | Comments |
 | --- | -------------------- | --------------- | ----- | ---------- | --------- | -------- |
-| 2.0 | 0.05                 | 0.001           | 200.0 | [1.4 (non-coplanar), 1.0 (coplanar)] | Ref. [^5] | Set arbritrarily for use in 'simplex algorythim to determine CRSS' |
+| 2.0 | 0.05                 | 0.001           | 200.0 | [1.4 (non-coplanar), 1.0 (coplanar)] | (Zambaldi, 2012)[^5] | Set arbritrarily for use in 'simplex algorythim to determine CRSS' |
 |     |                      |                 |       |          |           |          |
 
 
