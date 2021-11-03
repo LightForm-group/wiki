@@ -1,5 +1,5 @@
 ---
-title: Getting Started With DREAM3D
+title: Using DREAM3D for DAMASK
 author: Inigo Howe
 tags:
   - dream3d
