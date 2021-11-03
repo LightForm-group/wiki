@@ -1,10 +1,10 @@
 ---
-title: Getting Started with DREAM3D
-author: Adam Plowman
+title: Getting Started With DREAM3D
+author: Inigo Howe
 tags:
   - dream3d
-toc: true
-published: true
-layout: jupyter_notebook
 subcollection: DREAM3D
 ---
+## Installation and setup
+
+DREAM3D is an open source software package used to generate virtual microstructres. It is avalible to download from here[http://dream3d.bluequartz.net/Download/].
