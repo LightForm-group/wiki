@@ -3,7 +3,7 @@ title: Getting Started With DREAM3D
 author: Inigo Howe
 tags:
   - dream3d
-subcollection: DREAM3D
+subcollection: DAMASK
 ---
 ## Installation and setup
 
