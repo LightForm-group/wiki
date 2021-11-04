@@ -13,7 +13,7 @@ published: true
 
 Constitutive Crystal Plasticity models are reliant on two equations as part of a phenomenological power law:
 
-Equation 1.0 describes the constitutive power law by which the slip rate $\dot{\gamma}$ on some arbitrary labelled slip system $i$ is dependant upon the initial shear rate $\dot{\gamma}_{0}^{i}$, ratio between initial $\tau^i$ and saturated $\xi^i$ CRSS values, inverse of strain rate sensitivity $n=\frac{1}{m}$, and shear stress on the slip system:
+Equation 1.0 describes the constitutive power law used by most crystal plasticity modelling software by which the slip rate $\dot{\gamma}$ on some arbitrary labelled slip system $i$ is dependant upon the initial shear rate $\dot{\gamma}_{0}^{i}$, ratio between initial $\tau^i$ and saturated $\xi^i$ CRSS values, inverse of strain rate sensitivity $n=\frac{1}{m}$, and shear stress on the slip system:
 
 $$
 \begin{equation}
@@ -21,11 +21,17 @@ $$
 \end{equation}
 $$
 	
-The saturated critical resolved shear stress ($\xi^i$) in this equation is reliant on Equation 2.0, which calculates the rate of hardening of the slip system with deformation:
+The saturated critical resolved shear stress ($\xi^i$) in Equation 1.0 is reliant on either Equation 2.0 or 3.0, which calculates the rate of hardening of the slip system with deformation. [DAMASK](https://damask3.mpie.de) uses the hardening law represented in Equation 2.0, while [FepX](https://fepx.info) uses a modified Voce hardening law in Equation 3.0:
 
 $$
 \begin{equation}
 \dot{\xi}^i = \dot{h}_0^{s-s}(1+h_{int}^i)\sum_{i^{\prime}=1}^{N_s} \displaystyle\left\lvert\dot{\gamma}^i\right\vert \displaystyle\left\lvert1-\frac{\xi^{i^{\prime}}}{\xi_\infty^{i^{\prime}}}\right\vert^a sgn(1-\frac{\xi^{i^{\prime}}}{\xi_\infty^{i^{\prime}}})h^{ii^{\prime}}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\dot{\xi}^i = h_0\left(\frac{\xi_s(\dot{\gamma})-\xi^i}{\xi_s(\dot{gamma})-\xi_0}\right)^{n^{\prime}}\dot{\gamma}
 \end{equation}
 $$
 
