@@ -28,10 +28,10 @@ $$
 \dot{\xi}^i = \dot{h}_0^{s-s}(1+h_{int}^i)\sum_{i^{\prime}=1}^{N_s} \displaystyle\left\lvert\dot{\gamma}^i\right\vert \displaystyle\left\lvert1-\frac{\xi^{i^{\prime}}}{\xi_\infty^{i^{\prime}}}\right\vert^a sgn(1-\frac{\xi^{i^{\prime}}}{\xi_\infty^{i^{\prime}}})h^{ii^{\prime}}
 \end{equation}
 $$
-
+\
 $$
 \begin{equation}
-\dot{\xi}^i = h_0\left(\frac{\xi_s(\dot{\gamma})-\xi^i}{\xi_s(\dot{gamma})-\xi_0}\right)^{n^{\prime}}\dot{\gamma}
+\dot{\xi}^i = h_0\left(\frac{\xi_s(\dot{\gamma})-\xi^i}{\xi_s(\dot{\gamma})-\xi_0}\right)^{n^{\prime}}\dot{\gamma}
 \end{equation}
 $$
 
