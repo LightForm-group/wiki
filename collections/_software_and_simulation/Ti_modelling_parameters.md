@@ -13,7 +13,7 @@ published: true
 
 Constitutive Crystal Plasticity models are reliant on two equations as part of a phenomenological power law:
 
-Equation 1.0 describes the constitutive power law used by most crystal plasticity modelling software by which the slip rate $\dot{\gamma}$ on some arbitrary labelled slip system $i$ is dependant upon the initial shear rate $\dot{\gamma}_{0}^{i}$, ratio between initial $\tau^i$ and saturated $\xi^i$ CRSS values, inverse of strain rate sensitivity $n=\frac{1}{m}$, and shear stress on the slip system:
+Equation 1 describes the constitutive power law used by most crystal plasticity modelling software by which the slip rate $\dot{\gamma}$ on some arbitrary labelled slip system $i$ is dependant upon the initial shear rate $\dot{\gamma}_{0}^{i}$, ratio between initial $\tau^i$ and saturated $\xi^i$ CRSS values, inverse of strain rate sensitivity $n=\frac{1}{m}$, and shear stress on the slip system:
 
 $$
 \begin{equation}
@@ -21,7 +21,7 @@ $$
 \end{equation}
 $$
 	
-The saturated critical resolved shear stress ($\xi^i$) in Equation 1.0 is reliant on either Equation 2.0 or 3.0, which calculates the rate of hardening of the slip system with deformation. [DAMASK](https://damask3.mpie.de) uses the hardening law represented in Equation 2.0, while [FepX](https://fepx.info) uses a modified Voce hardening law in Equation 3.0:
+The saturated critical resolved shear stress ($\xi^i$) in Equation 1.0 is reliant on either Equation 2 or 3, which calculates the rate of hardening of the slip system with deformation. [DAMASK](https://damask3.mpie.de) uses the hardening law represented in Equation 2, while [FepX](https://fepx.info) uses a modified Voce hardening law in Equation 3:
 
 $$
 \begin{equation}
