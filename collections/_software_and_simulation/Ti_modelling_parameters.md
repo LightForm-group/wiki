@@ -45,9 +45,9 @@ Please add to this list should your literature review include these parameters, 
 
 | $C_{11}$ | $C_{12}$ | $C_{13}$ | $C_{33}$ | $C_{44}$ | $C_{66}$ | Source    | Comments                                                                                                                     |
 | -------- | -------- | -------- | -------- | -------- | -------- | --------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| 162.4    | 92.0     | 69.0     | 180.7    | 46.7     |          | (Fisher, 1964)[^1] | Ultrasonic wave interference tests of CP-Ti at room temperature. Measurement of $C_{33}$ was interrupted but still included. |
+| 162.4    | 92.0     | 69.0     | 180.7    | 46.7     | -        | (Fisher, 1964)[^1] | Ultrasonic wave interference tests of CP-Ti at room temperature. Measurement of $C_{33}$ was interrupted but still included. |
 | 160.0    | 95.0     | 45.0     | 181.0    | 55.0     | 55.0     | (Naimon, 1974)[^2] | 'pulse superposition' of Ti64 at room temperature.                                                                           |
-| 160.0    | 90.0     | 66.0     | 181.0    | 46.5     |          | (Hearmon, 1984)[^3] | Collection of crystal parameters from legacy papers |
+| 160.0    | 90.0     | 66.0     | 181.0    | 46.5     | -        | (Hearmon, 1984)[^3] | Collection of crystal parameters from legacy papers |
 
 ### Plastic properties - Initial and saturated Critical Resolved Shear Stresses (CRSS)
 
