@@ -13,7 +13,7 @@ published: true
 
 Constitutive Crystal Plasticity models are reliant on two equations as part of a phenomenological power law:
 
-Equation 1 describes the constitutive power law used by most crystal plasticity modelling software by which the slip rate $\dot{\gamma}$ on some arbitrary labelled slip system $i$ is dependant upon the initial shear rate $\dot{\gamma}_{0}^{i}$, ratio between initial $\tau^i$ and saturated $\xi^i$ CRSS values, inverse of strain rate sensitivity $n=\frac{1}{m}$, and shear stress on the slip system:
+Equation 1 describes the constitutive power law used by most crystal plasticity modelling software by which the slip rate $\dot{\gamma}$ on some arbitrary labelled slip system $i$ is dependant upon the initial shear rate $\dot{\gamma}_{0}^{i}$, ratio between initial $\tau^i$ and saturated $\xi^i$ CRSS values, inverse of strain rate sensitivity $n=\frac{1}{m}$, and shear stress on the slip system: hey there!
 
 $$
 \begin{equation}
