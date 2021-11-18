@@ -67,7 +67,7 @@ Ti-$\alpha$ phase possesses a hexagonal-close packed (HCP) unit cell with $c/a$ 
 
 
 ## Beta phase (Ti-$\beta$)
-Because single-crystal properties of the beta phase cannot be determined directly at room temperature, some assumptions may be made in order to model its deformation response. E.g. Interstitial free steel parameters are a good for approximating the deformation response, due to its similar slip modes.
+Because single-crystal properties of the beta phase cannot be determined directly at room temperature, some assumptions may be made in order to model its deformation response. E.g. Interstitial free steel is a good approximation for the $\beta$-phase, due to possessing similar slip modes.
 ### Elastic properties
 
 | $C_{11}$ | $C_{12}$ | $C_{44}$ | Source | Comments |
