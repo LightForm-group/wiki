@@ -6,7 +6,7 @@ subcollection: SXRD
 
 ## Setting up the beamline
 
-The beamline scientists will take you throught the 
+The beamline scientists will take you through the beam calibration. It is useful at this stage to know how many rings of a particular phase you would like to collect. The beamline scientist can then take you through the appropriate beam size (eg. 0.5 x 0.5 mm) and detector distance (eg. 750 mm). The new pilatus detector has lots of gaps which can be a problem for capturing the rings. It could also be an advantage to assume orthorhombic symmetry and adjust the detector height, so that you can capture only the bottom half of the pattern. This can improve the resolution of the rings for better pattern fitting. However, it may be a problem for calculating accurate texture and phase fraction, which require full rings.
 
 ## Operating the Diamond beamline
 
@@ -51,7 +51,7 @@ See sample image: cam / QT Viewer
 
 ## Method for fast acquisition
 
-For fast acquisition a new script had to be created. It seems there is a limit with how many frames can be recorded, so 100 Hz can at max be ran for up to 60 seconds. There is also a delay after running fast acquisition mode for the data from the Pilatus detector to be saved out to the Diamond storage. Additionally, it seems the it takes longer than expected to record at a particular frequency, so setting the number of frames can cause the acquisition to overrun - Stefan M
+For fast acquisition a new script had to be created. It seems there is a limit with how many frames can be recorded, so 100 Hz can at max be ran for up to 60 seconds. There is also a delay after running fast acquisition mode for the data from the Pilatus detector to be saved out to the Diamond storage. Additionally, it seems the it takes longer than expected to record at a particular frequency, so setting the number of frames can cause the acquisition to overrun - Stefan Michalik can advise on this.
 
 1. Rotate ETMT to run experiment - change TAB2 from 45 to 0 degrees
 2. Change beamline setup to capture image of sample - MoveToEndOfDetectorDiagnostics
