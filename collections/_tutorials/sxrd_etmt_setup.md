@@ -14,17 +14,22 @@ However, the ETMT is not an easy to use equipment. The ETMT at Diamond is also s
 
 Practice sessions with the ETMT at Diamond are needed to;
 
-- Practice connecting the thermocouples. The samples at Diamond need to be tested in a chamber, which restricts the space to connect the thermocouples. For this reason, it is advised to have longer thermocouple and resistivity wires (> 70 mm). It also helps to make the Pt/Rh (+ve terminal) wire slightly longer, by ~ 5 mm, than the Pt (-ve terminal) for easy identification. Note, the Pt/Rh (+ve) wire also needs to be at the top of the sample, to prevent erroneous hot-spots forming along the sample length.
+- Set the gauge length of the machine. The samples at Diamond need to be tested in a chamber, which restricts the sample gauge length that can be tested. The largest gauge length of samples is ~ 40 mm, but samples should be less than this length if being deformed. To allow movement up to 40 mm it will be neccessary to remove the vacuum seal to the chamber attached to the top grip, which loosens a spring baffle. This is done by loosening the two grips underneath the rubber seal and above the baffle, using two rods and turning with opposite rotation. Note, this will mean that you now do not have a vacuum seal on the chamber.
+- Practice connecting the thermocouples. The chamber restricts the space to connect the thermocouples. For this reason, it is advised to have longer thermocouple and resistivity wires (> 70 mm). It also helps to make the Pt/Rh (+ve terminal) wire slightly longer, by ~ 5 mm, than the Pt (-ve terminal) for easy identification. Note, the Pt/Rh (+ve) wire also needs to be at the top of the sample, to prevent erroneous hot-spots forming along the sample length.
 - Create holders to support the thermocouple and resistivity connectors. If the connectors are pulling on the thermocouple wires, this is likely to pull them off during the experiment. So, use tape/metal objects to support the thermocouple connectors. It is also easier to insert the wires into the connector during the experiment if the connectors are upside down.
-- Write out the testing methods. **Note, methods cannot be copied from the Manchester ETMT software**. Copying methods from different software can lead to errors and ouputting the data. Check these methods run and output the data in the correct format.
 - Check the connections into the computer are correct. There is a split connector for the thermocouple running into the back of the Eurotherm controller. In case of R-type the two orange connectors should connect into T/C-1 and T/C-2. However, in the case of K-type thermocouple it seems a connector with a looped wire is used to 'trick' the Eurortherm readout. Therefore, it is important to check the Eurotherm readout is showing what is expected.
 - Check you are recording the Eurotherm temperature. The Eurotherm temperature is more accurate than the ETMT (controller) readout, with typically ~ 10 to 15 degrees difference. This is because the Eurotherm temperature can only be recorded at ~ 20 Hz, which is too slow to control during fast tests. Nevertheless, the Eurotherm temperature can be recorded as "Tempearture (Controller 1)" in Channels for corrected the data.
 - Check you can record the voltage output. The voltage output from two resistivity wires of the same type, e.g. Pt-Pt or Cu-Cu, can record phase changes in the sample and the plastic strain, see (Christopher S. Daniel EngD Thesis)[https://www.research.manchester.ac.uk/portal/en/theses/an-investigation-into-the-texture-development-during-hotrolling-of-dualphase-zirconium-alloys(416cf1d6-15de-41d0-ad7c-3d0db664ae84).html]. The BNC cable will need to be connected. And the calibration will need running with either High or Low voltage and a maximum of ~ 0.5 Volts.
-- Check the 
+- Write out the testing methods. **Note, methods cannot be copied from the Manchester ETMT software**. Copying methods from different software versions can lead to errors running the tests and ouputting the data. 
+- Check the methods on the Diamond ETMT run.
+- Check data output is in the correct format.
 - Calibrate the PID settings. The PID settings for the different materials and sample geometries can vary. Calibrate these prior to the experiment to reduce time on the beamline.
 
 
 ## Typical PID settings
 
+A useful description of PID settings can be found (here)[https://www.reddit.com/r/FromTheDepths/comments/kuyftc/pid_tuning_guide_for_dummies/]
+
+The PID settings on the ETMT can be tested by setting a waveform - using the waveform button, located in the bottom left panel. The ouput can be monitored using the scope tool. Note, it may be neccesary to change the axes of the scope to check the output.
 
 
