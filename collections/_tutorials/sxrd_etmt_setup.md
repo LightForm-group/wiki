@@ -8,7 +8,15 @@ subcollection: SXRD
 
 The Instron Electro-Thermal Mechanical Testing System (ETMT) is stored at Diamond, either in the Harwell complex, or in experimental hutch 2 on the I12 beamline. The beamline scientists can crane the ETMT into position on the I12 beamline, as well as connect up the cabling and water supply. This includes connecting 3x analogue outputs, which can be used for synching data from the ETMT with the recorded sycnhrotron patterns.
 
-However, the ETMT is not an easy to use equipment. The ETMT at Diamond is also slightly different to the one at Manchester. Therefore, it is advised to have at least one day of training with Andrew Pearce (Instron), followed by at least one/two days of practice experiments with your samples, before the beamline experiment. 
+However, the ETMT is not an easy to use equipment. The ETMT at Diamond is also slightly different to the one at Manchester. Therefore, it is advised to have at least one day of training with Andrew Pearce (Instron), followed by at least one/two days of practice experiments with your samples, before the beamline experiment.
+
+## Differences between operating Manchester ETMT and Diamond ETMT
+
+The Diamond ETMT has a newer software for running the tests. Instead of the buttons 1,2,3 on the cabinet, there is now a switch on the controller. The furthest left means no power to the machine, the middle (with a button hold to illuminate the green light) is for manual adjustment with the controller and for enabling sample protect, and the far left button is for control from the computer. To setup a test, you first need to set the gauge length manually with the middle button (after illuminating the green light). Then screw in the top of the sample, then balance the load, then turn on sample protect. Then continue to screw in the sample as you see the load adjust. 
+
+After connecting the thermocouple and resistivity wires, you can then put on the front of the chamber (a stupidly heavy door that makes a mockery of the safety assessment procedure). If you put this on at any other stage it can ruin your sample by sending the load control mental. 
+
+After the door is bolted on you can then turn the switch to far position (wait a few seconds). Set the load and current to zero in the setpoint tool on the computer. Then (as long as the power supply is on) you can press the green "System Enable" button, which gives heating power to the ETMT.
 
 ## Practice check-list
 
