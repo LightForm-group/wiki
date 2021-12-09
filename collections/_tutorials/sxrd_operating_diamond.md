@@ -51,7 +51,7 @@ See sample image: cam / QT Viewer
 
 ## Method for fast acquisition
 
-For fast acquisition a new script had to be created. It seems there is a limit with how many frames can be recorded, so 100 Hz can at max be ran for up to 60 seconds. There is also a delay after running fast acquisition mode for the data from the Pilatus detector to be saved out to the Diamond storage. Additionally, it seems the it takes longer than expected to record at a particular frequency, so setting the number of frames can cause the acquisition to overrun - Stefan Michalik can advise on this.
+For fast acquisition a new script had to be created. This script (Version 2) can be found on the beamline directory - .../2021/mg28894-1/processing/scripts/GDA and Stefan Michalik should also have a copy. It seems there is a limit with how many frames can be recorded, so 100 Hz can at max be ran for up to 60 seconds. There is also a delay after running fast acquisition mode for the data from the Pilatus detector to be saved out to the Diamond storage. Additionally, it seems the it takes longer than expected to record at a particular frequency, so setting the number of frames can cause the acquisition to overrun - Stefan Michalik can advise on this.
 
 1. Rotate ETMT to run experiment - change TAB2 from 45 to 0 degrees
 2. Change beamline setup to capture image of sample - MoveToEndOfDetectorDiagnostics
