@@ -29,6 +29,26 @@ If you are still having problems, post a new GitHub issue in the installation re
 
 Please add a new issue to the installation repository ([UoM-CSF-Matflow](https://github.com/LightForm-group/UoM-CSF-matflow))
 
+## Importing large parameters
+
+You may have issues when using `import` to re-use workflow parameters from an existing workflow, if the parameters are larger than the available memory on the login node at submission time. To prevent this, you can first submit, using `qsub`, a jobscipt that runs `matflow make`:
+
+```sh
+#!/bin/bash --login
+
+#$ -cwd
+#$ -N mf_make
+#$ -pe smp.pe 6   # specify whatever resources are required to access sufficient memory
+
+export HDF5_USE_FILE_LOCKING=FALSE
+export OMP_NUM_THREADS=1
+
+matflow make workflow_file.yml
+
+```
+
+Once this has run, a new workflow directory should be generated. You can then submit the workflow via this directory with `matflow go /path/to/workflow/directory`.
+
 ## FAQs
 **When I submit a workflow I get a message like "*The following schemas are invalid...*"; what does this mean?**
 
