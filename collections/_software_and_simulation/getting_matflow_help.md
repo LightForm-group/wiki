@@ -57,11 +57,30 @@ This indicates that some of the task schemas cannot be used, given the extension
 ## Troubleshooting
 **My workflow didn't run**
 
-1. Type `matflow validate` into the terminal. If workflow does not work, go to 2.
-2. Run the following in the terminal: `/mnt/eps01-rds/jf01-home01/shared/matflow/ipdate_matflow.sh`. If worlflow does not work, go to 3
-3. Check if there is an error (with line numbers) displayed in the CSF interface. If yes, go to 4. If no, go to 5.
-4. Check the yaml file on https://yamlvalidator.com . Make sure there are no indentation errors. If workflow does not work, go to 5.
-5. Look for `stderr.log` in the `simulate_volume_element` directory. If you've found it, go to 6; if there is no such directory, go to 7.
-6. Read the error at the bottom of the log file. Comment out the relevant tasks, starting from the one in the error message. If `stderr.log` is all 0s, go to 7. If you have tried commenting out all of the tasks, go to 7. If the workflow worked after commenting out tasks, go to 8.
-7. Use [example workflows](https://github.com/LightForm-group/UoM-CSF-matflow/tree/master/workflows). Compare your workflow against the example at https://text-compare.com. If the workflow is not working try a different example; if you have tried all of the examples go to 1 or contact a member of the team; if the example workflow works go to 8.
-8. Identify the relevant task(s) that failed and refer to the corresponding troubleshooting section for that task.
+1. Type `matflow validate` into the terminal.
+   - This ensures that matflow is installed correctly
+   -  If your workflow does not work, go to 2.
+2. Run the following in the terminal: `/mnt/eps01-rds/jf01-home01/shared/matflow/update_matflow.sh`. 
+   - This ensures that you are using the latest stable version of matflow
+   - If your worlflow does not work, go to 3
+3. Check if there is an error with line numbers displayed in the CSF interface. 
+   - If yes, that means that there is likely an error in the format of your YAML file, go to 4. 
+   - If no, go to 5.
+4. Check the yaml file on https://yamlvalidator.com . Make sure there are no indentation errors.
+   - If your workflow still does not work, go to 5.
+5. Look for `stderr.log` in the `simulate_volume_element` directory. 
+   - If you've found it, go to 6. 
+   - If there is no such directory, the workflow did not run at all, go to 7.
+6. Read the error at the bottom of the log file. Comment out the relevant tasks, starting from the one at the bottom of the error message. This is to isolate the problem out.
+   - If `stderr.log` is all 0s, then matflow go to 7.
+   - If you have tried commenting out all of the tasks, go to 7.
+   - If your workflow worked after commenting out tasks, go to 9.
+7. Use one of the [example workflows](https://github.com/LightForm-group/UoM-CSF-matflow/tree/master/workflows).
+   - If the example workflow is not working, repeat with a different example. 
+   - If you have tried all of the examples go to 1 or contact a member of the team.
+   - If the example workflow works go to 8.
+8. Compare your workflow against the working example workflow at https://text-compare.com and see what the differences are in the relevant task(s).
+   - This is to isolate and fix the relevant task(s).
+9. You have now identified the relevant task(s) that failed. Please refer to the corresponding troubleshooting section for that task.
+
+Individual task troubleshooting WIP
