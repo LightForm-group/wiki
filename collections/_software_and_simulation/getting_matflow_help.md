@@ -55,7 +55,7 @@ Once this has run, a new workflow directory should be generated. You can then su
 This indicates that some of the task schemas cannot be used, given the extension packages that you currently have installed. This is not a problem, unless you want to use one of those tasks. If you do try to use one of those tasks in a workflow profile, you will receive a more obvious error from MatFlow.
 
 ## Troubleshooting
-**My workflow didn't run
+**My workflow didn't run**
 
 1. Type `matflow validate` into the terminal. If workflow does not work, go to 2.
 2. Run the following in the terminal: `/mnt/eps01-rds/jf01-home01/shared/matflow/ipdate_matflow.sh`. If worlflow does not work, go to 3
