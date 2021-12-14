@@ -66,7 +66,7 @@ This indicates that some of the task schemas cannot be used, given the extension
 3. Check if there is an error with line numbers displayed in the CSF interface. 
    - If yes, that means that there is likely an error in the format of your YAML file, go to 4. 
    - If no, go to 5.
-4. Check the yaml file on https://yamlvalidator.com . Make sure there are no indentation errors.
+4. Check the yaml file on [https://yamlvalidator.com](https://yamlvalidator.com) . Make sure there are no indentation errors.
    - If your workflow still does not work, go to 5.
 5. Look for `stderr.log` in the `simulate_volume_element` directory. 
    - If you've found it, go to 6. 
@@ -79,7 +79,7 @@ This indicates that some of the task schemas cannot be used, given the extension
    - If the example workflow is not working, repeat with a different example. 
    - If you have tried all of the examples go to 1 or contact a member of the team.
    - If the example workflow works go to 8.
-8. Compare your workflow against the working example workflow at https://text-compare.com and see what the differences are in the relevant task(s).
+8. Compare your workflow against the working example workflow at [https://text-compare.com](https://text-compare.com) and see what the differences are in the relevant task(s).
    - This is to isolate and fix the relevant task(s).
 9. You have now identified the relevant task(s) that failed. Please refer to the corresponding troubleshooting section for that task.
 
