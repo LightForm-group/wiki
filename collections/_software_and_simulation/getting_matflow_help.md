@@ -83,4 +83,27 @@ This indicates that some of the task schemas cannot be used, given the extension
    - This is to isolate and fix the relevant task(s).
 9. You have now identified the relevant task(s) that failed. Please refer to the corresponding troubleshooting section for that task.
 
-Individual task troubleshooting WIP
+**There's no visualisation of the results / There's no .vtr in the simulate_volume_element_loading task directory --WIP (more errors needed and more thorough solutions needed)**
+
+1. Navigate to the `output` directory of your simulation (the directory address should look like this: `#/scratch/Your_Task_Name_and_Date/output`)
+2. Read `t5_pro.o-------` (or `t4_pro.o-------` / `t6_pro.o-------` depending on how many tasks you have, it should be the final task)
+3. Read the error message: 
+  - If it is something like `Failed to execute the output map for output "volume_element_response". Exception was: Unable to allocate 72.0 MiB for an array with shape (1048576, 3, 3) and data type float64`, Go to 4
+  - If it is something else (I have not encountered other errors yet, please provide additional errors)
+4. Open your /yaml file and add the following lines into the `simulate_colume_element_loading` task: 
+```sh
+    run_options:
+      num_cores: 8
+      processing:
+        l: mem256
+```
+and try again
+5. If it still fails in the same way then replace the above with:
+```sh
+    run_options:
+      num_cores: 16
+      processing:
+        l:mem512
+```
+
+Other tasks' troubleshooting WIP
