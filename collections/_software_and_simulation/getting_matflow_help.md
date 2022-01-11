@@ -55,6 +55,16 @@ Once this has run, a new workflow directory should be generated. You can then su
 This indicates that some of the task schemas cannot be used, given the extension packages that you currently have installed. This is not a problem, unless you want to use one of those tasks. If you do try to use one of those tasks in a workflow profile, you will receive a more obvious error from MatFlow.
 
 ## Troubleshooting
+**Installation failed due to an error message: `damask-parse current_version has requirement numpy>=1.17.5 but you'll have numpy other_version which is incompatible`**
+
+1. Type `pip list --user` into the command line.
+   - This should give you a list of modules installed on your user account.
+2. Find the version of numpy in the list and check if it is the correct version.
+3. If the version is incorrect, then type `pip uninstall numpy`
+   - This should prompt a Y/N answer, say yes.
+4. Type `pip install --user numpy==1.17.5` to reinstall the correct version of numpy.
+5. Check the installation with `matflow validate`
+
 **My workflow didn't run**
 
 1. Type `matflow validate` into the terminal.
