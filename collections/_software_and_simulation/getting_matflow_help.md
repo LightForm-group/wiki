@@ -100,7 +100,8 @@ This indicates that some of the task schemas cannot be used, given the extension
 3. Read the error message: 
   - If it is something like `Failed to execute the output map for output "volume_element_response". Exception was: Unable to allocate 72.0 MiB for an array with shape (1048576, 3, 3) and data type float64`, Go to 4
   - If it is something else (I have not encountered other errors yet, please provide additional errors)
-4. Open your /yaml file and add the following lines into the `simulate_colume_element_loading` task: 
+4. Try lowering your modelling domain size (bearing in mind the z-dimension must be divisible by the number of cores), or lower the number of increments to be visualised (e.g. visualising every other increment rather than all of them). ***If the above is not an option, go to 5***
+5. Open your /yaml file and add the following lines into the `simulate_colume_element_loading` task: 
 ```sh
     run_options:
       num_cores: 8
@@ -108,12 +109,21 @@ This indicates that some of the task schemas cannot be used, given the extension
         l: mem256
 ```
 and try again
-5. If it still fails in the same way then replace the above with:
+
+6. If it still fails in the same way then replace the above with:
 ```sh
     run_options:
       num_cores: 16
       processing:
-        l:mem512
+        l: mem512
 ```
 
+7. If that still doesn't work, try:
+```sh
+    run_options
+      num_cores: 16
+      processing:
+         num_cores: 4
+         l: mem512
+```
 Other tasks' troubleshooting WIP
