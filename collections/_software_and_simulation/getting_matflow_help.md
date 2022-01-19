@@ -58,40 +58,62 @@ This indicates that some of the task schemas cannot be used, given the extension
 **Installation failed due to an error message: `damask-parse current_version has requirement numpy>=1.17.5 but you'll have numpy other_version which is incompatible`**
 
 1. Type `pip list --user` into the command line.
-   - This should give you a list of modules installed on your user account.
+  - This should give you a list of modules installed on your user account.
 2. Find the version of numpy in the list and check if it is the correct version.
 3. If the version is incorrect, then type `pip uninstall numpy`
-   - This should prompt a Y/N answer, say yes.
+  - This should prompt a Y/N answer, say yes.
 4. Type `pip install --user numpy==1.17.5` to reinstall the correct version of numpy.
 5. Check the installation with `matflow validate`
 
 **My workflow didn't run**
 
 1. Type `matflow validate` into the terminal.
-   - This ensures that matflow is installed correctly
-   -  If your workflow does not work, go to 2.
+  - This ensures that matflow is installed correctly
+  -  If your workflow does not work, go to 2.
 2. Run the following in the terminal: `/mnt/eps01-rds/jf01-home01/shared/matflow/update_matflow.sh`. 
-   - This ensures that you are using the latest stable version of matflow
-   - If your worlflow does not work, go to 3
+  - This ensures that you are using the latest stable version of matflow
+  - If your worlflow does not work, go to 3
 3. Check if there is an error with line numbers displayed in the CSF interface. 
-   - If yes, that means that there is likely an error in the format of your YAML file, go to 4. 
-   - If no, go to 5.
+  - If yes, that means that there is likely an error in the format of your YAML file, go to 4. 
+  - If no, go to 5.
 4. Check the yaml file on [https://yamlvalidator.com](https://yamlvalidator.com) . Make sure there are no indentation errors.
-   - If your workflow still does not work, go to 5.
-5. Look for `stderr.log` in the `simulate_volume_element` directory. 
-   - If you've found it, go to 6. 
-   - If there is no such directory, the workflow did not run at all, go to 7.
-6. Read the error at the bottom of the log file. Comment out the relevant tasks, starting from the one at the bottom of the error message. This is to isolate the problem out.
-   - If `stderr.log` is all 0s, then matflow go to 7.
-   - If you have tried commenting out all of the tasks, go to 7.
-   - If your workflow worked after commenting out tasks, go to 9.
-7. Use one of the [example workflows](https://github.com/LightForm-group/UoM-CSF-matflow/tree/master/workflows).
-   - If the example workflow is not working, repeat with a different example. 
-   - If you have tried all of the examples go to 1 or contact a member of the team.
-   - If the example workflow works go to 8.
-8. Compare your workflow against the working example workflow at [https://text-compare.com](https://text-compare.com) and see what the differences are in the relevant task(s).
-   - This is to isolate and fix the relevant task(s).
-9. You have now identified the relevant task(s) that failed. Please refer to the corresponding troubleshooting section for that task.
+  - If your workflow still does not work, go to 5.
+5. Go to `~/.matflow/` and check `config.yml`. It should look like this:
+```sh
+task_schema_sources:
+- /mnt/eps01-rds/jf01-home01/shared/matflow/task_schemas.yml
+software_sources:
+- /mnt/eps01-rds/jf01-home01/shared/matflow/software.yml
+parallel_modes:
+  MPI:
+    command: mpirun -np <<num_cores>>
+  OpenMP:
+    env: export OMP_NUM_THREADS=<<num_cores>>
+
+default_preparation_run_options:
+  l: short
+
+default_processing_run_options:
+  l: short
+  
+default_iterate_run_options:
+  l: short  
+```
+  - If it is correct, go to 6.
+6. Look for `stderr.log` in the `simulate_volume_element` directory. 
+  - If you've found it, go to 7. 
+  - If there is no such directory, the workflow did not run at all, go to 8.
+7. Read the error at the bottom of the log file. Comment out the relevant tasks, starting from the one at the bottom of the error message. This is to isolate the problem out.
+  - If `stderr.log` is all 0s, then matflow go to 8.
+  - If you have tried commenting out all of the tasks, go to 8.
+  - If your workflow worked after commenting out tasks, go to 10.
+8. Use one of the [example workflows](https://github.com/LightForm-group/UoM-CSF-matflow/tree/master/workflows).
+  - If the example workflow is not working, repeat with a different example. 
+  - If you have tried all of the examples go to 1 or contact a member of the team.
+  - If the example workflow works go to 9.
+9. Compare your workflow against the working example workflow at [https://text-compare.com](https://text-compare.com) and see what the differences are in the relevant task(s).
+  - This is to isolate and fix the relevant task(s).
+10. You have now identified the relevant task(s) that failed. Please refer to the corresponding troubleshooting section for that task.
 
 **There's no visualisation of the results / There's no .vtr in the simulate_volume_element_loading task directory --WIP (more errors needed and more thorough solutions needed)**
 
