@@ -97,8 +97,10 @@ default_processing_run_options:
   l: short
   
 default_iterate_run_options:
-  l: short  
+  l: short
+
 ```
+
   - If it is correct, go to 6.
 6. Look for `stderr.log` in the `simulate_volume_element` directory. 
   - If you've found it, go to 7. 
