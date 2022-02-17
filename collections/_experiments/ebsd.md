@@ -6,6 +6,8 @@ tutorials:
   - Beta reconstruction
   - Cleaning EBSD data
   - EBSD Sample preparation
+metadata_templates:
+  - ebsd.yml
 analysis_codes:
   - name: Example MTEX Scripts 
     link: https://github.com/LightForm-group/Lightform_Mtex
