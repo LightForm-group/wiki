@@ -51,18 +51,20 @@ Ti-$\alpha$ phase possesses a hexagonal-close packed (HCP) unit cell with $c/a$ 
 | 160.0    | 90.0     | 66.0     | 181.0    | 46.5     | -        | (Hearmon, 1984)[^4] | Collection of crystal parameters from legacy papers |
 
 ### Plastic properties - Initial and saturated Critical Resolved Shear Stresses (CRSS)
+Be aware some are given as ratios.
 
 | Slip system |   \{ 0002 \}\< 11-20 \>   |   \{ 10-10 \}\< 11-20 \>   |   \{ 10-11 \}\< 11-23 \>   |   Source  | Comments |
 | ----------- | --------------------- |  --------------------- | ---------------------- | --------- | -------- |
-| CRSS        | 420.0                 |  370.0                 | 590.0                  | (Bridier, 2006)[^5] | In-situ fatigue tests of room temperature Ti64. |
-| CRSS        | 349.0                 |  150.0                 | 1107.0                 | (Zambaldi, 2012)[^6] | 'Simplex algorythym' used to matchup results of MARC CPFE model with compression tests of room temperature CP-Ti. |
-| CRSS        | 444.0                 |  392.0                 | 631.0                 | (Jones, 1981)[^7] | 'Ball model' - estimations of CRSS were validated against uniaxial compression and tensile tests of CP-Ti at room temperature. |
+| CRSS        | 1.5                   |  1                     | 3                      | (Dunst, 1996)[^5] | texture predictions validated eagainst experimental. |
+| CRSS        | 420.0                 |  370.0                 | 590.0                  | (Bridier, 2006)[^6] | In-situ fatigue tests of room temperature Ti64. |
+| CRSS        | 349.0                 |  150.0                 | 1107.0                 | (Zambaldi, 2012)[^7] | 'Simplex algorythym' used to matchup results of MARC CPFE model with compression tests of room temperature CP-Ti. |
+| CRSS        | 444.0                 |  392.0                 | 631.0                 | (Jones, 1981)[^8] | 'Ball model' - estimations of CRSS were validated against uniaxial compression and tensile tests of CP-Ti at room temperature. |
 
 ### Plastic properties - Hardening equation parameters
 
 | $a$ | $n_{sl}=\frac{1}{m}$ | $dot{\gamma}_0$ | $h_0$ |  $h_{ij}$  |   Source  | Comments |
 | --- | -------------------- | --------------- | ----- | ---------- | --------- | -------- |
-| 2.0 | 0.05                 | 0.001           | 200.0 | [1.4 (non-coplanar), 1.0 (coplanar)] | (Zambaldi, 2012)[^6] | Set arbritrarily for use in 'simplex algorythim to determine CRSS' |
+| 2.0 | 0.05                 | 0.001           | 200.0 | [1.4 (non-coplanar), 1.0 (coplanar)] | (Zambaldi, 2012)[^7] | Set arbritrarily for use in 'simplex algorythim to determine CRSS' |
 |     |                      |                 |       |          |           |          |
 
 
@@ -77,10 +79,10 @@ Because single-crystal properties of the beta phase cannot be determined directl
 
 ### Plastic properties - Initial and saturated Critical Resolved Shear Stresses (CRSS)
 
-| Pencil glide |   \{ 110 \}\< 111 \>   |   \{ 112 \}\< 111 \>   |   \{ 123 \}\< 111 \>   | Source | Comments |
-| ------------ | ------------------ |  ----------------- | ------------------ | ------ | -------- |
-|     CRSS     |                    |                    |                    |        |          |
-|              |                    |                    |                    |        |          |
+| Pencil glide | \{ 110 \}\< 111 \> | \{ 112 \}\< 111 \>| \{ 123 \}\< 111 \> | Source | Comments |
+| ------------ | ------------------ | ----------------- | ------------------ | ------ | -------- |
+|     CRSS     | 1/3                | 1/3               | 1/3                | (Dunst, 1996) [^5] | Hot Texture predictions compared against experimental. |
+|              |                    |                   |                    |        |          |
 
 ### Plastic properties - Hardening equation parameters
 
@@ -100,9 +102,10 @@ This code is maintained by the Microstructure Modelling Group at the University 
 [^2]: Fisher, E.S. and Renken, C.J., 1964. Single-crystal elastic moduli and the hcp→ bcc transformation in Ti, Zr, and Hf. Physical review, 135(2A), p.A482.
 [^3]: Naimon, E.R., Weston, W.F. and Ledbetter, H.M., 1974. Elastic properties of two titanium alloys at low temperatures. Cryogenics, 14(5), pp.246-249.
 [^4]: Hearmon, R.F.S., 1984. The elastic constants of crystals and other anisotropic materials. Landolt-Bornstein Tables, III/18, 1154.
-[^5]: Bridier, F., 2006. Analyse expérimentale des modes de déformation et d'endommagement par fatigue à 20° C d'alliage de titane: aspects cristallographiques à différentes échelles (Doctoral dissertation, Poitiers).
-[^6]: Zambaldi, C., Yang, Y., Bieler, T.R. and Raabe, D., 2012. Orientation informed nanoindentation of α-titanium: Indentation pileup in hexagonal metals deforming by prismatic slip. Journal of Materials Research, 27(1), pp.356-367.
-[^7]: Jones, I.P. and Hutchinson, W.B., 1981. Stress-state dependence of slip in Titanium-6Al-4V and other HCP metals. Acta Metallurgica, 29(6), pp.951-968.
+[^5]: Dunst, D. and Mecking, H., 1996. Analysis of Experimental and Theoretical Rolling Textures of Two-phase Titanium Alloys/Analyse von gemessenen und berechneten Walztexturen bei zweiphasigen Titanbasislegierungen. International Journal of Materials Research, 87(6), pp.498-507.
+[^6]: Bridier, F., 2006. Analyse expérimentale des modes de déformation et d'endommagement par fatigue à 20° C d'alliage de titane: aspects cristallographiques à différentes échelles (Doctoral dissertation, Poitiers).
+[^7]: Zambaldi, C., Yang, Y., Bieler, T.R. and Raabe, D., 2012. Orientation informed nanoindentation of α-titanium: Indentation pileup in hexagonal metals deforming by prismatic slip. Journal of Materials Research, 27(1), pp.356-367.
+[^8]: Jones, I.P. and Hutchinson, W.B., 1981. Stress-state dependence of slip in Titanium-6Al-4V and other HCP metals. Acta Metallurgica, 29(6), pp.951-968.
 
 
 
