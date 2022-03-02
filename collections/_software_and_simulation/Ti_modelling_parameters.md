@@ -55,7 +55,7 @@ Be aware some are given as ratios.
 
 | Slip system |   \{ 0002 \}\< 11-20 \>   |   \{ 10-10 \}\< 11-20 \>   |   \{ 10-11 \}\< 11-23 \>   |   Source  | Comments |
 | ----------- | --------------------- |  --------------------- | ---------------------- | --------- | -------- |
-| CRSS        | 1.5                   |  1                     | 3                      | (Dunst, 1996)[^5] | texture predictions validated eagainst experimental. |
+| CRSS ratio  | 1.5                   |  1                     | 3                      | (Dunst, 1996)[^5] | texture predictions validated eagainst experimental. |
 | CRSS        | 420.0                 |  370.0                 | 590.0                  | (Bridier, 2006)[^6] | In-situ fatigue tests of room temperature Ti64. |
 | CRSS        | 349.0                 |  150.0                 | 1107.0                 | (Zambaldi, 2012)[^7] | 'Simplex algorythym' used to matchup results of MARC CPFE model with compression tests of room temperature CP-Ti. |
 | CRSS        | 444.0                 |  392.0                 | 631.0                 | (Jones, 1981)[^8] | 'Ball model' - estimations of CRSS were validated against uniaxial compression and tensile tests of CP-Ti at room temperature. |
@@ -81,7 +81,7 @@ Because single-crystal properties of the beta phase cannot be determined directl
 
 | Pencil glide | \{ 110 \}\< 111 \> | \{ 112 \}\< 111 \>| \{ 123 \}\< 111 \> | Source | Comments |
 | ------------ | ------------------ | ----------------- | ------------------ | ------ | -------- |
-|     CRSS     | 1/3                | 1/3               | 1/3                | (Dunst, 1996) [^5] | Hot Texture predictions compared against experimental. |
+| CRSS ratio   | 1/3                | 1/3               | 1/3                | (Dunst, 1996) [^5] | Hot Texture predictions compared against experimental. |
 |              |                    |                   |                    |        |          |
 
 ### Plastic properties - Hardening equation parameters
