@@ -42,17 +42,29 @@ From here it is possible to view and search through your data storage space usin
 
 #### Connecting iCSF (incline) storage with RDS storage
 
-To view files and interact with files on the Research Database Storage (RDS) space through the iCSF (incline) storage space, we need to setup a sym link. To setup a sym link to the personal RDS space we can use something like;
+Our group has allocated funds to purchase space for research data storage (RDS) from the university, which is stored and backed up on the servers. You will need to contact IT services to be given a portion of this space, which you will have read/write access to, and others in the group will be able to read and download. You will also be given access to shared space, where everyone has read/write access. For instance;
 
-```python
-ln -s /mnt/eps01-rds/Fonseca-Lightform/username ~/rds_lightform
-```
+`/mnt/eps01-rds/Fonseca-Lightform/username`
 
-And to link to the shared RDS space we can use;
+and 
 
-```python
-ln -s /mnt/eps01-rds/Fonseca-Lightform/shared ~/rds_lightform_shared
-```
+`/mnt/eps01-rds/Fonseca-Lightform/shared`
+
+To access the RDS data on the iCSF (incline) storage space you will first need to setup some symbolic links. A symbolic link, also known as a sym or a soft link is a special type of file that points to another file or directory (like a shortcut in Windows), this will allow you to view the contents of the folder. First, remote desktop into the interactive linux environment, launch the terminal, and log in to the iCSF using the command;
+
+`ssh -X username@incline256.itservices.manchester.ac.uk`
+
+Then, it is probably a good idea to make a new directory in your home folder on the iCSF where you would like to store this data. For instance,
+
+`mkdir rds_lightform`
+
+Then, create the symbolic link;
+
+`ln -s /mnt/eps01-rds/Fonseca-Lightform/mbcx9cd4 ~/rds_lightform`
+
+In case there is a mistake in your filename you can delete a sym link using;
+
+`unlink ~/rds_lightform`
 
 #### Loading modules
 
