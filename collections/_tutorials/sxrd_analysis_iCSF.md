@@ -182,6 +182,7 @@ To ensure that your packages do not mix up and interfere with each other during 
 cd python_package/
 python -m venv venv
 source venv/bin/activate
+pip install --upgrade pip
 pip install jupyter
 pip install -r requirements.txt
 ```
@@ -201,7 +202,7 @@ pip install --upgrade -r requirements.txt
 pip install --upgrade specific_python_package
 ```
 
-Note in some instances, for developers, you may want to run in egg mode, for example using;
+Note in some instances, for developers, you may want to run in egg mode, to update packages instantly, for example using;
 
 ```python
 pip install -e .
