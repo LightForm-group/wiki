@@ -32,7 +32,7 @@ Once this is setup you can connect to the remote desktop linux environment, from
 
 A jupyter notebook can be launched like so *(note the version number may change as python is updated)*;
 
-```python
+```bash
 jupyter-notebook-icsf 3/2019.07
 ```
 
@@ -42,7 +42,7 @@ This allows you to interact and analyse data stored on your iCSF (incline) data 
 
 The connection with the iCSF is created through a secure shell protocol like so **(note replace username with your actual username)**;
 
-```python
+```bash
 ssh -X username@incline256.itservices.manchester.ac.uk
 ```
 
@@ -60,40 +60,48 @@ and
 
 To access the RDS data on the iCSF (incline) storage space you will first need to setup some symbolic links. A symbolic link, also known as a sym or a soft link is a special type of file that points to another file or directory (like a shortcut in Windows), this will allow you to view the contents of the folder. First, remote desktop into the interactive linux environment, launch the terminal, and log in to the iCSF using the command;
 
-`ssh -X username@incline256.itservices.manchester.ac.uk`
+```bash
+ssh -X username@incline256.itservices.manchester.ac.uk
+```
 
 Then, it is probably a good idea to make a new directory in your home folder on the iCSF where you would like to store this data. For instance,
 
-`mkdir rds_lightform`
+```bash
+mkdir rds_lightform
+```
 
 Then, create the symbolic link;
 
-`ln -s /mnt/eps01-rds/Fonseca-Lightform/mbcx9cd4 ~/rds_lightform`
+```bash
+ln -s /mnt/eps01-rds/Fonseca-Lightform/mbcx9cd4 ~/rds_lightform
+```
 
 In case there is a mistake in your filename you can delete a sym link using;
 
-`unlink ~/rds_lightform`
+```bash
+unlink ~/rds_lightform
+```
 
 #### Loading modules
 
 The most useful thing about the iCSF is the ability to launch interactive modules. The most useful modules for analysing synchrotron data are MATLAB, DAWN, DIOPTAS and MAUD;
 
-```python
+```bash
 module load apps/binapps/matlab/R2019a
 matlab
 ```
 
-```python
+```bash
 module load apps/binapps/dawn/2.16.1
 dawn
 ```
 
-```python
+```bash
 source activate dioptas
 dioptas
 ```
 
-```python
+```bash
 module load apps/binapps/maud/2.93
 maud.sh
 ```
@@ -102,13 +110,13 @@ maud.sh
 
 If you are experiencing memory issues on the iCSF at any time, you can check the memeory usage of the home partition (space shared by all users):
 
-```python
+```bash
 df -h /home
 ```
 
 Or you can also check how much space your home directory is using;
 
-```python
+```bash
 du -skh $HOME
 ```
 
@@ -116,7 +124,7 @@ du -skh $HOME
 
 It is also possible to interact with the iCSF and RDS space through an external terminal. From here it is possible to view the data stored on the RDS, and it is also possible to create port links to launch analyses and notebooks that run on the iCSF processors. To view your iCSF (incline) storage space you can use the secure shell protocol like so;
 
-```python
+```bash
 ssh -t -L 7779:localhost:7779 mbcx9cd4@incline256.itservices.manchester.ac.uk
 ```
 
@@ -126,7 +134,7 @@ From here, **and on your own terminal** it is possible to view and search throug
 
 To view files on your computer from the iCSF **(just like you would on an external hard drive)**, you can install the [OS X Fuse](https://osxfuse.github.io) package. Then, in the terminal you can create a directory within which you can view all of the folders and files on the iCSF *(including sym links to the RDS space)*;
 
-```python
+```bash
 cd Desktop
 mkdir iCSF-Home
 sshfs -o follow_symlinks username@incline.itservices.manchester.ac.uk: iCSF-Home
@@ -134,20 +142,32 @@ sshfs -o follow_symlinks username@incline.itservices.manchester.ac.uk: iCSF-Home
 
 In cases where this is not connected (usually due to the node being overloaded), you can instead use the slightly different command;
 
-```python
+```bash
 sshfs -o follow_symlinks username@incline256.itservices.manchester.ac.uk: iCSF-Home
 ```
 
 Sometimes, there can also be an issue with permissions to a shared folder, such as the sym link to the RDS shared folder, which shows up as permission denied. In this case, you can view the files in shared sym linked folders using;
 
-```python
+```bash
 sshfs -o defer_permissions username@incline256.itservices.manchester.ac.uk:/mnt/eps01-rds/Fonseca-Lightform RDS
 ```
 
 or;
 
-```python
+```bash
 sshfs -o defer_permissions username@rds-ssh.itservices.manchester.ac.uk:/mnt/eps01-rds/Fonseca-Lightform RDS
+```
+
+To close the directory you used to be able to use;
+
+```bash
+umount -f /Users/mbcx9cd4/Desktop/iCSF-Home
+```
+
+However, this seems to cause problems with the latest Mac OS, so better now to use;
+
+```bash
+diskutil unmount /Users/mbcx9cd4/Desktop/iCSF-Home
 ```
 
 #### Copying data to the iCSF (incline) 
@@ -156,11 +176,11 @@ For copying bulk experimental data from synchrotron beamlines such as Diamond or
 
 For general copying of data to and from the iCSF (incline) and RDS space, you can use the `cp` command *(for copying everything without comparison)*, or the `rsync` command *(for only copying changes ot the source data)*;
 
-```python
+```bash
 cp -vr source destination
 ```
 
-```python
+```bash
 rsync -azv source destination
 ```
 
@@ -168,7 +188,7 @@ rsync -azv source destination
 
 So, in this example the command is used to transfer data from a data refinement (TOPAS) from a personal computer onto the RDS space, which is sym linked to the iCSF (incline) storage space.
 
-```python
+```bash
 rsync -azv ~/Documents/Dropbox\ \(The\ University\ of\ Manchester\)/Zr\ Computer/TOPAS/Data\ Transfer/Batch05/ username@incline256.itservices.manchester.ac.uk:rds_lightform/SXRD_analysis/desy_2021/experiment05-deformation/phase-fraction-TOPAS/Batch05
 ```
 
@@ -178,7 +198,7 @@ It would also be valid to use `username@rds-ssh.itservices.manchester.ac.uk:` in
 
 To ensure that your packages do not mix up and interfere with each other during your analysis it is important to setup a virtual python environment, and to work within that python environment. A virtual environment can be setup like so using a list of the required packages *(found in requirements.txt)*;
 
-```python
+```bash
 cd python_package/
 python -m venv venv
 source venv/bin/activate
@@ -191,20 +211,20 @@ From here, you could launch python (`python`) or launch a notebook (`python -m j
 
 You can check what versions are downloaded using;
 
-```python
+```bash
 pip list
 ```
 
 And if it's necessary to force upgrade some packages then you can use;
 
-```python
+```bash
 pip install --upgrade -r requirements.txt
 pip install --upgrade specific_python_package
 ```
 
 Note in some instances, for developers, you may want to run in egg mode, to update packages instantly, for example using;
 
-```python
+```bash
 pip install -e .
 ```
 
@@ -212,14 +232,14 @@ pip install -e .
 
 First you need to create a shell script for launching the port link;
 
-```python
+```bash
 vi start-notebook.sh
 chmod 744 start-notebook.sh
 ```
 
 Then, after having setting up a virtual environment and closed it, you can launch a notebook via a port link in the terminal, like so;
 
-```python
+```bash
 ssh -t -L 7780:localhost:7780 username@incline256.itservices.manchester.ac.uk "virtualenv-setup/start-notebook.sh 7780 . rds_lightform/SXRD_analysis_packages/pyFAI-integration-caking/venv && exit"
 ```
 
@@ -231,7 +251,7 @@ You can also use this same command to launch the notebook on the linux remote de
 
 At some points you may need to alter the bashrc file, this is done by opening the file in a text editor;
 
-```python
+```bash
 nano ~/.Basic
 vi ~/.bashrc
 echo $PATH
