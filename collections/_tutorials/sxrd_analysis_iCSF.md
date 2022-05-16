@@ -1,6 +1,6 @@
 ---
 title: Synchrotron X-ray diffraction analysis on iCSF / CSF
-author: Christopher Daniel
+author: Christopher Daniel, Guy Bowker
 subcollection: SXRD
 ---
 
