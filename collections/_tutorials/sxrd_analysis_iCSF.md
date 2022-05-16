@@ -106,6 +106,8 @@ module load apps/binapps/maud/2.93
 maud.sh
 ```
 
+When using the iCSF for the first time, you will need to ensure lines to enable an internet connection and use of python are contained within the `.bash_profile` file of your iCSF home directory - please see FAQs at the bottom of the page.
+
 #### Memory Check
 
 If you are experiencing memory issues on the iCSF at any time, you can check the memeory usage of the home partition (space shared by all users):
@@ -184,7 +186,7 @@ cp -vr source destination
 rsync -azv source destination
 ```
 
-*Note leading ~/ in path means your home folder, leading ./ means in this folder or stuff in current working directory.*
+*Note leading ~/ in path means your home folder, leading `./` means in this folder or stuff in current working directory.*
 
 So, in this example the command is used to transfer data from a data refinement (TOPAS) from a personal computer onto the RDS space, which is sym linked to the iCSF (incline) storage space.
 
@@ -207,6 +209,7 @@ pip install jupyter
 pip install -r requirements.txt
 ```
 
+*Please note if the command `python -m venv venv` does not work here you may first need to ensure python is usable from your iCSF/CSF space. This can be done by ensuring the following lines are included in the `.bash_profile` file of your iCSF/CSF home directory - please see FAQs at the bottom of the page.*
 From here, you could launch python (`python`) or launch a notebook (`python -m jupyter notebook`) within the virtual environment. **However, the notebook will not launch in the browser unless you are able to launch it via a port link (see below on how to set this up).**
 
 You can check what versions are downloaded using;
@@ -230,7 +233,7 @@ pip install -e .
 
 #### Launching Jupyter Notebook via port link
 
-First you need to create a shell script for launching the port link;
+First you need to create a shell script somewhere on your iCSF space for launching the port link (ideally in the same directory as the venv you would like to use);
 
 ```bash
 vi start-notebook.sh
@@ -256,3 +259,11 @@ nano ~/.Basic
 vi ~/.bashrc
 echo $PATH
 ```
+#### FAQs
+ - Please note if any commands using `python` do not work on the iCSF you may first need to ensure python is usable from your iCSF space - this can be done by ensuring the following lines are included in the `.bash_profile` file of your iCSF home directory (note - changes to .bashrc will not take effect until re-logging in to the iCSF):
+```bash
+module load apps/binapps/anaconda3/2019.07
+module add tools/env/proxy2
+```
+The first line ensures you may use the currently installed version of python available to all CSF and iCSF users.
+The second line loads a tool for allowing your iCSF space to connect to the internet.
