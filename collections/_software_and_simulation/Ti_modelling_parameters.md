@@ -74,7 +74,7 @@ Because single-crystal properties of the beta phase cannot be determined directl
 
 | $C_{11}$ | $C_{12}$ | $C_{44}$ | Source | Comments |
 |  ------- | -------- | -------- | ------ | -------- |
-|          |          |          |        |          |
+|   97.7   |   87.2   |   37.5   | (Ledbetter, 2004)[^9] | non-contacting electromagnetic-acoustic resonance at 1030C. |
 |          |          |          |        |          |
 
 ### Plastic properties - Initial and saturated Critical Resolved Shear Stresses (CRSS)
@@ -106,6 +106,7 @@ This code is maintained by the Microstructure Modelling Group at the University 
 [^6]: Bridier, F., 2006. Analyse expérimentale des modes de déformation et d'endommagement par fatigue à 20° C d'alliage de titane: aspects cristallographiques à différentes échelles (Doctoral dissertation, Poitiers).
 [^7]: Zambaldi, C., Yang, Y., Bieler, T.R. and Raabe, D., 2012. Orientation informed nanoindentation of α-titanium: Indentation pileup in hexagonal metals deforming by prismatic slip. Journal of Materials Research, 27(1), pp.356-367.
 [^8]: Jones, I.P. and Hutchinson, W.B., 1981. Stress-state dependence of slip in Titanium-6Al-4V and other HCP metals. Acta Metallurgica, 29(6), pp.951-968.
+[^9]: Ledbetter, H., Ogi, H., Kai, S., Kim, S. and Hirao, M., 2004. Elastic constants of body-centered-cubic titanium monocrystals. Journal of applied physics, 95(9), pp.4642-4644.
 
 
 
