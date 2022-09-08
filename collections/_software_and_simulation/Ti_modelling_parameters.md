@@ -10,31 +10,46 @@ toc: false
 subcollection: Titanium
 published: true
 ---
+The model presented uses a constitutive law based on a phenomenological crystal plasticity model described by Pierce et al. (Pierce, 1983). As part of the DAMASK framework (Roters, 2019). A phenomenological model attempts to predict the response one variable has on another, but is not derived from first principles.
+The DAMASK full-field crystal plasticity model considers a representative volume element as a continuous body $\mathcal{B}$ consisting of material points located in reference configuration $\textbf{x}\in\mathcal{B}_0$ which move to the current configuration $\textbf{y}\in\mathcal{B}_t$ with deformation.
+    An infinitesimal line segment $d\textbf{x}$ is moved by the application of a deformation gradient tensor $F$, which maps $d\textbf{x}$ in the reference configuration to $d\textbf{y}$ in the current configuration. $d\textbf{y} = F(\textbf{x})\cdot d\textbf{x}$.
+    Multiplicative decomposition of the deformation gradient tensor splits $F$ into the elastic deformation gradient tensor $F_e$ and plastic deformation gradient tensor $F_p$:
+	\begin{equation}\label{equation:1}
+		F = F_{e} \cdot F_{p}
+	\end{equation}
+    
+    The elastic deformation gradient tensor $F_e$ is calculated from the Green-Lagrange strain $E$ which is itself determined using Hooke's law:
+	\begin{equation}\label{equation:2}
+		S = \mathbb{C}:E
+	\end{equation}
 
-Constitutive Crystal Plasticity models are reliant on two equations as part of a phenomenological power law:
+    Where $S$ is the Cauchy stress tensor and $\mathbb{C}$ is the elastic stiffness tensor. $E$ may then be expressed:
+		
+	\begin{equation}
+		E = \frac{(\boldsymbol{F}_e^T\boldsymbol{F}_e-\boldsymbol{I})}{2}
+		\label{eqn:3}
+	\end{equation}
 
-Equation 1 describes the constitutive power law used by most crystal plasticity modelling software by which the slip rate $\dot{\gamma}$ on some arbitrary labelled slip system $i$ is dependant upon the initial shear rate $\dot{\gamma}_{0}^{i}$, ratio between initial $\tau^i$ and saturated $\xi^i$ CRSS values, inverse of strain rate sensitivity $n=\frac{1}{m}$, and shear stress on the slip system:
+    The plastic deformation gradient tensor $F_p$ is calculated using constitutive equations. A constitutive equation describes the response of a specific material to external stimuli. The slip rate $\dot{\gamma}^i$ of polycrystal slip plane $i$ for a given load case is determined as follows:
+    
+    Equation (\ref{equation:2}) describes the phenomenological power law by which the slip rate $\dot{\gamma}^i$ on some slip system $i$ is dependant upon the initial shear rate $\dot{\gamma}_{0}^{i}$, ratio between resolved shear stress $\tau^i$ and critical resolved shear stress (CRSS) $\xi^i$, inverse of strain rate sensitivity $n_{sl}=\frac{1}{m}$, also known as the stress exponent, and resolved shear stress on the slip system $\tau^{i}$:
+        \begin{equation}\label{equation:3}
+            \dot{\gamma}^i = \dot{\gamma}_{0}^{i}\displaystyle\left\vert\frac{\tau^i}{\xi^i}\right\vert^{n_{sl}}\text{sgn}(\tau^i)
+        \end{equation}
 
-$$
-\begin{equation}
-\dot{\gamma}^i = \dot{\gamma}_{0}^{i}\displaystyle\left\lvert \frac{\tau^i}{\xi^i}\right\vert^n \text{sgn}(\tau^i)
-\end{equation}
-$$
-	
-The saturated critical resolved shear stress ($\xi^i$) in Equation 1.0 is reliant on either Equation 2 or 3, which calculates the rate of hardening of the slip system with deformation. [DAMASK](https://damask3.mpie.de) uses the hardening law represented in Equation 2, while [FepX](https://fepx.info) uses a modified Voce hardening law in Equation 3:
+    The CRSS $\xi^i$ in Equation (\ref{equation:3}) is analogous to the yield of slip system $i$. When the resolved shear stress becomes greater than that of the CRSS of the slip system, $\dot{\gamma}^{i}\neq0$ and the slip system begins to slip.
+    The resolved shear stress on the system $i$, $\tau^i$, is the second piola-kirchoff stress tensor, $\boldsymbol{S}$, projected by the corresponding schmid tensor, itself given by the dyadic product of the unit vectors along the slip direction, $\boldsymbol{b}^i$, and the slip plane normal, $\boldsymbol{n}^i$:
 
-$$
-\begin{equation}
-\dot{\xi}^i = \dot{h}_0^{s-s}(1+h_{int}^i)\sum_{i^{\prime}=1}^{N_s} \displaystyle\left\lvert\dot{\gamma}^i\right\vert \displaystyle\left\lvert1-\frac{\xi^{i^{\prime}}}{\xi_\infty^{i^{\prime}}}\right\vert^a sgn(1-\frac{\xi^{i^{\prime}}}{\xi_\infty^{i^{\prime}}})h^{ii^{\prime}}
-\end{equation}
-$$
+        \begin{equation}\label{equation:3}
+            \tau^i = \boldsymbol{S}\cdot\boldsymbol{b}^i\otimes\boldsymbol{n}^i
+        \end{equation}
+    
+    The following power law is used to determine the change of CRSS $\xi^i$ from its initial value $\xi_0^i$, to the defined saturated CRSS $\xi_\infty^{i^{\prime}}$ with flow hardening as shown in Equation (\ref{equation:4}) and figure \ref{fig:CRSS_evolution}:
+        \begin{equation}\label{equation:4}
+            \dot{\xi}^i = \dot{h}_0^{s-s}\sum_{i^{\prime}=1}^{N_s} \displaystyle\left\vert\dot{\gamma}^i\right\vert \displaystyle\left\vert1-\frac{\xi^{i^{\prime}}}{\xi_\infty^{i^{\prime}}}\right\vert^{w}sgn(1-\frac{\xi^{i^{\prime}}}{\xi_\infty^{i^{\prime}}})h^{ii^{\prime}}
+        \end{equation}
 
-
-$$
-\begin{equation}
-\dot{\xi}^i = h_0\left(\frac{\xi_s(\dot{\gamma})-\xi^i}{\xi_s(\dot{\gamma})-\xi_0}\right)^{n^{\prime}}\dot{\gamma}
-\end{equation}
-$$
+    Where $\dot{h}_0^{s-s}$ is the initial hardening rate, $w$ is a fitting parameter and $h^{ii^{\prime}}$ is the components of the slip-slip interaction matrix. $h_{ij}$ is 1.0 for self-hardening and 1.4 for latent hardening.
 
 Please find below a collection of single crystal property parameters for titanium and its alloys from a variety of literature sources.
 Please add to this list should your literature review include these parameters, to aid future work into modelling of titanium and its alloys.
