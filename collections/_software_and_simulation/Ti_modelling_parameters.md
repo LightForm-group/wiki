@@ -11,52 +11,57 @@ toc: false
 subcollection: Titanium
 published: true
 ---
-The model presented uses a constitutive law based on a phenomenological crystal plasticity model described by Pierce et al. (Pierce, 1983). As part of the DAMASK framework (Roters, 2019). A phenomenological model attempts to predict the response one variable has on another, but is not derived from first principles.
-The DAMASK full-field crystal plasticity model considers a representative volume element as a continuous body $\mathcal{B}$ consisting of material points located in reference configuration $\textbf{x}\in\mathcal{B}_0$ which move to the current configuration $\textbf{y}\in\mathcal{B}_t$ with deformation.
-    An infinitesimal line segment $d\textbf{x}$ is moved by the application of a deformation gradient tensor $F$, which maps $d\textbf{x}$ in the reference configuration to $d\textbf{y}$ in the current configuration. $d\textbf{y} = F(\textbf{x})\cdot d\textbf{x}$.
-    Multiplicative decomposition of the deformation gradient tensor splits $F$ into the elastic deformation gradient tensor $F_e$ and plastic deformation gradient tensor $F_p$:
-	\begin{equation}\label{equation:1}
-		F = F_{e} \cdot F_{p}
-	\end{equation}
+The model presented uses a constitutive law based on a phenomenological crystal plasticity model described by Pierce et al. (Pierce, 1983) as part of the DAMASK framework (Roters, 2019).
+A phenomenological model attempts to predict the response one variable has on another, but is not derived from first principles.
+The DAMASK full-field crystal plasticity model considers a representative volume element as a continuous body $\mathcal{B}$ consisting of material points $\textbf{x}$ located in reference configuration $\mathcal{B}$<sub>0</sub> which move to the current configuration $\textbf{y}$ in $\mathcal{B}$<sub>t</sub> with deformation.
+An infinitesimal line segment $d\textbf{x}$ is moved by the application of a deformation gradient tensor $F$, which maps $d\textbf{x}$ in the reference configuration to $d\textbf{y}$ in the current configuration. $d\textbf{y} = F(\textbf{x})\cdot d\textbf{x}$.
+Multiplicative decomposition of the deformation gradient tensor splits $F$ into the elastic deformation gradient tensor $F_{e}$ and plastic deformation gradient tensor $F_{p}$
+
+$$
+F = F_{e} \cdot F_{p}
+$$
     
-    The elastic deformation gradient tensor $F_e$ is calculated from the Green-Lagrange strain $E$ which is itself determined using Hooke's law:
-	\begin{equation}\label{equation:2}
-		S = \mathbb{C}:E
-	\end{equation}
+The elastic deformation gradient tensor $F_{e}$ is calculated from the Green-Lagrange strain $E$ which is itself determined using Hooke's law
 
-    Where $S$ is the Cauchy stress tensor and $\mathbb{C}$ is the elastic stiffness tensor. $E$ may then be expressed:
-		
-	\begin{equation}
-		E = \frac{(\boldsymbol{F}_e^T\boldsymbol{F}_e-\boldsymbol{I})}{2}
-		\label{eqn:3}
-	\end{equation}
+$$
+S = \mathbb{C}:E
+$$
 
-    The plastic deformation gradient tensor $F_p$ is calculated using constitutive equations. A constitutive equation describes the response of a specific material to external stimuli. The slip rate $\dot{\gamma}^i$ of polycrystal slip plane $i$ for a given load case is determined as follows:
+Where $S$ is the Cauchy stress tensor and $\mathbb{C}$ is the elastic stiffness tensor. $E$ may then be expressed
+
+$$
+E = \frac{(\boldsymbol{F_{e}}^{T}\boldsymbol{F_{e}}-\boldsymbol{I})}{2}
+$$
+
+The plastic deformation gradient tensor $F_{p}$ is calculated using constitutive equations.
+A constitutive equation describes the response of a specific material to external stimuli. The slip rate $\dot{\gamma}^i$ of polycrystal slip plane $i$ for a given load case is determined as follows
+
+The phenomenological power law by which the slip rate $\dot{\gamma}^i$ on some slip system $i$ is dependant upon the initial shear rate $\dot{\gamma_{0}}^i$ , ratio between resolved shear stress $\tau^i$ and critical resolved shear stress (CRSS) $\xi^i$, inverse of strain rate sensitivity $n_{sl}=\frac{1}{m}$ (also known as the stress exponent), and resolved shear stress on the slip system $\tau^{i}$, is given as
+
+$$
+\dot{\gamma}^i = \dot{\gamma_{0}}^{i}\displaystyle\left\vert\frac{\tau^i}{\xi^i}\right\vert^{n_{sl}}\text{sgn}(\tau^i)
+$$
+
+The CRSS $\xi^i$ in Equation is analogous to the yield of slip system $i$. When the resolved shear stress becomes greater than that of the CRSS of the slip system, $\dot{\gamma}^{i}\neq0$ and the slip system begins to slip.
+The resolved shear stress on the system $i$, $\tau^i$, is the second piola-kirchoff stress tensor, $\boldsymbol{S}$, projected by the corresponding schmid tensor, itself given by the dyadic product of the unit vectors along the slip direction, $\boldsymbol{b}^i$, and the slip plane normal, $\boldsymbol{n}^i$
+
+$$
+\tau^i = \boldsymbol{S}\cdot\boldsymbol{b}^i\otimes\boldsymbol{n}^i
+$$
     
-    Equation (\ref{equation:2}) describes the phenomenological power law by which the slip rate $\dot{\gamma}^i$ on some slip system $i$ is dependant upon the initial shear rate $\dot{\gamma}_{0}^{i}$, ratio between resolved shear stress $\tau^i$ and critical resolved shear stress (CRSS) $\xi^i$, inverse of strain rate sensitivity $n_{sl}=\frac{1}{m}$, also known as the stress exponent, and resolved shear stress on the slip system $\tau^{i}$:
-        \begin{equation}\label{equation:3}
-            \dot{\gamma}^i = \dot{\gamma}_{0}^{i}\displaystyle\left\vert\frac{\tau^i}{\xi^i}\right\vert^{n_{sl}}\text{sgn}(\tau^i)
-        \end{equation}
+The following power law is used to determine the change of CRSS $\xi^i$ from its initial value $\xi_0^i$, to the defined saturated CRSS $\xi_\infty^{i^{\prime}}$ with flow hardening as shown in Equation *numb*
 
-    The CRSS $\xi^i$ in Equation (\ref{equation:3}) is analogous to the yield of slip system $i$. When the resolved shear stress becomes greater than that of the CRSS of the slip system, $\dot{\gamma}^{i}\neq0$ and the slip system begins to slip.
-    The resolved shear stress on the system $i$, $\tau^i$, is the second piola-kirchoff stress tensor, $\boldsymbol{S}$, projected by the corresponding schmid tensor, itself given by the dyadic product of the unit vectors along the slip direction, $\boldsymbol{b}^i$, and the slip plane normal, $\boldsymbol{n}^i$:
+$$
+\dot{\xi}^i = \dot{h}_0^{s-s}\sum_{i^{\prime}=1}^{N_s} \displaystyle\left\vert\dot{\gamma}^i\right\vert \displaystyle\left\vert1-\frac{\xi^{i^{\prime}}}{\xi_\infty^{i^{\prime}}}\right\vert^{w}sgn(1-\frac{\xi^{i^{\prime}}}{\xi_\infty^{i^{\prime}}})h^{ii^{\prime}}
+$$
 
-        \begin{equation}\label{equation:3}
-            \tau^i = \boldsymbol{S}\cdot\boldsymbol{b}^i\otimes\boldsymbol{n}^i
-        \end{equation}
-    
-    The following power law is used to determine the change of CRSS $\xi^i$ from its initial value $\xi_0^i$, to the defined saturated CRSS $\xi_\infty^{i^{\prime}}$ with flow hardening as shown in Equation (\ref{equation:4}) and figure \ref{fig:CRSS_evolution}:
-        \begin{equation}\label{equation:4}
-            \dot{\xi}^i = \dot{h}_0^{s-s}\sum_{i^{\prime}=1}^{N_s} \displaystyle\left\vert\dot{\gamma}^i\right\vert \displaystyle\left\vert1-\frac{\xi^{i^{\prime}}}{\xi_\infty^{i^{\prime}}}\right\vert^{w}sgn(1-\frac{\xi^{i^{\prime}}}{\xi_\infty^{i^{\prime}}})h^{ii^{\prime}}
-        \end{equation}
-
-    Where $\dot{h}_0^{s-s}$ is the initial hardening rate, $w$ is a fitting parameter and $h^{ii^{\prime}}$ is the components of the slip-slip interaction matrix. $h_{ij}$ is 1.0 for self-hardening and 1.4 for latent hardening.
+Where $\dot{h_0}^{s-s}$ is the initial hardening rate, $w$ is a fitting parameter and $h^{ii^{\prime}}$ is the components of the slip-slip interaction matrix. $h_{ij}$ is 1.0 for self-hardening and 1.4 for latent hardening.
 
 Please find below a collection of single crystal property parameters for titanium and its alloys from a variety of literature sources.
 Please add to this list should your literature review include these parameters, to aid future work into modelling of titanium and its alloys.
 
 
-## Alpha phase (Ti-$\alpha$)
+## Alpha phase (Ti-α)
 Ti-$\alpha$ phase possesses a hexagonal-close packed (HCP) unit cell with $c/a$ ratio 1.587, smaller than the ideal ratio of 1.633 (Lutjering, 2007)[^1].
 ### Elastic properties
 
@@ -84,7 +89,7 @@ Be aware some are given as ratios.
 |     |                      |                 |       |          |           |          |
 
 
-## Beta phase (Ti-$\beta$)
+## Beta phase (Ti-β)
 Because single-crystal properties of the beta phase cannot be determined directly at room temperature, some assumptions may be made in order to model its deformation response. E.g. Interstitial free steel is a good approximation for the $\beta$-phase, due to possessing similar slip modes.
 ### Elastic properties
 
