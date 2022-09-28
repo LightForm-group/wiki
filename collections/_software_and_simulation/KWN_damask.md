@@ -40,7 +40,7 @@ The following installation instructions are specific to users of the University 
 
 ```cd ..```
 
-- Create a ```build``` directory and navigate into it:
+- Create a ```build``` directory in ```software/damask-kwn/``` and navigate into it:
 
 ``` mkdir build```
 
