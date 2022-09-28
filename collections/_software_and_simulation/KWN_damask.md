@@ -40,11 +40,13 @@ The following installation instructions are specific to users of the University 
 >
 >``` cd build```
 
+- Run the following command:
+>```cmake ../ -DDAMASK_SOLVER=GRID -DCMAKE_INSTALL_PREFIX=../```
+
+
 - Run the following command
 >```make all install```
 
-- Run the following command:
->```cmake ../ -DDAMASK_SOLVER=GRID -DCMAKE_INSTALL_PREFIX=../```
 
 ## References
 
