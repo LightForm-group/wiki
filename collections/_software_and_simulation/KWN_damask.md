@@ -30,6 +30,7 @@ The following installation instructions are specific to users of the University 
 
 - Download the folder called ```damask-kwn``` from [this link](https://github.com/LightForm-group/Damask-KWN) and copy it in your ```software``` directory (or clone it directly from Github)
 - Go to the ```software/damask-kwn/``` directory:
+
 ```cd software/damask-kwn/```
 - Go to the ```src``` directory and remove the hidden files that might have appeared when copying the ```damask-kwn``` folder in the ```software``` directory (this step is not necessary if you used github to clone the folder):
 
