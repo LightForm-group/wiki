@@ -4,7 +4,9 @@ author: Madeleine Bignon
 tags:
   - damask
   - csf
-toc: true
+  - Crystal Plasticity
+  - Modelling
+toc: false
 subcollection: KWN precipitation model  
 published: true
 
