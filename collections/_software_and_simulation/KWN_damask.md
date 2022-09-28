@@ -37,6 +37,7 @@ The following installation instructions are specific to users of the University 
 
 - Create a ```build``` directory and navigate into it:
 >``` mkdir build```
+>
 >``` cd build```
 
 - Run the following command
@@ -44,3 +45,6 @@ The following installation instructions are specific to users of the University 
 
 - Run the following command:
 >```cmake ../ -DDAMASK_SOLVER=GRID -DCMAKE_INSTALL_PREFIX=../```
+
+## References
+
