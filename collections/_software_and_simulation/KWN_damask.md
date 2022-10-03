@@ -1,5 +1,5 @@
 ---
-title: Installing a Damask version including KWN model for precipitatiojn kinetics
+title: Installing a Damask version including KWN model for precipitation kinetics
 author: Madeleine Bignon
 tags:
   - damask
