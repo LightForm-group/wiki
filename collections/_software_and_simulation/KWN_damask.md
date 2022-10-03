@@ -7,7 +7,9 @@ tags:
   - Crystal Plasticity
   - Modelling
 toc: false
-subcollection: KWN precipitation model  
+subcollection: 
+  - KWN precipitation model  
+  - DAMASK
 published: true
 ---
 This version of Damask includes a constitutive behaviour law for dynamic precipitation. The program is available [here](https://github.com/LightForm-group/Damask-KWN).
