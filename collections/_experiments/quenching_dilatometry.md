@@ -14,6 +14,8 @@ analysis_codes:
     link: https://github.com/LightForm-group/steel_dilatometer_analysis/tree/main/CCT%20Plotting
   - name: Dilation Curve Plotting
     link: https://github.com/LightForm-group/steel_dilatometer_analysis/tree/main/Transformation%20Analysis
+  - name: CCT Predictor
+    link: https://github.com/LightForm-group/steel_dilatometer_analysis/tree/main/CCT_Predictor
 ---
 
 ## Executive Summary
