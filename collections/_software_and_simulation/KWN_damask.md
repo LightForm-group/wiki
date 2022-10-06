@@ -282,6 +282,7 @@ solver:
   mechanical: spectral_basic
   thermal: spectral
   ```
-
+## Post-processing
+Some post-processing tools are available in the ```env-script``` directory
 ## References
 
