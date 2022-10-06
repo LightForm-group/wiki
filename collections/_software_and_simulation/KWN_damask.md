@@ -296,5 +296,3 @@ This will create a textfile per variable and per time increment containing the v
 
 Additionally, the jupyter notebook ```notebook_post_processing.ipynb``` can be copied in the folder containing the result file and run to display some calculation results. 
 
-## References
-
