@@ -81,6 +81,8 @@ First of all, open the CSF and run the following command:
 source /mnt/eps01-rds/jf01-home01/shared/load_DAMASK-processing.sh
 ```
 ### Running a job 
+
+
 Place the following jobscript into a directory containing `DAMASK` input files (`geom.vtr`, `load.yaml`, and `material.yaml`) and submit it with `qsub jobscript_name`.
 
 ```sh
@@ -94,6 +96,7 @@ mpirun -n $NSLOTS DAMASK_grid -l load.yaml -g geom.vtr
 ```
 Running a job on the CSF will create two files in the working directory it is run within: A `jobname.o0000000` file, which contains generic job output, and `jobname.e0000000` which contains detail on errors that occured during the run.
 
+A set of examples files (`geom.vtr`, `load.yaml`, `material.yaml` and `jobscript.sh` files) is available in the ```example_of_use``` directory [here](https://github.com/LightForm-group/Damask-KWN)
 ### Input files examples
 
 The ```material.yaml``` file contains all the material properties. It also contains all the parameters of the KWN dynamic precipitation model (please note that the temperature is defined in the ```load.yaml``` file). The documentation detailing the meaning of the inputs is available [here](https://github.com/LightForm-group/Damask-KWN/blob/main/model_documentation/fullfield-kwn.pdf).
