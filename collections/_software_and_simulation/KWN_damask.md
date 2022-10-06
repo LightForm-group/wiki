@@ -96,7 +96,7 @@ Running a job on the CSF will create two files in the working directory it is ru
 
 ### Input files examples
 
-The ```material.yaml``` file contains all the material properties. It also contains all the parameters of the KWN dynamic precipitation model. The documentation detailing the meaning of the inputs is available [here](https://github.com/LightForm-group/Damask-KWN/blob/main/model_documentation/fullfield-kwn.pdf).
+The ```material.yaml``` file contains all the material properties. It also contains all the parameters of the KWN dynamic precipitation model (please note that the temperature is defined in the ```load.yaml``` file). The documentation detailing the meaning of the inputs is available [here](https://github.com/LightForm-group/Damask-KWN/blob/main/model_documentation/fullfield-kwn.pdf).
 
 Example ```material.yaml``` file (for a simulation with 4 grains)
 ```yaml
