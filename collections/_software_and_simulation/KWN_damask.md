@@ -273,9 +273,9 @@ loadstep:
       - 0
       - x
   discretization:
-    N: 10000
-    t: 2000
-  f_out: 100
+    N: 10000 #discretisation for the calculation (N time steps)
+    t: 2000 #total deformation time in [s]
+  f_out: 100 #frequency of the outputs : one file every f_out calculations 
 
   
 solver:
@@ -293,6 +293,7 @@ To create textfiles containing the results of the calculation, as well as ```.vt
 python post_processing.py geom_load.hdf5
 ```
 This will create a textfile per variable and per time increment containing the value of the given variables for all voxels of the simulation. For example, if the simulation is run with a 16x16x16 (=4096) box, the file ```vf_100``` contains 4096 lines for the calculated volume fractions of the 4096 elements of the simulation at increment time 100.
+This also creates ```.vtr``` files that can be visualised in Paraview.
 
-Additionally, the jupyter notebook ```notebook_post_processing.ipynb``` can be copied in the folder containing the result file and run to display some calculation results. 
+Additionally, the jupyter notebook ```notebook_post_processing.ipynb``` can be copied in the folder containing the result file and run to display some plots. 
 
