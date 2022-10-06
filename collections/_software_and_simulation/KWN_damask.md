@@ -16,6 +16,8 @@ This version of Damask includes a constitutive behaviour law for dynamic precipi
 
 The constitutive law called ```kwnpowerlaw``` allows to consider the evolution of a precipitate distribution under deformation. The evolution of the precipitate distribution is calculated with a multi-class KWN precipitation kinetics model. The strengthening effect of precipitates is taken into account in the calculation of the critical resolved shear stress for dislocation glide. The accelerating effect of deformation on precipitation kinetics is considered using a phenomenological model for excess vacancy production. 
 
+The documentation of the model can be downloaded [here][https://github.com/LightForm-group/Damask-KWN/blob/main/model_documentation/fullfield-kwn.pdf]
+
 ## Installation
 
 The following installation instructions are specific to users of the University of Manchester's Computational Shared Facility (CSF).
@@ -93,9 +95,56 @@ Running a job on the CSF will create two files in the working directory it is ru
 
 ### Input files examples
 
-The ```material.yaml```yaml file contains all the material properties. It also contains all the parameters of the KWN dynamic precipitation model.
+The ```material.yaml``` file contains all the material properties. It also contains all the parameters of the KWN dynamic precipitation model. The documentation detailing the meaning of the inputs is available [here](https://github.com/LightForm-group/Damask-KWN/blob/main/model_documentation/fullfield-kwn.pdf).
 
+Example ```material.yaml``` file (for a simulation with 4 grains)
 ```yaml
+homogenization:
+  SX:
+    N_constituents: 1
+    mechanical:
+      type: pass
+    thermal:
+      type: pass
+      
+material:
+- constituents:
+  - O:
+    - 0.19813654684736873
+    - -0.4003702989793671
+    - 0.38708148638970563
+    - -0.806606133991621
+    phase: Aluminum
+    v: 1.0
+  homogenization: SX
+- constituents:
+  - O:
+    - 0.4131826988800702
+    - -0.6684243946439803
+    - 0.5135613787035137
+    - 0.34459192720543513
+    phase: Aluminum
+    v: 1.0
+  homogenization: SX
+- constituents:
+  - O:
+    - 0.21956653913118745
+    - -0.3396582332002957
+    - 0.5011663510132476
+    - -0.765019678260156
+    phase: Aluminum
+    v: 1.0
+  homogenization: SX
+- constituents:
+  - O:
+    - 0.2487765086598615
+    - -0.8408812909074685
+    - 0.44711671323124785
+    - 0.17639599794237146
+    phase: Aluminum
+    v: 1.0
+    
+    
 phase:
   Aluminum:
     lattice: cF
@@ -189,6 +238,46 @@ phase:
 
 ```
 
+The ```load.yaml``` file contains the deformation conditions as well as the temperature.
+
+Example ```load.yaml``` file
+```yaml
+initial_conditions:
+  thermal:
+    T: 423.0
+loadstep:
+- boundary_conditions:
+    mechanical:
+      P:
+      - x
+      - x
+      - x
+      - x
+      - 0
+      - x
+      - x
+      - x
+      - 0
+      dot_F:
+      - 0.0001
+      - 0
+      - 0
+      - 0
+      - x
+      - 0
+      - 0
+      - 0
+      - x
+  discretization:
+    N: 10000
+    t: 2000
+  f_out: 100
+
+  
+solver:
+  mechanical: spectral_basic
+  thermal: spectral
+  ```
 
 ## References
 
