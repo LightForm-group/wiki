@@ -78,7 +78,7 @@ make all install
 First of all, open the CSF and run the following command:
 
 ```bash
-source /mnt/eps01-rds/jf01-home01/shared/load_DAMASK-master.sh
+source /mnt/eps01-rds/jf01-home01/shared/load_DAMASK-processing.sh
 ```
 ### Running a job 
 Place the following jobscript into a directory containing `DAMASK` input files (`geom.vtr`, `load.yaml`, and `material.yaml`) and submit it with `qsub jobscript_name`.
