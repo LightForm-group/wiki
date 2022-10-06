@@ -16,7 +16,7 @@ This version of Damask includes a constitutive behaviour law for dynamic precipi
 
 The constitutive law called ```kwnpowerlaw``` allows to consider the evolution of a precipitate distribution under deformation. The evolution of the precipitate distribution is calculated with a multi-class KWN precipitation kinetics model. The strengthening effect of precipitates is taken into account in the calculation of the critical resolved shear stress for dislocation glide. The accelerating effect of deformation on precipitation kinetics is considered using a phenomenological model for excess vacancy production. 
 
-The documentation of the model can be downloaded [here][https://github.com/LightForm-group/Damask-KWN/blob/main/model_documentation/fullfield-kwn.pdf]
+The documentation of the model can be downloaded [here](https://github.com/LightForm-group/Damask-KWN/blob/main/model_documentation/fullfield-kwn.pdf)
 
 ## Installation
 
