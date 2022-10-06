@@ -283,6 +283,12 @@ solver:
   thermal: spectral
   ```
 ## Post-processing
-Some post-processing tools are available in the ```env-script``` directory
+
+Some post-processing tools are available in the ```env_scripts``` directory from [this repository](https://github.com/LightForm-group/Damask-KWN).
+To use them, copy the ```post_processing.py``` and ```notebook_post_processing.ipynb``` in the folder containing the result file (which has ```.hdf5``` extension).
+
+To create textfiles containing the results of the calculation, as well as ```.vtr``` files allowing to display the result in 3D (e.g. with Paraview). 
+
+
 ## References
 
