@@ -287,8 +287,14 @@ solver:
 Some post-processing tools are available in the ```env_scripts``` directory from [this repository](https://github.com/LightForm-group/Damask-KWN).
 To use them, copy the ```post_processing.py``` and ```notebook_post_processing.ipynb``` in the folder containing the result file (which has ```.hdf5``` extension).
 
-To create textfiles containing the results of the calculation, as well as ```.vtr``` files allowing to display the result in 3D (e.g. with Paraview). 
+To create textfiles containing the results of the calculation, as well as ```.vtr``` files allowing to display the result in 3D (e.g. with Paraview), go with the CSF to the folder containing the result file (```geom_load.hdf5``` in the example below) and run the following command:
 
+```bash
+python post_processing.py geom_load.hdf5
+```
+This will create a textfile per variable and per time increment containing the value of the given variables for all voxels of the simulation. For example, if the simulation is run with a 16x16x16 (=4096) box, the file ```vf_100``` contains 4096 lines for the calculated volume fractions of the 4096 elements of the simulation at increment time 100.
+
+Additionally, the jupyter notebook ```notebook_post_processing.ipynb``` can be copied in the folder containing the result file and run to display some calculation results. 
 
 ## References
 
