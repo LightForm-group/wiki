@@ -68,6 +68,7 @@ cmake ../ -DDAMASK_SOLVER=GRID -DCMAKE_INSTALL_PREFIX=../
 
 
 - Run the following command
+
 ```bash
 make all install
 ```
