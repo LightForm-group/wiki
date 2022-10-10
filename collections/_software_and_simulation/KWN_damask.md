@@ -78,7 +78,7 @@ make all install
 First of all, open the CSF and run the following command:
 
 ```bash
-source /mnt/eps01-rds/jf01-home01/shared/load_DAMASK-processing.sh
+source /mnt/eps01-rds/jf01-home01/shared/load_DAMASK_processing.sh
 ```
 ### Running a job 
 
