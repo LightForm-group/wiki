@@ -236,19 +236,20 @@ pip install -e .
 First you need to download the <a href="start-notebook.sh">shell script</a> and place it somewhere on your iCSF space for launching the port link (ideally in the same directory as the venv you would like to use);
 
 ```bash
-vi start-notebook.sh
 chmod 744 start-notebook.sh
 ```
 
-Then, after having setting up a virtual environment and closed it, you can launch a notebook via a port link in the terminal, like so;
+Then, after having setting up a virtual environment and closed it, you can launch a notebook via a port link in the terminal, replacing <USERNAME> with your manchester IT username, the path to start-notebook.sh, and the path the your desired virtual environment like so;
 
 ```bash
-ssh -t -L 7780:localhost:7780 username@incline256.itservices.manchester.ac.uk "virtualenv-setup/start-notebook.sh 7780 . rds_lightform/SXRD_analysis_packages/pyFAI-integration-caking/venv && exit"
+ssh -t -L 7780:localhost:7780 <USERNAME>@incline256.itservices.manchester.ac.uk "virtualenv-setup/start-notebook.sh 7780 . rds_lightform/SXRD_analysis_packages/pyFAI-integration-caking/venv && exit"
 ```
 
 This will create a link to launch the notebook, which you can open on your own computer, but will run all processes via the iCSF, saving your own computer processing power. This notebook does not become slow and laggy, like the one on the iCSF, and is therefore very useful for editing notebooks.
 
 You can also use this same command to launch the notebook on the linux remote desktop, which is useful for when you are not editing the notebook, but want to analyse larger datasets using the iCSF.
+ 
+ If the command has not correctly loaded the desired virtual environment, it will instead default to your user-installed pip packages (using `pip install --user`). You can check which python packages you have installed directly from the notebook with `!pip list` in a run cell.
 
 #### ADVANCED - Altering the bashrc file
 
