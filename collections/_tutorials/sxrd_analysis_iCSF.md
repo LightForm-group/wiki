@@ -233,7 +233,7 @@ pip install -e .
 
 #### Launching Jupyter Notebook via port link
 
-First you need to download the <a href="start-notebook.sh">shell script</a> and place it somewhere on your iCSF space for launching the port link (ideally in the same directory as the venv you would like to use);
+First you need to download the <a href="[wiki/collections/_tutorials/start-notebook.sh](https://downgit.github.io/#/home?url=https://github.com/LightForm-group/wiki/blob/master/collections/_tutorials/start-notebook.sh)">shell script</a> and place it somewhere on your iCSF space for launching the port link (ideally in the same directory as the venv you would like to use);
 
 ```bash
 chmod 744 start-notebook.sh
