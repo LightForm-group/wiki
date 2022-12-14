@@ -102,3 +102,4 @@ with TCPython() as session:
     plt.show()
 
 ```
+![alt text](https://github.com/LightForm-group/wiki/blob/master/collections/_software_and_simulation/param_fit.png)
