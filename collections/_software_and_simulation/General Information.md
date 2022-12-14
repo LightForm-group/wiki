@@ -41,7 +41,7 @@ For Linux OS:
 
 You should now be ready to run a TC-Python script, it is recommended that you run some of the examples provided by Thermo-Calc. Go to **File -> Open** and please navigate to the path of the TC-Python installation. Click on the **Examples** folder and from any subfolder run the example. Below is an example (```pyex_P_01_Precipitation_Al-Sc_AL3SC.py```) from the Precipitation subfolder, which simulates the kinetics of precipitation of Al3Sc from an FCC_A1 solution phase and shows some results, with minimally required settings. Default values are used for unspecified settings.
 
-![alt text](http://url/to/img.png)
+![alt text](https://www.dropbox.com/s/kpeaug0738ppzs4/tc_example.png?dl=0)
 
 ## Architecture
 
