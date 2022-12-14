@@ -48,9 +48,13 @@ You should now be ready to run a TC-Python script, it is recommended that you ru
 TC-Python contains classes of these types:
 
 **TCPython** – this is where you start with general settings.
+
 **SystemBuilder and System** – where you choose database and elements etc.
+
 **Calculation** – where you choose and configure the calculation.
+
 **Result** – where you get the results from a calculation you have run.
+
 
 Please refer to https://download.thermocalc.com/docs/tc-python/2022a/html/architecture.html#tcpython for further information
 
