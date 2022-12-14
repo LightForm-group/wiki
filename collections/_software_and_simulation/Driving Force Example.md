@@ -15,7 +15,8 @@ Using TC-Python, the Gibbs energy for a specific phase can be calculated for a m
 
 Please check the below modules are installed and available on your PC. These are all installed on the Morton PC, it is recommended you use the Morton PC and use the PyCharm IDE.
 
-```from mpl_toolkits.mplot3d import Axes3D
+```
+from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
 from matplotlib import cm
 import numpy as np
@@ -23,6 +24,7 @@ from tc_python import *
 import pandas as pd
 ```
 To ensure/check which phases are present in the system, the following function can be utilised. This is useful when the Gibbs energy of a specific phase is required.
+
 ```
 def list_stable_phases(result):
 ​
