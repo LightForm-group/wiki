@@ -10,7 +10,7 @@ subcollection: TC Python
 published: true
 ---
 
-#Getting Started with TC-Python
+# Getting Started with TC-Python
 
 TC-Python is a Python™ language-based SDK available with Thermo-Calc which allows for easy and flexible coupling of Thermo-Calc calculations with other numerical packages like NumPy, SciPy, and TensorFlow. The majority of calculations found within the Thermo-Calc graphical interface and console mode are available in TC-Python. This includes:
 - Single equilibrium
