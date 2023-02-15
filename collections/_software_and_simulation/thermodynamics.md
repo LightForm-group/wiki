@@ -9,7 +9,7 @@ toc: true
 The following thermodynamic software packages are available within the CLARI group.
 JMatPro – phase equilibria and solidification modelling (+physical property prediction) 
 ThermoCalc – phase diagrams and thermodynamics 
-This software is installed on the modelling PC. Please contact the #mortonpc or #general group on Slack if you have problems accessing this machine. To use this software from elsewhere, you need to remote log-in or install on your own machine (JMatPro only).
+This software is installed on the modelling PC. Please contact the #jmatpro_users or #mortonpc group on Slack if you have problems accessing this machine. Ask you supervisor to add you to Slack if you are not a member already. To use this software from elsewhere, you need to remote log-in or install on your own machine (JMatPro only).
 
 ## JMatPro
 
@@ -18,12 +18,7 @@ The current version of JMatPro can either be run using remote desktop (see later
 ## Multiuser Method: 
 
 To install JMatPro on your own machine (Windows only), first download it at: <https://www.sentesoftware.co.uk>
-Log-in to the client area: 
-
-```
-User: robsonjoseph 
-Password: bVl;J3N
-```
+You will need the **login details** - please ask for these on the **#jmatpro_users** Slack group (ask your supervisor to add you to Slack if you are not a member). 
 
 You can then download and install the latest version (you want the standard version, not the node-locked version). Providing you are on a Materials based PC or VPN, the USB key should be found when you run JMatPro. There is a small possibility that your computer cannot find the licence on the network. In this case, if you get a licence error, try the following procedure:
 
@@ -50,8 +45,8 @@ Details of the remote machine you will need to enter to log-in are:
 ```
 IP: 130.88.146.29:56224
 User: modelling	
-Password: modelling2018
 ```
+**Please ask for the log-in password on the Slack channel #jmatpro_users
 
 You may get a warning message, which you can ignore and proceed. 
 **Note: if another user is also trying to use the same computer, you may find you get logged out during your session. If this happens, you will need to wait and try again another time when the computer is not in use. Please check the booking form on the home screen and make a booking for the time you want to use the PC. If another user is booked at for the date/time you log in, please book another slot and log off.**
