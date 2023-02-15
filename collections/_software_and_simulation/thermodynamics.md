@@ -18,7 +18,7 @@ The current version of JMatPro can either be run using remote desktop (see later
 ## Multiuser Method: 
 
 To install JMatPro on your own machine (Windows only), first download it at: <https://www.sentesoftware.co.uk>
-You will need the **login details** - please ask for these on the **#jmatpro_users** Slack group (ask your supervisor to add you to Slack if you are not a member). 
+You will need the **login details** - please see pinned post on the **#jmatpro_users** Slack group (ask your supervisor to add you to the Slack group #jmatpro_users if you are not a member). 
 
 You can then download and install the latest version (you want the standard version, not the node-locked version). Providing you are on a Materials based PC or VPN, the USB key should be found when you run JMatPro. There is a small possibility that your computer cannot find the licence on the network. In this case, if you get a licence error, try the following procedure:
 
@@ -46,7 +46,7 @@ Details of the remote machine you will need to enter to log-in are:
 IP: 130.88.146.29:56224
 User: modelling	
 ```
-**Please ask for the log-in password on the Slack channel #jmatpro_users**
+**Please see the pinned post for the log-in password on the Slack channel #jmatpro_users**
 
 You may get a warning message, which you can ignore and proceed. 
 **Note: if another user is also trying to use the same computer, you may find you get logged out during your session. If this happens, you will need to wait and try again another time when the computer is not in use. Please check the booking form on the home screen and make a booking for the time you want to use the PC. If another user is booked at for the date/time you log in, please book another slot and log off.**
