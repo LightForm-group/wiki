@@ -46,7 +46,7 @@ Details of the remote machine you will need to enter to log-in are:
 IP: 130.88.146.29:56224
 User: modelling	
 ```
-**Please ask for the log-in password on the Slack channel #jmatpro_users
+**Please ask for the log-in password on the Slack channel #jmatpro_users**
 
 You may get a warning message, which you can ignore and proceed. 
 **Note: if another user is also trying to use the same computer, you may find you get logged out during your session. If this happens, you will need to wait and try again another time when the computer is not in use. Please check the booking form on the home screen and make a booking for the time you want to use the PC. If another user is booked at for the date/time you log in, please book another slot and log off.**
