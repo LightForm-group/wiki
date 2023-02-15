@@ -1,6 +1,7 @@
 ---
 title: Thermodynamic Software
 author: Joe Robson
+toc: true
 ---
 
 ## Thermodynamic Modelling Software at Manchester
