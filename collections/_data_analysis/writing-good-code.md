@@ -15,7 +15,7 @@ Here we set out some simple steps that can make a big difference to the quality 
 Place a brief explanatory comment at the start of every program to say what this script does. Give a comment at the start of each function to say what it does (it only takes a line). If your code does anything complex then add some comments next to the complex bit to say what is going on.
 
 ### Give functions and variables meaningful names
-If your vairables are called i, j and k then it will be really hard to understand what your code is doing. Using really short variable names was a convention from mnay years ago when screens could only show 80 characters. These days it is not necessary. Use names that descirbe what you are doing. e.g.
+If your vairables are called i, j and k then it will be really hard to understand what your code is doing. Using really short variable names was a convention from many years ago when screens could only show 80 characters. These days it is not necessary. Use names that descirbe what you are doing. e.g.
 
 ```
 # This code calculates the number of flocks of sheep 
