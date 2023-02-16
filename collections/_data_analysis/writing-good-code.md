@@ -26,7 +26,7 @@ num_flocks = num_sheep / flock_size
 print(num_flocks)
 ```
 
-### Use functions to break up code / dont repeat yourself
+### Use functions to break up code / don't repeat yourself
 If your code is longer than 20 lines, it is time to start breaking it up into logical subsections. Using functions allows breaking down the problem being solved into smaller chunks so it can be more easily understood. It also reduces repetition which makes code easier to maintain. If you find yourself copying and pasting sections of code and renaming varaible names then you should be using a function.
 
 ### Dont reinvent the wheel
