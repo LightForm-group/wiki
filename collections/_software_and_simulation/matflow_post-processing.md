@@ -14,7 +14,7 @@ subcollection: MatFlow
 ## Exploring matflow workflow metadata and results
 Matflow outputs all metadata and volume element dimensions, orientation data, single crystal parameters and simulation results in a HDF file named `workflow.hdf5`, this file can be explored in two ways:
 
-Firstly, using the HDF view program, which can be downloaded !(here)[https://www.hdfgroup.org/downloads/hdfview/#download].
+Firstly, using the HDF view program, which can be downloaded [here](https://www.hdfgroup.org/downloads/hdfview/#download).
 Right click the `workflow.hdf5` file in your file explorer and `open with HDFview`.
 In the dropdown select `element_data`. Simulation results can be found under `simulate_volume_element_loading`.
 
