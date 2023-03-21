@@ -2,10 +2,8 @@
 title: Dilatometer quenching tests
 author: Ed Pickering, Josh Collins, Mark Taylor
 analysis_codes:
-  - name: Offset Strain Calculation
-    link: https://github.com/LightForm-group/steel_dilatometer_analysis/tree/main/Offset%20Calculations
   - name: Transformation Start (Ts) Analysis
-    link: https://github.com/LightForm-group/steel_dilatometer_analysis/tree/main/Transformation%20Analysis
+    link: https://github.com/mjki4jcd/Steel-Dilatometry-Analysis/blob/main/dilatometry_ts_calculator.py
   - name: Ae3 Calculations
     link: https://github.com/LightForm-group/steel_dilatometer_analysis/tree/main/Ae3%20Calculations
   - name: Bs & Ms Calculations
