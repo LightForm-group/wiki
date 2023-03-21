@@ -4,16 +4,6 @@ author: Ed Pickering, Josh Collins, Mark Taylor
 analysis_codes:
   - name: Transformation Start (Ts) Analysis
     link: https://github.com/mjki4jcd/Steel-Dilatometry-Analysis/blob/main/dilatometry_ts_calculator.py
-  - name: Ae3 Calculations
-    link: https://github.com/LightForm-group/steel_dilatometer_analysis/tree/main/Ae3%20Calculations
-  - name: Bs & Ms Calculations
-    link: https://github.com/LightForm-group/steel_dilatometer_analysis/tree/main/Bs%20%26%20Ms%20Calculations
-  - name: CCT Plotting
-    link: https://github.com/LightForm-group/steel_dilatometer_analysis/tree/main/CCT%20Plotting
-  - name: Dilation Curve Plotting
-    link: https://github.com/LightForm-group/steel_dilatometer_analysis/tree/main/Transformation%20Analysis
-  - name: CCT Predictor
-    link: https://github.com/LightForm-group/steel_dilatometer_analysis/tree/main/CCT_Predictor
 ---
 
 ## Executive Summary
