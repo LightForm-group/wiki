@@ -3,7 +3,7 @@ title: Dilatometer quenching tests
 author: Ed Pickering, Josh Collins, Mark Taylor
 analysis_codes:
   - name: Transformation Start (Ts) Analysis
-    link: https://github.com/JoshUoM/Steel-Dilatometry-Analysis/blob/main/dilatometry_ts_calculator.py
+    link: https://github.com/JoshUoM/Steel-Dilatometry-Analysis
 ---
 
 ## Executive Summary
