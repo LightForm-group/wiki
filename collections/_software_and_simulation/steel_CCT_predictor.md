@@ -11,4 +11,4 @@ published: true
 
 ## Low Alloy Steel CCT Predictor
 
-Link to Python code: https://github.com/JoshUoM/Steel-CCT-Predictor
+Link to Python code: [https://github.com/JoshUoM/Steel-CCT-Predictor](https://github.com/JoshUoM/Steel-CCT-Predictor)
