@@ -14,3 +14,7 @@ but the key points are summarised below:
 - Use png when you need a raster-based format
   PNG files are saved with lossless compression, whereas jpg uses lossy compression, which gives rise to artifacts
   or distortions due to the data when saving.
+  While raster images are not as sharp as vector based, you can mitigate against this by setting the required resolution
+  ```
+  plt.savefig("plot.png", dpi=300)
+  ```
