@@ -49,3 +49,6 @@ Because our datasets are getting larger, automating our analyses has become esse
 ### Examples of good analysis workflows
 
 [Analysis workflows](./analysis-workflows)
+
+## Saving images
+Some advice on choosing a suitable image [file format and resolution](./saving-figures)
