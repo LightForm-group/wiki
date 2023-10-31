@@ -9,12 +9,12 @@ When processing data (e.g. with python and matplotlib) to create figures, there 
 but the key points are summarised below:
 
 - Prefer vector-based formats (svg and pdf)
-  These represent images with points, lines, and curves, so they have 'infinite resolution'.
-  Raster-based formats like png represent images with pixels, so they will get blurry when zoomed in.
+  - These represent images with points, lines, and curves, so they have 'infinite resolution'.
+  - Raster-based formats like png represent images with pixels, so they will get blurry when zoomed in.
 - Use png when you need a raster-based format
-  PNG files are saved with lossless compression, whereas jpg uses lossy compression, which gives rise to artifacts
+  - PNG files are saved with lossless compression, whereas jpg uses lossy compression, which gives rise to artifacts
   or distortions due to the data when saving.
-  While raster images are not as sharp as vector based, you can mitigate against this by setting the required resolution
-  ```
-  plt.savefig("plot.png", dpi=300)
-  ```
+  - While raster images are not as sharp as vector based, you can mitigate against this by setting the required resolution
+    ```
+    plt.savefig("plot.png", dpi=300)
+    ```
