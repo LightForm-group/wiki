@@ -12,7 +12,7 @@ Sharing research is good for everyone. It allows verification of research that h
 
 Sharing can also be good for the group that publishes the work. It increases the impact of the work by allowing more people to access it, it allows the development of collaborations with new researchers and groups from around the world and it also ensures that all researchers get credit for the work they do, not just PIs or grant holders.
 
-As well as the  inherrently positive aspects of open research, we are starting to see changes in policy in areas like research funding and publishing that will frther increase the importance of open research. In LightForm we want to be ahead of the courve in adopting these practices.
+As well as the  inherrently positive aspects of open research, we are starting to see changes in policy in areas like research funding and publishing that will frther increase the importance of open research. In LightForm we want to be ahead of the curve in adopting these practices.
 
 ## Barriers to sharing
 
