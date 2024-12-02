@@ -7,6 +7,10 @@ tags:
   - CSF3
   - Crystal Plasticity
   - Modelling
+toc: false
+subcollection: 
+  - DAMASK
+published: true
 ---
 
 This page aims to detail how to install PETSc (https://petsc.org/release/) and DAMASK (https://damask-multiphysics.org/) for simulating crystal plasticity.
