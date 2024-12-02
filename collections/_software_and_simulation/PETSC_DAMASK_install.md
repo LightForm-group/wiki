@@ -8,8 +8,7 @@ tags:
   - Crystal Plasticity
   - Modelling
 toc: false
-subcollection: 
-  - DAMASK
+subcollection: DAMASK
 published: true
 ---
 
