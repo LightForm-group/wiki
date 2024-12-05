@@ -38,7 +38,7 @@ Make sure to save and exit, you will need to logout and log back in for the chan
 
 ## Install PETSc
 
-Now, we need to download and install PETSc, if you don't already have a software folder on the CSF3, then ensure you make on in your home directory. Once downloaded, it's important to make sure you are on the correct branch.
+Now, we need to download and install PETSc, if you don't already have a software folder on the CSF3, then ensure you make one in your home directory. Once downloaded, it's important to make sure you are on the correct branch.
 
 ```
 cd
@@ -54,7 +54,7 @@ cd petsc
 git checkout release-3.19
 ```
 
-Now that we have PETSc downloaded we need to configure it for use with DAMASK. We need to create a folder within PETSc to hold extra packaged required by DAMASK. This should be within the PETSc directory `software/petsc/mkl-opt`.
+Now that we have PETSc downloaded we need to configure it for use with DAMASK. We need to create a folder within PETSc to hold extra packaged required by DAMASK. This filepath should look like this `software/petsc/mkl-opt`. Since we already defined a variable called `$PETSC_DIR`, we can just use this to go directly to the folder. 
 
 ```
 cd $PETSC_DIR
@@ -108,7 +108,7 @@ PETSC_DIR=$(pwd)
 make PETSC_DIR=$(pwd) PETSC_ARCH=mkl-opt all
 make PETSC_DIR=$(pwd) PETSC_ARCH=mkl-opt check
 ```
-This should run successfully and install PETSc. 
+This should run successfully and install PETSc. There might be some issues when running the tests, which is usually to do with MPI not being loaded properly. 
 
 ## Install DAMASK
 
