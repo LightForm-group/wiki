@@ -16,7 +16,7 @@ This page aims to detail how to install PETSc (https://petsc.org/release/) and D
 
 
 ## Edit Bash Profile
-Before we begin, it is important to define some enviroment variables, these should be added to your `.bash_profile`, which can be accessed using the following commands.
+Before we begin, it is important to define some enviroment variables, these should be added to your `.bash_profile`, which can be accessed using the following commands. NOTE: make sure you do not have any conda initialisation in you bash profiles, as this will interfere with installation, for more information see https://ri.itservices.manchester.ac.uk/csf3/software/applications/anaconda-python/ .
 
 ```
 cd
@@ -29,8 +29,7 @@ With the editor open, add the following lines of code to the bottom
 export HDF5_USE_FILE_LOCKING=FALSE
 
 export PETSC_DIR=$HOME/software/petsc
-export PETSC_ARCH=mkl-opt
-
+export PETSC_ARCH=linux-gnu
 export PATH=$PETSC_DIR/$PETSC_ARCH/bin:$PATH
 ```
 
@@ -54,12 +53,12 @@ cd petsc
 git checkout release-3.19
 ```
 
-Now that we have PETSc downloaded we need to configure it for use with DAMASK. We need to create a folder within PETSc to hold extra packaged required by DAMASK. This filepath should look like this `software/petsc/mkl-opt`. Since we already defined a variable called `$PETSC_DIR`, we can just use this to go directly to the folder. 
+Now that we have PETSc downloaded we need to configure it for use with DAMASK. We need to create a folder within PETSc to hold extra packaged required by DAMASK. This filepath should look like this `software/petsc/linux-gnu`. Since we already defined a variable called `$PETSC_DIR`, we can just use this to go directly to the folder. 
 
 ```
 cd $PETSC_DIR
 
-mkdir mkl-opt
+mkdir linux-gnu
 ```
 
 When configuring PETSc, it's best to either do so interactively or using a submission script. Here, we use a submission script that we can call `configure_petsc.sh`.
@@ -68,45 +67,41 @@ When configuring PETSc, it's best to either do so interactively or using a submi
 #!/bin/bash --login
 
 #$ -cwd
-#$ -N configure_petsc
+#$ -N make_petsc
+#$ -l short
 
 # Exports
 export HDF5_USE_FILE_LOCKING=FALSE
+export OMP_NUM_THREADS=1
+export PETSC_ARCH=linux-gnu
 
 # contains:
 module purge
-
-module load mpi/intel-19.1/openmpi/4.1.1
-module load tools/gcc/cmake/3.13.2
+module load compilers/gcc/14.1.0
+module load tools/gcc/cmake/3.28.6
 
 cd $PETSC_DIR
 
 ## For CSF3
 ./configure \
---with-cc=mpicc \
---with-cxx=mpicxx \
---with-fc=mpif90 \
+--with-cc=$CC \
+--with-cxx=$CXX \
+--with-fc=$FC \
+--download-mpich \
 --download-fftw \
 --download-hdf5 \
 --download-hdf5-fortran-bindings=1 \
---download-metis \
---download-parmetis \
---download-yaml \
+--download-libfyaml \
 --download-zlib \
 --download-fblaslapack \
---with-mkl_pardiso-dir=$MKLROOT \
---with-mkl_sparse-dir=$MKLROOT \
---with-mkl_sparse_optimize-dir=$MKLROOT \
---with-blaslapack-dir=$MKLROOT \
---with-debugging=0 \
-COPTFLAGS="-O2 -mavx2 -axCORE-AVX512,CORE-AVX2,AVX" \
-CXXOPTFLAGS="-O2 -mavx2 -axCORE-AVX512,CORE-AVX2,AVX" \
-FOPTFLAGS="-O2 -mavx2 -axCORE-AVX512,CORE-AVX2,AVX" \
-PETSC_ARCH=mkl-opt \
-PETSC_DIR=$(pwd)
+COPTFLAGS="-O2 -march=znver4" \
+CXXOPTFLAGS="-O2 -march=znver4" \
+FOPTFLAGS="-O2 -march=znver4" \
+PETSC_ARCH=$PETSC_ARCH \
+PETSC_DIR=$PETSC_DIR
 
-make PETSC_DIR=$(pwd) PETSC_ARCH=mkl-opt all
-make PETSC_DIR=$(pwd) PETSC_ARCH=mkl-opt check
+make PETSC_DIR=$PETSC_DIR PETSC_ARCH=$PETSC_ARCH all
+make PETSC_DIR=$PETSC_DIR PETSC_ARCH=$PETSC_ARCH check
 ```
 This should run successfully and install PETSc. There might be some issues when running the tests, which is usually to do with MPI not being loaded properly. 
 
@@ -137,12 +132,11 @@ LD_LIBRARY_PATH=$PETSC_DIR/$PETSC_ARCH/lib:$LD_LIBRARY_PATH
 
 # contains:
 module purge
-
-module load mpi/intel-19.1/openmpi/4.1.1
-module load tools/gcc/cmake/3.13.2
+module load compilers/gcc/14.1.0
+module load tools/gcc/cmake/3.28.6
 
 PETSC_DIR=$HOME/software/petsc
-PETSC_ARCH=damask
+PETSC_ARCH=linux-gnu
 
 cd $DAMASK_ROOT
 
