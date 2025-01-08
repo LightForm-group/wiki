@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Welcome to the LightForm Wiki!
+title: Welcome to the CLARI (formally LightForm) Wiki!
 published: true
 ---
 
