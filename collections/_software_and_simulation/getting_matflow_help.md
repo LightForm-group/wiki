@@ -6,7 +6,7 @@ tags:
   - python
   - matflow-old
 published: true
-subcollection: MatFlow_old
+subcollection: MatFlow old
 ---
 
 ## Getting help with MatFlow workflows
