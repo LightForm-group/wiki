@@ -4,9 +4,9 @@ author: Adam Plowman
 toc: true
 tags:
   - python
-  - matflow
+  - matflow-old
 published: true
-subcollection: MatFlow
+subcollection: MatFlow_old
 ---
 
 1. On the CSF, uninstall any "published" version of the package you wish to install from GitHub. For example, if you want to install a development version of the `matflow-damask` extension, first do `pip uninstall matflow-damask`. (Not sure if this step is required.)

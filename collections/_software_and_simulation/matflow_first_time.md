@@ -4,12 +4,12 @@ author: Peter Crowther
 toc: true
 tags:
   - python
-  - matflow
+  - matflow-old
   - workflow
   - yaml
   - yml
 published: true
-subcollection: MatFlow
+subcollection: MatFlow_old
 ---
 
 ## Installing MatFlow
