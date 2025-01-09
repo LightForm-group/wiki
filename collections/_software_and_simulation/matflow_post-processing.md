@@ -5,10 +5,10 @@ toc: true
 tags:
   - python
   - jupyter
-  - matflow
+  - matflow-old
   - damask
 published: true
-subcollection: MatFlow
+subcollection: MatFlow_old
 ---
 
 ## Exploring matflow workflow metadata and results

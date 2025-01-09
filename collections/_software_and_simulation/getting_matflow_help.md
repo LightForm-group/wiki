@@ -4,9 +4,9 @@ author: Adam Plowman
 toc: true
 tags:
   - python
-  - matflow
+  - matflow-old
 published: true
-subcollection: MatFlow
+subcollection: MatFlow_old
 ---
 
 ## Getting help with MatFlow workflows

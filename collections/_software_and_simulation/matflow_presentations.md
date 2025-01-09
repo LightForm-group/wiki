@@ -3,9 +3,9 @@ title: MatFlow presentations
 author: Adam Plowman
 toc: true
 tags:
-  - matflow
+  - matflow-old
 published: true
-subcollection: MatFlow
+subcollection: MatFlow_old
 ---
 
 Click to download a PowerPoint presentation on MatFlow:
