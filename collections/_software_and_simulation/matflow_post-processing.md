@@ -8,7 +8,7 @@ tags:
   - matflow-old
   - damask
 published: true
-subcollection: MatFlow_old
+subcollection: MatFlow old
 ---
 
 ## Exploring matflow workflow metadata and results
