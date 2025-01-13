@@ -9,7 +9,7 @@ tags:
   - yaml
   - yml
 published: true
-subcollection: MatFlow_old
+subcollection: MatFlow old
 ---
 
 ## Installing MatFlow
