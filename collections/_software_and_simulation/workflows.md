@@ -6,7 +6,7 @@ tags:
   - simulation
 published: true
 toc: true
-subcollection: MatFlow_old
+subcollection: MatFlow old
 ---
 
 ![matflow.png]({{site.baseurl}}/assets/images/posts/matflow.png)
