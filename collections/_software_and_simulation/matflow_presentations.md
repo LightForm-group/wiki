@@ -5,7 +5,7 @@ toc: true
 tags:
   - matflow-old
 published: true
-subcollection: MatFlow_old
+subcollection: MatFlow old
 ---
 
 Click to download a PowerPoint presentation on MatFlow:
