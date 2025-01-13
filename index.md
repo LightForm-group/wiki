@@ -8,6 +8,10 @@ published: true
 
 The purpose of this Wiki is to share our collective knowledge about procedures, methods and hacks that are useful for our research. Please contribute anything you think might be useful to others. We use Markdown to format the text in this Wiki. If you'd like to know more about Markdown, GitHub has a nice intro [here](https://guides.github.com/features/mastering-markdown/).
 
+## Announcements
+
+- The modelling and data meetings will be running a new competition! Make at least one notable contribution to the wiki before the meeting just before the easter break (1st April) and have your chance to win a free easter egg! (the winner will be drawn from a hat on the day of the meeting. A "Notable contribution" is defined as one page worth of content, authored or co-authored.) Good Luck!
+
 ## Group Calendar
 
 <div id="calendar-wrapper">
