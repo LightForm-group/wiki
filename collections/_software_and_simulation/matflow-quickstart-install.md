@@ -1,13 +1,13 @@
 ---
-title: Matflow: Quickest Quickstart in the West (QQTW)
+title: Matflow - Quickest Quickstart in the West (QQTW)
 author: Samuel Engel
 tags:
   - CSF3
   - Matflow
   - Modelling
 toc: false
-subcollection: MatFlow
 published: true
+subcollection: MatFlow
 ---
 
 This page details how to install Matflow (https://docs.matflow.io) using centrally installed packages on the CSF3. 
