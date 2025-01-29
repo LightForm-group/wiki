@@ -111,7 +111,7 @@ Now MatFlow should be fully installed and working. For now this just includes DA
 
 ## Building a Custom Install (Advanced Users)
 
-The method above installs MatFlow using precreated conda enviroments that hold the relevant softwares, if you want different versions, or even additional softwares adding, you will need to create your own enviroments. 
+The method above installs MatFlow using released versions of MatFlow, if you want to use a different version of MatFlow, that is perhaps on Github branch, you will need to use the example.  
 
 In this example, we will use pip to install an experimental version of MatFlow that uses the release version of the crystal plasticity software DAMASK. You should repeat steps 1 and 2, but stop before you pip install anything. Instead navigate to the shared space on the CSF3.
 
