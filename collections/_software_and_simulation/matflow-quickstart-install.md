@@ -12,7 +12,7 @@ subcollection: MatFlow
 
 This page details how to install Matflow (https://docs.matflow.io) using centrally installed packages on the CSF3. 
 
-
+# Quickstart
 ## 1. Edit Bash Profile
 Before we begin, it is important to add the following lines to you bash profile, this will allow you to use the modulefiles that are stored in the Clari/Lightform shared space on the CSF3.
 
@@ -107,10 +107,11 @@ configs:
 
 Now MatFlow should be fully installed and working.
 
-## Building a Custom Install (Advanced Users)
+# Building a Custom Install (Advanced Users)
 
 The method above installs MatFlow using released versions of MatFlow, if you want to use a different version of MatFlow, that is perhaps on Github branch, you will need to use this example.  
 
+## 1. Install Matflow
 In this example, we will use pip to install an experimental version of MatFlow that uses the release version of the crystal plasticity software DAMASK. You should repeat steps 1 and 2, but stop before you pip install anything. Instead navigate to the shared space on the CSF3.
 
 ```
@@ -129,8 +130,11 @@ After that has installed, we also want to install a different version of HPCFlow
 ```
 pip install hpcflow-new2==0.2.0a189
 ```
-Ignore any warning it gives you. Now navigate back to your home directory, we need to change the configuration file to use a different version of DAMASK.
+Ignore any warning it gives you.
 
+## 2. Change the Configuration File
+
+Now navigate back to your home directory, we need to change the configuration file to use a different version of DAMASK.
 ```
 cd
 
@@ -179,10 +183,11 @@ configs:
 
 After that has done, you should be able to use the release version of DAMASK in MatFlow. You need to be careful as there have been some changes that will affect the demo workflows, which will cause them to not work correctly. This is usually because some parameters have become lists instead of single values and as such need some minor tweaking to the input file. 
 
-## Creating your own Enviroments (Super-Advanced Users)
+# Creating your own Enviroments (Super-Advanced Users)
 
 Currently, this process links to pre-existing enviroments on the CSF3. You might have a version of a software that is not currently supported and therefore need to make your own custom enviroment from scratch. In this example we will look at how to create a custom DAMASK enviroment, and the best practice for installing it centrally for everyone to use. If you are shy about sharing your MatFlow enviroment or uncomfortable installing in a shared space, then you can simply create these files in your home directory, ideally in a folder called `software`, `envs` or something similiar.
 
+## 1. Create Custom Enviroments
 Now navigate to the `envs` folder on the shared space. This is located at `/mnt/eps01-rds/Fonseca-Lightform/shared/software/envs` if you get lost. You will need to create an aptly named folder to hold your custom MatFlow installation, for example we will call this folder `matflow-damask-3.0.0temperature`. For further clarity, add a `README` in this folder to describe the specific versions of each software you are installing. 
 
 ```
@@ -242,6 +247,8 @@ pip install -e .
 pip install hpcflow-new2==0.2.0a189
 ```
 
+## 2. Edit the Configuration File
+
 Now that we have this set up, we just need to tell our `config.yaml` where our custom installation is. Open the config file and change the enviroment sources to point to the folder we have created. You will notice that this points to a `envs.yaml` file, which we will create next.
 
 ```
@@ -280,6 +287,7 @@ configs:
           defaults: {}
 ```
 
+## 3. Create an Enviroments File
 Now go back to the `envs` folder that we have created. 
 
 ```
