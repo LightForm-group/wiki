@@ -26,7 +26,7 @@ python -m venv .venv
 
 and like this on Windows:
 
-```bash
+```
 py -m venv .venv
 ```
 
@@ -42,7 +42,7 @@ source .venv/bin/activate
 
 and on Windows:
 
-```bash
+```
 .venv\Scripts\activate
 ```
 
@@ -73,7 +73,7 @@ source .venv/bin/activate
 
 or
 
-```bash
+```
 .venv\Scripts\activate
 ```
 
