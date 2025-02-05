@@ -10,7 +10,7 @@ subcollection: Python
 
 ## What are virtual environments and why should I use them?
 
-A virtual environment is a way to manage dependencies separately for different projects. This can help to avoid conflicts between python packages, and makes your code [easier to reproduce](using-a-requirementstxt-file) because others will known which packages (and maybe even which versions of them) are needed to run your code. The virtual environment is isolated from other virtual environments, so packages installed in one project's virtual environment won't interfere with those in a different project's virtual environment.
+A virtual environment is a way to manage dependencies separately for different projects. This can help to avoid conflicts between python packages, and makes your code [easier to reproduce](#using-a-requirementstxt-file) because others will known which packages (and maybe even which versions of them) are needed to run your code. The virtual environment is isolated from other virtual environments, so packages installed in one project's virtual environment won't interfere with those in a different project's virtual environment.
 
 ## How to create a virtual environment
 
