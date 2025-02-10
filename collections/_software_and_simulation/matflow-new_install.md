@@ -1,4 +1,4 @@
----
+[requirements.txt](https://github.com/user-attachments/files/18733542/requirements.txt)---
 title: Installing Matflow
 author: Guy Bowker, Gerard Capes, Samuel Engel
 toc: true
@@ -19,11 +19,14 @@ For instructions on how to write your own workflow, see [Gerards repository here
 ## Installing matflow-damask
 Steps Ive done to install matflow-new with damask functionality on my CSF space:
 
+Download this folder:
+[matflow-new.zip](https://github.com/user-attachments/files/18733560/matflow-new.zip)
+
 Create an environment of `python=3.10` using conda `conda create -n damask-venv python=3.10`
 
 activate environment `conda activate damask-env`
 
-install requirements `pip install -r requirements.txt` 
+install requirements `pip install -r requirements.txt`
 
 Test matflow CLI works by just typing matflow in command line and pressing enter.
 
