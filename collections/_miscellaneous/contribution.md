@@ -1,12 +1,12 @@
 ---
 title: How to contribute to the Wiki
-author: Adam Plowman
+author: Adam Plowman, Guy Bowker
 toc: true
 ---
 
 This Wiki is designed to be updated frequently; we want everyone to share any and all useful information related to LightForm and the research we do. This is a short guide for how to contribute. Don't worry about breaking the Wiki, we can always revert it to a previous state (because it uses GitHub)!
 
-Before you start, please make sure you have a GitHub account, and that you are a member of the LightForm "wiki-creators" team. @AdamPlowman or @PeterCrowther will be happy to help with this.
+Before you start, please make sure you have a GitHub account, and that you are a member of the LightForm "wiki-creators" team. @GuyBowker or @PeterCrowther will be happy to help with this.
 
 Content in this wiki is organised into *collections* (which you can see in the navigation side-bar on the left). They are currently:
 
@@ -116,4 +116,4 @@ Once the changes have been deployed on GitHub, you should now find a link to the
 
 ## Help
 
-Please contact @AdamPlowman if you have any problems with contributing to the Wiki.
+Please contact @GuyBowker if you have any problems with contributing to the Wiki.
