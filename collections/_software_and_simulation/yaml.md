@@ -11,7 +11,7 @@ subcollection: MatFlow
 
 # Useful things to know about yaml
 
- https://www.yaml.info/learn/bestpractices.html
+<https://www.yaml.info/learn/bestpractices.html>
 
 ## Indentation
 YAML can use indented, or zero-indented lists (sequences), where the hyphen is
@@ -49,8 +49,8 @@ e.g.
 environments:
 - name: abaqus_env
 setup: |
-    source /mnt/iusers01/support/mbexegc2/scratch/Abaqus_bayesian_matflow/.venv/bin/activate
-    module load apps/binapps/abaqus/2022
+  source /mnt/iusers01/support/mbexegc2/scratch/Abaqus_bayesian_matflow/.venv/bin/activate
+  module load apps/binapps/abaqus/2022
 ```
 
 ## Null = None
@@ -59,4 +59,4 @@ In YAML, you use `Null` if you want to set a (python) value of `None`.
 ## Checking your YAML file
 If you're struggling to understand a new error from MatFlow, 
 it's worth checking you're using valid syntax in your yaml file(s) 
-using something like https://www.yamllint.com/.
+using something like <https://www.yamllint.com/>.
