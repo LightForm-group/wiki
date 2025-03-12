@@ -13,7 +13,7 @@ subcollection: MatFlow
 
  https://www.yaml.info/learn/bestpractices.html
 
- ## Indentation
+## Indentation
 YAML can use indented, or zero-indented lists (sequences), where the hyphen is
 at the same level of indentation as the previous line.
 
