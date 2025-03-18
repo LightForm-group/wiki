@@ -1,5 +1,5 @@
 ---
-title: Thermophysical Properties: What is JMatPro actually doing
+title: Thermophysical Properties Extended General
 author: James Butler 
 toc: true
 tags:
