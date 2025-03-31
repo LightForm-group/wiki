@@ -1,5 +1,5 @@
 ---
-title: Using Python on the CSF for post-processing
+title: Using Python on the CSF for Post-processing
 author: Yuchen Zheng
 tags:
   - simulation
@@ -11,9 +11,9 @@ published: true
 subcollection: DAMASK
 ---
 
-This content is an addition to the previous section [here](https://www.paraview.org/Wiki/images/b/bc/ParaViewTutorial56.pdf).
+This content is an addition to the previous section [here](https://lightform-group.github.io/wiki/software_and_simulation/new-damask).
 
-After getting the `geom_load.hdf5` file as the result of DAMASK simulation. We can do processing with Python codes om CSF.
+After getting the `geom_load.hdf5` file as the result of DAMASK simulation. We can do processing with Python codes on CSF.
 
 ### Output .vti File from .hdf5
 `.vti` file is used to store series of image data, which can be exported during post-processing and visualised by ParaView. Here is a detailed example can be named
@@ -39,11 +39,10 @@ for inc in [0, 10, 20, 30, 40]:                         # Depends on which time-
   f_inc.export_VTK(output=['sigma', 'epsilon_V^0.0(F)', 'O', 'IPFcolor_(1 0 0)','IPFcolor_(0 1 0)','IPFcolor_(0 0 1)', 'phi'])   # Export .vti with the parameters added above.
   print(f_inc.list_data())                              # Show existed dataset.
 ```
-We can modify it by adding more parameters we need to analysis. It is worth to mention that though the command is called `.export_VTK`, the output file is in the
+We can modify it by adding more parameters we need to analyse. It is worth to mention that though the command is called `.export_VTK`, the output file is in the
 format of '.vti', not `.vtk` or `.vtr`. It is a standard output format of the latest damask module.
 
-Don't `.add` the same parameters twice otherwise there will be errors. A good way to check if the dataset already existed is `print(f_inc.list_data())` where we can check
-all the parameters we added before.
+Don't `.add` the same parameters twice otherwise there will be errors. A good way to check if the dataset already existed is `print(f_inc.list_data())` where we can check all the parameters we added before.
 
 ### Output Stress vs Strain Curve from .hdf5
 Write another python script or just add the following lines to the `postprocessing.py`:
