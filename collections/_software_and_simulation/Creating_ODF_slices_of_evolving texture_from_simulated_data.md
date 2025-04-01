@@ -83,6 +83,22 @@ for inc = 1:1:n_incs
     %psi = calcKernel(ori);
 
     %odf = calcDensity(ori, 'kernel', psi);
+    odf = calcDensity(ori, 'kernel', SO3DeLaValleePoussinKernel, 'halfwidth', 10*degree);
+
+    setMTEXpref('FontSize', 31);
+
+ figure()
+ plot(odf, 'phi2', 45*degree, ...
+      'antipodal', ...
+      'linewidth', 1, ...
+      'colorbar', 'cs', 'ss', ...
+      'minmax', 0:0.1:10, ...
+      'colorRange', [0, 30]);
+ 
+ mtexColorbar('location', 'southOutSide', 'title', 'mrd');
+saveas(gcf, strcat(path_to_txts, 'ODF_quat_list_', increment, '.png'))
+close(gcf);
+end
 ```
 This will loop through the quaternion lists to produce a 45-degree ODF slice for each time step
 
