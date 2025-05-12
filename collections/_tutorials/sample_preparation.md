@@ -200,6 +200,12 @@ Sample mounting: for EBSD, avoid resin when putting in the SEM, but samples can 
 
 -OPS is tough to remove completely from Ti. Run sample under hot water then, with a clean gloved finger, gently rub standard dish washing soap (e.g. Fairy Liquid) onto the surface. Run under the hot tap again while continuing to rub the surface gently, then clean with ethanol/methanol and air dry.
 
+### 3.1.3. Alternative Polishing Methods
+
+-For EBSD of bi-modal Ti64 the grinding process is as described above, however the polishing process used to achieve good indexing in this instance is quite different to that previously described. Instead of a water: OPS: hydrogen peroxide, 4:1:1 solution softly polished for 15 minutes, I have found that better indexing is achieved for the Ti64 fan blade sampples investigated when using a solution of 4:1 hydrogen peroxide: OPS for at least 25 minutes. The polishing step is immediately followed by a 5-minute period of polishing under running water in order, to prevent OPS from sticking to the surface. After polishing under water the same cleaning process as previously described in 3.1.2.2 was also conducted. 
+
+- For EBSD of fully lamellar Ti64 a polishing solution of hydrogen peroxide and OPS in a 1:1 ratio is used initially used for 5 minutes, the sample surface is then cleaned as previously described in section 3.1.2.2, before polishing is continued using a polishing solution of hydrogen peroxide: OPS: water in a 1:1:4 ratio until there are no visiblie scratches or defects in darkfield imaging on optical microscopes. 
+
 ## 3.2. EBSD Preparation Steps
 
 For soft Ti alloys, polishing often creates a thin deformed top layer on the sample and can significantly reduce the intensity/contrast of EBSD patterns, leading to low indexing. This needs to be removed.
