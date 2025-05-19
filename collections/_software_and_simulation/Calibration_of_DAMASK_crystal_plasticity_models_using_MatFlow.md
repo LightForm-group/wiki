@@ -1,9 +1,12 @@
 ---
 title: Calibration of DAMASK crystal plasticity models using MatFlow
 author: Matty Warner
+toc: true
+published: true
 tags:
 - damask
 - matflow
+subcollection: DAMASK
 ---
 This page aims to show how to calibrate crystal plasticity models in DAMASK using a stress-strain data from an experimental tensile test with a MatFlow workflow.
 
