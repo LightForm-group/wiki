@@ -10,7 +10,7 @@ The purpose of this Wiki is to share our collective knowledge about procedures, 
 
 ## Announcements
 
-- The modelling and data meetings will be running a new competition! Make at least one notable contribution to the wiki before the meeting just before the easter break (1st April) and have your chance to win a free easter egg! (the winner will be drawn from a hat on the day of the meeting. A "Notable contribution" is defined as one page worth of content, authored or co-authored.) Good Luck!
+No new announcements at this time. Please chack back here for new updates.
 
 ## Group Calendar
 
