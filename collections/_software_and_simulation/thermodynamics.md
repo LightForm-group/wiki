@@ -43,9 +43,10 @@ For Windows 10, the Remote Desktop connection is straightforward.
 Details of the remote machine you will need to enter to log-in are:
 
 ```
-IP: 130.88.44.168:56224
-User: modelling	
+PC name: b-11uxx52773bx
+IP address: 130.88.44.27:56224
 ```
+
 **Please see the pinned post for the log-in password on the Slack channel #jmatpro_users**
 
 You may get a warning message, which you can ignore and proceed. 
