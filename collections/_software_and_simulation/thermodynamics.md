@@ -26,7 +26,7 @@ You can then download and install the latest version (you want the standard vers
 1. Open a web browser and follow the link <http://localhost:1947/_int_/config_to.html> 
 2. Make sure the option "Allow Access to Remote Licenses" is checked (if not, check it)
 3. Uncheck the option "Broadcast Search for Remote Licenses", and check the option "Aggressive Search for Remote Licenses"
-4. Under "Specify Search Parameters", enter the IP address of the license server, i.e. 130.88.44.168
+4. Under "Specify Search Parameters", enter the IP address of the license server, i.e. 130.88.44.27:56224
 5. Click "Submit"
 ```
 
